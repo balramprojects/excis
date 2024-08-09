@@ -227,226 +227,34 @@
             font-weight: 700;
             letter-spacing: 2px;
         }
+
+        .nav-tab-dropdown {
+            display: none;
+        }
+
+        #nav-tab:hover .nav-tab-dropdown,
+        .nav-tab-dropdown:hover {
+            display: block;
+        }
+
+        #nav-tab:hover {
+            background: rgb(0, 0, 0, 0.1);
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div style="position: sticky; top: 0; z-index: 2;">
-        <div class="full-container">
-            <div style="width: 100%; height: 52px; background: #121820;">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <div style="height: 100%; gap: 25px;" class="d-flex">
-                            <a href="#" title="Career">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;" class="d-flex align-items-center">
-                                    Career
-                                </div>
-                            </a>
-                            <a href="#" title="CSR">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;" class="d-flex align-items-center">
-                                    CSR
-                                </div>
-                            </a>
-                            <a href="#" title="News">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;" class="d-flex align-items-center">
-                                    News
-                                </div>
-                            </a>
-                        </div>
+    <div id="landing-header-menu" style="position: sticky; top: 0; z-index: 2;"></div>
 
-                        <div class="d-flex align-items-center" style="font-size: 12px; text-align: center; color: #FAF9F6;">
-                            <p style="font-weight: 700;">Now Hiring : &nbsp;</p>
-                            <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
-                        </div>
-
-                        <a href="" class="d-flex align-items-center" style="padding: 0 10px 0 0;" title="Excis Worldwide">
-                            <div class="d-flex" style="gap: 16px;">
-                                <div style="width: 24px;" class="d-flex">
-                                    <img loading="lazy" src="images/global-presence.png" alt="Global">
-                                </div>
-                                <p style="font-size: 16px; color: #FAF9F6;">
-                                    Global | EN
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="full-container">
-            <div style="width: 100%; height: 65px; background: #FAF9F6; box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <a href="" title="Excis Logo" class="d-flex align-items-center">
-                            <div style="width: 60px;" class="d-flex">
-                                <img loading="lazy" src="images/main-logo.png" alt="Excis">
-                            </div>
-                        </a>
-
-                        <div class="d-flex" style="font-size: 13px; gap: 24px;">
-                            <a href="" class="d-flex align-items-center">
-                                <p style="color: #000;">About Us</p>
-                            </a>
-                            <div class="services d-flex align-items-center">
-                                <p style="color: #000;">Services</p>
-
-                                <div class="services-list-backdrop" style="width: 100vw; height: calc(100vh - 117px); background: rgb(0, 0, 0, 0.7); position: absolute; top: 65px; left: 50%; transform:translate(-50%, 0%);">
-
-                                </div>
-
-                                <div class="services-list" style="width: 100vw; position: absolute; top: 65px; left: 50%; transform:translate(-50%, 0%);">
-                                    <div style="width: 100%; background: #FAF9F6;">
-                                        <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                                            <div style="width: 100%; gap: 20px; padding: 20px 0 0;" class="d-flex justify-content-center align-items-start">
-                                                <div style="width: 100%;">
-                                                    <p style="font-size: 18px; font-weight: 700; padding-bottom: 10px; color: #F58520; border-bottom: 1px solid rgb(37, 37, 37, 0.2);">
-                                                        Infrastructure</p>
-
-                                                    <ul style="list-style-type: none;">
-                                                        <li style="margin-top: 10px; line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div style="width: 100%;">
-                                                    <p style="font-size: 18px; font-weight: 700; padding-bottom: 10px; color: #252525; border-bottom: 1px solid rgb(37, 37, 37, 0.2);">
-                                                        Infrastructure</p>
-
-                                                    <ul style="list-style-type: none;">
-                                                        <li style="margin-top: 10px; line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div style="width: 100%;">
-                                                    <p style="font-size: 18px; font-weight: 700; padding-bottom: 10px; color: #252525; border-bottom: 1px solid rgb(37, 37, 37, 0.2);">
-                                                        Infrastructure</p>
-
-                                                    <ul style="list-style-type: none;">
-                                                        <li style="margin-top: 10px; line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                                <div style="width: 100%;">
-                                                    <p style="font-size: 18px; font-weight: 700; padding-bottom: 10px; color: #252525; border-bottom: 1px solid rgb(37, 37, 37, 0.2);">
-                                                        Infrastructure</p>
-
-                                                    <ul style="list-style-type: none;">
-                                                        <li style="margin-top: 10px; line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                        <li style="line-height: 26px;">
-                                                            <a href="#" style="font-size: 14px; font-weight: 400; color: #252525;">Network</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="" class="d-flex align-items-center">
-                                <p style="color: #000;">Industries</p>
-                            </a>
-                            <a href="" class="d-flex align-items-center">
-                                <p style="color: #000;">Partners</p>
-                            </a>
-                            <a href="" class="d-flex align-items-center">
-                                <p style="color: #000;">CISCO DNA Spaces</p>
-                            </a>
-                            <a href="" class="d-flex align-items-center">
-                                <p style="color: #000;">Insights</p>
-                            </a>
-                        </div>
-
-                        <a href="" class="d-flex align-items-center">
-                            <div style="height: 42px; width: 129px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; background: #F58520; color: #FAF9F6; " class="d-flex justify-content-center align-items-center">
-                                Contact Us
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="full-container">
-        <div style="height: 520px; width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 0 0 50px 50px;">
-            <div style="height: 100%; padding: 0 15px;" class="inner-content-container">
-                <div style="width: 100%;" class="d-flex justify-content-between">
-                    <div style="height: 520px; flex-direction: column;" class="d-flex justify-content-center">
-                        <div style="max-width: 460px; font-size: 60px; font-weight: 800; line-height: 55px; color: #fff; text-wrap: wrap; text-transform: uppercase;">
-                            One World One Team
-                        </div>
-                        <div style="max-width: 350px; font-size: 25px; font-weight: 400; line-height: 32px; letter-spacing: 0.5px; padding: 20px 0 0; color: orange; text-wrap: wrap;">
-                            &nbsp; Your Global IT Solution
-                        </div>
-                        <div style="width: fit-content; padding: 14px; margin: 25px 0 0 10px; color: #252525; background: #FAF9F6; gap: 12px; border-radius: 10px;" class="d-flex justify-content-center align-items-center">
-                            <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">Let's Work Together</p>
-                            <div style="width: 20px;" class="d-flex">
-                                <img loading="lazy" src="images/btn-arrow.png" alt="Excis Compliance">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <script>
+        fetch('landing-header-menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('landing-header-menu').innerHTML = data;
+            });
+    </script>
 
     <div class="full-container">
         <div style="height: 520px; width: 100%; background-image: url('images/homepage.jpg'); background-size: 100% 100%; background-repeat: no-repeat; border-radius: 0 0 50px 50px;">
