@@ -256,9 +256,8 @@
             });
     </script>
 
-    <div class="full-container">
+    <!-- <div class="full-container">
         <div style="height: 520px; width: 100%; background-image: url('images/homepage.jpg'); background-size: 100% 100%; background-repeat: no-repeat; border-radius: 0 0 50px 50px;">
-            <!-- <div style="height: 520px; width: 100%; background-image: url('images/banner-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; border-radius: 0 0 50px 50px;"> -->
             <div style="height: 100%; padding: 0 15px;" class="inner-content-container">
                 <div style="width: 100%;" class="d-flex justify-content-center">
 
@@ -289,6 +288,33 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="full-container">
+        <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
+            <div style="position: absolute; top: 0; left: 50%; height: 260px; width: max-content; transform: translate(-50%, 0);">
+                <img src="images/inner-pages-banner.png" alt="">
+            </div>
+
+            <div style="height: 170px; width: max-content; position: absolute; top: 0; left: -10px; opacity: 0.5">
+                <img src="images/inner-pages-banner-abstract.png" alt="">
+            </div>
+
+            <div style="height: 170px; width: max-content; position: absolute; top: 0; right: -10px; transform: scaleX(-1); opacity: 0.5">
+                <img src="images/inner-pages-banner-abstract.png" alt="">
+            </div>
+
+            <div style="height: 100%; padding: 0 15px;" class="main-content-container">
+                <div style="width: 100%; height: 100%; flex-direction: column;" class="d-flex justify-content-center">
+                    <div style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 1);">
+                        Home - <span style="font-weight: 600;">Services</span>
+                    </div>
+                    <div style="font-size: 40px; font-weight: 600; padding: 5px 0 0; color: rgba(37, 37, 37, 1);">
+                        Services
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="full-container">
@@ -301,7 +327,7 @@
 
                 <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
                     <div style="width: 100%;">
-                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: #F58520;">
+                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: rgba(37, 37, 37, 1);">
                             Our Services
                         </div>
                         <div style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: #252525;">
