@@ -247,6 +247,7 @@
             width: 100%;
             display: flex;
             align-items: center;
+            padding: 0 0 50px 0;
         }
 
         .carousel {
@@ -575,71 +576,39 @@
         </div>
     </div>
 
-    <script>
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const cards = document.querySelector('.cards');
-
-        let cardIndex = 0;
-        const cardWidth = 33.27; // Card width including margin
-        const visibleCards = 3;
-        const totalCards = cards.children.length;
-
-        function updateCarousel() {
-            cards.style.transform = `translateX(${-cardIndex * cardWidth}%)`;
-            prevBtn.disabled = cardIndex === 0;
-            nextBtn.disabled = cardIndex >= totalCards - visibleCards;
-        }
-
-        prevBtn.addEventListener('click', () => {
-            if (cardIndex > 0) {
-                cardIndex--;
-                updateCarousel();
-            }
-        });
-
-        nextBtn.addEventListener('click', () => {
-            if (cardIndex < totalCards - visibleCards) {
-                cardIndex++;
-                updateCarousel();
-            }
-        });
-    </script>
-
     <div class="full-container">
-        <div style="width: 100%; background: #fff;">
+        <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);">
             <div style="max-width: 100%; margin-inline: auto; position: relative;">
                 <div
-                    style="width: 290px; height: 416px; background-image: url('images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
+                    style="width: 290px; height: 416px; background-image: url('images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; position: absolute; bottom: 0; left: 0;">
                 </div>
                 <div
-                    style="width: 290px; height: 416px; background-image: url('images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
+                    style="width: 290px; height: 416px; background-image: url('images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; position: absolute; top: 0; right: 0;">
                 </div>
 
-                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
+                <div style="height: 100%; padding: 50px 15px 80px;" class="main-content-container">
                     <div style="width: 100%;">
-                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: rgba(37, 37, 37, 1);">
+                        <div
+                            style="font-size: 36px; font-weight: 500; text-align: center; color: rgba(250, 249, 246, 1);">
                             Our Services
                         </div>
                         <div
-                            style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: #252525;">
+                            style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: rgba(250, 249, 246, 1);">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
                             quis culpa cumque, laboriosam deserunt unde?
                         </div>
 
-                        <div style="padding: 30px 0 0;">
+                        <div style="padding: 50px 0 0;">
                             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
                                 <div class="services-cards d-flex justify-content-between">
                                     <div style="padding: 20px 25px;">
                                         <div style="width: 100px; margin-inline: auto;" class="d-flex">
                                             <img loading="lazy" src="images/help-desk-icon.png" alt="">
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
                                             Help Desk
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
@@ -659,12 +628,10 @@
                                         <div style="width: 100px; margin-inline: auto;" class="d-flex">
                                             <img loading="lazy" src="images/data-security-icon.png" alt="">
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
                                             Data Security
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
@@ -684,12 +651,10 @@
                                         <div style="width: 100px; margin-inline: auto;" class="d-flex">
                                             <img loading="lazy" src="images/data-security-icon.png" alt="">
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
                                             Email Security
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
@@ -709,12 +674,10 @@
                                         <div style="width: 100px; margin-inline: auto;" class="d-flex">
                                             <img loading="lazy" src="images/web-security-icon.png" alt="">
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
                                             Web Security
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
@@ -734,12 +697,10 @@
                                         <div style="width: 100px; margin-inline: auto;" class="d-flex">
                                             <img loading="lazy" src="images/application-security-icon.png" alt="">
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
                                             Application Security
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
@@ -759,12 +720,10 @@
                                         <div style="width: 100px; margin-inline: auto;" class="d-flex">
                                             <img loading="lazy" src="images/hybrid-cloud-icon.png" alt="">
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
                                             Hybrid Cloud
                                         </div>
-
                                         <div
                                             style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
@@ -778,240 +737,144 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div style="width: fit-content; padding: 14px 45px; margin: 40px auto 0; color: #252525; background: #fff; gap: 12px; border: 1px solid #252525; border-radius: 10px;"
-                            class="d-flex justify-content-center align-items-center">
-                            <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">View All</p>
-                            <div style="width: 20px;" class="d-flex">
-                                <img loading="lazy" src="images/btn-arrow.png" alt="Excis Compliance">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="full-container">
-        <div style="width: 100%; background: linear-gradient(#1B315D, #354D7D);">
-            <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                <div style="width: 100%; padding: 80px 0;">
-                    <div style="max-width: 1000px; height: 110px; margin-inline: auto;"
-                        class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <p style="font-size: 80px; font-weight: 700; line-height: 80px; color: #FAF9F6;">50000+</p>
-                            <p style="font-size: 24px; font-weight: 300; padding: 10px 0 0; color: #FAF9F6;">Tickets Per
-                                Month</p>
-                        </div>
-                        <div style="height: 100%; padding: 0 .5px; margin: 0 40px; background: #fff;"></div>
-                        <div>
-                            <p style="font-size: 80px; font-weight: 700; line-height: 80px; color: #FAF9F6;">200+</p>
-                            <p style="font-size: 24px; font-weight: 300; padding: 10px 0 0; color: #FAF9F6;">Enterprise
-                                Clients</p>
-                        </div>
-                        <div style="height: 100%; padding: 0 .5px; margin: 0 40px; background: #fff;"></div>
-                        <div>
-                            <p style="font-size: 80px; font-weight: 700; line-height: 80px; color: #FAF9F6;">100+</p>
-                            <p style="font-size: 24px; font-weight: 300; padding: 10px 0 0; color: #FAF9F6;">Countries
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="full-container">
-        <div style="width: 100%; background: #fff;">
-            <div style="max-width: 100%; margin-inline: auto; position: relative;">
-                <div
-                    style="width: 290px; height: 416px; background-image: url('images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
-                </div>
-                <div
-                    style="width: 290px; height: 416px; background-image: url('images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
-                </div>
-
-                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                    <div style="width: 100%;">
-                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: #F58520;">
-                            Our Core Values
-                        </div>
-                        <div
-                            style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: #252525;">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                            quis culpa cumque, laboriosam deserunt unde?
-                        </div>
-
-                        <div style="padding: 30px 0 0;">
-                            <div style="width: 100%; gap: 30px;"
-                                class="d-flex justify-content-between align-items-center">
-                                <div style="width: 100%; padding: 20px; background: #FAF9F6; border: 1px solid rgb(37, 37, 37, 0.2); border-radius: 10px; gap: 20px;"
-                                    class="core-values-card d-flex justify-content-start align-items-center">
-                                    <div style="height: 70px; width: 70px; border-radius: 50%;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="height: 55px; width: 55px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 50%;"
-                                            class="drop d-flex justify-content-center align-items-center">
-                                            <div style="width: 20px;" class="d-flex">
-                                                <img loading="lazy" src="images/dollar-icon.png" alt="">
-                                            </div>
+                                <div class="services-cards d-flex justify-content-between">
+                                    <div style="padding: 20px 25px;">
+                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
+                                            <img loading="lazy" src="images/data-security-icon.png" alt="">
                                         </div>
-                                    </div>
-
-                                    <div style="font-size: 22px; font-weight: 800; color: #252525;">
-                                        Integrity & Ethics
-                                    </div>
-                                </div>
-
-                                <div style="width: 100%; padding: 20px; background: #FAF9F6; border: 1px solid rgb(37, 37, 37, 0.2); border-radius: 10px; gap: 20px;"
-                                    class="core-values-card d-flex justify-content-start align-items-center">
-                                    <div style="height: 70px; width: 70px; border-radius: 50%;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="height: 55px; width: 55px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 50%;"
-                                            class="drop d-flex justify-content-center align-items-center">
-                                            <div style="width: 20px;" class="d-flex">
-                                                <img loading="lazy" src="images/dollar-icon.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div style="font-size: 22px; font-weight: 800; color: #252525;">
-                                        Emp Development
-                                    </div>
-                                </div>
-
-                                <div style="width: 100%; padding: 20px; background: #FAF9F6; border: 1px solid rgb(37, 37, 37, 0.2); border-radius: 10px; gap: 20px;"
-                                    class="core-values-card d-flex justify-content-start align-items-center">
-                                    <div style="height: 70px; width: 70px; border-radius: 50%;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="height: 55px; width: 55px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 50%;"
-                                            class="drop d-flex justify-content-center align-items-center">
-                                            <div style="width: 20px;" class="d-flex">
-                                                <img loading="lazy" src="images/dollar-icon.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div style="font-size: 22px; font-weight: 800; color: #252525;">
-                                        Trust & Teamwork
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="height: 100%; padding: 30px 15px 50px;" class="main-content-container">
-                    <div style="width: 100%;">
-                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: #F58520;">
-                            Case Studies
-                        </div>
-                        <div
-                            style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: #252525;">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                            quis culpa cumque, laboriosam deserunt unde?
-                        </div>
-
-                        <div style="padding: 30px 0 0;">
-                            <div style="width: 100%; gap: 30px;"
-                                class="d-flex justify-content-between align-items-start">
-                                <div style="width: 100%; padding: 20px; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                    class="case-studies-card">
-                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="width: 140px;" class="d-flex">
-                                            <img loading="lazy" src="images/case-studies-card-creative.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div style="width: 100%; padding: 10px 5px;">
-                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                            RETAIL
-                                        </div>
-
-                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                        </div>
-
                                         <div
-                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                            Email Security
                                         </div>
-
-                                        <div style="padding: 30px 0 0;">
-                                            <a href="#" style="font-size: 12px; font-weight: 700; color: #252525;">Read
-                                                More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div style="width: 100%; padding: 20px; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                    class="case-studies-card">
-                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="width: 140px;" class="d-flex">
-                                            <img loading="lazy" src="images/case-studies-card-creative.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div style="width: 100%; padding: 10px 5px;">
-                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                            RETAIL
-                                        </div>
-
-                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                        </div>
-
                                         <div
-                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                        </div>
-
-                                        <div style="padding: 30px 0 0;">
-                                            <a href="#" style="font-size: 12px; font-weight: 700; color: #252525;">Read
-                                                More</a>
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                         </div>
                                     </div>
-                                </div>
-
-                                <div style="width: 100%; padding: 20px; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                    class="case-studies-card">
-                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
+                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
                                         class="d-flex justify-content-center align-items-center">
-                                        <div style="width: 140px;" class="d-flex">
-                                            <img loading="lazy" src="images/case-studies-card-creative.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div style="width: 100%; padding: 10px 5px;">
-                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                            RETAIL
-                                        </div>
-
-                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                        </div>
-
-                                        <div
-                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                        </div>
-
-                                        <div style="padding: 30px 0 0;">
-                                            <a href="#" style="font-size: 12px; font-weight: 700; color: #252525;">Read
-                                                More</a>
-                                        </div>
+                                        <a href="#"
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
+                                            <u>Learn more</u>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div style="width: fit-content; padding: 14px 45px; margin: 40px auto 0; color: #252525; background: #fff; gap: 12px; border: 1px solid #252525; border-radius: 10px;"
-                            class="d-flex justify-content-center align-items-center">
-                            <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">View All</p>
-                            <div style="width: 20px;" class="d-flex">
-                                <img loading="lazy" src="images/btn-arrow.png" alt="Excis Compliance">
+
+                                <div class="services-cards d-flex justify-content-between">
+                                    <div style="padding: 20px 25px;">
+                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
+                                            <img loading="lazy" src="images/web-security-icon.png" alt="">
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                            Web Security
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                        </div>
+                                    </div>
+                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <a href="#"
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
+                                            <u>Learn more</u>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="services-cards d-flex justify-content-between">
+                                    <div style="padding: 20px 25px;">
+                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
+                                            <img loading="lazy" src="images/application-security-icon.png" alt="">
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                            Application Security
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                        </div>
+                                    </div>
+                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <a href="#"
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
+                                            <u>Learn more</u>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="services-cards d-flex justify-content-between">
+                                    <div style="padding: 20px 25px;">
+                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
+                                            <img loading="lazy" src="images/data-security-icon.png" alt="">
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                            Email Security
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                        </div>
+                                    </div>
+                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <a href="#"
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
+                                            <u>Learn more</u>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="services-cards d-flex justify-content-between">
+                                    <div style="padding: 20px 25px;">
+                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
+                                            <img loading="lazy" src="images/web-security-icon.png" alt="">
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                            Web Security
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                        </div>
+                                    </div>
+                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <a href="#"
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
+                                            <u>Learn more</u>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="services-cards d-flex justify-content-between">
+                                    <div style="padding: 20px 25px;">
+                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
+                                            <img loading="lazy" src="images/application-security-icon.png" alt="">
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                            Application Security
+                                        </div>
+                                        <div
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                        </div>
+                                    </div>
+                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <a href="#"
+                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
+                                            <u>Learn more</u>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1570,6 +1433,37 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const cards = document.querySelector('.cards');
+
+        let cardIndex = 0;
+        const cardWidth = 33.27; // Card width including margin
+        const visibleCards = 3;
+        const totalCards = cards.children.length;
+
+        function updateCarousel() {
+            cards.style.transform = `translateX(${-cardIndex * cardWidth}%)`;
+            prevBtn.disabled = cardIndex === 0;
+            nextBtn.disabled = cardIndex >= totalCards - visibleCards;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (cardIndex > 0) {
+                cardIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (cardIndex < totalCards - visibleCards) {
+                cardIndex++;
+                updateCarousel();
+            }
+        });
+    </script>
 
     <script>
         // Initialize the intl-tel-input plugin
