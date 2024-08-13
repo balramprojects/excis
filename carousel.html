@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Carousel</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .carousel-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .carousel {
+            overflow: hidden;
+            width: 100%;
+            /* Adjusted width for 3.5 cards visible */
+        }
+
+        .cards {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card {
+            flex: 0 0 350px;
+            margin: 0 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel-container">
+        <button class="prev-btn" id="prev-btn" disabled>&lt;</button>
+        <div class="carousel">
+            <div class="cards">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+                <div class="card">Card 4</div>
+                <div class="card">Card 5</div>
+                <div class="card">Card 6</div>
+                <div class="card">Card 7</div>
+                <div class="card">Card 8</div>
+            </div>
+        </div>
+        <button class="next-btn" id="next-btn">&gt;</button>
+    </div>
+
+    <script>
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const cards = document.querySelector('.cards');
+
+        let cardIndex = 0;
+        const cardWidth = 350; // Card width including margin
+        const visibleCards = 3.5;
+        const totalCards = 8;
+
+        function updateCarousel() {
+            cards.style.transform = `translateX(${-cardIndex * cardWidth}px)`;
+            prevBtn.disabled = cardIndex === 0;
+            nextBtn.disabled = cardIndex >= totalCards - visibleCards;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (cardIndex > 0) {
+                cardIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (cardIndex < totalCards - visibleCards) {
+                cardIndex++;
+                updateCarousel();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
