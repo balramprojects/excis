@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service, Country, and City Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .service-block {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-block h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .add-button, #add-service-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-button:hover, #add-service-btn:hover {
+            background-color: #0056b3;
+        }
+        .country-city-group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .country-city-group label {
+            width: 100px;
+            margin-right: 10px;
+        }
+        .country-city-group select {
+            margin-right: 20px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            .country-city-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .country-city-group select {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            .country-city-group label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Manage Services, Countries, and Cities</h1>
+
+    <div id="services-container">
+        <!-- Service blocks will be added here dynamically -->
+    </div>
+
+    <button id="add-service-btn">Add Service</button>
+
+    <script>
+        document.getElementById('add-service-btn').addEventListener('click', function() {
+            addServiceBlock();
+        });
+
+        function addServiceBlock() {
+            const serviceBlock = document.createElement('div');
+            serviceBlock.className = 'service-block';
+
+            const serviceHeader = document.createElement('h2');
+            serviceHeader.textContent = `Service ${document.querySelectorAll('.service-block').length + 1}`;
+            serviceBlock.appendChild(serviceHeader);
+
+            const serviceLabel = document.createElement('label');
+            serviceLabel.textContent = 'Select Service:';
+            serviceBlock.appendChild(serviceLabel);
+
+            const serviceSelect = document.createElement('select');
+            serviceSelect.innerHTML = `
+                <option value="" disabled selected>Select a service</option>
+                <option value="Service 1">Service 1</option>
+                <option value="Service 2">Service 2</option>
+                <option value="Service 3">Service 3</option>
+            `;
+            serviceBlock.appendChild(serviceSelect);
+
+            const countriesContainer = document.createElement('div');
+            countriesContainer.className = 'countries-container';
+            serviceBlock.appendChild(countriesContainer);
+
+            const addCountryBtn = document.createElement('button');
+            addCountryBtn.textContent = 'Add Country';
+            addCountryBtn.className = 'add-button';
+            addCountryBtn.addEventListener('click', function() {
+                addCountryCityGroup(countriesContainer);
+            });
+            serviceBlock.appendChild(addCountryBtn);
+
+            document.getElementById('services-container').appendChild(serviceBlock);
+        }
+
+        function addCountryCityGroup(container) {
+            const group = document.createElement('div');
+            group.className = 'country-city-group';
+
+            const countryLabel = document.createElement('label');
+            countryLabel.textContent = 'Select Country:';
+            group.appendChild(countryLabel);
+
+            const countrySelect = document.createElement('select');
+            countrySelect.innerHTML = `
+                <option value="" disabled selected>Select a country</option>
+                <option value="Country 1">Country 1</option>
+                <option value="Country 2">Country 2</option>
+                <option value="Country 3">Country 3</option>
+            `;
+            group.appendChild(countrySelect);
+
+            const cityLabel = document.createElement('label');
+            cityLabel.textContent = 'Select City:';
+            group.appendChild(cityLabel);
+
+            const citySelect = document.createElement('select');
+            citySelect.innerHTML = `
+                <option value="" disabled selected>Select a city</option>
+                <option value="City 1">City 1</option>
+                <option value="City 2">City 2</option>
+                <option value="City 3">City 3</option>
+            `;
+            group.appendChild(citySelect);
+
+            container.appendChild(group);
+        }
+
+        // Initialize with one service block
+        addServiceBlock();
+    </script>
+</body>
+</html>
