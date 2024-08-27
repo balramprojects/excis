@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+
+    <style>
+        .pagination-carousel-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .pagination-carousel-container .carousel {
+            overflow: hidden;
+        }
+
+        .pagination-carousel-cards-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .card {
+            width: calc(50% - 10px);
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        .prev-btn,
+        .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev-btn {
+            left: 0;
+        }
+
+        .next-btn {
+            right: 0;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .page-btn {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 5px;
+            cursor: pointer;
+            background-color: #ddd;
+        }
+
+        .page-btn.active {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagination-carousel-container">
+        <div class="carousel">
+            <div class="pagination-carousel-cards-wrapper">
+
+            </div>
+        </div>
+        <button class="prev-btn">Prev</button>
+        <button class="next-btn">Next</button>
+        <div class="pagination">
+
+        </div>
+    </div>
+
+    <script>
+        const cards = Array.from({ length: 1000 }, (_, i) => `<div class="card">Card ${i + 1}</div>`); // Example with 1000 cards
+        const cardsPerPage = 6;
+        const carouselWrapper = document.querySelector('.pagination-carousel-cards-wrapper');
+        const pagination = document.querySelector('.pagination');
+        let currentPage = 1;
+        const totalPages = Math.ceil(cards.length / cardsPerPage);
+        const visiblePages = 2; // Number of pagination buttons to show
+
+        function renderCarousel() {
+            carouselWrapper.innerHTML = cards.slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage).join('');
+            updatePagination();
+        }
+
+        function updatePagination() {
+            pagination.innerHTML = '';
+            let startPage = Math.max(1, currentPage - Math.floor(visiblePages / 2));
+            let endPage = Math.min(totalPages, startPage + visiblePages - 1);
+
+            if (endPage - startPage + 1 < visiblePages) {
+                startPage = Math.max(1, endPage - visiblePages + 1);
+            }
+
+            if (startPage > 1) {
+                const firstPageBtn = document.createElement('span');
+                firstPageBtn.textContent = '1';
+                firstPageBtn.classList.add('page-btn');
+                firstPageBtn.addEventListener('click', () => goToPage(1));
+                pagination.appendChild(firstPageBtn);
+
+                const ellipsis = document.createElement('span');
+                ellipsis.textContent = '...';
+                pagination.appendChild(ellipsis);
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                const button = document.createElement('span');
+                button.textContent = i;
+                button.classList.add('page-btn');
+                if (i === currentPage) button.classList.add('active');
+                button.addEventListener('click', () => goToPage(i));
+                pagination.appendChild(button);
+            }
+
+            if (endPage < totalPages) {
+                const ellipsis = document.createElement('span');
+                ellipsis.textContent = '...';
+                pagination.appendChild(ellipsis);
+
+                const lastPageBtn = document.createElement('span');
+                lastPageBtn.textContent = totalPages;
+                lastPageBtn.classList.add('page-btn');
+                lastPageBtn.addEventListener('click', () => goToPage(totalPages));
+                pagination.appendChild(lastPageBtn);
+            }
+        }
+
+        function goToPage(page) {
+            if (page < 1 || page > totalPages) return;
+            currentPage = page;
+            renderCarousel();
+        }
+
+        document.querySelector('.prev-btn').addEventListener('click', () => goToPage(currentPage - 1));
+        document.querySelector('.next-btn').addEventListener('click', () => goToPage(currentPage + 1));
+
+        // Initial render
+        renderCarousel();
+
+    </script>
+</body>
+
+</html>
