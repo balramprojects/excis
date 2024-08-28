@@ -16,7 +16,7 @@
             overflow: hidden;
         }
 
-        .pagination-carousel-cards-wrapper {
+        .pagination-carousel-cards {
             display: flex;
             justify-content: space-between;
             gap: 20px;
@@ -24,15 +24,16 @@
             transition: transform 0.5s ease-in-out;
         }
 
-        .card {
+        .pagination-carousel-cards .card {
             width: calc(50% - 10px);
             box-sizing: border-box;
             padding: 10px;
-            background-color: lightgray;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.1);
         }
 
-        .prev-btn,
-        .next-btn {
+        .pagination-carousel-container .pre-btn,
+        .pagination-carousel-container .nxt-btn {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -43,20 +44,20 @@
             cursor: pointer;
         }
 
-        .prev-btn {
+        .pagination-carousel-container .pre-btn {
             left: 0;
         }
 
-        .next-btn {
+        .pagination-carousel-container .nxt-btn {
             right: 0;
         }
 
-        .pagination {
+        .pagination-carousel-container .pagination {
             text-align: center;
             margin-top: 10px;
         }
 
-        .page-btn {
+        .page-no-btn {
             display: inline-block;
             margin: 0 5px;
             padding: 5px;
@@ -64,7 +65,7 @@
             background-color: #ddd;
         }
 
-        .page-btn.active {
+        .page-no-btn.active {
             background-color: #333;
             color: white;
         }
@@ -74,28 +75,56 @@
 <body>
     <div class="pagination-carousel-container">
         <div class="carousel">
-            <div class="pagination-carousel-cards-wrapper">
+            <div class="pagination-carousel-cards">
 
             </div>
         </div>
-        <button class="prev-btn">Prev</button>
-        <button class="next-btn">Next</button>
+
+        <button class="pre-btn">Prev</button>
+        <button class="nxt-btn">Next</button>
+
         <div class="pagination">
 
         </div>
     </div>
 
     <script>
-        const cards = Array.from({ length: 1000 }, (_, i) => `<div class="card">Card ${i + 1}</div>`); // Example with 1000 cards
+
+        const cardData = [
+            {
+                title: `Card Title 1`,
+                content: `This is the content for card number 1.`
+            },
+            {
+                title: `Card Title 2`,
+                content: `This is the content for card number 2.`
+            },
+            {
+                title: `Card Title 3`,
+                content: `This is the content for card number 3.`
+            }
+        ];
+
         const cardsPerPage = 6;
-        const carouselWrapper = document.querySelector('.pagination-carousel-cards-wrapper');
-        const pagination = document.querySelector('.pagination');
+        const carouselWrapper = document.querySelector('.pagination-carousel-cards');
+        const pagination = document.querySelector('.pagination-carousel-container .pagination');
         let currentPage = 1;
-        const totalPages = Math.ceil(cards.length / cardsPerPage);
+        const totalPages = Math.ceil(cardData.length / cardsPerPage);
         const visiblePages = 2; // Number of pagination buttons to show
 
         function renderCarousel() {
-            carouselWrapper.innerHTML = cards.slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage).join('');
+            // Generate the HTML for the cards using the cardData array
+            const cardsHTML = cardData
+                .slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage)
+                .map(card => `
+                    <div class="card">
+                        <h3>${card.title}</h3>
+                        <p>${card.content}</p>
+                    </div>
+                `)
+                .join('');
+
+            carouselWrapper.innerHTML = cardsHTML;
             updatePagination();
         }
 
@@ -111,7 +140,7 @@
             if (startPage > 1) {
                 const firstPageBtn = document.createElement('span');
                 firstPageBtn.textContent = '1';
-                firstPageBtn.classList.add('page-btn');
+                firstPageBtn.classList.add('page-no-btn');
                 firstPageBtn.addEventListener('click', () => goToPage(1));
                 pagination.appendChild(firstPageBtn);
 
@@ -123,7 +152,7 @@
             for (let i = startPage; i <= endPage; i++) {
                 const button = document.createElement('span');
                 button.textContent = i;
-                button.classList.add('page-btn');
+                button.classList.add('page-no-btn');
                 if (i === currentPage) button.classList.add('active');
                 button.addEventListener('click', () => goToPage(i));
                 pagination.appendChild(button);
@@ -136,7 +165,7 @@
 
                 const lastPageBtn = document.createElement('span');
                 lastPageBtn.textContent = totalPages;
-                lastPageBtn.classList.add('page-btn');
+                lastPageBtn.classList.add('page-no-btn');
                 lastPageBtn.addEventListener('click', () => goToPage(totalPages));
                 pagination.appendChild(lastPageBtn);
             }
@@ -148,8 +177,8 @@
             renderCarousel();
         }
 
-        document.querySelector('.prev-btn').addEventListener('click', () => goToPage(currentPage - 1));
-        document.querySelector('.next-btn').addEventListener('click', () => goToPage(currentPage + 1));
+        document.querySelector('.pagination-carousel-container .pre-btn').addEventListener('click', () => goToPage(currentPage - 1));
+        document.querySelector('.pagination-carousel-container .nxt-btn').addEventListener('click', () => goToPage(currentPage + 1));
 
         // Initial render
         renderCarousel();
