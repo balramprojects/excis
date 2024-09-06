@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location and Services Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #map {
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .dropdown-checkbox {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .dropdown-checkbox-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border: 1px solid #ddd;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .dropdown-checkbox:hover .dropdown-checkbox-content {
+            display: block;
+        }
+
+        .dropdown-checkbox-content label {
+            display: block;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .dropdown-checkbox-content label:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-checkbox-content input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .selected-services {
+            margin-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        #importExcel {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Enter Location and Services</h2>
+
+    <input type="file" id="importExcel" accept=".xlsx, .xls" />
+    <form id="locationForm">
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select a country</option>
+            <option value="South Africa">South Africa</option>
+            <option value="United States">United States</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+        </select><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="" disabled selected>Select a city</option>
+        </select><br><br>
+
+        <label for="address">Address:</label>
+        <select id="address" name="address" required>
+            <option value="" disabled selected>Select an address</option>
+        </select><br><br>
+
+        <div class="dropdown-checkbox">
+            <span>Dispatch:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="dispatch" value="2 Hour Response">2 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="3 Hour Response">3 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="4 Hour Response">4 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="6 Hour Response">6 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="8 Hour Response">8 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-dispatch"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Dedicated With Backfill:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="2 Hour Response">2 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="3 Hour Response">3 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="4 Hour Response">4 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="6 Hour Response">6 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="8 Hour Response">8 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-dedicated-with-backfill"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Dedicated Without Backfill:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="2 Hour Response">2 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="3 Hour Response">3 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="4 Hour Response">4 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="6 Hour Response">6 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="8 Hour Response">8 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="1 Business Day">1 Business
+                    Day</label>
+            </div>
+            <div class="selected-services" id="selected-dedicated-without-backfill"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Scheduled Visits:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="scheduledVisits" value="2 Hour Response">2 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="3 Hour Response">3 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="4 Hour Response">4 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="6 Hour Response">6 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="8 Hour Response">8 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-scheduled-visits"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Backfill Only:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="backfillOnly" value="2 Hour Response">2 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="3 Hour Response">3 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="4 Hour Response">4 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="6 Hour Response">6 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="8 Hour Response">8 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-backfill-only"></div>
+        </div>
+
+        <br><br>
+        <button type="submit">Add Location</button>
+    </form>
+
+    <h2>Locations and Services</h2>
+    <table id="locationsTable">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Dispatch</th>
+                <th>Dedicated With Backfill</th>
+                <th>Dedicated Without Backfill</th>
+                <th>Scheduled Visits</th>
+                <th>Backfill Only</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([-33.9249, 18.4241], 10); // Initial view set to Cape Town
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var locationsTable = document.getElementById('locationsTable').getElementsByTagName('tbody')[0];
+
+        // Handle Excel import
+        document.getElementById('importExcel').addEventListener('change', function (event) {
+            var file = event.target.files[0];
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var data = new Uint8Array(e.target.result);
+                var workbook = XLSX.read(data, { type: 'array' });
+
+                var firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+                var rows = XLSX.utils.sheet_to_json(firstSheet, { header: 1 });
+
+                rows.slice(1).forEach(function (row) {
+                    var country = row[0];
+                    var city = row[1];
+                    var address = row[2];
+                    var dispatch = row[3];
+                    var dedicatedWithBackfill = row[4];
+                    var dedicatedWithoutBackfill = row[5];
+                    var scheduledVisits = row[6];
+                    var backfillOnly = row[7];
+
+                    var newRow = locationsTable.insertRow();
+                    newRow.insertCell(0).innerHTML = country;
+                    newRow.insertCell(1).innerHTML = city;
+                    newRow.insertCell(2).innerHTML = address;
+                    newRow.insertCell(3).innerHTML = dispatch || 'None';
+                    newRow.insertCell(4).innerHTML = dedicatedWithBackfill || 'None';
+                    newRow.insertCell(5).innerHTML = dedicatedWithoutBackfill || 'None';
+                    newRow.insertCell(6).innerHTML = scheduledVisits || 'None';
+                    newRow.insertCell(7).innerHTML = backfillOnly || 'None';
+
+                    // Geocode the address and place a marker
+                    var query = encodeURIComponent(`${address}, ${city}, ${country}`);
+                    var url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}`;
+
+                    fetch(url)
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.length > 0) {
+                                var latLng = [data[0].lat, data[0].lon];
+                                L.marker(latLng).addTo(map)
+                                    .bindPopup(`<b>${address}</b><br>${city}, ${country}`)
+                                    .openPopup();
+                                map.setView(latLng, 10);
+                            } else {
+                                alert("Could not find the location!");
+                            }
+                        });
+                });
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        // Example of pre-existing form submission logic
+        document.getElementById('locationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Logic to add manually entered locations...
+        });
+    </script>
+</body>
+
+</html>

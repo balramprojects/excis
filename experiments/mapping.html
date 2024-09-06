@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location and Services Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #map {
+            height: 400px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .dropdown-checkbox {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .dropdown-checkbox-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border: 1px solid #ddd;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .dropdown-checkbox:hover .dropdown-checkbox-content {
+            display: block;
+        }
+
+        .dropdown-checkbox-content label {
+            display: block;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .dropdown-checkbox-content label:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-checkbox-content input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .selected-services {
+            margin-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Enter Location and Services</h2>
+    <form id="locationForm">
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select a country</option>
+            <option value="South Africa">South Africa</option>
+            <option value="United States">United States</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+        </select><br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="" disabled selected>Select a city</option>
+        </select><br><br>
+
+        <label for="address">Address:</label>
+        <select id="address" name="address" required>
+            <option value="" disabled selected>Select an address</option>
+        </select><br><br>
+
+        <div class="dropdown-checkbox">
+            <span>Dispatch:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="dispatch" value="2 Hour Response">2 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="3 Hour Response">3 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="4 Hour Response">4 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="6 Hour Response">6 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="8 Hour Response">8 Hour Response</label>
+                <label><input type="checkbox" name="dispatch" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-dispatch"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Dedicated With Backfill:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="2 Hour Response">2 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="3 Hour Response">3 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="4 Hour Response">4 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="6 Hour Response">6 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="8 Hour Response">8 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithBackfill" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-dedicated-with-backfill"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Dedicated Without Backfill:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="2 Hour Response">2 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="3 Hour Response">3 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="4 Hour Response">4 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="6 Hour Response">6 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="8 Hour Response">8 Hour
+                    Response</label>
+                <label><input type="checkbox" name="dedicatedWithoutBackfill" value="1 Business Day">1 Business
+                    Day</label>
+            </div>
+            <div class="selected-services" id="selected-dedicated-without-backfill"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Scheduled Visits:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="scheduledVisits" value="2 Hour Response">2 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="3 Hour Response">3 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="4 Hour Response">4 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="6 Hour Response">6 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="8 Hour Response">8 Hour Response</label>
+                <label><input type="checkbox" name="scheduledVisits" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-scheduled-visits"></div>
+        </div>
+
+        <div class="dropdown-checkbox">
+            <span>Backfill Only:</span>
+            <div class="dropdown-checkbox-content">
+                <label><input type="checkbox" name="backfillOnly" value="2 Hour Response">2 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="3 Hour Response">3 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="4 Hour Response">4 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="6 Hour Response">6 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="8 Hour Response">8 Hour Response</label>
+                <label><input type="checkbox" name="backfillOnly" value="1 Business Day">1 Business Day</label>
+            </div>
+            <div class="selected-services" id="selected-backfill-only"></div>
+        </div><br><br>
+
+        <button type="submit">Add Location</button>
+    </form>
+
+    <h2>Locations and Services</h2>
+    <table id="locationsTable">
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Dispatch</th>
+                <th>Dedicated With Backfill</th>
+                <th>Dedicated Without Backfill</th>
+                <th>Scheduled Visits</th>
+                <th>Backfill Only</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([-33.9249, 18.4241], 10); // Initial view set to Cape Town
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var locationForm = document.getElementById('locationForm');
+        var locationsTable = document.getElementById('locationsTable').getElementsByTagName('tbody')[0];
+
+        // Predefined locations data
+        const locationData = {
+            "South Africa": {
+                "Cape Town": ["2 Main Road, Cape Town", "15 Beach Road, Cape Town"],
+                "Johannesburg": ["10 Green Street, Johannesburg", "22 Sandton Drive, Johannesburg"]
+            },
+            "United States": {
+                "New York": ["1 Times Square, New York", "350 5th Ave, New York"],
+                "Los Angeles": ["Hollywood Blvd, Los Angeles", "100 Universal City Plaza, Los Angeles"]
+            },
+            "India": {
+                "Delhi": ["Connaught Place, Delhi", "India Gate, Delhi"],
+                "Mumbai": ["Marine Drive, Mumbai", "Gateway of India, Mumbai"]
+            },
+            "Australia": {
+                "Sydney": ["Opera House, Sydney", "Bondi Beach, Sydney"],
+                "Melbourne": ["Federation Square, Melbourne", "12 Bourke Street, Melbourne"]
+            },
+            "Canada": {
+                "Toronto": ["CN Tower, Toronto", "100 Queen St W, Toronto"],
+                "Vancouver": ["Stanley Park, Vancouver", "Granville Island, Vancouver"]
+            }
+        };
+
+        // Populate city dropdown based on selected country
+        document.getElementById('country').addEventListener('change', function () {
+            var cities = locationData[this.value];
+            var citySelect = document.getElementById('city');
+            citySelect.innerHTML = '<option value="" disabled selected>Select a city</option>';
+
+            for (var city in cities) {
+                citySelect.innerHTML += '<option value="' + city + '">' + city + '</option>';
+            }
+        });
+
+        // Populate address dropdown based on selected city
+        document.getElementById('city').addEventListener('change', function () {
+            var addresses = locationData[document.getElementById('country').value][this.value];
+            var addressSelect = document.getElementById('address');
+            addressSelect.innerHTML = '<option value="" disabled selected>Select an address</option>';
+
+            addresses.forEach(function (address) {
+                addressSelect.innerHTML += '<option value="' + address + '">' + address + '</option>';
+            });
+        });
+
+        // Update selected services display
+        function updateSelectedServices() {
+            document.querySelectorAll('.dropdown-checkbox').forEach(function (dropdown) {
+                var serviceType = dropdown.querySelector('span').textContent.replace(':', '');
+                var selectedServices = Array.from(dropdown.querySelectorAll('input[type="checkbox"]:checked'))
+                    .map(checkbox => checkbox.value)
+                    .join(', ');
+
+                document.getElementById('selected-' + serviceType.toLowerCase().replace(/ /g, '-')).innerText = selectedServices || 'None';
+            });
+        }
+
+        // Add event listener for checkboxes
+        document.querySelectorAll('.dropdown-checkbox-content input[type="checkbox"]').forEach(function (checkbox) {
+            checkbox.addEventListener('change', updateSelectedServices);
+        });
+
+        locationForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var country = document.getElementById('country').value;
+            var city = document.getElementById('city').value;
+            var address = document.getElementById('address').value;
+
+            var services = {
+                "Dispatch": [],
+                "Dedicated With Backfill": [],
+                "Dedicated Without Backfill": [],
+                "Scheduled Visits": [],
+                "Backfill Only": []
+            };
+
+            document.querySelectorAll('.dropdown-checkbox').forEach(function (dropdown) {
+                var serviceType = dropdown.querySelector('span').textContent.replace(':', '');
+                var checkedServices = Array.from(dropdown.querySelectorAll('input[type="checkbox"]:checked'))
+                    .map(checkbox => checkbox.value);
+                services[serviceType] = checkedServices;
+            });
+
+            var row = locationsTable.insertRow();
+            row.insertCell(0).innerHTML = country;
+            row.insertCell(1).innerHTML = city;
+            row.insertCell(2).innerHTML = address;
+
+            // Fill in services
+            Object.keys(services).forEach(function (key, index) {
+                var cell = row.insertCell(3 + index);
+                cell.innerHTML = services[key].join(', ') || 'None';
+            });
+
+            // Geocode the address
+            var query = encodeURIComponent(`${address}, ${city}, ${country}`);
+            var url = `https://nominatim.openstreetmap.org/search?format=json&q=${query}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        var latLng = [data[0].lat, data[0].lon];
+                        L.marker(latLng).addTo(map)
+                            .bindPopup(`<b>${address}</b><br>${city}, ${country}`)
+                            .openPopup();
+                        map.setView(latLng, 10);
+                    } else {
+                        alert("Could not find the location!");
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>
