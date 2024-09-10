@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Postal Code Pinning and Services</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th,
+        td {
+            width: 150px;
+        }
+
+        #import-btn {
+            margin-top: 20px;
+        }
+
+        .services {
+            text-align: center;
+        }
+
+        .invalid-postal {
+            background-color: #f8d7da;
+        }
+
+        #measure-distance-btn {
+            margin-top: 10px;
+        }
+
+        .distance-label {
+            background: black !important;
+            color: #fff !important;
+            width: max-content !important;
+            height: auto !important;
+            padding: 5px 10px 3px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Import Excel, Pin Postal Codes, and Manage Services</h1>
+
+    <!-- Import Button -->
+    <input type="file" id="file-input" accept=".xlsx, .xls" />
+    <button id="measure-distance-btn">Measure Distance</button>
+
+    <!-- Display Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>City</th>
+                <th>Postal Code</th>
+                <th>Service 1</th>
+                <th>Service 2</th>
+            </tr>
+        </thead>
+        <tbody id="location-table-body">
+            <!-- Dynamic rows will be added here -->
+        </tbody>
+    </table>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([20, 0], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        const markers = {}; // Store postal codes and markers
+        const pinnedLocations = []; // Array to track pinned locations
+        let isMeasuring = false;
+        let startMarker = null;
+        let endMarker = null;
+        let polyline = null; // Variable to store the polyline
+        let distanceLabel = null; // Variable to store the distance label
+
+        // Default Leaflet marker icon
+        const defaultIcon = L.icon({
+            iconUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
+        // Green marker icon for start point
+        const greenIcon = L.icon({
+            iconUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
+        // Red marker icon for end point
+        const redIcon = L.icon({
+            iconUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
+        // Add measure distance button functionality
+        document.getElementById('measure-distance-btn').addEventListener('click', function () {
+            isMeasuring = true;
+            startMarker = null;
+            endMarker = null;
+            if (polyline) {
+                map.removeLayer(polyline); // Remove previous polyline if exists
+                polyline = null;
+            }
+            if (distanceLabel) {
+                map.removeLayer(distanceLabel); // Remove previous distance label if exists
+                distanceLabel = null;
+            }
+            alert('Click on two markers to measure the distance between them.');
+        });
+
+        // Handle Excel file import
+        document.getElementById('file-input').addEventListener('change', handleFileUpload);
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) {
+                alert('Please select a file first!');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const sheetName = workbook.SheetNames[0];
+                const sheet = workbook.Sheets[sheetName];
+                const json = XLSX.utils.sheet_to_json(sheet);
+
+                // Clear previous rows
+                document.getElementById('location-table-body').innerHTML = '';
+
+                // Add each site location to the table and pin the location
+                json.forEach((site) => {
+                    const { Country, City, PostalCode } = site;
+
+                    // Add row to table
+                    const row = addRowToTable(Country, City, PostalCode);
+
+                    // Geocode the postal code and add a marker
+                    geocodePostalCode(PostalCode, City, row);
+                });
+            };
+
+            reader.readAsArrayBuffer(file);
+        }
+
+        // Function to dynamically add a row in the table with service checkboxes
+        function addRowToTable(country, city, postalCode) {
+            const tableBody = document.getElementById('location-table-body');
+            const row = document.createElement('tr');
+
+            row.innerHTML = `
+                <td>${country}</td>
+                <td>${city}</td>
+                <td>${postalCode}</td>
+                <td class="services">
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Item 1</label>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Item 2</label>
+                </td>
+                <td class="services">
+                    <label><input type="checkbox" class="service2-checkbox" data-postal="${postalCode}"> Item 1</label>
+                    <label><input type="checkbox" class="service2-checkbox" data-postal="${postalCode}"> Item 2</label>
+                </td>
+            `;
+
+            tableBody.appendChild(row);
+            return row; // Return the row for later use
+        }
+
+        // Function to pin location on map based on postal code using OpenStreetMap Nominatim API
+        async function geocodePostalCode(postalCode, city, row) {
+            const url = `https://nominatim.openstreetmap.org/search?postalcode=${postalCode}&format=json&limit=1`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data.length > 0) {
+                    const lat = parseFloat(data[0].lat);
+                    const lon = parseFloat(data[0].lon);
+
+                    // Add a marker for the location
+                    const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
+                    marker.bindPopup(`<b>${city}</b><br>Postal Code: ${postalCode}`);
+                    markers[postalCode] = marker;
+                    pinnedLocations.push(marker); // Add to pinned locations list
+
+                    // Add event listener for marker click (for measuring distance)
+                    marker.on('click', function () {
+                        if (isMeasuring) {
+                            if (!startMarker) {
+                                startMarker = marker;
+                                startMarker.setIcon(greenIcon); // Change to green to indicate start point
+                            } else if (!endMarker) {
+                                endMarker = marker;
+                                endMarker.setIcon(redIcon); // Change to red to indicate end point
+                                drawLineAndShowDistance(startMarker, endMarker);
+                                isMeasuring = false; // Stop measuring after two points are selected
+                            }
+                        }
+                    });
+
+                    // Listen for changes to service checkboxes for this postal code
+                    document.querySelectorAll(`input[data-postal="${postalCode}"]`).forEach(checkbox => {
+                        checkbox.addEventListener('change', function () {
+                            updateMarkerPopup(postalCode);
+                        });
+                    });
+                } else {
+                    // No location found, highlight the row in red
+                    row.classList.add('invalid-postal');
+                }
+            } catch (error) {
+                console.error('Error geocoding postal code:', error);
+                row.classList.add('invalid-postal');
+            }
+        }
+
+        // Function to draw a line and show distance between two markers
+        function drawLineAndShowDistance(startMarker, endMarker) {
+            const startLatLng = startMarker.getLatLng();
+            const endLatLng = endMarker.getLatLng();
+
+            // Draw a line between the two markers
+            if (polyline) {
+                map.removeLayer(polyline); // Remove previous polyline if exists
+            }
+            polyline = L.polyline([startLatLng, endLatLng], { color: 'blue' }).addTo(map);
+
+            // Calculate distance
+            const distance = startLatLng.distanceTo(endLatLng) / 1000; // Distance in kilometers
+
+            // Show distance on the map
+            if (distanceLabel) {
+                map.removeLayer(distanceLabel); // Remove previous distance label if exists
+            }
+            distanceLabel = L.marker([startLatLng.lat + (endLatLng.lat - startLatLng.lat) / 2, startLatLng.lng + (endLatLng.lng - startLatLng.lng) / 2], {
+                icon: L.divIcon({
+                    className: 'distance-label',
+                    html: `<div>${distance.toFixed(2)} km</div>`
+                })
+            }).addTo(map);
+        }
+
+        // Function to update the marker's popup content with selected services
+        function updateMarkerPopup(postalCode) {
+            const marker = markers[postalCode];
+
+            // Get checked items for Service 1
+            const service1Items = Array.from(document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]:checked`))
+                .map(input => input.nextSibling.textContent.trim());
+
+            // Get checked items for Service 2
+            const service2Items = Array.from(document.querySelectorAll(`.service2-checkbox[data-postal="${postalCode}"]:checked`))
+                .map(input => input.nextSibling.textContent.trim());
+
+            // Construct the popup content with services only if they have checked items
+            let services = `<b>Postal Code: ${postalCode}</b><br>`;
+
+            if (service1Items.length > 0) {
+                services += `<b>Service 1:</b> ${service1Items.join(', ')}<br>`;
+            }
+
+            if (service2Items.length > 0) {
+                services += `<b>Service 2:</b> ${service2Items.join(', ')}<br>`;
+            }
+
+            // If no services are selected, provide a default message
+            if (service1Items.length === 0 && service2Items.length === 0) {
+                services += `<i>No services selected</i>`;
+            }
+
+            // Update the marker's popup content
+            marker.setPopupContent(services);
+        }
+    </script>
+</body>
+
+</html>
