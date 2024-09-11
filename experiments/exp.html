@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map with Postal Code Pinning and Services</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/exceljs@4.2.1/dist/exceljs.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
 
         #map {
-            height: 300px;
+            height: 350px;
             width: 100%;
             margin-top: 20px;
         }
@@ -31,17 +32,12 @@
             text-align: left;
         }
 
-        th,
-        td {
-            width: 150px;
-        }
-
         #import-btn {
             margin-top: 20px;
         }
 
         .services {
-            text-align: center;
+            text-align: start;
         }
 
         .invalid-postal {
@@ -74,6 +70,7 @@
     <!-- Import Button -->
     <input type="file" id="file-input" accept=".xlsx, .xls" />
     <button id="measure-distance-btn">Measure Distance</button>
+    <button id="download-template-btn">Download Excel Template</button>
 
     <!-- Display Table -->
     <table>
@@ -82,8 +79,7 @@
                 <th>Country</th>
                 <th>City</th>
                 <th>Postal Code</th>
-                <th>Dispatch</th>
-                <th>Dedicated with Backfill</th>
+                <th>Services</th>
             </tr>
         </thead>
         <tbody id="location-table-body">
@@ -108,34 +104,32 @@
         let polyline = null; // Variable to store the polyline
         let distanceLabel = null; // Variable to store the distance label
 
-        // Default Leaflet marker icon
+        // Define Leaflet marker icons with custom images
         const defaultIcon = L.icon({
-            iconUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
+            iconUrl: './blue-pin.png',
+            iconSize: [30, 35],
+            iconAnchor: [15, 33],
             popupAnchor: [1, -34],
             shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
-            shadowSize: [41, 41]
+            shadowSize: [40, 25]
         });
 
-        // Green marker icon for start point
         const greenIcon = L.icon({
-            iconUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
+            iconUrl: './green-pin.png', // Replace with your custom green marker icon path
+            iconSize: [30, 35],
+            iconAnchor: [15, 33],
             popupAnchor: [1, -34],
             shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
-            shadowSize: [41, 41]
+            shadowSize: [40, 25]
         });
 
-        // Red marker icon for end point
         const redIcon = L.icon({
-            iconUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-icon.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
+            iconUrl: './red-pin.png', // Replace with your custom red marker icon path
+            iconSize: [30, 35],
+            iconAnchor: [15, 33],
             popupAnchor: [1, -34],
             shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
-            shadowSize: [41, 41]
+            shadowSize: [40, 25]
         });
 
         // Add measure distance button functionality
@@ -200,12 +194,10 @@
                 <td>${city}</td>
                 <td>${postalCode}</td>
                 <td class="services">
-                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Item 1</label>
-                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Item 2</label>
-                </td>
-                <td class="services">
-                    <label><input type="checkbox" class="service2-checkbox" data-postal="${postalCode}"> Item 1</label>
-                    <label><input type="checkbox" class="service2-checkbox" data-postal="${postalCode}"> Item 2</label>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Dispatch</label> <br>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Scheduled</label> <br>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Dedicated with Backfill</label> <br>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Dedicated without Backfill</label>
                 </td>
             `;
 
@@ -228,6 +220,9 @@
                     // Add a marker for the location
                     const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
                     marker.bindPopup(`<b>${country}, ${city}, ${postalCode}</b>`);
+                    marker.country = country; // Store country 
+                    marker.city = city; // Store city
+                    marker.postalCode = postalCode; // Store postalCode
                     markers[postalCode] = marker;
                     pinnedLocations.push(marker); // Add to pinned locations list
 
@@ -253,72 +248,83 @@
                         });
                     });
                 } else {
-                    // No location found, highlight the row in red
+                    // No location found, mark the row as invalid
                     row.classList.add('invalid-postal');
+                    console.warn(`No location found for postal code ${postalCode}`);
                 }
             } catch (error) {
-                console.error('Error geocoding postal code:', error);
-                row.classList.add('invalid-postal');
+                console.error(`Error geocoding postal code ${postalCode}:`, error);
             }
         }
 
-        // Function to draw a line and show distance between two markers
-        function drawLineAndShowDistance(startMarker, endMarker) {
-            const startLatLng = startMarker.getLatLng();
-            const endLatLng = endMarker.getLatLng();
+        // Function to update marker popup with services information
+        function updateMarkerPopup(postalCode) {
+            const marker = markers[postalCode];
+            if (!marker) return;
 
-            // Draw a line between the two markers
+            // Get selected services
+            const services = [];
+            document.querySelectorAll(`input[data-postal="${postalCode}"]:checked`).forEach(checkbox => {
+                services.push(checkbox.parentElement.textContent.trim());
+            });
+
+            // Update marker popup
+            marker.setPopupContent(`
+                <b>${marker.country}, ${marker.city}, ${marker.postalCode}</b><br>
+                <b>Services:</b> ${services.join(', ') || 'None'}
+            `);
+        }
+
+        // Function to draw line and show distance between two markers
+        function drawLineAndShowDistance(marker1, marker2) {
             if (polyline) {
                 map.removeLayer(polyline); // Remove previous polyline if exists
             }
-            polyline = L.polyline([startLatLng, endLatLng], { color: 'blue' }).addTo(map);
+            polyline = L.polyline([marker1.getLatLng(), marker2.getLatLng()], { color: 'blue' }).addTo(map);
 
-            // Calculate distance
-            const distance = startLatLng.distanceTo(endLatLng) / 1000; // Distance in kilometers
+            const distance = marker1.getLatLng().distanceTo(marker2.getLatLng()) / 1000; // Distance in kilometers
+            const distanceText = `${distance.toFixed(2)} km`;
 
-            // Show distance on the map
+            // Display distance label
             if (distanceLabel) {
                 map.removeLayer(distanceLabel); // Remove previous distance label if exists
             }
-            distanceLabel = L.marker([startLatLng.lat + (endLatLng.lat - startLatLng.lat) / 2, startLatLng.lng + (endLatLng.lng - startLatLng.lng) / 2], {
+            distanceLabel = L.marker(polyline.getCenter(), {
                 icon: L.divIcon({
                     className: 'distance-label',
-                    html: `<div>${distance.toFixed(2)} km</div>`
+                    html: distanceText
                 })
             }).addTo(map);
         }
 
-        // Function to update the marker's popup content with selected services
-        function updateMarkerPopup(postalCode) {
-            const marker = markers[postalCode];
+        // Add download template button functionality
+        document.getElementById('download-template-btn').addEventListener('click', async function () {
+            const workbook = new ExcelJS.Workbook();
+            const worksheet = workbook.addWorksheet('Locations');
 
-            // Get checked items for Service 1
-            const service1Items = Array.from(document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]:checked`))
-                .map(input => input.nextSibling.textContent.trim());
+            // Define header row
+            const headers = ["Country", "City", "PostalCode", "Services"];
+            worksheet.addRow(headers);
 
-            // Get checked items for Service 2
-            const service2Items = Array.from(document.querySelectorAll(`.service2-checkbox[data-postal="${postalCode}"]:checked`))
-                .map(input => input.nextSibling.textContent.trim());
+            // Apply header styles
+            worksheet.getRow(1).font = { bold: true };
+            worksheet.getRow(1).fill = {
+                type: 'pattern',
+                pattern: 'solid',
+                fgColor: { argb: 'FFFF00' } // Yellow background color
+            };
 
-            // Construct the popup content with services only if they have checked items
-            let services = `<b>Postal Code: ${postalCode}</b><br>`;
+            // Add example rows
+            worksheet.addRow(["USA", "New York", 10001, "Dispatch"]);
 
-            if (service1Items.length > 0) {
-                services += `<b>Service 1:</b> ${service1Items.join(', ')}<br>`;
-            }
-
-            if (service2Items.length > 0) {
-                services += `<b>Service 2:</b> ${service2Items.join(', ')}<br>`;
-            }
-
-            // If no services are selected, provide a default message
-            if (service1Items.length === 0 && service2Items.length === 0) {
-                services += `<i>No services selected</i>`;
-            }
-
-            // Update the marker's popup content
-            marker.setPopupContent(services);
-        }
+            // Create buffer and trigger download
+            const buffer = await workbook.xlsx.writeBuffer();
+            const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'Template.xlsx';
+            link.click();
+        });
     </script>
 </body>
 
