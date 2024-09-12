@@ -44,6 +44,10 @@
             background-color: #f8d7da;
         }
 
+        .invalid-service {
+            background-color: #f8d7da;
+        }
+
         #measure-distance-btn {
             margin-top: 10px;
         }
@@ -103,6 +107,15 @@
         let endMarker = null;
         let polyline = null; // Variable to store the polyline
         let distanceLabel = null; // Variable to store the distance label
+
+        // Define valid service names
+        const validServices = [
+            'Dispatch', 
+            'Scheduled Visits', 
+            'Dedicated with Backfill', 
+            'Dedicated without Backfill',
+            'Backfill Only'
+        ];
 
         // Define Leaflet marker icons with custom images
         const defaultIcon = L.icon({
@@ -182,7 +195,7 @@
                     // Automatically check the checkboxes based on the services listed in the Excel file
                     if (Services) {
                         const servicesList = Services.split(',').map(service => service.trim()); // Split services by commas and trim spaces
-                        checkServices(PostalCode, servicesList);
+                        checkServices(PostalCode, servicesList, row);
                     }
                 });
             };
@@ -191,13 +204,23 @@
         }
 
         // Function to check the checkboxes for the services from Excel
-        function checkServices(postalCode, servicesList) {
+        function checkServices(postalCode, servicesList, row) {
             servicesList.forEach(service => {
                 const checkboxes = document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]`);
+                let isValid = true;
+
                 checkboxes.forEach(checkbox => {
                     const serviceName = checkbox.parentElement.textContent.trim();
                     if (servicesList.includes(serviceName)) {
                         checkbox.checked = true; // Check the checkbox if the service matches
+                    }
+                });
+
+                // Highlight invalid services
+                servicesList.forEach(service => {
+                    if (!validServices.includes(service)) {
+                        row.classList.add('invalid-service'); // Add red background if the service is invalid
+                        isValid = false;
                     }
                 });
             });
@@ -214,9 +237,10 @@
                 <td>${postalCode}</td>
                 <td class="services">
                     <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Dispatch</label> <br>
-                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Scheduled</label> <br>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Scheduled Visits</label> <br>
                     <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Dedicated with Backfill</label> <br>
-                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Dedicated without Backfill</label>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Dedicated without Backfill</label> <br>
+                    <label><input type="checkbox" class="service1-checkbox" data-postal="${postalCode}"> Backfill Only</label>
                 </td>
             `;
 
@@ -226,20 +250,20 @@
 
         // Function to pin location on map based on postal code and country using OpenStreetMap Nominatim API
         async function geocodePostalCode(postalCode, city, country, row) {
-            const url = `https://nominatim.openstreetmap.org/search?postalcode=${postalCode}&country=${encodeURIComponent(country)}&format=json&limit=1`;
+            const url = `https://nominatim.openstreetmap.org/search?format=json&country=${country}&postalcode=${postalCode}`;
 
             try {
                 const response = await fetch(url);
                 const data = await response.json();
 
-                if (data.length > 0) {
-                    const lat = parseFloat(data[0].lat);
-                    const lon = parseFloat(data[0].lon);
+                if (data && data.length > 0) {
+                    const lat = data[0].lat;
+                    const lon = data[0].lon;
 
-                    // Add a marker for the location
+                    // Add marker to map
                     const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
-                    marker.bindPopup(`<b>${country}, ${city}, ${postalCode}</b>`);
-                    marker.country = country; // Store country 
+                    marker.bindPopup(`${city}, ${country} (${postalCode})`).openPopup();
+
                     marker.city = city; // Store city
                     marker.postalCode = postalCode; // Store postal code
 
