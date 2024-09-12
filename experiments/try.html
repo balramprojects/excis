@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            position: relative; /* Ensure table is relative for tooltip positioning */
+            overflow: visible; /* Ensure tooltips aren't clipped */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            position: relative; /* Ensure tooltips are positioned relative to table cells */
+        }
+
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer; /* Indicate interaction */
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            width: 200px; /* Set the width of the tooltip */
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 10;
+            bottom: 125%; /* Position above the cell */
+            left: 50%;
+            margin-left: -100px; /* Center tooltip */
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0.3s;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+        }
+
+        .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Ensure tooltip visibility for cells near the edge */
+        .tooltip-container.tooltip-top .tooltip-text {
+            bottom: 150%; /* Adjust for cells where tooltips might be cut off at the top */
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+    </tr>
+    <tr>
+        <td>Short text</td>
+        <td>
+            <div class="tooltip-container tooltip-top">
+                Hover here
+                <div class="tooltip-text">This is the full version of the long text that will be shown in the tooltip when you hover over this cell. It will only display on hover and keeps the table clean.</div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Another short text</td>
+        <td>
+            <div class="tooltip-container">
+                Hover for more
+                <div class="tooltip-text">Here is another example of long text in the hover popup. The full content is shown in the tooltip.</div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

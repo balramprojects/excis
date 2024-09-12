@@ -171,17 +171,36 @@
 
                 // Add each site location to the table and pin the location
                 json.forEach((site) => {
-                    const { Country, City, PostalCode } = site;
+                    const { Country, City, PostalCode, Services } = site;
 
                     // Add row to table
                     const row = addRowToTable(Country, City, PostalCode);
 
                     // Geocode the postal code and add a marker
                     geocodePostalCode(PostalCode, City, Country, row);
+
+                    // Automatically check the checkboxes based on the services listed in the Excel file
+                    if (Services) {
+                        const servicesList = Services.split(',').map(service => service.trim()); // Split services by commas and trim spaces
+                        checkServices(PostalCode, servicesList);
+                    }
                 });
             };
 
             reader.readAsArrayBuffer(file);
+        }
+
+        // Function to check the checkboxes for the services from Excel
+        function checkServices(postalCode, servicesList) {
+            servicesList.forEach(service => {
+                const checkboxes = document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]`);
+                checkboxes.forEach(checkbox => {
+                    const serviceName = checkbox.parentElement.textContent.trim();
+                    if (servicesList.includes(serviceName)) {
+                        checkbox.checked = true; // Check the checkbox if the service matches
+                    }
+                });
+            });
         }
 
         // Function to dynamically add a row in the table with service checkboxes
@@ -222,110 +241,83 @@
                     marker.bindPopup(`<b>${country}, ${city}, ${postalCode}</b>`);
                     marker.country = country; // Store country 
                     marker.city = city; // Store city
-                    marker.postalCode = postalCode; // Store postalCode
-                    markers[postalCode] = marker;
-                    pinnedLocations.push(marker); // Add to pinned locations list
+                    marker.postalCode = postalCode; // Store postal code
 
-                    // Add event listener for marker click (for measuring distance)
+                    markers[postalCode] = marker; // Save marker for future reference
+
+                    pinnedLocations.push(marker); // Add to pinned locations
+
+                    // Add event listener for distance measurement
                     marker.on('click', function () {
                         if (isMeasuring) {
                             if (!startMarker) {
                                 startMarker = marker;
-                                startMarker.setIcon(greenIcon); // Change to green to indicate start point
-                            } else if (!endMarker) {
+                                marker.setIcon(greenIcon); // Change start marker to green
+                            } else if (!endMarker && marker !== startMarker) {
                                 endMarker = marker;
-                                endMarker.setIcon(redIcon); // Change to red to indicate end point
-                                drawLineAndShowDistance(startMarker, endMarker);
-                                isMeasuring = false; // Stop measuring after two points are selected
+                                marker.setIcon(redIcon); // Change end marker to red
+                                calculateDistance(startMarker, endMarker); // Calculate and show distance
                             }
                         }
                     });
 
-                    // Listen for changes to service checkboxes for this postal code
-                    document.querySelectorAll(`input[data-postal="${postalCode}"]`).forEach(checkbox => {
-                        checkbox.addEventListener('change', function () {
-                            updateMarkerPopup(postalCode);
-                        });
-                    });
+                    row.classList.remove('invalid-postal');
                 } else {
-                    // No location found, mark the row as invalid
-                    row.classList.add('invalid-postal');
-                    console.warn(`No location found for postal code ${postalCode}`);
+                    row.classList.add('invalid-postal'); // Mark row as invalid if postal code not found
                 }
             } catch (error) {
-                console.error(`Error geocoding postal code ${postalCode}:`, error);
+                console.error('Error fetching geocoding data:', error);
+                row.classList.add('invalid-postal'); // Mark row as invalid in case of error
             }
         }
 
-        // Function to update marker popup with services information
-        function updateMarkerPopup(postalCode) {
-            const marker = markers[postalCode];
-            if (!marker) return;
+        // Function to calculate and display distance between two markers
+        function calculateDistance(startMarker, endMarker) {
+            const startLatLng = startMarker.getLatLng();
+            const endLatLng = endMarker.getLatLng();
+            const distance = startLatLng.distanceTo(endLatLng) / 1000; // Distance in kilometers
 
-            // Get selected services
-            const services = [];
-            document.querySelectorAll(`input[data-postal="${postalCode}"]:checked`).forEach(checkbox => {
-                services.push(checkbox.parentElement.textContent.trim());
-            });
+            // Draw a line between the two markers
+            polyline = L.polyline([startLatLng, endLatLng], { color: 'blue' }).addTo(map);
 
-            // Update marker popup
-            marker.setPopupContent(`
-                <b>${marker.country}, ${marker.city}, ${marker.postalCode}</b><br>
-                <b>Services:</b> ${services.join(', ') || 'None'}
-            `);
-        }
-
-        // Function to draw line and show distance between two markers
-        function drawLineAndShowDistance(marker1, marker2) {
-            if (polyline) {
-                map.removeLayer(polyline); // Remove previous polyline if exists
-            }
-            polyline = L.polyline([marker1.getLatLng(), marker2.getLatLng()], { color: 'blue' }).addTo(map);
-
-            const distance = marker1.getLatLng().distanceTo(marker2.getLatLng()) / 1000; // Distance in kilometers
-            const distanceText = `${distance.toFixed(2)} km`;
-
-            // Display distance label
-            if (distanceLabel) {
-                map.removeLayer(distanceLabel); // Remove previous distance label if exists
-            }
-            distanceLabel = L.marker(polyline.getCenter(), {
+            // Show the distance on the map
+            const midLatLng = [(startLatLng.lat + endLatLng.lat) / 2, (startLatLng.lng + endLatLng.lng) / 2]; // Midpoint
+            distanceLabel = L.marker(midLatLng, {
                 icon: L.divIcon({
                     className: 'distance-label',
-                    html: distanceText
+                    html: `${distance.toFixed(2)} km`
                 })
             }).addTo(map);
         }
 
-        // Add download template button functionality
-        document.getElementById('download-template-btn').addEventListener('click', async function () {
+        // Function to download an Excel template
+        document.getElementById('download-template-btn').addEventListener('click', function () {
             const workbook = new ExcelJS.Workbook();
-            const worksheet = workbook.addWorksheet('Locations');
+            const worksheet = workbook.addWorksheet('Template');
 
-            // Define header row
-            const headers = ["Country", "City", "PostalCode", "Services"];
-            worksheet.addRow(headers);
+            worksheet.columns = [
+                { header: 'Country', key: 'Country' },
+                { header: 'City', key: 'City' },
+                { header: 'PostalCode', key: 'PostalCode' },
+                { header: 'Services', key: 'Services' }
+            ];
 
-            // Apply header styles
-            worksheet.getRow(1).font = { bold: true };
-            worksheet.getRow(1).fill = {
-                type: 'pattern',
-                pattern: 'solid',
-                fgColor: { argb: 'FFFF00' } // Yellow background color
-            };
+            // Create a sample row
+            worksheet.addRow({ Country: 'USA', City: 'New York', PostalCode: '10001', Services: 'Dispatch, Scheduled' });
 
-            // Add example rows
-            worksheet.addRow(["USA", "New York", 10001, "Dispatch"]);
-
-            // Create buffer and trigger download
-            const buffer = await workbook.xlsx.writeBuffer();
-            const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'Template.xlsx';
-            link.click();
+            // Download the template
+            workbook.xlsx.writeBuffer().then(function (data) {
+                const blob = new Blob([data], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'Template.xlsx';
+                a.click();
+                window.URL.revokeObjectURL(url);
+            });
         });
     </script>
+
 </body>
 
 </html>
