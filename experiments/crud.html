@@ -170,6 +170,7 @@
         });
 
         // Handle Excel file import
+        // Handle Excel file import
         document.getElementById('file-input').addEventListener('change', handleFileUpload);
 
         function handleFileUpload(event) {
@@ -203,7 +204,9 @@
                     // Automatically check the checkboxes based on the services listed in the Excel file
                     if (Services) {
                         const servicesList = Services.split(',').map(service => service.trim()); // Split services by commas and trim spaces
-                        checkServices(PostalCode, servicesList, row);
+                        checkServices(PostalCode, servicesList, row); // Check services and hide unchecked ones
+                    } else {
+                        checkServices(PostalCode, [], row); // If no services, just call the function with empty array
                     }
                 });
             };
@@ -211,31 +214,31 @@
             reader.readAsArrayBuffer(file);
         }
 
+
         // Function to check the checkboxes for the services from Excel
         function checkServices(postalCode, servicesList, row) {
-            servicesList.forEach(service => {
-                const checkboxes = document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]`);
-                let isValid = true;
+            const checkboxes = document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]`);
+            let anyChecked = false; // Flag to check if any service is checked
 
-                checkboxes.forEach(checkbox => {
-                    const serviceName = checkbox.parentElement.textContent.trim();
-                    if (servicesList.includes(serviceName)) {
-                        checkbox.checked = true; // Check the checkbox if the service matches
-                    }
-                });
-
-                // Highlight invalid services
-                servicesList.forEach(service => {
-                    if (!validServices.includes(service)) {
-                        row.classList.add('invalid-service'); // Add red background if the service is invalid
-                        isValid = false;
-                    }
-                });
-
-                // Initially hide unchecked services
-                hideUncheckedServices(postalCode);
+            checkboxes.forEach(checkbox => {
+                const serviceName = checkbox.parentElement.textContent.trim();
+                if (servicesList.includes(serviceName)) {
+                    checkbox.checked = true; // Check the checkbox if the service matches
+                    anyChecked = true; // At least one checkbox is checked
+                }
             });
+
+            // Hide unchecked services initially
+            hideUncheckedServices(postalCode);
+
+            // If no services are checked, highlight the row in red
+            if (!anyChecked) {
+                row.classList.add('invalid-service'); // Add red background if no service is selected
+            } else {
+                row.classList.remove('invalid-service'); // Remove red background if at least one service is checked
+            }
         }
+
 
         // Function to hide unchecked services
         function hideUncheckedServices(postalCode) {
@@ -273,19 +276,19 @@
             tableBody.appendChild(row);
 
             // Add event listeners for buttons
-            row.querySelector('.update-btn').addEventListener('click', function() {
+            row.querySelector('.update-btn').addEventListener('click', function () {
                 showAllServices(postalCode);
                 this.classList.add('hidden');
                 row.querySelector('.save-btn').classList.remove('hidden');
             });
 
-            row.querySelector('.save-btn').addEventListener('click', function() {
+            row.querySelector('.save-btn').addEventListener('click', function () {
                 saveServices(postalCode);
                 this.classList.add('hidden');
                 row.querySelector('.update-btn').classList.remove('hidden');
             });
 
-            row.querySelector('.delete-btn').addEventListener('click', function() {
+            row.querySelector('.delete-btn').addEventListener('click', function () {
                 tableBody.removeChild(row);
                 if (markers[postalCode]) {
                     map.removeLayer(markers[postalCode]);
@@ -307,12 +310,23 @@
         // Function to save only checked services
         function saveServices(postalCode) {
             const checkboxes = document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]`);
+            let anyChecked = false; // Flag to check if any checkbox is checked
             checkboxes.forEach(checkbox => {
                 const serviceItem = checkbox.parentElement.parentElement;
                 if (!checkbox.checked) {
-                    serviceItem.classList.add('hidden');
+                    serviceItem.classList.add('hidden'); // Hide unchecked services
+                } else {
+                    anyChecked = true; // Set flag to true if any checkbox is checked
                 }
             });
+
+            // If no checkboxes are checked, highlight the row in red
+            const row = document.querySelector(`tr[data-postal="${postalCode}"]`);
+            if (!anyChecked) {
+                row.classList.add('invalid-service'); // Add red background if no service is selected
+            } else {
+                row.classList.remove('invalid-service'); // Remove red background if at least one service is checked
+            }
         }
 
         // Function to pin location on map based on postal code and country using OpenStreetMap Nominatim API
@@ -329,7 +343,7 @@
 
                     // Add marker to map
                     const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
-                    marker.bindPopup(`${city}, ${country} (${postalCode})`).openPopup();
+                    marker.bindPopup(`${city}, ${country}, ${postalCode}`).openPopup();
 
                     marker.city = city; // Store city
                     marker.postalCode = postalCode; // Store postal code
@@ -412,4 +426,3 @@
 </body>
 
 </html>
-
