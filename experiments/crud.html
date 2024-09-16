@@ -170,7 +170,6 @@
         });
 
         // Handle Excel file import
-        // Handle Excel file import
         document.getElementById('file-input').addEventListener('change', handleFileUpload);
 
         function handleFileUpload(event) {
@@ -214,7 +213,6 @@
             reader.readAsArrayBuffer(file);
         }
 
-
         // Function to check the checkboxes for the services from Excel
         function checkServices(postalCode, servicesList, row) {
             const checkboxes = document.querySelectorAll(`.service1-checkbox[data-postal="${postalCode}"]`);
@@ -238,7 +236,6 @@
                 row.classList.remove('invalid-service'); // Remove red background if at least one service is checked
             }
         }
-
 
         // Function to hide unchecked services
         function hideUncheckedServices(postalCode) {
@@ -330,6 +327,7 @@
         }
 
         // Function to pin location on map based on postal code and country using OpenStreetMap Nominatim API
+        // Function to pin location on map based on postal code and country using OpenStreetMap Nominatim API
         async function geocodePostalCode(postalCode, city, country, row) {
             const url = `https://nominatim.openstreetmap.org/search?format=json&country=${country}&postalcode=${postalCode}`;
 
@@ -343,16 +341,25 @@
 
                     // Add marker to map
                     const marker = L.marker([lat, lon], { icon: defaultIcon }).addTo(map);
-                    marker.bindPopup(`${city}, ${country}, ${postalCode}`).openPopup();
 
-                    marker.city = city; // Store city
-                    marker.postalCode = postalCode; // Store postal code
+                    // Fetch associated services
+                    const services = Array.from(row.querySelectorAll('.service1-checkbox'))
+                        .filter(checkbox => checkbox.checked)
+                        .map(checkbox => checkbox.parentElement.textContent.trim());
+
+                    // Store the postal code, city, and services in the marker
+                    marker.city = city;
+                    marker.postalCode = postalCode;
+                    marker.services = services.length > 0 ? services.join(', ') : 'No services available';
+
+                    // Set marker popup content
+                    marker.bindPopup(`<b>${city}, ${country}, ${postalCode}<br>Services:</b> ${marker.services}`).openPopup();
 
                     markers[postalCode] = marker; // Save marker for future reference
 
                     pinnedLocations.push(marker); // Add to pinned locations
 
-                    // Add event listener for distance measurement
+                    // Add event listener for distance measurement and displaying services
                     marker.on('click', function () {
                         if (isMeasuring) {
                             if (!startMarker) {
@@ -363,6 +370,9 @@
                                 marker.setIcon(redIcon); // Change end marker to red
                                 calculateDistance(startMarker, endMarker); // Calculate and show distance
                             }
+                        } else {
+                            // If not measuring, show popup with services
+                            marker.openPopup();
                         }
                     });
 
@@ -375,6 +385,7 @@
                 row.classList.add('invalid-postal'); // Mark row as invalid in case of error
             }
         }
+
 
         // Function to calculate and display distance between two markers
         function calculateDistance(startMarker, endMarker) {
