@@ -1,0 +1,220 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart Infographic</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .pie-chart {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .pie-chart .segment {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background-color: transparent;
+            transform-origin: 100% 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .pie-chart .segment::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background-color: inherit;
+            transform-origin: 0 0;
+            transform: rotate(0deg);
+            clip-path: circle(50%);
+        }
+
+        #segment1 {
+            transform: rotate(0deg);
+        }
+
+        #segment2 {
+            transform: rotate(90deg);
+        }
+
+        #segment3 {
+            transform: rotate(180deg);
+        }
+
+        #segment4 {
+            transform: rotate(270deg);
+        }
+
+        .segment {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .segment:hover::before {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .segment .icon {
+            margin-bottom: 10px;
+        }
+
+        .segment .icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .segment .content {
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .segment .content h3 {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .segment .content p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pie-chart">
+        <div class="segment" id="segment1" style="--rotation: 0deg; --color: #ff5a5a;">
+            <div class="icon"><img src="icon1.png" alt="Icon 1"></div>
+            <div class="content">
+                <h3>Title 1</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="segment" id="segment2" style="--rotation: 90deg; --color: #ffac33;">
+            <div class="icon"><img src="icon2.png" alt="Icon 2"></div>
+            <div class="content">
+                <h3>Title 2</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="segment" id="segment3" style="--rotation: 180deg; --color: #33aaff;">
+            <div class="icon"><img src="icon3.png" alt="Icon 3"></div>
+            <div class="content">
+                <h3>Title 3</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="segment" id="segment4" style="--rotation: 270deg; --color: #66cc66;">
+            <div class="icon"><img src="icon4.png" alt="Icon 4"></div>
+            <div class="content">
+                <h3>Title 4</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.segment').forEach(segment => {
+            segment.addEventListener('click', () => {
+                alert('You clicked a segment!');
+            });
+        });
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .triangle {
+            position: relative;
+            background-color: orange;
+        }
+
+        .triangle:before,
+        .triangle:after {
+            content: '';
+            position: absolute;
+            background-color: inherit;
+        }
+
+        .triangle,
+        .triangle:before,
+        .triangle:after {
+            width: 10em;
+            height: 10em;
+            border-top-right-radius: 30%;
+        }
+
+        .triangle {
+            transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+        }
+
+        .triangle:before {
+            transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+        }
+
+        .triangle:after {
+            transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+        }
+
+
+        .tricon {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background: navy;
+            border-top-right-radius: 30px;
+            transform: rotate(-45deg) skew(-10deg, -10deg);
+        }
+
+        .tricon::before {
+            content: "";
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background: navy;
+            border-top-right-radius: 30px;
+            transform: rotate(0deg) skew(-10deg, -10deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 500px; height: 500px; border: 1px solid rgb(0, 0, 0, 0.1); position: relative;">
+            <div class='triangle'></div>
+
+            <div class="tricon">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
