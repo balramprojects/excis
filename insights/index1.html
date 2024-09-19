@@ -340,7 +340,60 @@
         .next-btn {
             z-index: 1;
         }
+    </style>
 
+    <style>
+        .tab {
+            background-color: #fff;
+            border: 1px solid #eee;
+            margin: 10px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            /* Ensure smooth transitions by hiding overflow */
+        }
+
+        .tab-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.2em;
+            background-color: #fff;
+        }
+
+        .tab-header:hover {
+            background-color: #f0f0f0;
+        }
+
+        .icon {
+            font-size: 1.5em;
+        }
+
+        .tab-content {
+            max-height: 0;
+            /* Initially hidden */
+            overflow: hidden;
+            padding: 0 15px;
+            /* Add padding but collapse it when hidden */
+            transition: max-height 0.5s ease, padding 0.5s ease;
+            font-size: 1em;
+            background-color: #fcf8ef;
+        }
+
+        .tab-content.open {
+            max-height: 500px;
+            /* Adjust based on the content's expected height */
+            padding: 15px;
+        }
+
+        .brain-image {
+            width: 50px;
+            height: auto;
+            float: right;
+        }
+    </style>
+
+    <style>
         .accordion-tab-box {
             width: 100%;
             position: relative;
@@ -378,29 +431,12 @@
             height: 0px;
             padding: 0;
             background: rgba(250, 249, 246);
-            /* transition: all .1s ease-in-out; */
         }
 
         .accordion-tab-box.active .accordion-tab-desc {
             height: 100%;
             padding: 0 50px 30px;
-            /* transition: all .1s ease-in-out; */
-        }
-
-        .view-all-btn {
-            width: fit-content;
-            padding: 14px 50px;
-            margin: 30px auto 0;
-            color: #252525;
-            background: transparent;
-            gap: 12px;
-            border: 1px solid #252525;
-            border-radius: 10px;
-        }
-
-        .view-all-btn:hover {
-            background: #121820;
-            color: #fff;
+            transition: all .5s ease-in-out;
         }
     </style>
 
@@ -855,392 +891,445 @@
         <div style="width: 100%; background: #fff;">
             <div style="max-width: 100%; margin-inline: auto; position: relative;">
                 <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-
-                    <div class="accordions" onclick="getAccordionBlockHeight()">
-                        <div class="accordion-tab-box">
-                            <div class="accordion-tab-title d-flex justify-content-between align-items-center">
-                                <div class="txt">
-                                    Case Studies
-                                </div>
-                                <div class="icon">
-                                    +
-                                </div>
-                            </div>
-                            <div class="accordion-tab-desc">
-                                <div style="width: 100%; gap: 30px;"
-                                    class="d-flex justify-content-between align-items-start">
-                                    <a href="./case-studies.html">
-                                        <div style="width: 100%; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                            class="case-studies-card">
-                                            <div style="margin: 20px;">
-                                                <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                                    class="d-flex justify-content-center align-items-center">
-                                                    <div style="width: 140px;" class="d-flex">
-                                                        <img loading="lazy"
-                                                            src="../images/case-studies-card-creative.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div style="width: 100%; padding: 10px 5px;">
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                                        RETAIL
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                                        Lorem ipsum dolor sit, amet consectetur
-                                                        adipisicing elit. Temporibus, odit.
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                                        Lorem ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Nihil dolorum
-                                                        distinctio vel praesentium voluptatibus possimus
-                                                        illum et velit harum neque.
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: #252525; padding: 30px 0 0;">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="./case-studies.html">
-                                        <div style="width: 100%; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                            class="case-studies-card">
-                                            <div style="margin: 20px;">
-                                                <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                                    class="d-flex justify-content-center align-items-center">
-                                                    <div style="width: 140px;" class="d-flex">
-                                                        <img loading="lazy"
-                                                            src="../images/case-studies-card-creative.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div style="width: 100%; padding: 10px 5px;">
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                                        RETAIL
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                                        Lorem ipsum dolor sit, amet consectetur
-                                                        adipisicing elit. Temporibus, odit.
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                                        Lorem ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Nihil dolorum
-                                                        distinctio vel praesentium voluptatibus possimus
-                                                        illum et velit harum neque.
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: #252525; padding: 30px 0 0;">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="./case-studies.html">
-                                        <div style="width: 100%; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                            class="case-studies-card">
-                                            <div style="margin: 20px;">
-                                                <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                                    class="d-flex justify-content-center align-items-center">
-                                                    <div style="width: 140px;" class="d-flex">
-                                                        <img loading="lazy"
-                                                            src="../images/case-studies-card-creative.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <div style="width: 100%; padding: 10px 5px;">
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                                        RETAIL
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                                        Lorem ipsum dolor sit, amet consectetur
-                                                        adipisicing elit. Temporibus, odit.
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                                        Lorem ipsum dolor sit amet consectetur
-                                                        adipisicing elit. Nihil dolorum
-                                                        distinctio vel praesentium voluptatibus possimus
-                                                        illum et velit harum neque.
-                                                    </div>
-
-                                                    <div
-                                                        style="font-size: 12px; font-weight: 700; color: #252525; padding: 30px 0 0;">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="view-all-btn d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">
-                                        View All</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../images/btn-arrow.png" alt="Excis Compliance">
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                        <div class="card">
+                            <a href="#case-studies">
+                                <div style="padding: 50px;">
+                                    <div style="max-width: 80px; margin-inline: auto;">
+                                        <img loading="lazy" src="../images/trophy-icon.png" alt="">
+                                    </div>
+                                    <div
+                                        style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
+                                        Case Studies
+                                    </div>
+                                    <div
+                                        style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="accordion-tab-box">
-                            <div class="accordion-tab-title d-flex justify-content-between align-items-center">
-                                <div class="txt">
-                                    News
-                                </div>
-                                <div class="icon">
-                                    +
-                                </div>
-                            </div>
-                            <div class="accordion-tab-desc">
-                                <div style="width: 100%; flex-direction: column; gap: 20px;"
-                                    class="d-flex justify-content-start">
-                                    <div
-                                        style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px; background: #fff;">
-                                        <a href="">
-                                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
-                                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
-                                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
-                                                </div>
-                                                <div style=" flex-direction: column;"
-                                                    class="d-flex justify-content-between">
-                                                    <div>
-                                                        <div style="height: 20px; margin: 5px 0 0;">
-                                                            <img loading="lazy" style="width: auto;"
-                                                                src="../images/partner-lenovo.png" alt="">
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Deleniti nam consequuntur assumenda rem dolores non.
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                                                            minima repudiandae voluptatum facere ducimus accusantium
-                                                            voluptatem in qui omnis nemo.
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
+                        <div class="card">
+                            <a href="#news">
+                                <div style="padding: 50px;">
+                                    <div style="max-width: 80px; margin-inline: auto;">
+                                        <img loading="lazy" src="../images/trophy-icon.png" alt="">
                                     </div>
-
                                     <div
-                                        style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px; background: #fff;">
-                                        <a href="">
-                                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
-                                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
-                                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
-                                                </div>
-                                                <div style=" flex-direction: column;"
-                                                    class="d-flex justify-content-between">
-                                                    <div>
-                                                        <div style="height: 20px; margin: 5px 0 0;">
-                                                            <img loading="lazy" style="width: auto;"
-                                                                src="../images/partner-cisco.png" alt="">
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Incidunt nemo odio quis fuga, voluptate numquam!
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                            Tempora at reprehenderit libero esse in fugit iure
-                                                            exercitationem, possimus debitis ipsum?
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
+                                        style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
+                                        News
                                     </div>
-
                                     <div
-                                        style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px; background: #fff;">
-                                        <a href="">
-                                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
-                                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
-                                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
-                                                </div>
-                                                <div style=" flex-direction: column;"
-                                                    class="d-flex justify-content-between">
-                                                    <div>
-                                                        <div style="height: 20px; margin: 5px 0 0;">
-                                                            <img loading="lazy" style="width: auto;"
-                                                                src="../images/partner-dell.png" alt="">
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                            Sunt quia enim perspiciatis, natus unde incidunt quam
-                                                            temporibus doloribus minima voluptates.
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
-                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Doloremque dolores maxime inventore est, voluptas vel
-                                                            dignissimos accusamus eligendi maiores similique.
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
+                                        style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="accordion-tab-box">
-                            <div class="accordion-tab-title d-flex justify-content-between align-items-center">
-                                <div class="txt">
-                                    Insights
-                                </div>
-                                <div class="icon">
-                                    +
-                                </div>
-                            </div>
-                            <div class="accordion-tab-desc">
-                                <div style="width: 100%; flex-direction: column; gap: 20px;"
-                                    class="d-flex justify-content-start">
-                                    <div
-                                        style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px; background: #fff;">
-                                        <a href="">
-                                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
-                                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
-                                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
-                                                </div>
-                                                <div style=" flex-direction: column;"
-                                                    class="d-flex justify-content-between">
-                                                    <div>
-                                                        <div style="height: 20px; margin: 5px 0 0;">
-                                                            <img loading="lazy" style="width: auto;"
-                                                                src="../images/partner-lenovo.png" alt="">
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Deleniti nam consequuntur assumenda rem dolores non.
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                                                            minima repudiandae voluptatum facere ducimus accusantium
-                                                            voluptatem in qui omnis nemo.
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
+                        <div class="card">
+                            <a href="#insights">
+                                <div style="padding: 50px;">
+                                    <div style="max-width: 80px; margin-inline: auto;">
+                                        <img loading="lazy" src="../images/trophy-icon.png" alt="">
                                     </div>
-
                                     <div
-                                        style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px; background: #fff;">
-                                        <a href="">
-                                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
-                                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
-                                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
-                                                </div>
-                                                <div style=" flex-direction: column;"
-                                                    class="d-flex justify-content-between">
-                                                    <div>
-                                                        <div style="height: 20px; margin: 5px 0 0;">
-                                                            <img loading="lazy" style="width: auto;"
-                                                                src="../images/partner-cisco.png" alt="">
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
-                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Incidunt nemo odio quis fuga, voluptate numquam!
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                            Tempora at reprehenderit libero esse in fugit iure
-                                                            exercitationem, possimus debitis ipsum?
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
+                                        style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
+                                        Insights
                                     </div>
-
                                     <div
-                                        style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px; background: #fff;">
-                                        <a href="">
-                                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
-                                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
-                                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
-                                                </div>
-                                                <div style=" flex-direction: column;"
-                                                    class="d-flex justify-content-between">
-                                                    <div>
-                                                        <div style="height: 20px; margin: 5px 0 0;">
-                                                            <img loading="lazy" style="width: auto;"
-                                                                src="../images/partner-dell.png" alt="">
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                                            Sunt quia enim perspiciatis, natus unde incidunt quam
-                                                            temporibus doloribus minima voluptates.
-                                                        </div>
-                                                        <div
-                                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
-                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Doloremque dolores maxime inventore est, voluptas vel
-                                                            dignissimos accusamus eligendi maiores similique.
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
-                                                        Read More
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
+                                        style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="case-studies" class="full-container anchor-offset">
+        <div style="width: 100%; background: rgba(217, 217, 217);">
+            <div style="padding: 80px 15px;" class="main-content-container">
+                <div style="font-size: 36px; font-weight: 500; line-height: 54px; color: #F58520;">
+                    Case Studies
+                </div>
+                <div
+                    style="max-width: 60%; font-size: 14px; font-weight: 400; line-height: 25px; padding: 20px 0 0; color: rgba(37, 37, 37);">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatum! Fugiat, minus
+                    odit. Accusantium illo quaerat recusandae quidem eum numquam rem quisquam facilis?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-container">
+        <div style="width: 100%; background: #fff;">
+            <div style="max-width: 100%; margin-inline: auto; position: relative;">
+                <div style="height: 100%; padding: 50px 15px 50px;" class="main-content-container">
+                    <div style="width: 100%; gap: 30px;" class="d-flex justify-content-between align-items-start">
+                        <a href="./case-studies.html">
+                            <div style="width: 100%; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
+                                class="case-studies-card">
+                                <div style="margin: 20px;">
+                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <div style="width: 140px;" class="d-flex">
+                                            <img loading="lazy" src="../images/case-studies-card-creative.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div style="width: 100%; padding: 10px 5px;">
+                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
+                                            RETAIL
+                                        </div>
+
+                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                        </div>
+
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                        </div>
+
+                                        <div
+                                            style="font-size: 12px; font-weight: 700; color: #252525; padding: 30px 0 0;">
+                                            Read More
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./case-studies.html">
+                            <div style="width: 100%; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
+                                class="case-studies-card">
+                                <div style="margin: 20px;">
+                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <div style="width: 140px;" class="d-flex">
+                                            <img loading="lazy" src="../images/case-studies-card-creative.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div style="width: 100%; padding: 10px 5px;">
+                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
+                                            RETAIL
+                                        </div>
+
+                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                        </div>
+
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                        </div>
+
+                                        <div
+                                            style="font-size: 12px; font-weight: 700; color: #252525; padding: 30px 0 0;">
+                                            Read More
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="./case-studies.html">
+                            <div style="width: 100%; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
+                                class="case-studies-card">
+                                <div style="margin: 20px;">
+                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <div style="width: 140px;" class="d-flex">
+                                            <img loading="lazy" src="../images/case-studies-card-creative.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div style="width: 100%; padding: 10px 5px;">
+                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
+                                            RETAIL
+                                        </div>
+
+                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                        </div>
+
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                        </div>
+
+                                        <div
+                                            style="font-size: 12px; font-weight: 700; color: #252525; padding: 30px 0 0;">
+                                            Read More
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="width: fit-content; padding: 14px 50px; margin: 40px auto 0; color: #252525; background: #fff; gap: 12px; border: 1px solid #252525; border-radius: 10px;"
+                        class="d-flex justify-content-center align-items-center">
+                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">View All</p>
+                        <div style="width: 20px;" class="d-flex">
+                            <img loading="lazy" src="../images/btn-arrow.png" alt="Excis Compliance">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="news" class="full-container anchor-offset">
+        <div style="width: 100%; background: rgba(217, 217, 217);">
+            <div style="padding: 80px 15px;" class="main-content-container">
+                <div style="font-size: 36px; font-weight: 500; line-height: 54px; color: #F58520;">
+                    News
+                </div>
+                <div
+                    style="max-width: 60%; font-size: 14px; font-weight: 400; line-height: 25px; padding: 20px 0 0; color: rgba(37, 37, 37);">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatum! Fugiat, minus
+                    odit. Accusantium illo quaerat recusandae quidem eum numquam rem quisquam facilis?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-container">
+        <div style="width: 100%; background: #fff;">
+            <div style="padding: 50px 15px;" class="main-content-container">
+                <div style="width: 100%; flex-direction: column; gap: 20px;" class="d-flex justify-content-start">
+                    <div style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px;">
+                        <a href="">
+                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
+                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
+                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
+                                </div>
+                                <div style=" flex-direction: column;" class="d-flex justify-content-between">
+                                    <div>
+                                        <div style="height: 20px; margin: 5px 0 0;">
+                                            <img loading="lazy" style="width: auto;" src="../images/partner-lenovo.png"
+                                                alt="">
+                                        </div>
+                                        <div
+                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi similique
+                                            modi dolorum accusamus sint animi.
+                                        </div>
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                            reprehenderit eum fuga tenetur blanditiis facilis voluptate libero nemo
+                                            autem odio voluptatem sed, consequuntur, dolor provident.
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
+                                        Read More
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px;">
+                        <a href="">
+                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
+                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
+                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
+                                </div>
+                                <div style=" flex-direction: column;" class="d-flex justify-content-between">
+                                    <div>
+                                        <div style="height: 20px; margin: 5px 0 0;">
+                                            <img loading="lazy" style="width: auto;" src="../images/partner-cisco.png"
+                                                alt="">
+                                        </div>
+                                        <div
+                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi similique
+                                            modi dolorum accusamus sint animi.
+                                        </div>
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, vero a quia
+                                            officia sapiente laboriosam minus neque debitis quo recusandae in architecto
+                                            iure suscipit maiores soluta, eveniet aliquam officiis adipisci ipsa
+                                            asperiores consequatur porro vel!
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
+                                        Read More
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px;">
+                        <a href="">
+                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
+                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
+                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
+                                </div>
+                                <div style=" flex-direction: column;" class="d-flex justify-content-between">
+                                    <div>
+                                        <div style="height: 20px; margin: 5px 0 0;">
+                                            <img loading="lazy" style="width: auto;" src="../images/partner-dell.png"
+                                                alt="">
+                                        </div>
+                                        <div
+                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi similique
+                                            modi
+                                            dolorum accusamus sint animi.
+                                        </div>
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                            reprehenderit eum fuga tenetur blanditiis facilis voluptate libero nemo
+                                            autem
+                                            odio voluptatem sed, consequuntur, dolor provident.
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
+                                        Read More
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="insights" class="full-container anchor-offset">
+        <div style="width: 100%; background: rgba(217, 217, 217);">
+            <div style="padding: 80px 15px;" class="main-content-container">
+                <div style="font-size: 36px; font-weight: 500; line-height: 54px; color: #F58520;">
+                    Insights
+                </div>
+                <div
+                    style="max-width: 60%; font-size: 14px; font-weight: 400; line-height: 25px; padding: 20px 0 0; color: rgba(37, 37, 37);">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatum! Fugiat, minus
+                    odit. Accusantium illo quaerat recusandae quidem eum numquam rem quisquam facilis?
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-container">
+        <div style="width: 100%; background: #fff;">
+            <div style="padding: 50px 15px;" class="main-content-container">
+                <div style="width: 100%; flex-direction: column; gap: 20px;" class="d-flex justify-content-start">
+                    <div style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px;">
+                        <a href="">
+                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
+                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
+                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
+                                </div>
+                                <div style=" flex-direction: column;" class="d-flex justify-content-between">
+                                    <div>
+                                        <div style="height: 20px; margin: 5px 0 0;">
+                                            <img loading="lazy" style="width: auto;" src="../images/partner-lenovo.png"
+                                                alt="">
+                                        </div>
+                                        <div
+                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi similique
+                                            modi dolorum accusamus sint animi.
+                                        </div>
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                            reprehenderit eum fuga tenetur blanditiis facilis voluptate libero nemo
+                                            autem odio voluptatem sed, consequuntur, dolor provident.
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
+                                        Read More
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px;">
+                        <a href="">
+                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
+                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
+                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
+                                </div>
+                                <div style=" flex-direction: column;" class="d-flex justify-content-between">
+                                    <div>
+                                        <div style="height: 20px; margin: 5px 0 0;">
+                                            <img loading="lazy" style="width: auto;" src="../images/partner-cisco.png"
+                                                alt="">
+                                        </div>
+                                        <div
+                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi similique
+                                            modi dolorum accusamus sint animi.
+                                        </div>
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, vero a quia
+                                            officia sapiente laboriosam minus neque debitis quo recusandae in architecto
+                                            iure suscipit maiores soluta, eveniet aliquam officiis adipisci ipsa
+                                            asperiores consequatur porro vel!
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
+                                        Read More
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div style="width: 100%; border: 1px solid rgba(37, 37, 37, 0.1); border-radius: 10px;">
+                        <a href="">
+                            <div style="margin: 20px; gap: 30px;" class="d-flex justify-content-start">
+                                <div style="max-width: 400px; width: 100%; border-radius: 10px;">
+                                    <img loading="lazy" src="../images/insights-news-img.png" alt="">
+                                </div>
+                                <div style=" flex-direction: column;" class="d-flex justify-content-between">
+                                    <div>
+                                        <div style="height: 20px; margin: 5px 0 0;">
+                                            <img loading="lazy" style="width: auto;" src="../images/partner-dell.png"
+                                                alt="">
+                                        </div>
+                                        <div
+                                            style="font-size: 18px; font-weight: 700; line-height: 20px; padding: 15px 0 0; color: #000;">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi similique
+                                            modi
+                                            dolorum accusamus sint animi.
+                                        </div>
+                                        <div
+                                            style="font-size: 14px; font-weight: 400; line-height: 16px; padding: 10px 0 0; color: rgba(0, 0, 0, 0.5);">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                            reprehenderit eum fuga tenetur blanditiis facilis voluptate libero nemo
+                                            autem
+                                            odio voluptatem sed, consequuntur, dolor provident.
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="font-size: 14px; font-weight: 500; line-height: 20px; color: rgb(0, 105, 255);">
+                                        Read More
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1802,51 +1891,34 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-        let accordions = document.querySelectorAll('.accordion-tab-box');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const cards = document.querySelector('.cards');
 
-        accordions.forEach((accord, index) => {
-            accord.onclick = (e) => {
-                if (accord.classList.contains('active')) {
-                    accord.classList.remove('active');
-                    accord.querySelector('.accordion-tab-title .icon').innerHTML = "+";
+        let cardIndex = 0;
+        const cardWidth = 33.27; // Card width including margin
+        const visibleCards = 3;
+        const totalCards = cards.children.length;
 
-                } else {
-                    accordions.forEach(subaccord => {
-                        subaccord.classList.remove('active');
-                        subaccord.querySelector('.accordion-tab-title .icon').innerHTML = "+";
-                    });
-                    accord.classList.add('active');
-                    accord.querySelector('.accordion-tab-title .icon').innerHTML = "-";
-
-                }
-
-                const scrollCount = 312 + (103 * index);
-
-                let top = e.target.offsetTop;
-                window.scroll({
-                    top: top + scrollCount, // if you have a sticky nav, take the height of that off 'top' e.g. 'top - 100';
-                    behavior: 'smooth'
-                });
-            };
-        });
-    </script>
-
-    <script>
-        function getAccordionBlockHeight() {
-            const blockCard = document.querySelector('.accordions');
-
-            // Get the distance from the block to the top of the viewport
-            const distanceFromTopViewport = blockCard.getBoundingClientRect().top;
-
-            // Add the amount scrolled vertically to get distance from the top of the page
-            const distanceFromTopPage = distanceFromTopViewport + window.scrollY;
-
-            // Return the calculated value
-            return distanceFromTopPage;
+        function updateCarousel() {
+            cards.style.transform = `translateX(${-cardIndex * cardWidth}%)`;
+            prevBtn.disabled = cardIndex === 0;
+            nextBtn.disabled = cardIndex >= totalCards - visibleCards;
         }
 
-        // Now, call the function and assign the result to a variable
-        const accordionHeight = getAccordionBlockHeight();
+        prevBtn.addEventListener('click', () => {
+            if (cardIndex > 0) {
+                cardIndex--;
+                updateCarousel();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (cardIndex < totalCards - visibleCards) {
+                cardIndex++;
+                updateCarousel();
+            }
+        });
     </script>
 
     <script>
