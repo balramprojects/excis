@@ -856,7 +856,7 @@
             <div style="max-width: 100%; margin-inline: auto; position: relative;">
                 <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
 
-                    <div class="accordions" onclick="getAccordionBlockHeight()">
+                    <div class="accordions">
                         <div class="accordion-tab-box">
                             <div class="accordion-tab-title d-flex justify-content-between align-items-center">
                                 <div class="txt">
@@ -1829,24 +1829,6 @@
                 });
             };
         });
-    </script>
-
-    <script>
-        function getAccordionBlockHeight() {
-            const blockCard = document.querySelector('.accordions');
-
-            // Get the distance from the block to the top of the viewport
-            const distanceFromTopViewport = blockCard.getBoundingClientRect().top;
-
-            // Add the amount scrolled vertically to get distance from the top of the page
-            const distanceFromTopPage = distanceFromTopViewport + window.scrollY;
-
-            // Return the calculated value
-            return distanceFromTopPage;
-        }
-
-        // Now, call the function and assign the result to a variable
-        const accordionHeight = getAccordionBlockHeight();
     </script>
 
     <script>
