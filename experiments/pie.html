@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: "Roboto", system-ui;
+            font-family: 400;
         }
 
         img {
@@ -37,6 +48,21 @@
             position: relative;
         }
 
+        .pie-containers-center-point .pie-container-center-circle {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: rgba(21, 35, 75);
+            position: absolute;
+            z-index: 9;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .pie-containers-center-point .pie-slice {
             width: 206px;
             height: 300px;
@@ -45,7 +71,8 @@
             left: 50%;
             transform-origin: bottom;
             clip-path: polygon(0% 0%, 100% 0%, 100% 40px, 50% 100%, 0% 40px);
-            /* background: red; */
+            transform: translate(-50%, 0);
+            transition: all .5s ease-in-out;
         }
 
         .pie-containers-center-point .pie-slice.slice-1 {
@@ -89,6 +116,12 @@
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
         }
 
+        .pie-containers-center-point .pie-slice.active .pie-triangle {
+            background: rgb(245, 133, 32);
+            top: 30px;
+            transition: all .2s ease-in-out;
+        }
+
         .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-left-curve-block,
         .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-right-curve-block {
             width: 17px;
@@ -121,138 +154,20 @@
         }
 
         .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve {
-            left: 6px;
+            left: 5.5px;
         }
 
         .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
-            right: 6px;
+            right: 5.5px;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .pie-container {
-            width: 600px;
-            height: 600px;
-            margin-inline: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .pie-container-center-point {
-            position: relative;
-            width: 0;
-            height: 0;
-        }
-
-        .pie-container-center-circle {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            background: rgba(21, 35, 75);
-            position: absolute;
-            z-index: 9;
-            left: 50%;
-            right: 5;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .pie-triangle-container-wrapper {
-            width: 206px;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            position: absolute;
-            top: -300px;
-            left: 50%;
-            transform-origin: bottom;
-            overflow: hidden;
-            clip-path: polygon(0% 0%, 100% 0%, 100% 42px, 50% 100%, 0% 42px, 0% 0%);
-        }
-
-        .pie-triangle-container {
-            /* position: absolute;
-            top: -250px;
-            left: 50%;
-            transform-origin: bottom; */
-        }
-
-        .pie-triangle-container .pie-triangle {
-            height: 250px;
-            width: 206px;
-            background: rgba(233, 233, 233);
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            position: relative;
-            top: -6px;
-        }
-
-        .pie-triangle-container.active .pie-triangle {
+        .pie-containers-center-point .pie-slice.active .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve,
+        .pie-containers-center-point .pie-slice.active .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
             background: rgb(245, 133, 32);
-            top: -20px;
-            transition: all .2s ease-in-out;
+            transition: .2s ease-in-out;
         }
 
-        .pie-triangle-container .pie-triangle .pie-triangle-left-curve-block,
-        .pie-triangle-container .pie-triangle .pie-triangle-right-curve-block {
-            width: 17px;
-            height: 17px;
-            position: absolute;
-            top: -2px;
-            background: #fff;
-        }
-
-        .pie-triangle-container .pie-triangle .pie-triangle-left-curve-block {
-            border-bottom-right-radius: 10px;
-            left: 0;
-        }
-
-        .pie-triangle-container .pie-triangle .pie-triangle-right-curve-block {
-            border-bottom-left-radius: 10px;
-            right: 0;
-        }
-
-        .pie-triangle-container .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve,
-        .pie-triangle-container .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
-            width: 25px;
-            height: 25px;
-            position: absolute;
-            top: 2px;
-            background: rgba(233, 233, 233);
-            border-radius: 50%;
-        }
-
-        .pie-triangle-container .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve {
-            left: 5.8px;
-        }
-
-        .pie-triangle-container .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
-            right: 6px;
-        }
-
-        .pie-triangle-container.active .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve,
-        .pie-triangle-container.active .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
-            background: rgb(245, 133, 32);
-            transition: all .2s ease-in-out;
-        }
-
-        .pie-triangle-container .pie-triangle-outer-circle {
+        .pie-containers-center-point .pie-slice .pie-triangle-outer-circle {
             height: 52px;
             width: 52px;
             position: absolute;
@@ -268,14 +183,18 @@
             box-shadow: 0px 8px 3px -1px rgb(137, 147, 152);
         }
 
-        .pie-triangle-container.active .pie-triangle-outer-circle {
-            background: rgb(21, 35, 75);
-            top: 0px;
-            box-shadow: 0px 8px 3px -1px rgb(0, 0, 0, 0.5);
+        .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle {
+            top: 0;
             transition: all .2s ease-in-out;
         }
 
-        .pie-triangle-container .pie-triangle-outer-circle .pie-triangle-inner-circle {
+        .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle {
+            background: rgb(21, 35, 75);
+            box-shadow: 0px 8px 3px -1px rgb(21, 35, 75, 0.5);
+            transition: all .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle-outer-circle .pie-triangle-inner-circle {
             height: 42px;
             width: 42px;
             display: flex;
@@ -286,14 +205,33 @@
             border-radius: 50%;
         }
 
-        .pie-triangle-container.active .pie-triangle-outer-circle .pie-triangle-inner-circle {
+        .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle .pie-triangle-inner-circle {
             background: rgb(245, 133, 32);
             transition: all .2s ease-in-out;
         }
 
-        .pie-triangle-container .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+        .pie-containers-center-point .pie-slice .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
             max-width: 21px;
             display: flex;
+        }
+
+        .pie-containers-center-point .pie-slice .txt-content {
+            position: absolute;
+            top: calc(50% - 15px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgba(115, 115, 115);
+            font-size: 13px;
+            font-weight: 700;
+            text-wrap: wrap;
+        }
+
+        .pie-containers-center-point .pie-slice.active .txt-content {
+            top: calc(50% - 30px);
+            color: #fff;
+            font-size: 15px;
+            transition: all .2s ease-in-out;
         }
     </style>
 </head>
@@ -302,298 +240,177 @@
 
     <div class="pie-containers">
         <div class="pie-containers-center-point">
-            <div class="pie-slice slice-1">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pie-slice slice-2">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pie-slice slice-3">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pie-slice slice-4">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pie-slice slice-5">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pie-slice slice-6">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pie-slice slice-7">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pie-slice slice-8">
-                <div class="pie-triangle">
-                    <div class="pie-triangle-left-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                    <div class="pie-triangle-right-curve-block">
-                        <div class="pie-triangle-curve"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="pie-container">
-        <div class="pie-container-center-point">
-
             <div class="pie-container-center-circle">
                 <div style="width: 120px; display: flex;">
                     <img loading="lazy" style="height: 100%; width: 100%;" src="./Excis-Logo.png" alt="">
                 </div>
             </div>
 
-            <div class="pie-triangle-container-wrapper" style="transform: translate(-50%, 0) rotate(0deg); z-index: 1;">
-                <div class="pie-triangle-container active">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon8.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
+                </div>
             </div>
-
-            <div class="pie-triangle-container-wrapper"
-                style="transform: translate(-50%, 0) rotate(45deg); z-index: 2;">
-                <div class="pie-triangle-container">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon2.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
+                </div>
             </div>
-
-            <div class="pie-triangle-container-wrapper"
-                style="transform: translate(-50%, 0) rotate(90deg); z-index: 3;">
-                <div class="pie-triangle-container">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon3.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
+                </div>
             </div>
-
-            <div class="pie-triangle-container-wrapper"
-                style="transform: translate(-50%, 0) rotate(135deg); z-index: 4;">
-                <div class="pie-triangle-container">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon4.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
+                </div>
             </div>
-
-            <div class="pie-triangle-container-wrapper"
-                style="transform: translate(-50%, 0) rotate(180deg); z-index: 5;">
-                <div class="pie-triangle-container">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon5.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
+                </div>
             </div>
-
-            <div class="pie-triangle-container-wrapper"
-                style="transform: translate(-50%, 0) rotate(225deg); z-index: 6;">
-                <div class="pie-triangle-container">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon6.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
+                </div>
             </div>
-
-            <div class="pie-triangle-container-wrapper"
-                style="transform: translate(-50%, 0) rotate(270deg); z-index: 7;">
-                <div class="pie-triangle-container">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon7.png" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
+                </div>
             </div>
-
-            <div class="pie-triangle-container-wrapper"
-                style="transform: translate(-50%, 0) rotate(315deg); z-index: 8;">
-                <div class="pie-triangle-container">
-                    <div class="pie-triangle">
-                        <div class="pie-triangle-left-curve-block">
-                            <div class="pie-triangle-curve"></div>
-                        </div>
-
-                        <div class="pie-triangle-right-curve-block">
-                            <div class="pie-triangle-curve"></div>
+            <div class="pie-slice">
+                <div class="pie-triangle">
+                    <div class="pie-triangle-left-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                    <div class="pie-triangle-right-curve-block">
+                        <div class="pie-triangle-curve"></div>
+                    </div>
+                </div>
+                <div class="pie-triangle-outer-circle">
+                    <div class="pie-triangle-inner-circle">
+                        <div class="icon-img">
+                            <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
                         </div>
                     </div>
-
-                    <div class="pie-triangle-outer-circle">
-                        <div class="pie-triangle-inner-circle">
-                            <div class="icon-img">
-                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="txt-content">
+                    Cyber Security Solutions
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        const triangles = document.querySelectorAll('.pie-triangle-container');
+        const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');
 
         triangles.forEach(triangle => {
 
@@ -611,6 +428,23 @@
             });
 
         });
+
+        window.onload = function () {
+            var n = 0;
+            var pieSlices = document.querySelectorAll(".pie-containers-center-point .pie-slice");
+
+            pieSlices.forEach((slice, index) => {
+                setTimeout(function () {
+                    var n = index + 1;
+                    slice.classList.add(`slice-${n}`);
+                }, 300 * (index + 1));
+            });
+
+            setTimeout(function () {
+                pieSlices[0].classList.add("active");
+            }, 3100);
+        };
+
     </script>
 
 </body>
