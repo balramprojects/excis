@@ -7,6 +7,7 @@ require_once('./constant.php');
 
 <head>
     <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='keywords' content='excis, excis compliance, axis, exis'>
     <meta name='description' content='Your Global IT SupportOur IT helpdesk is comprised of certified IT professionals, trained and experienced across a wide variety of vendors - Excis'>
     <meta http-equiv='Pragma' content='no-cache'>

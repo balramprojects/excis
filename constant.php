@@ -5,5 +5,5 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $desktop_url = 'http://localhost/excis/';
 } else {
     // Production environment
-    $desktop_url = 'https://exc1s.com/';
+    $desktop_url = 'http://www.exc1s.com/';
 }

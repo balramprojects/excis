@@ -1,4 +1,4 @@
-<div id="contact-us" class="full-container">
+<div class="full-container">
     <div style="width: 100%; background: #fff;">
         <div style="max-width: 100%; margin-inline: auto; position: relative;">
             <div
