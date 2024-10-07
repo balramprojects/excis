@@ -425,7 +425,7 @@ require_once('./constant.php');
                             </li>
 
                             <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="industries.php">
+                                <a href="<?php echo $desktop_url . 'industries'; ?>">
                                     <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
                                         class="nav-tab-item d-flex align-items-center">
                                         Industries
@@ -434,7 +434,7 @@ require_once('./constant.php');
                             </li>
 
                             <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="insights/index.php">
+                                <a href="<?php echo $desktop_url . 'insights/'; ?>">
                                     <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
                                         class="nav-tab-item d-flex align-items-center">
                                         Insights
@@ -443,7 +443,7 @@ require_once('./constant.php');
                             </li>
                         </ul>
 
-                        <a href="contact-us.php" class="d-flex align-items-center">
+                        <a href="<?php echo $desktop_url . 'contact-us'; ?>" class="d-flex align-items-center">
                             <div style="height: 42px; width: 129px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; background: #F58520; color: #FAF9F6; "
                                 class="d-flex justify-content-center align-items-center">
                                 Contact Us

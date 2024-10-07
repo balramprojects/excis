@@ -1,11 +1,11 @@
-RewriteEngine On
-RewriteBase /excis/
+# Remove index.php from the URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.php [NC]
+RewriteRule ^index\.php(.*)$ /$1 [R=301,L]
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
 
 # Enable Compression
 <IfModule mod_deflate.c>

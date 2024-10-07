@@ -1,11 +1,30 @@
+<?php
+require_once('../constant.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excis Compliance</title>
+    <meta name='keywords' content='excis, excis compliance, axis, exis'>
+    <meta name='description' content='Your Global IT SupportOur IT helpdesk is comprised of certified IT professionals, trained and experienced across a wide variety of vendors - Excis'>
+    <meta http-equiv='Pragma' content='no-cache'>
+    <meta http-equiv='Cache-Control' content='no-cache'>
+    <meta name='robots' content='noindex, nofollow'>
+    <meta name='author' content='Excis Compliance'>
+    <meta name='copyright' content='Excis Compliance'>
+    <meta name='og:title' content='Excis Compliance'>
+    <meta name='og:type' content='image'>
+    <meta name='og:url' content='https://www.excis.com/wp-content/uploads/2021/12/fav.png'>
+    <meta name='og:image' content='htpps://www.excis.com'>
+    <meta name='og:description' content='Your Global IT SupportOur IT helpdesk is comprised of certified IT professionals, trained and experienced across a wide variety of vendors - Excis'>
 
+    <title>Case Studies - Excis Compliance Ltd.</title>
+
+    <link rel="canonical" href="https://www.exc1s.com/insights/case-studies">
+    <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
     <link rel="stylesheet" href="../assets/sass/index.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
@@ -24,7 +43,6 @@
             width: 70px;
             height: 3px;
             background: #000;
-
         }
 
         .submitBtn {
@@ -1068,257 +1086,81 @@
     </div>
 
     <div class="full-container">
-        <div style="width: 100%; background: rgba(18, 24, 32, 1);">
-            <div style="height: 100%; padding: 50px 15px 0;" class="main-content-container">
-                <div style="width: 100%; gap: 80px;" class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <div
-                            style="font-size: 18px; font-weight: 700; color: rgba(245, 133, 32, 1); text-transform: uppercase; text-wrap: nowrap;">
-                            Excis Compliance Ltd.
-                        </div>
-                        <div
-                            style="font-size: 13px; font-weight: 300; line-height: 20px; letter-spacing: 1px; padding: 15px 0 0; color: rgba(250, 249, 246, 1);">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellat? Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus tenetur,
-                            necessitatibus
-                            officiis quisquam consectetur. Blanditiis autem ipsum eos aut?
-                        </div>
-                        <div style="width: 60%; padding: 30px 0 0;"
-                            class="d-flex justify-content-between align-items-center">
-                            <div style="height: 22px;">
-                                <img src="../assets/images/facebook.png" style="width: auto;" alt="">
-                            </div>
-                            <div style="height: 22px;">
-                                <img src="../assets/images/youtube.png" style="width: auto;" alt="">
-                            </div>
-                            <div style="height: 22px;">
-                                <img src="../assets/images/instagram.png" style="width: auto;" alt="">
-                            </div>
-                            <div style="height: 22px;">
-                                <img src="../assets/images/twitter.png" style="width: auto;" alt="">
-                            </div>
-                            <div style="height: 22px;">
-                                <img src="../assets/images/linkedin.png" style="width: auto;" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div
-                                style="font-size: 18px; font-weight: 700; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
-                                Our Services
-                            </div>
-                            <div style="padding: 10px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Network</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Data
-                                    Center Support</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">End-User
-                                    Support</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Audio-Visual</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">WiFi
-                                    Services</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Cybersecurity
-                                    Consulting</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">API
-                                    Integration</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Warehousing</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Audio-Visual</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">WiFi
-                                    Services</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Cybersecurity
-                                    Consulting</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">All
-                                    Services &nbsp; -></a>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div
-                                style="font-size: 18px; font-weight: 700; padding: 20px 0 0; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
-                                About Us
-                            </div>
-                            <div style="padding: 10px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Why
-                                    Excis</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Career
-                                    Opportunities</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">CSR</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Worldwide</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Partners</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <div
-                                style="font-size: 18px; font-weight: 700; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
-                                Industries
-                            </div>
-                            <div style="padding: 10px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Retail</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Energy</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Life
-                                    Sciences</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Financial
-                                    Services (FS&I)</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Telecoms</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Utilities</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Public
-                                    Sector</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Manufacturing</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Education</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">IT
-                                    & Consulting</a>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div
-                                style="font-size: 18px; font-weight: 700; padding: 20px 0 0; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
-                                Insights
-                            </div>
-                            <div style="padding: 10px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Blogs/Case
-                                    Studies</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">News</a>
-                            </div>
-                            <div style="padding: 5px 0 0; line-height: 24px;">
-                                <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Research
-                                    & Development</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div
-                            style="font-size: 16px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">
-                            ISO Certfications Certified <br> Covering The UK
-                        </div>
-                        <div style="padding: 20px 0 0; gap: 10px;"
-                            class="d-flex justify-content-between align-itemcenter">
-                            <div style="width: 60px;" class="d-flex">
-                                <img src="../assets/images/iso-1.png" alt="">
-                            </div>
-                            <div style="width: 60px;" class="d-flex">
-                                <img src="../assets/images/iso-2.png" alt="">
-                            </div>
-                            <div style="width: 60px;" class="d-flex">
-                                <img src="../assets/images/iso-3.png" alt="">
-                            </div>
-                            <div style="width: 60px;" class="d-flex">
-                                <img src="../assets/images/iso-4.png" alt="">
-                            </div>
-                        </div>
-                        <div style="padding: 15px 0 0;">
-                            <div style="width: 100px;" class="d-flex">
-                                <img src="../assets/images/cyber-essentials.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+        <div style="width: 100%; background: rgba(18, 24, 32);">
+            <div style="height: 100%; padding: 80px 15px;" class="main-content-container">
+                <div style="font-size: 34px; font-weight: 500; color: #fff; text-align: center;">
+                    Lorem ipsum dolor sit amet.
                 </div>
-                <div style="width: 100%; padding: 25px 0 0; border-bottom: 1px solid #fff;"></div>
-                <div style="height: 70px;" class="d-flex justify-content-between align-items-center">
-                    <div style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">
-                        ©2024 Excis Compliance Ltd. All Rights Reserved.
+
+                <div style="margin-top: 50px; flex-wrap: wrap;" class="d-flex">
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 25px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div style="padding: 0 15px 0;">
-                            <a href="" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">General
-                                Policies</a>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 30px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
                         </div>
-                        <div style="padding: 0 15px 0;">
-                            <a href=""
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">Privacy/
-                                Cookies Policy</a>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 60px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
                         </div>
-                        <div style="padding: 0 15px 0;">
-                            <a href="" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">Terms
-                                and Conditions</a>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 20px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-vmware.png" alt="">
+                        </div>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 35px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-deutsche-bank.png" alt="">
+                        </div>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 35px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-cisco.png" alt="">
+                        </div>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 25px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-nokia.png" alt="">
+                        </div>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 25px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                        </div>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 30px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
+                        </div>
+                    </div>
+                    <div style="height: 100px; flex: 1;"
+                        class="partner-cards d-flex justify-content-center align-items-center">
+                        <div style="height: 60px;" class="d-flex">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <?php
+    require("../footer.php");
+    ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1360,8 +1202,8 @@
         var iti = window.intlTelInput(input, {
             initialCountry: "auto",
             separateDialCode: true,
-            geoIpLookup: function (success, failure) {
-                $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+            geoIpLookup: function(success, failure) {
+                $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
                     var countryCode = (resp && resp.country) ? resp.country : "us";
                     success(countryCode);
                 });
@@ -1371,7 +1213,7 @@
         });
 
         // Log the selected country on change
-        input.addEventListener("countrychange", function () {
+        input.addEventListener("countrychange", function() {
             var selectedCountryData = iti.getSelectedCountryData();
             // console.log("Selected country:", selectedCountryData.name, selectedCountryData.dialCode);
             // console.log("Selected country phone code:", selectedCountryData.dialCode);

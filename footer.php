@@ -166,16 +166,16 @@
                                             style="width: 50%; gap: 10px; display: grid; grid-template-columns: repeat(2, 1fr);">
                                             <div class="d-flex justify-content-start align-items-center"
                                                 style="margin: 10px 0 0; gap: 5px;">
-                                                <input type="checkbox" name="recruitment" id=""
+                                                <input type="checkbox" name="services" id=""
                                                     style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
-                                                <label for="recruitment"
+                                                <label for="services"
                                                     style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Services</label>
                                             </div>
                                             <div class="d-flex justify-content-start align-items-center"
                                                 style="margin: 10px 0 0; gap: 5px;">
-                                                <input type="checkbox" name="recruitment" id=""
+                                                <input type="checkbox" name="sales" id=""
                                                     style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
-                                                <label for="recruitment"
+                                                <label for="sales"
                                                     style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Sales</label>
                                             </div>
                                             <div class="d-flex justify-content-start align-items-center"
@@ -184,6 +184,13 @@
                                                     style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
                                                 <label for="recruitment"
                                                     style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Recruitment</label>
+                                            </div>
+                                            <div class="d-flex justify-content-start align-items-center"
+                                                style="margin: 10px 0 0; gap: 5px;">
+                                                <input type="checkbox" name="partner" id=""
+                                                    style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
+                                                <label for="partner"
+                                                    style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Partner</label>
                                             </div>
                                         </div>
                                     </div>
@@ -232,19 +239,19 @@
                     <div style="width: 60%; padding: 30px 0 0;"
                         class="d-flex justify-content-between align-items-center">
                         <div style="height: 22px;">
-                            <img src="assets/images/facebook.png" style="width: auto;" alt="">
+                            <img src="<?php echo $desktop_images . 'facebook.png'; ?>" style="width: auto;" alt="">
                         </div>
                         <div style="height: 22px;">
-                            <img src="assets/images/youtube.png" style="width: auto;" alt="">
+                            <img src="<?php echo $desktop_images . 'youtube.png'; ?>" style="width: auto;" alt="">
                         </div>
                         <div style="height: 22px;">
-                            <img src="assets/images/instagram.png" style="width: auto;" alt="">
+                            <img src="<?php echo $desktop_images . 'instagram.png'; ?>" style="width: auto;" alt="">
                         </div>
                         <div style="height: 22px;">
-                            <img src="assets/images/twitter.png" style="width: auto;" alt="">
+                            <img src="<?php echo $desktop_images . 'twitter.png'; ?>" style="width: auto;" alt="">
                         </div>
                         <div style="height: 22px;">
-                            <img src="assets/images/linkedin.png" style="width: auto;" alt="">
+                            <img src="<?php echo $desktop_images . 'linkedin.png'; ?>" style="width: auto;" alt="">
                         </div>
                     </div>
                 </div>
@@ -422,21 +429,21 @@
                     <div style="padding: 20px 0 0; gap: 10px;"
                         class="d-flex justify-content-between align-itemcenter">
                         <div style="width: 60px;" class="d-flex">
-                            <img src="assets/images/iso-1.png" alt="">
+                            <img src="<?php echo $desktop_images . 'iso-1.png'; ?>" alt="">
                         </div>
                         <div style="width: 60px;" class="d-flex">
-                            <img src="assets/images/iso-2.png" alt="">
+                            <img src="<?php echo $desktop_images . 'iso-2.png'; ?>" alt="">
                         </div>
                         <div style="width: 60px;" class="d-flex">
-                            <img src="assets/images/iso-3.png" alt="">
+                            <img src="<?php echo $desktop_images . 'iso-3.png'; ?>" alt="">
                         </div>
                         <div style="width: 60px;" class="d-flex">
-                            <img src="assets/images/iso-4.png" alt="">
+                            <img src="<?php echo $desktop_images . 'iso-4.png'; ?>" alt="">
                         </div>
                     </div>
                     <div style="padding: 15px 0 0;">
                         <div style="width: 100px;" class="d-flex">
-                            <img src="assets/images/cyber-essentials.png" alt="">
+                            <img src="<?php echo $desktop_images . 'cyber-essentials.png'; ?>" alt="">
                         </div>
                     </div>
                 </div>
@@ -448,16 +455,16 @@
                 </div>
                 <div class="d-flex justify-content-center align-items-center">
                     <div style="padding: 0 15px 0;">
-                        <a href="" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">General
+                        <a href="#" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">General
                             Policies</a>
                     </div>
                     <div style="padding: 0 15px 0;">
-                        <a href=""
+                        <a href="#"
                             style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">Privacy/
                             Cookies Policy</a>
                     </div>
                     <div style="padding: 0 15px 0;">
-                        <a href="" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">Terms
+                        <a href="#" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">Terms
                             and Conditions</a>
                     </div>
                 </div>
