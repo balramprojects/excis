@@ -357,7 +357,7 @@ require_once('./constant.php');
 
                         <ul class="d-flex align-items-center" style="font-size: 13px; list-style-type: none;">
                             <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="services.php">
+                                <a href="<?php echo $desktop_url . 'services'; ?>">
                                     <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
                                         class="nav-tab-item d-flex align-items-center">
                                         Services
