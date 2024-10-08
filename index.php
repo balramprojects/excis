@@ -364,64 +364,65 @@ require_once('./constant.php');
                                     </div>
                                 </a>
 
-                                <!-- <div style="position: absolute; top: 65px; left: 50%; transform: translate(-50%, 0); box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.05), -5px 5px 5px rgb(0, 0, 0, 0.05), 0px 5px 5px rgb(0, 0, 0, 0.05); padding: 0 50px 50px;  z-index: 1; background: rgb(250,249,246);"
+                                <div style="position: absolute; top: 65px; left: 50%; transform: translate(-50%, 0); box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.05), -5px 5px 5px rgb(0, 0, 0, 0.05), 0px 5px 5px rgb(0, 0, 0, 0.05); padding: 0 50px 50px;  z-index: 1; background: rgb(250,249,246);"
                                     class="nav-tab-dropdown">
                                     <div class="d-flex justify-content-center align-items-start">
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
+                                        <ul style="list-style-type: none; padding: 10px 20px 0; width: 215px;">
+                                            <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Infrastructure</li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Network</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Data Center Support</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">End User Support</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Audio-Visual</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">WiFi Services</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Operating System</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">New Office + Migration <br> Solutions</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Helpdesk</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Storage As A Service (SAAS)</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Device As A Service (DAAS)</a></li>
                                         </ul>
 
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
+                                        <ul style="list-style-type: none; padding: 10px 20px 0; width: 215px;">
+                                            <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Cyber Security Services</li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Cyber Security Consulting</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">End Point Security</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Network Security</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Application Security</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Web Security</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Email Security</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Hybrid Cloud Security</a></li>
+
+                                            <li style="padding: 10px 0 0;">
+                                                <ul style="list-style-type: none; padding: 10px 0 0; width: 215px;">
+                                                    <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Cloud Services</li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Private Cloud Solutions</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Hybrid Cloud</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Office 365 And G-Suite Migration + Integration</a></li>
+                                                </ul>
                                             </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
+                                        </ul>
+
+                                        <ul style="list-style-type: none; padding: 10px 20px 0; width: 215px;">
+                                            <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Development</li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Software And Application Development</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">API Integration</a></li>
+                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Network And Systems Automation</a></li>
+
+                                            <li style="padding: 10px 0 0;">
+                                                <ul style="list-style-type: none; padding: 10px 0 0; width: 215px;">
+                                                    <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Depot</li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Warehousing</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Logistics</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Staging</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Wiping + Disposal</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">PMO</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">NOC Services</a></li>
+                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">SOC Services</a></li>
+                                                </ul>
                                             </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
                                         </ul>
                                     </div>
-                                </div> -->
+                                </div>
                             </li>
 
                             <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
