@@ -14,11 +14,11 @@ require_once('./constant.php');
     <meta http-equiv='Cache-Control' content='no-cache'>
     <meta name='robots' content='noindex, nofollow'>
     <meta name='author' content='Excis Compliance'>
-    <meta name='copyright' content='Excis Compliance'>
-    <meta name='og:title' content='Excis Compliance'>
+    <meta name='copyright' content='Excis Compliance Ltd.'>
+    <meta name='og:title' content='Excis Compliance Ltd.'>
     <meta name='og:type' content='image'>
-    <meta name='og:url' content='https://www.excis.com/wp-content/uploads/2021/12/fav.png'>
-    <meta name='og:image' content='htpps://www.excis.com'>
+    <meta name='og:url' content='htpps://www.exc1s.com'>
+    <meta name='og:image' content='<?php echo $desktop_images . 'email-signature.gif'; ?>'>
     <meta name='og:description' content='Your Global IT SupportOur IT helpdesk is comprised of certified IT professionals, trained and experienced across a wide variety of vendors - Excis'>
 
     <title>Excis Compliance Ltd.</title>
@@ -331,7 +331,7 @@ require_once('./constant.php');
                             title="Excis Worldwide">
                             <div class="d-flex" style="gap: 16px;">
                                 <div style="width: 24px;" class="d-flex">
-                                    <img loading="lazy" src="assets/images/global-presence.png" alt="Global">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global">
                                 </div>
                                 <p style="font-size: 16px; color: #FAF9F6;">
                                     Global | EN
@@ -351,7 +351,7 @@ require_once('./constant.php');
                         <a href="<?php echo $desktop_url; ?>" title="Excis Logo" style="margin: 0 70px 0 0;"
                             class="d-flex align-items-center">
                             <div style="width: 60px;" class="d-flex">
-                                <img loading="lazy" src="assets/images/main-logo.png" alt="Excis">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
                             </div>
                         </a>
 
@@ -463,7 +463,7 @@ require_once('./constant.php');
                 <div style="width: 100%;" class="d-flex justify-content-center">
                     <div style="height: 520px; position: relative; display: flex; align-items: center;">
                         <div style="height: 88%; display: flex; opacity: 0.7;">
-                            <img loading="lazy" src="assets/images/map.png" alt="">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'map.png'; ?>" alt="">
                         </div>
 
                         <div style="position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%);">
@@ -481,7 +481,7 @@ require_once('./constant.php');
                                     <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">Let's Work Together
                                     </p>
                                     <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Excis Compliance">
                                     </div>
                                 </div>
                             </div>
