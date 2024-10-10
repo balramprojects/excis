@@ -17,16 +17,17 @@ require_once('./constant.php');
     <meta name='copyright' content='Excis Compliance Ltd.'>
     <meta name='og:title' content='Excis Compliance Ltd.'>
     <meta name='og:type' content='image'>
-    <meta name='og:url' content='htpps://www.exc1s.com'>
+    <meta name='og:url' content='http://www.exc1s.com'>
     <meta name='og:image' content='<?php echo $desktop_images . 'email-signature.gif'; ?>'>
     <meta name='og:description' content='Your Global IT SupportOur IT helpdesk is comprised of certified IT professionals, trained and experienced across a wide variety of vendors - Excis'>
 
     <title>Excis Compliance Ltd.</title>
 
-    <link rel="canonical" href="https://www.exc1s.com">
+    <link rel="canonical" href="http://www.exc1s.com">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
     <link rel="stylesheet" href="assets/sass/index.css">
     <link rel="stylesheet" href="assets/sass/common.css">
+    <link rel="stylesheet" href="assets/sass/contact-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
 
@@ -41,7 +42,6 @@ require_once('./constant.php');
 
         .drop {
             box-shadow: 0px 0px 1px 1px #cfd3da;
-
         }
 
         .core-values-card:hover .drop {
@@ -174,77 +174,6 @@ require_once('./constant.php');
             border: 1px solid #fff;
             filter: grayscale(0);
             transition: all .3s ease-in-out;
-        }
-
-        .iti {
-            width: 100%;
-        }
-
-        .iti__flag-container {
-            margin-right: 5px;
-        }
-
-        .iti__selected-flag {
-            height: 101%;
-            padding: 0 9px;
-            background-size: contain;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            outline: none;
-        }
-
-        .iti__country-name {
-            margin-left: 10px;
-        }
-
-        .iti__country-list {
-            min-width: 300px;
-            width: 100%;
-            max-height: 150px;
-            margin: 0 0 0 -1px;
-            z-index: 1;
-        }
-
-        .iti__dial-code {
-            margin-left: 5px;
-        }
-
-        .iti--separate-dial-code {
-            margin: 6px 0 0 0;
-        }
-
-        .iti__selected-dial-code {
-            width: 36px;
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        .iti__arrow {
-            width: 10px;
-            height: 5px;
-            background: rgb(0, 0, 0, 0.9);
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            transform: rotate(0deg);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti__arrow.iti__arrow--up {
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            transform: rotate(-180deg);
-            transition: all .3s ease-in-out;
-        }
-
-        #phone::placeholder {
-            color: rgb(0, 0, 0, 0.25);
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2px;
         }
 
         .nav-tab-dropdown {
