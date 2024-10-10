@@ -157,10 +157,11 @@
                                     </div>
                                 </div>
 
-                                <div style=" margin: 20px 30px;" class="d-flex">
+                                <div style="margin: 20px 30px;" class="d-flex">
                                     <div style="width: 100%;">
                                         <p style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">How
-                                            Can We Help You?</p>
+                                            Can We Help You?
+                                        </p>
 
                                         <div
                                             style="width: 50%; gap: 10px; display: grid; grid-template-columns: repeat(2, 1fr);">
