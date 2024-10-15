@@ -17,19 +17,22 @@ require_once('./constant.php');
     <meta name='copyright' content='Excis Compliance Ltd.'>
     <meta name='og:title' content='Excis Compliance Ltd.'>
     <meta name='og:type' content='image'>
-    <meta name='og:url' content='http://www.exc1s.com'>
+    <meta name='og:url' content='https://www.exc1s.com'>
     <meta name='og:image' content='<?php echo $desktop_images . 'email-signature.gif'; ?>'>
     <meta name='og:description' content='Your Global IT SupportOur IT helpdesk is comprised of certified IT professionals, trained and experienced across a wide variety of vendors - Excis'>
 
-    <title>Excis Compliance Ltd.</title>
+    <title>Home - Excis Compliance</title>
 
-    <link rel="canonical" href="http://www.exc1s.com">
+    <link rel="canonical" href="https://www.exc1s.com">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
     <link rel="stylesheet" href="assets/sass/index.css">
+    <link rel="stylesheet" href="assets/sass/navigation.css">
     <link rel="stylesheet" href="assets/sass/common.css">
     <link rel="stylesheet" href="assets/sass/contact-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <style>
         .submitBtn {
@@ -175,246 +178,181 @@ require_once('./constant.php');
             filter: grayscale(0);
             transition: all .3s ease-in-out;
         }
-
-        .nav-tab-dropdown {
-            display: none;
-        }
-
-        #nav-tab:hover .nav-tab-dropdown,
-        .nav-tab-dropdown:hover {
-            display: block;
-        }
-
-        .nav-tab-item {
-            position: relative;
-        }
-
-        #nav-tab .nav-tab-item::after {
-            content: "";
-            width: 0%;
-            height: 4px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 5px 5px 0 0;
-            transition: all .1s ease-in-out;
-        }
-
-        #nav-tab .nav-tab-item.active::after {
-            width: 100%;
-        }
-
-        #nav-tab .nav-tab-item.active {
-            color: #F58520 !important;
-        }
-
-        #nav-tab:hover .nav-tab-item::after {
-            width: 100%;
-            transition: all .3s ease-in-out;
-        }
-
-        #nav-tab:hover .nav-tab-item {
-            color: #F58520 !important;
-            transition: all .2s ease-in-out;
-        }
     </style>
 
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
 
-    <div id="landing-header-menu" style="position: sticky; top: 0; z-index: 2;">
+    <!-- Navigation -->
+    <div class="pg-nav-sticky">
         <div class="full-container">
-            <div style="width: 100%; height: 52px; background: #121820;">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <div style="height: 100%; gap: 25px;" class="d-flex">
-                            <a href="#" title="Career">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    Career
-                                </div>
-                            </a>
-                            <a href="#" title="CSR">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    CSR
-                                </div>
-                            </a>
-                            <a href="#" title="News">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    News
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="d-flex align-items-center"
-                            style="font-size: 12px; text-align: center; color: #FAF9F6;">
-                            <p style="font-weight: 700;">Now Hiring : &nbsp;</p>
-                            <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
-                        </div>
-
-                        <a href="#" class="d-flex align-items-center" style="padding: 0 10px 0 0;"
-                            title="Excis Worldwide">
-                            <div class="d-flex" style="gap: 16px;">
-                                <div style="width: 24px;" class="d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global">
-                                </div>
-                                <p style="font-size: 16px; color: #FAF9F6;">
-                                    Global | EN
-                                </p>
+            <div class="black-nav-container">
+                <div class="main-content-container d-flex justify-content-between">
+                    <div class="left-content d-flex">
+                        <a href="#" title="Career">
+                            <div class="block-txt d-flex align-items-center">
+                                Career
+                            </div>
+                        </a>
+                        <a href="#" title="CSR">
+                            <div class="block-txt d-flex align-items-center">
+                                CSR
+                            </div>
+                        </a>
+                        <a href="#" title="News">
+                            <div class="block-txt d-flex align-items-center">
+                                News
                             </div>
                         </a>
                     </div>
+
+                    <div class="middle-content d-flex align-items-center">
+                        <p>Now Hiring :</p>
+                        <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
+                    </div>
+
+                    <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
+                        <div class="img-and-txt d-flex">
+                            <div class="icon-img d-flex align-items-center">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global">
+                            </div>
+                            <p>Global | EN</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
 
-        <div class="full-container">
-            <div
-                style="width: 100%; height: 65px; background: #FAF9F6; box-shadow: 0 0 10px rgb(0, 0, 0, 0.2); position: relative;">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <a href="<?php echo $desktop_url; ?>" title="Excis Logo" style="margin: 0 70px 0 0;"
-                            class="d-flex align-items-center">
-                            <div style="width: 60px;" class="d-flex">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
-                            </div>
-                        </a>
+            <div class="main-nav-container">
+                <div class="main-content-container d-flex justify-content-between">
+                    <a href="<?php echo $desktop_url; ?>" title="Excis Logo" class="left-content d-flex align-items-center">
+                        <div class="logo-img d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
+                        </div>
+                    </a>
 
-                        <ul class="d-flex align-items-center" style="font-size: 13px; list-style-type: none;">
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="<?php echo $desktop_url . 'services'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item d-flex align-items-center">
-                                        Services
+                    <ul class="middle-content d-flex align-items-center">
+                        <li class="nav-block-container d-flex align-items-center">
+                            <a href="<?php echo $desktop_url . 'services'; ?>">
+                                <div class="nav-tab-item d-flex align-items-center">
+                                    Services
+                                </div>
+                            </a>
+
+                            <div class="nav-tab-dropdown">
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <ul>
+                                        <li>Infrastructure</li>
+                                        <li><a href="#">Network</a></li>
+                                        <li><a href="#">Data Center Support</a></li>
+                                        <li><a href="#">End User Support</a></li>
+                                        <li><a href="#">Audio-Visual</a></li>
+                                        <li><a href="#">WiFi Services</a></li>
+                                        <li><a href="#">Operating System</a></li>
+                                        <li><a href="#">New Office + Migration <br> Solutions</a></li>
+                                        <li><a href="#">Helpdesk</a></li>
+                                        <li><a href="#">Storage As A Service (SAAS)</a></li>
+                                        <li><a href="#">Device As A Service (DAAS)</a></li>
+                                    </ul>
+
+                                    <div>
+                                        <ul>
+                                            <li>Cyber Security Services</li>
+                                            <li><a href="#">Cyber Security Consulting</a></li>
+                                            <li><a href="#">End Point Security</a></li>
+                                            <li><a href="#">Network Security</a></li>
+                                            <li><a href="#">Application Security</a></li>
+                                            <li><a href="#">Web Security</a></li>
+                                            <li><a href="#">Email Security</a></li>
+                                            <li><a href="#">Hybrid Cloud Security</a></li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>Development</li>
+                                            <li><a href="#">Software And Application Development</a></li>
+                                            <li><a href="#">API Integration</a></li>
+                                            <li><a href="#">Network And Systems Automation</a></li>
+                                        </ul>
                                     </div>
-                                </a>
 
-                                <div style="position: absolute; top: 65px; left: 50%; transform: translate(-50%, 0); box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.05), -5px 5px 5px rgb(0, 0, 0, 0.05), 0px 5px 5px rgb(0, 0, 0, 0.05); padding: 0 50px 50px;  z-index: 1; background: rgb(250,249,246);"
-                                    class="nav-tab-dropdown">
-                                    <div class="d-flex justify-content-center align-items-start">
-                                        <ul style="list-style-type: none; padding: 10px 20px 0; width: 215px;">
-                                            <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Infrastructure</li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Network</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Data Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">End User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Audio-Visual</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">WiFi Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Operating System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">New Office + Migration <br> Solutions</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Helpdesk</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Storage As A Service (SAAS)</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Device As A Service (DAAS)</a></li>
+                                    <div>
+                                        <ul>
+                                            <li>Cloud Services</li>
+                                            <li><a href="#">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
+                                            <li><a href="#">Private Cloud Solutions</a></li>
+                                            <li><a href="#">Hybrid Cloud</a></li>
+                                            <li><a href="#">Office 365 And G-Suite Migration + Integration</a></li>
                                         </ul>
 
-                                        <ul style="list-style-type: none; padding: 10px 20px 0; width: 215px;">
-                                            <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Cyber Security Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Cyber Security Consulting</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">End Point Security</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Network Security</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Application Security</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Web Security</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Email Security</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Hybrid Cloud Security</a></li>
-
-                                            <li style="padding: 10px 0 0;">
-                                                <ul style="list-style-type: none; padding: 10px 0 0; width: 215px;">
-                                                    <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Cloud Services</li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Private Cloud Solutions</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Hybrid Cloud</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Office 365 And G-Suite Migration + Integration</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-
-                                        <ul style="list-style-type: none; padding: 10px 20px 0; width: 215px;">
-                                            <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Development</li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Software And Application Development</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">API Integration</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Network And Systems Automation</a></li>
-
-                                            <li style="padding: 10px 0 0;">
-                                                <ul style="list-style-type: none; padding: 10px 0 0; width: 215px;">
-                                                    <li style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25); text-wrap: nowrap;">Depot</li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Warehousing</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Logistics</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Staging</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">Wiping + Disposal</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">PMO</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">NOC Services</a></li>
-                                                    <li style="padding: 10px 0 0;"><a href="#" style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: wrap;">SOC Services</a></li>
-                                                </ul>
-                                            </li>
+                                        <ul>
+                                            <li>Depot</li>
+                                            <li><a href="#">Warehousing</a></li>
+                                            <li><a href="#">Logistics</a></li>
+                                            <li><a href="#">Staging</a></li>
+                                            <li><a href="#">Wiping + Disposal</a></li>
+                                            <li><a href="#">PMO</a></li>
+                                            <li><a href="#">NOC Services</a></li>
+                                            <li><a href="#">SOC Services</a></li>
                                         </ul>
                                     </div>
                                 </div>
-                            </li>
-
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="<?php echo $desktop_url . 'industries'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item d-flex align-items-center">
-                                        Industries
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="<?php echo $desktop_url . 'insights/'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item d-flex align-items-center">
-                                        Insights
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-
-                        <a href="<?php echo $desktop_url . 'contact-us'; ?>" class="d-flex align-items-center">
-                            <div style="height: 42px; width: 129px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; background: #F58520; color: #FAF9F6; "
-                                class="d-flex justify-content-center align-items-center">
-                                Contact Us
                             </div>
-                        </a>
-                    </div>
+                        </li>
+
+                        <li class="nav-block-container d-flex align-items-center">
+                            <a href="<?php echo $desktop_url . 'industries'; ?>">
+                                <div class="nav-tab-item d-flex align-items-center">
+                                    Industries
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-block-container d-flex align-items-center">
+                            <a href="<?php echo $desktop_url . 'insights/'; ?>">
+                                <div class="nav-tab-item d-flex align-items-center">
+                                    Insights
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="<?php echo $desktop_url . 'contact-us'; ?>" class="right-content d-flex align-items-center">
+                        <div class="contact-us-btn d-flex justify-content-center align-items-center">
+                            Contact Us
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Landing Banner -->
     <div class="full-container">
-        <div
-            style="height: 520px; width: 100%; background: linear-gradient(160deg, #1b315d, #24345A, rgb(36, 52, 90), #473F4A, #664D47, #84593F, #95603c); border-radius: 0 0 50px 50px;">
-            <div style="height: 100%; padding: 0 15px;" class="inner-content-container">
-                <div style="width: 100%;" class="d-flex justify-content-center">
-                    <div style="height: 520px; position: relative; display: flex; align-items: center;">
-                        <div style="height: 88%; display: flex; opacity: 0.7;">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'map.png'; ?>" alt="">
-                        </div>
+        <div class="d-landing-banner">
+            <div class="inner-content-container">
+                <div class="banner-content d-flex justify-content-center align-items-center">
+                    <div class="map-img">
+                        <img loading="lazy" src="<?php echo $desktop_images . 'map.png'; ?>" alt="World Map">
+                    </div>
 
-                        <div style="position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%);">
-                            <div style="height: 520px; flex-direction: column;" class="d-flex justify-content-center">
-                                <div
-                                    style="width: 100%; font-size: 70px; font-weight: 800; line-height: 70px; color: #fff; text-wrap: nowrap; text-align: center; text-transform: uppercase; text-shadow: 0 4px 0 #000;">
-                                    One World <br> One Team
-                                </div>
-                                <div
-                                    style="width: 100%; font-size: 24px; font-weight: 600; line-height: 32px; letter-spacing: 3.5px; text-align: center; text-transform: uppercase; padding: 15px 0 0; color: #fff; text-wrap: wrap; text-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);">
-                                    &nbsp; Your Global IT Solution
-                                </div>
-                                <div style="width: fit-content; padding: 12px 14px; margin: 35px auto 0; color: #252525; background: #FAF9F6; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">Let's Work Together
-                                    </p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Excis Compliance">
-                                    </div>
+                    <div class="text-content d-flex justify-content-center">
+                        <div class="slogan-main-txt" data-aos="zoom-out" data-aos-duration="1500">
+                            One World <br> One Team
+                        </div>
+                        <div class="slogan-sub-txt">
+                            &nbsp; Your Global IT Solution
+                        </div>
+                        <a href="#">
+                            <div class="banner-btn d-flex justify-content-center align-items-center">
+                                <p>Let's Work Together</p>
+                                <div class="arrow d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Excis Compliance">
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1134,7 +1072,6 @@ require_once('./constant.php');
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         // Initialize the intl-tel-input plugin
         var input = document.querySelector("#phone");

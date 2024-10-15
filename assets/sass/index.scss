@@ -1,3 +1,111 @@
+$black-color: #121820;
+$white-color: #FAF9F6;
+$orange-color: #F58520;
+
+:root {
+    --black-color: #{$black-color};
+    --white-color: #{$white-color};
+    --orange-color: #{$orange-color};
+}
+
+.d-landing-banner {
+    height: 520px;
+    width: 100%;
+    background: linear-gradient(160deg, #1b315d, #24345A, rgb(36, 52, 90), #473F4A, #664D47, #84593F, #95603c);
+    border-radius: 0 0 50px 50px;
+
+    .inner-content-container {
+        height: 100%;
+        padding: 0 15px;
+
+        .banner-content {
+            height: 520px;
+            width: 100%;
+            position: relative;
+
+            .map-img {
+                height: 88%;
+                display: flex;
+                opacity: 0.7;
+
+                img {
+                    width: auto !important;
+                }
+            }
+
+            .text-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 520px;
+                flex-direction: column;
+
+                .slogan-main-txt {
+                    width: 100%;
+                    font-size: 70px;
+                    font-weight: 800;
+                    line-height: 70px;
+                    color: var(--white-color);
+                    text-wrap: nowrap;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-shadow: 0 4px 0 var(--black-color);
+                }
+
+                .slogan-sub-txt {
+                    width: 100%;
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 32px;
+                    letter-spacing: 3.5px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 15px 0 0;
+                    color: var(--white-color);
+                    text-wrap: wrap;
+                    text-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+                }
+
+                .banner-btn {
+                    width: fit-content;
+                    padding: 12px 14px;
+                    margin: 35px auto 0;
+                    color: var(--black-color);
+                    background: var(--white-color);
+                    gap: 12px;
+                    border-radius: 10px;
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-wrap: nowrap;
+                    }
+
+                    .arrow {
+                        width: 20px;
+                    }
+
+                    &:hover {
+                        color: var(--white-color);
+                        background: var(--black-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 .about-us-box {
     background: #FAF9F6;
     border: 1px solid rgb(0, 0, 0, 0.1);
