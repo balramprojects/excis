@@ -1,0 +1,38 @@
+:root {
+  --black-color: #121820;
+  --white-color: #FAF9F6;
+  --orange-color: #F58520;
+}
+
+.why-choose-bg {
+  width: 100%;
+  background: var(--white-color);
+}
+.why-choose-bg .why-choose-container {
+  max-width: 100%;
+  margin-inline: auto;
+  position: relative;
+}
+.why-choose-bg .why-choose-container .left-btm-abstract,
+.why-choose-bg .why-choose-container .right-top-abstract {
+  width: 290px;
+  height: 416px;
+  background-image: url("./../images/abstract-bg-btm.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  position: absolute;
+}
+.why-choose-bg .why-choose-container .left-btm-abstract {
+  bottom: 0;
+  left: 0;
+}
+.why-choose-bg .why-choose-container .right-top-abstract {
+  top: 0;
+  right: 0;
+  rotate: 180deg;
+}
+.why-choose-bg .why-choose-container .main-content-container {
+  height: 100%;
+  padding: 50px 15px;
+}/*# sourceMappingURL=why-excis.css.map */

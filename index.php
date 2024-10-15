@@ -26,6 +26,7 @@ require_once('./constant.php');
     <link rel="canonical" href="https://www.exc1s.com">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
     <link rel="stylesheet" href="assets/sass/index.css">
+    <link rel="stylesheet" href="assets/sass/why-excis.css">
     <link rel="stylesheet" href="assets/sass/navigation.css">
     <link rel="stylesheet" href="assets/sass/common.css">
     <link rel="stylesheet" href="assets/sass/contact-us.css">
@@ -360,16 +361,12 @@ require_once('./constant.php');
     </div>
 
     <div class="full-container">
-        <div style="width: 100%; background: #fff;">
-            <div style="max-width: 100%; margin-inline: auto; position: relative;">
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
-                </div>
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
-                </div>
+        <div class="why-choose-bg">
+            <div class="why-choose-container">
+                <div class="left-btm-abstract"></div>
+                <div class="right-top-abstract"></div>
 
-                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
+                <div class="main-content-container">
                     <div style="width: 100%;">
                         <div
                             style="width: fit-content; font-size: 13px; font-weight: 700; padding: 7px 90px 7px 10px; color: #FAF9F6; background: #252525; border-radius: 4px;">

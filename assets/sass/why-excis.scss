@@ -1,0 +1,46 @@
+$black-color: #121820;
+$white-color: #FAF9F6;
+$orange-color: #F58520;
+
+:root {
+    --black-color: #{$black-color};
+    --white-color: #{$white-color};
+    --orange-color: #{$orange-color};
+}
+
+.why-choose-bg {
+    width: 100%;
+    background: var(--white-color);
+
+    .why-choose-container {
+        max-width: 100%;
+        margin-inline: auto;
+        position: relative;
+
+        .left-btm-abstract,
+        .right-top-abstract {
+            width: 290px;
+            height: 416px;
+            background-image: url('./../images/abstract-bg-btm.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            position: absolute;
+        }
+
+        .left-btm-abstract {
+            bottom: 0;
+            left: 0;
+        }
+
+        .right-top-abstract {
+            top: 0;
+            right: 0;
+            rotate: 180deg;
+        }
+
+        .main-content-container{
+            height: 100%; padding: 50px 15px;
+        }
+    }
+}
