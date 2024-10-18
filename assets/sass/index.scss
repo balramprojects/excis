@@ -1,4 +1,4 @@
-$black-color: #121820;
+$black-color: #252525;
 $white-color: #FAF9F6;
 $orange-color: #F58520;
 
@@ -94,45 +94,4 @@ $orange-color: #F58520;
             }
         }
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-.about-us-box {
-    background: #FAF9F6;
-    border: 1px solid rgb(0, 0, 0, 0.1);
-}
-
-.about-us-box .heading {
-    color: #F58520;
-}
-
-.about-us-box .subtxt {
-    color: #808389;
-}
-
-.about-us-box:hover {
-    background: linear-gradient(#1B315D, #354D7D);
-    border: 1px solid transparent;
-}
-
-.about-us-box:hover .heading,
-.about-us-box:hover .subtxt {
-    color: #FAF9F6;
-}
-
-.services-cards {
-    height: 370px;
-    flex-direction: column;
-    background: rgba(250, 249, 246, 1);
-    border-radius: 10px;
-    border: 1px solid rgba(37, 37, 37, 0.1);
 }

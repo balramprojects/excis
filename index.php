@@ -340,7 +340,7 @@ require_once('./constant.php');
                     </div>
 
                     <div class="text-content d-flex justify-content-center">
-                        <div class="slogan-main-txt" data-aos="zoom-out" data-aos-duration="1500">
+                        <div class="slogan-main-txt" data-aos="zoom-out" data-aos-duration="1000">
                             One World <br> One Team
                         </div>
                         <div class="slogan-sub-txt">
@@ -367,87 +367,73 @@ require_once('./constant.php');
                 <div class="right-top-abstract"></div>
 
                 <div class="main-content-container">
-                    <div style="width: 100%;">
-                        <div
-                            style="width: fit-content; font-size: 13px; font-weight: 700; padding: 7px 90px 7px 10px; color: #FAF9F6; background: #252525; border-radius: 4px;">
+                    <div class="content-container">
+                        <div class="heading-txt" data-aos="fade-up" data-aos-duration="1000">
                             ABOUT US
                         </div>
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <div style="font-size: 48px; font-weight: 700; padding: 10px 0 0; color: #F58520;">
+                        <div class="d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="why-choose-title">
+                                <div class="why-choose-title-txt">
                                     Why Choose Excis?
                                 </div>
-                                <div style="font-size: 18px; font-weight: 400; padding: 15px 0 0; color: #000;">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat minus cum
-                                    veritatis ipsum neque unde.
+                                <div class="why-choose-subtitle-txt">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
                                 </div>
                             </div>
-                            <div style="width: fit-content; padding: 14px 30px; margin: 25px 0 0; color: #FAF9F6; background: #252525; gap: 12px; border-radius: 10px;"
-                                class="d-flex justify-content-center align-items-center">
-                                <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">Learn More</p>
-                                <div style="width: 20px;" class="d-flex">
-                                    <img loading="lazy" src="assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn d-flex justify-content-center align-items-center">
+                                <p>Learn More</p>
+                                <div class="arrow d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
                                 </div>
                             </div>
                         </div>
 
-                        <div style="height: 100%; padding: 20px 0 0 0; gap: 30px;"
-                            class="d-flex justify-content-between">
-                            <div style="width: 100%;" class="">
-                                <div style="max-width: 100%; padding: 50px; border-radius: 10px;"
-                                    class="about-us-box d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div style="font-size: 24px; font-weight: 700;" class="heading">
+                        <div class="cards d-flex justify-content-between">
+                            <div class="vertical-card d-flex flex-column justify-content-between">
+                                <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="txt">
+                                        <div class="heading">
                                             4 Hour SLA
                                         </div>
-                                        <div style="width: 60%; font-size: 14px; font-weight: 400; line-height: 25px; padding: 20px 0 0; text-wrap: wrap;"
-                                            class="subtxt">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
-                                            sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                        <div class="subtxt">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ea recusandae maxime perferendis! Eos quasi quod animi doloremque nobis nulla!
                                         </div>
                                     </div>
-                                    <div style="width: 300px;">
-                                        <img loading="lazy" style="height: auto;" src="assets/images/about-us-creative.png"
-                                            alt="">
+                                    <div class="card-img">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="4 Hour SLA">
                                     </div>
                                 </div>
-                                <div style="max-width: 100%; padding: 50px; margin-top: 30px; border-radius: 10px;"
-                                    class="about-us-box d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div style="font-size: 24px; font-weight: 700;" class="heading">
+                                <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="txt">
+                                        <div class="heading">
                                             24/7 Support
                                         </div>
-                                        <div style="width: 60%; font-size: 14px; font-weight: 400; line-height: 25px; padding: 20px 0 0; text-wrap: wrap;"
-                                            class="subtxt">
+                                        <div class="subtxt">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
                                             sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
                                         </div>
                                     </div>
-                                    <div style="width: 300px;">
-                                        <img loading="lazy" style="height: auto;" src="assets/images/about-us-creative.png"
-                                            alt="">
+                                    <div class="card-img">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="24/7 Support">
                                     </div>
                                 </div>
                             </div>
 
-                            <div style="width: 55%; border-radius: 10px;" class="about-us-box">
-                                <div style="height: 100%; flex-direction: column;"
-                                    class="d-flex justify-content-between">
-                                    <div>
-                                        <div class="heading"
-                                            style="font-size: 24px; font-weight: 700; padding: 50px 50px 0 50px;">
+                            <div class="horizontal-card">
+                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="txt">
+                                        <div class="heading">
                                             Flexible IT Solutions
                                         </div>
 
-                                        <div class="subtxt"
-                                            style="font-size: 16px; font-weight: 400; line-height: 25px; padding: 15px 50px 0 50px;">
+                                        <div class="subtxt">
                                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam illum
                                             aperiam voluptates, numquam facere repellendus.
                                         </div>
                                     </div>
-                                    <div style="padding: 50px;">
-                                        <div style="width: 85%; margin-inline: auto;">
-                                            <img loading="lazy" src="assets/images/about-us-creative.png" alt="">
+                                    <div class="card-img-container">
+                                        <div class="card-img">
+                                            <img loading="lazy" src="assets/images/about-us-creative.png" alt="Flexible IT Solution">
                                         </div>
                                     </div>
                                 </div>
@@ -460,11 +446,10 @@ require_once('./constant.php');
     </div>
 
     <div class="full-container">
-        <div style="width: 100%; background: #121820;">
-
-            <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                <div style="width: 100%;">
-                    <div style="font-size: 36px; font-weight: 500; text-align: center; color: #FAF9F6;">
+        <div class="our-presence-bg">
+            <div class="main-content-container">
+                <div class="our-presence-container">
+                    <div class="title">
                         Our Global Presence
                     </div>
                     <div

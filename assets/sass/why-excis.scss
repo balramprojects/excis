@@ -1,9 +1,11 @@
-$black-color: #121820;
+$black-color: #252525;
+$grey-color: #808389;
 $white-color: #FAF9F6;
 $orange-color: #F58520;
 
 :root {
     --black-color: #{$black-color};
+    --grey-color: #{$grey-color};
     --white-color: #{$white-color};
     --orange-color: #{$orange-color};
 }
@@ -42,6 +44,195 @@ $orange-color: #F58520;
         .main-content-container {
             height: 100%;
             padding: 50px 15px;
+
+            .content-container {
+                width: 100%;
+
+                .heading-txt {
+                    width: fit-content;
+                    font-size: 13px;
+                    font-weight: 700;
+                    padding: 7px 90px 7px 10px;
+                    color: var(--white-color);
+                    background: var(--black-color);
+                    border-radius: 4px;
+                }
+
+                .why-choose-title {
+                    .why-choose-title-txt {
+                        font-size: 48px;
+                        font-weight: 700;
+                        padding: 10px 0 0;
+                        color: var(--orange-color);
+                    }
+
+                    .why-choose-subtitle-txt {
+                        font-size: 18px;
+                        font-weight: 400;
+                        padding: 15px 0 0;
+                        color: var(--black-color);
+                    }
+                }
+
+                .learn-more-btn {
+                    width: fit-content;
+                    padding: 14px 30px;
+                    margin: 25px 0 0;
+                    color: var(--white-color);
+                    background: var(--black-color);
+                    gap: 12px;
+                    border-radius: 10px;
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 600;
+                        text-wrap: nowrap;
+                    }
+
+                    .arrow {
+                        width: 20px;
+                    }
+                }
+
+                .cards {
+                    height: 100%;
+                    padding: 20px 0 0 0;
+                    gap: 30px;
+
+                    .vertical-card {
+                        width: 100%;
+                        gap: 20px;
+
+                        .card {
+                            background: var(--white-color);
+                            border: 1px solid rgb(0, 0, 0, 0.1);
+                            max-width: 100%;
+                            padding: 30px 50px;
+                            border-radius: 10px;
+
+                            .txt {
+                                padding: 20px 0;
+
+                                .heading {
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    color: var(--orange-color);
+                                }
+
+                                .subtxt {
+                                    width: 60%;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 25px;
+                                    padding: 20px 0 0;
+                                    text-wrap: wrap;
+                                    color: var(--grey-color);
+                                }
+                            }
+
+                            &:hover {
+                                background: linear-gradient(#1B315D, #354D7D);
+                                border: 1px solid transparent;
+                                transition: all .2s ease-in-out;
+
+                                .txt {
+
+                                    .heading,
+                                    .subtxt {
+                                        color: var(--white-color);
+                                    }
+                                }
+                            }
+
+                            .card-img {
+                                width: 350px;
+                            }
+                        }
+                    }
+
+                    .horizontal-card {
+                        width: 55%;
+                        border-radius: 10px;
+
+                        .card {
+                            height: 100%;
+                            flex-direction: column;
+                            background: var(--white-color);
+                            border: 1px solid rgb(0, 0, 0, 0.1);
+                            border-radius: 10px;
+
+                            .txt {
+                                .heading {
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    padding: 50px 50px 0 50px;
+                                    color: var(--orange-color);
+                                }
+
+                                .subtxt {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 25px;
+                                    padding: 15px 50px 0 50px;
+                                    color: var(--grey-color);
+                                }
+                            }
+
+                            .card-img-container {
+                                padding: 50px;
+
+                                .card-img {
+                                    width: 85%;
+                                    margin-inline: auto;
+                                }
+                            }
+
+                            &:hover {
+                                background: linear-gradient(#1B315D, #354D7D);
+                                border: 1px solid transparent;
+                                transition: all .2s ease-in-out;
+
+                                .txt {
+
+                                    .heading,
+                                    .subtxt {
+                                        color: var(--white-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+.our-presence-bg {
+    width: 100%;
+    background: var(--black-color);
+
+    .main-content-container {
+        height: 100%;
+        padding: 50px 15px;
+
+        .our-presence-container {
+            width: 100%;
+
+            .title {
+                font-size: 36px;
+                font-weight: 500;
+                text-align: center;
+                color: #FAF9F6;
+            }
+        }
+    }
+}
+
+.services-cards {
+    height: 370px;
+    flex-direction: column;
+    background: rgba(250, 249, 246, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(37, 37, 37, 0.1);
 }

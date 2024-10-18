@@ -1,5 +1,6 @@
 :root {
-  --black-color: #121820;
+  --black-color: #252525;
+  --grey-color: #808389;
   --white-color: #FAF9F6;
   --orange-color: #F58520;
 }
@@ -35,4 +36,158 @@
 .why-choose-bg .why-choose-container .main-content-container {
   height: 100%;
   padding: 50px 15px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container {
+  width: 100%;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .heading-txt {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 90px 7px 10px;
+  color: var(--white-color);
+  background: var(--black-color);
+  border-radius: 4px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .why-choose-title-txt {
+  font-size: 48px;
+  font-weight: 700;
+  padding: 10px 0 0;
+  color: var(--orange-color);
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .why-choose-subtitle-txt {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 0 0;
+  color: var(--black-color);
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 14px 30px;
+  margin: 25px 0 0;
+  color: var(--white-color);
+  background: var(--black-color);
+  gap: 12px;
+  border-radius: 10px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn p {
+  font-size: 12px;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn .arrow {
+  width: 20px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards {
+  height: 100%;
+  padding: 20px 0 0 0;
+  gap: 30px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card {
+  width: 100%;
+  gap: 20px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card {
+  background: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt {
+  padding: 20px 0;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--orange-color);
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .subtxt {
+  width: 60%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 20px 0 0;
+  text-wrap: wrap;
+  color: var(--grey-color);
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card:hover {
+  background: linear-gradient(#1B315D, #354D7D);
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card:hover .txt .heading,
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card:hover .txt .subtxt {
+  color: var(--white-color);
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .card-img {
+  width: 350px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card {
+  width: 55%;
+  border-radius: 10px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card {
+  height: 100%;
+  flex-direction: column;
+  background: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .heading {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 50px 50px 0 50px;
+  color: var(--orange-color);
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .subtxt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 15px 50px 0 50px;
+  color: var(--grey-color);
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container {
+  padding: 50px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container .card-img {
+  width: 85%;
+  margin-inline: auto;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card:hover {
+  background: linear-gradient(#1B315D, #354D7D);
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card:hover .txt .heading,
+.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card:hover .txt .subtxt {
+  color: var(--white-color);
+}
+
+.our-presence-bg {
+  width: 100%;
+  background: var(--black-color);
+}
+.our-presence-bg .main-content-container {
+  height: 100%;
+  padding: 50px 15px;
+}
+.our-presence-bg .main-content-container .our-presence-container {
+  width: 100%;
+}
+.our-presence-bg .main-content-container .our-presence-container .title {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  color: #FAF9F6;
+}
+
+.services-cards {
+  height: 370px;
+  flex-direction: column;
+  background: rgb(250, 249, 246);
+  border-radius: 10px;
+  border: 1px solid rgba(37, 37, 37, 0.1);
 }/*# sourceMappingURL=why-excis.css.map */

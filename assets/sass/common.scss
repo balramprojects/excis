@@ -111,6 +111,10 @@ img {
     display: flex;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .justify-content-start {
     justify-content: flex-start;
 }
