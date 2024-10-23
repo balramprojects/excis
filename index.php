@@ -17,14 +17,14 @@ require_once('./constant.php');
     <meta name='copyright' content='Excis Compliance Ltd.'>
     <meta name='og:title' content='Excis Compliance Ltd.'>
     <meta name='og:type' content='image'>
-    <meta name='og:url' content='https://www.exc1s.com'>
+    <meta name='og:url' content='https://www.excis.com'>
     <meta name='og:image' content='<?php echo $desktop_images . 'email-signature.gif'; ?>'>
     <meta name='og:description' content='Your Global IT SupportOur IT helpdesk is comprised of certified IT professionals, trained and experienced across a wide variety of vendors - Excis'>
 
     <title>Home - Excis Compliance</title>
 
-    <link rel="canonical" href="https://www.exc1s.com">
-    <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
+    <link rel="canonical" href="https://www.excis.com">
+    <link rel="icon" type="image/x-icon" href="<?php echo $desktop_images . 'favicon.ico'; ?>">
     <link rel="stylesheet" href="assets/sass/index.css">
     <link rel="stylesheet" href="assets/sass/why-excis.css">
     <link rel="stylesheet" href="assets/sass/navigation.css">
@@ -83,87 +83,7 @@ require_once('./constant.php');
             box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
         }
 
-        .countries-spot-container {
-            width: 150px;
-            background: white;
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            transform: translate(-50%, 0);
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.15);
-            display: none;
-        }
 
-        .countries-spot-point:hover+.countries-spot-container {
-            display: block;
-        }
-
-        .countries-spot-point {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point.blue {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #4383C3;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point:hover {
-            animation: pulse-animation 1s infinite;
-        }
-
-        .countries-spot-point.blue:hover {
-            animation: pulse-animation-blue 1s infinite;
-        }
-
-        @keyframes pulse-animation {
-            0% {
-                box-shadow: 0 0 0 0px rgb(245, 133, 32, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
-            }
-        }
-
-        @keyframes pulse-animation-blue {
-            0% {
-                box-shadow: 0 0 0 0px rgb(67, 131, 195, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(67, 131, 195, 0);
-            }
-        }
-
-        .countries-spot-container::after {
-            content: '';
-            width: 20px;
-            height: 10px;
-            position: absolute;
-            bottom: 0%;
-            left: 52%;
-            transform: translate(-50%, 96%);
-            background: #fff;
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.15);
-        }
 
         .partner-cards {
             min-width: 248px;
@@ -360,6 +280,7 @@ require_once('./constant.php');
         </div>
     </div>
 
+    <!-- About Us -->
     <div class="full-container">
         <div class="why-choose-bg">
             <div class="why-choose-container">
@@ -420,7 +341,7 @@ require_once('./constant.php');
                             </div>
 
                             <div class="horizontal-card">
-                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
                                     <div class="txt">
                                         <div class="heading">
                                             Flexible IT Solutions
@@ -433,7 +354,7 @@ require_once('./constant.php');
                                     </div>
                                     <div class="card-img-container">
                                         <div class="card-img">
-                                            <img loading="lazy" src="assets/images/about-us-creative.png" alt="Flexible IT Solution">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
                                         </div>
                                     </div>
                                 </div>
@@ -449,109 +370,105 @@ require_once('./constant.php');
         <div class="our-presence-bg">
             <div class="main-content-container">
                 <div class="our-presence-container">
-                    <div class="title">
+                    <div class="title" data-aos="zoom-out" data-aos-duration="1000">
                         Our Global Presence
                     </div>
-                    <div
-                        style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: rgb(250, 249, 246, 0.6);">
+                    <div class="subtxt" data-aos="zoom-out" data-aos-duration="1000">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
                         quis culpa cumque, laboriosam deserunt unde?
                     </div>
 
-                    <div style="width: 100%; padding: 50px 0 0; display: flex; justify-content: center;">
-                        <div style="max-width: 800px; position: relative;">
+                    <div class="our-presence-map d-flex justify-content-center align-items-center">
+                        <div class="map-legends-container d-flex">
+                            <div class="d-flex" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="legends-box1">
+                                    <div class="inner-box"></div>
+                                </div>
+                                <div class="legends-txt">
+                                    Excis Offices
+                                </div>
+                            </div>
+                            <div class="d-flex" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="legends-box2">
+                                    <div class="inner-box"></div>
+                                </div>
+                                <div class="legends-txt">
+                                    Excis Entities
+                                </div>
+                            </div>
+                        </div>
 
-                            <div style="max-width: 100%; display: flex;">
-                                <img style="width: 100%; height: 100%;" src="assets/images/world-map.png" alt="">
+                        <div class="map-container" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="map-img">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'world-map.png'; ?>" alt="Our Presence in World">
                             </div>
 
-                            <div class="countries-position" style="position: absolute; top: 63%; left: 67.1%;">
-                                <div class="countries-spot-point blue"></div>
+                            <div class="countries-position active navimumbai" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="countries-spot-point branch"></div>
                                 <div class="countries-spot-container">
-                                    <div
-                                        style="font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #F58520; padding: 0 0 3px; text-transform: uppercase;">
-                                        India</div>
-                                    <ul
-                                        style="font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 400; margin: 10px 0 0 15px; text-transform: uppercase;">
-                                        <li style="line-height: 19px;">Navi-Mumbai</li>
+                                    <div class="country-name">India</div>
+                                    <ul class="city-name">
+                                        <li>Navi-Mumbai</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="countries-position" style="position: absolute; top: 60%; left: 18.5%;">
-                                <div class="countries-spot-point"></div>
+                            <div class="countries-position mexico">
+                                <div class="countries-spot-point branch"></div>
                                 <div class="countries-spot-container">
-                                    <div
-                                        style="font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #F58520; padding: 0 0 3px; text-transform: uppercase;">
-                                        USA</div>
-                                    <ul
-                                        style="font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 400; margin: 10px 0 0 15px; text-transform: uppercase;">
-                                        <li style="line-height: 19px;">Mexico</li>
+                                    <div class="country-name">USA</div>
+                                    <ul class="city-name">
+                                        <li>Mexico</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="countries-position" style="position: absolute; top: 78.8%; left: 59.7%;">
-                                <div class="countries-spot-point"></div>
+                            <div class="countries-position madagascar">
+                                <div class="countries-spot-point branch"></div>
                                 <div class="countries-spot-container">
-                                    <div
-                                        style="font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #F58520; padding: 0 0 3px; text-transform: uppercase;">
-                                        Madagascar</div>
-                                    <ul
-                                        style="font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 400; margin: 10px 0 0 15px; text-transform: uppercase;">
-                                        <li style="line-height: 19px;">Porte A 103</li>
+                                    <div class="country-name">Madagascar</div>
+                                    <ul class="city-name">
+                                        <li>Antananarivo</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="countries-position" style="position: absolute; top: 85.5%; left: 52.2%;">
-                                <div class="countries-spot-point"></div>
+                            <div class="countries-position southafrica">
+                                <div class="countries-spot-point branch"></div>
                                 <div class="countries-spot-container">
-                                    <div
-                                        style="font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #F58520; padding: 0 0 3px; text-transform: uppercase;">
-                                        South Africa</div>
-                                    <ul
-                                        style="font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 400; margin: 10px 0 0 15px; text-transform: uppercase;">
-                                        <li style="line-height: 19px;">Capetown</li>
+                                    <div class="country-name">South Africa</div>
+                                    <ul class="city-name">
+                                        <li>Capetown</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="countries-position" style="position: absolute; top: 45%; left: 46.1%;">
-                                <div class="countries-spot-point blue"></div>
+                            <div class="countries-position uk">
+                                <div class="countries-spot-point branch"></div>
                                 <div class="countries-spot-container">
-                                    <div
-                                        style="font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #F58520; padding: 0 0 3px; text-transform: uppercase;">
-                                        United Kingdom</div>
-                                    <ul
-                                        style="font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 400; margin: 10px 0 0 15px; text-transform: uppercase;">
-                                        <li style="line-height: 19px;">Bracknell</li>
+                                    <div class="country-name">United Kingdom</div>
+                                    <ul class="city-name">
+                                        <li>Bracknell</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="countries-position" style="position: absolute; top: 41%; left: 56%;">
-                                <div class="countries-spot-point"></div>
+                            <div class="countries-position russia">
+                                <div class="countries-spot-point entities"></div>
                                 <div class="countries-spot-container">
-                                    <div
-                                        style="font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #F58520; padding: 0 0 3px; text-transform: uppercase;">
-                                        Russia</div>
-                                    <ul
-                                        style="font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 400; margin: 10px 0 0 15px; text-transform: uppercase;">
-                                        <li style="line-height: 19px;">Moscow</li>
+                                    <div class="country-name">Russia</div>
+                                    <ul class="city-name">
+                                        <li>Moscow</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="countries-position" style="position: absolute; top: 67%; left: 73.8%;">
-                                <div class="countries-spot-point"></div>
+                            <div class="countries-position thailand">
+                                <div class="countries-spot-point entities"></div>
                                 <div class="countries-spot-container">
-                                    <div
-                                        style="font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 600; color: #F58520; padding: 0 0 3px; text-transform: uppercase;">
-                                        Thailand</div>
-                                    <ul
-                                        style="font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 400; margin: 10px 0 0 15px; text-transform: uppercase;">
-                                        <li style="line-height: 19px;">Phuket</li>
+                                    <div class="country-name">Thailand</div>
+                                    <ul class="city-name">
+                                        <li>Phuket</li>
                                     </ul>
                                 </div>
                             </div>
@@ -563,14 +480,10 @@ require_once('./constant.php');
     </div>
 
     <div class="full-container">
-        <div style="width: 100%; background: #fff;">
-            <div style="max-width: 100%; margin-inline: auto; position: relative;">
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
-                </div>
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
-                </div>
+        <div class="our-services-bg">
+            <div class="our-services-container">
+                <div class="left-btm-abstract"></div>
+                <div class="right-top-abstract"></div>
 
                 <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
                     <div style="width: 100%;">
@@ -1054,6 +967,25 @@ require_once('./constant.php');
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script>
+        const countries = document.querySelectorAll('.countries-position');
+
+        countries.forEach(country => {
+            country.addEventListener('mouseover', () => {
+                countries.forEach(country => {
+                    country.classList.remove('active');
+                })
+
+                country.classList.add('active');
+            });
+
+            // country.addEventListener('mouseout', () => {
+            //     country.classList.add('active');
+            // });
+        });
+    </script>
+
     <script>
         // Initialize the intl-tel-input plugin
         var input = document.querySelector("#phone");

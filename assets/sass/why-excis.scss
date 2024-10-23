@@ -1,13 +1,19 @@
 $black-color: #252525;
+$black-color-primary: rgb(37, 37, 37, 0.5);
 $grey-color: #808389;
 $white-color: #FAF9F6;
+$white-color-primary: rgb(250, 249, 246, 0.5);
 $orange-color: #F58520;
+$blue-color: #4383C3;
 
 :root {
     --black-color: #{$black-color};
+    --black-color-primary: #{$black-color-primary};
     --grey-color: #{$grey-color};
     --white-color: #{$white-color};
+    --white-color-primary: #{$white-color-primary};
     --orange-color: #{$orange-color};
+    --blue-color: #{$blue-color};
 }
 
 .why-choose-bg {
@@ -97,11 +103,11 @@ $orange-color: #F58520;
                 .cards {
                     height: 100%;
                     padding: 20px 0 0 0;
-                    gap: 30px;
+                    gap: 25px;
 
                     .vertical-card {
                         width: 100%;
-                        gap: 20px;
+                        gap: 25px;
 
                         .card {
                             background: var(--white-color);
@@ -223,9 +229,242 @@ $orange-color: #F58520;
                 font-size: 36px;
                 font-weight: 500;
                 text-align: center;
-                color: #FAF9F6;
+                color: var(--white-color);
+            }
+
+            .subtxt {
+                max-width: 500px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: center;
+                padding: 10px 0 0;
+                margin-inline: auto;
+                color: var(--white-color-primary);
+            }
+
+            .our-presence-map {
+                width: 100%;
+                padding: 50px 0 0;
+                flex-direction: column;
+
+                .map-legends-container {
+                    gap: 40px;
+                    padding: 0 0 30px 0;
+
+                    .legends-box1 {
+                        border: 1px solid var(--blue-color);
+                        padding: 4px;
+
+                        .inner-box {
+                            width: 11px;
+                            height: 11px;
+                            background: var(--blue-color);
+                        }
+                    }
+
+                    .legends-box2 {
+                        border: 1px solid var(--orange-color);
+                        padding: 4px;
+
+                        .inner-box {
+                            width: 11px;
+                            height: 11px;
+                            background: var(--orange-color);
+                        }
+                    }
+
+                    .legends-txt {
+                        font-size: 14px;
+                        color: var(--white-color);
+                        padding: 0 0 0 8px;
+                    }
+                }
+
+                .map-container {
+                    max-width: 800px;
+                    position: relative;
+
+                    .map-img {
+                        max-width: 100%;
+                    }
+
+                    .countries-position {
+                        position: absolute;
+
+                        &.navimumbai {
+                            top: 63%;
+                            left: 67.1%;
+                        }
+
+                        &.mexico {
+                            top: 60%;
+                            left: 18.5%;
+                        }
+
+                        &.madagascar {
+                            top: 78.8%;
+                            left: 59.7%;
+                        }
+
+                        &.southafrica {
+                            top: 85.5%;
+                            left: 52.2%;
+                        }
+
+                        &.uk {
+                            top: 45%;
+                            left: 46.1%;
+                        }
+
+                        &.russia {
+                            top: 41%;
+                            left: 56%;
+                        }
+
+                        &.thailand {
+                            top: 67%;
+                            left: 73.8%;
+                        }
+
+                        .countries-spot-point {
+                            height: 6px;
+                            width: 6px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            border-radius: 50%;
+                            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+                            cursor: pointer;
+
+                            &.branch {
+                                background: var(--orange-color);
+                            }
+
+                            &.entities {
+                                background: var(--blue-color);
+                            }
+                        }
+
+                        .countries-spot-container {
+                            display: none;
+                            width: 150px;
+                            background: var(--white-color);
+                            position: absolute;
+                            bottom: 20px;
+                            left: 0;
+                            transform: translate(-50%, 0);
+                            padding: 10px 20px;
+                            border-radius: 5px;
+                            box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.15);
+
+                            &::after {
+                                content: '';
+                                width: 20px;
+                                height: 10px;
+                                position: absolute;
+                                bottom: 0%;
+                                left: 52%;
+                                transform: translate(-50%, 96%);
+                                background: var(--white-color);
+                                clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
+                                box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.15);
+                            }
+
+                            .country-name {
+                                font-size: 16px;
+                                font-weight: 700;
+                                color: var(--orange-color);
+                                padding: 0 0 3px;
+                                text-transform: uppercase;
+                            }
+
+                            .city-name {
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: var(--black-color);
+                                margin: 10px 0 0 15px;
+                                text-transform: uppercase;
+
+                                li {
+                                    line-height: 19px;
+                                }
+                            }
+                        }
+
+                        &.active {
+                            .countries-spot-point {
+                                &.branch {
+                                    animation: pulse-animation 1s infinite;
+                                }
+
+                                &.entities {
+                                    animation: pulse-animation-blue 1s infinite;
+                                }
+
+                                @keyframes pulse-animation {
+                                    0% {
+                                        box-shadow: 0 0 0 0px var(--orange-color);
+                                    }
+
+                                    100% {
+                                        box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
+                                    }
+                                }
+
+                                @keyframes pulse-animation-blue {
+                                    0% {
+                                        box-shadow: 0 0 0 0px var(--blue-color);
+                                    }
+
+                                    100% {
+                                        box-shadow: 0 0 0 15px rgb(67, 131, 195, 0);
+                                    }
+                                }
+                            }
+
+                            .countries-spot-container {
+                                display: block;
+                            }
+                        }
+                    }
+                }
             }
         }
+    }
+}
+
+.our-services-bg {
+    width: 100%;
+    background: var(--white-color);
+
+    .our-services-container {
+        max-width: 100%;
+        margin-inline: auto;
+        position: relative;
+
+        .left-btm-abstract,
+        .right-top-abstract {
+            width: 290px;
+            height: 416px;
+            background-image: url('./../images/abstract-bg-btm.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            position: absolute;
+        }
+
+        .left-btm-abstract {
+            bottom: 0;
+            left: 0;
+        }
+
+        .right-top-abstract {
+            top: 0;
+            right: 0;
+            rotate: 180deg;
+        }
+
     }
 }
 
