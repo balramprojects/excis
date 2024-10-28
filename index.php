@@ -62,23 +62,6 @@ require_once('./constant.php');
             }
         }
 
-        .services-list,
-        .services-list-backdrop {
-            display: none;
-        }
-
-        .services:hover .services-list {
-            display: block;
-        }
-
-        .services:hover .services-list-backdrop {
-            display: block;
-        }
-
-        .services-list-backdrop:hover {
-            display: none;
-        }
-
         .case-studies-card:hover {
             box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
         }
@@ -108,7 +91,7 @@ require_once('./constant.php');
         AOS.init();
     </script>
 
-    <!-- Navigation -->
+    <!-- Navigation Panel -->
     <div class="pg-nav-sticky">
         <div class="full-container">
             <div class="black-nav-container">
@@ -301,12 +284,14 @@ require_once('./constant.php');
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
                                 </div>
                             </div>
-                            <div class="learn-more-btn d-flex justify-content-center align-items-center">
-                                <p>Learn More</p>
-                                <div class="arrow d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                            <a href="#">
+                                <div class="learn-more-btn d-flex justify-content-center align-items-center">
+                                    <p>Learn More</p>
+                                    <div class="arrow d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="cards d-flex justify-content-between">
@@ -366,6 +351,7 @@ require_once('./constant.php');
         </div>
     </div>
 
+    <!-- Our Global Presence -->
     <div class="full-container">
         <div class="our-presence-bg">
             <div class="main-content-container">
@@ -374,8 +360,8 @@ require_once('./constant.php');
                         Our Global Presence
                     </div>
                     <div class="subtxt" data-aos="zoom-out" data-aos-duration="1000">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                        quis culpa cumque, laboriosam deserunt unde?
+                        Lorem ipsum, dolor sit adipisicing elit. Quia, omnis quae. Sequi
+                        quis culpa cumque, deserunt unde?
                     </div>
 
                     <div class="our-presence-map d-flex justify-content-center align-items-center">
@@ -479,182 +465,145 @@ require_once('./constant.php');
         </div>
     </div>
 
+    <!-- Our Services -->
     <div class="full-container">
         <div class="our-services-bg">
             <div class="our-services-container">
                 <div class="left-btm-abstract"></div>
                 <div class="right-top-abstract"></div>
 
-                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                    <div style="width: 100%;">
-                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: #F58520;">
+                <div class="main-content-container">
+                    <div class="content-container">
+                        <div class="services-title-txt" data-aos="zoom-out" data-aos-duration="1000">
                             Our Services
                         </div>
-                        <div
-                            style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: #252525;">
+                        <div class="services-subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
                             quis culpa cumque, laboriosam deserunt unde?
                         </div>
 
-                        <div style="padding: 30px 0 0;">
-                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
-                                <div class="services-cards d-flex justify-content-between">
-                                    <div style="padding: 20px 25px;">
-                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/help-desk-icon.png" alt="">
+                        <div class="service-cards-container">
+                            <div class="cards">
+                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1500">
+                                    <div class="top-part">
+                                        <div class="creative-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                        <div class="title">
                                             Help Desk
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                        <div class="subtitle">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                         </div>
                                     </div>
-                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <a href="#"
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
-                                            <u>Learn more</u>
+                                    <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <a href="#">
+                                            <p>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="services-cards d-flex justify-content-between">
-                                    <div style="padding: 20px 25px;">
-                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/data-security-icon.png" alt="">
+                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="top-part">
+                                        <div class="creative-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                        <div class="title">
                                             Data Security
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                        <div class="subtitle">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                         </div>
                                     </div>
-                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <a href="#"
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
-                                            <u>Learn more</u>
+                                    <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <a href="#">
+                                            <p>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="services-cards d-flex justify-content-between">
-                                    <div style="padding: 20px 25px;">
-                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/data-security-icon.png" alt="">
+                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1500">
+                                    <div class="top-part">
+                                        <div class="creative-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Email Security">
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                        <div class="title">
                                             Email Security
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                        <div class="subtitle">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                         </div>
                                     </div>
-                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <a href="#"
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
-                                            <u>Learn more</u>
+                                    <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <a href="#">
+                                            <p>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="services-cards d-flex justify-content-between">
-                                    <div style="padding: 20px 25px;">
-                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/web-security-icon.png" alt="">
+                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1500">
+                                    <div class="top-part">
+                                        <div class="creative-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                        <div class="title">
                                             Web Security
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                        <div class="subtitle">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                         </div>
                                     </div>
-                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <a href="#"
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
-                                            <u>Learn more</u>
+                                    <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <a href="#">
+                                            <p>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="services-cards d-flex justify-content-between">
-                                    <div style="padding: 20px 25px;">
-                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/application-security-icon.png" alt="">
+                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="top-part">
+                                        <div class="creative-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                        <div class="title">
                                             Application Security
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                        <div class="subtitle">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                         </div>
                                     </div>
-                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <a href="#"
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
-                                            <u>Learn more</u>
+                                    <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <a href="#">
+                                            <p>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
 
-                                <div class="services-cards d-flex justify-content-between">
-                                    <div style="padding: 20px 25px;">
-                                        <div style="width: 100px; margin-inline: auto;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/hybrid-cloud-icon.png" alt="">
+                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1500">
+                                    <div class="top-part">
+                                        <div class="creative-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 500; text-align: center; padding: 20px 0 0; color: #1B315D;">
+                                        <div class="title">
                                             Hybrid Cloud
                                         </div>
-
-                                        <div
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 400; text-align: center; padding: 15px 0 0; color: #000; text-wrap: wrap">
+                                        <div class="subtitle">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                         </div>
                                     </div>
-                                    <div style="height: 55px; border-top: 1px solid #CACFD7;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <a href="#"
-                                            style="font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #1B315D;">
-                                            <u>Learn more</u>
+                                    <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <a href="#">
+                                            <p>Learn More</p>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div style="width: fit-content; padding: 14px 45px; margin: 40px auto 0; color: #252525; background: #fff; gap: 12px; border: 1px solid #252525; border-radius: 10px;"
-                            class="d-flex justify-content-center align-items-center">
-                            <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">View All</p>
-                            <div style="width: 20px;" class="d-flex">
-                                <img loading="lazy" src="assets/images/btn-arrow.png" alt="Excis Compliance">
+                        <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="zoom-out" data-aos-duration="1000">
+                            <p>View All</p>
+                            <div class="arrow-img d-flex">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
                             </div>
                         </div>
                     </div>

@@ -1,16 +1,19 @@
 :root {
-  --black-color: #252525;
-  --black-color-primary: rgba(37, 37, 37, 0.5);
-  --grey-color: #808389;
+  --primary-black-color: #000;
+  --primary-white-color: #fff;
+  --secondary-black-color: rgba(0, 0, 0, 0.5);
+  --secondary-white-color: rgba(255, 255, 255, 0.5);
+  --black-color: #121820;
   --white-color: #FAF9F6;
-  --white-color-primary: rgba(250, 249, 246, 0.5);
   --orange-color: #F58520;
-  --blue-color: #4383C3;
+  --blue-color: #1B315D;
+  --grey-color: #808389;
+  --light-blue-color: rgb(54, 98, 200);
 }
 
 .why-choose-bg {
   width: 100%;
-  background: var(--white-color);
+  background: var(--primary-white-color);
 }
 .why-choose-bg .why-choose-container {
   max-width: 100%;
@@ -74,14 +77,21 @@
   background: var(--black-color);
   gap: 12px;
   border-radius: 10px;
+  border: 1px solid var(--black-color);
+  transition: all 0.3s ease-in-out;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn p {
+.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn s p {
   font-size: 12px;
   font-weight: 600;
   text-wrap: nowrap;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn .arrow {
   width: 20px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn:hover {
+  background: var(--white-color);
+  color: var(--black-color);
+  transition: all 0.3s ease-in-out;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards {
   height: 100%;
@@ -181,20 +191,20 @@
   width: 100%;
 }
 .our-presence-bg .main-content-container .our-presence-container .title {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 500;
   text-align: center;
   color: var(--white-color);
 }
 .our-presence-bg .main-content-container .our-presence-container .subtxt {
   max-width: 500px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   text-align: center;
   padding: 10px 0 0;
   margin-inline: auto;
-  color: var(--white-color-primary);
+  color: var(--grey-color);
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map {
   width: 100%;
@@ -206,27 +216,28 @@
   padding: 0 0 30px 0;
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 {
-  border: 1px solid var(--blue-color);
+  border: 1px solid var(--orange-color);
   padding: 4px;
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 .inner-box {
   width: 11px;
   height: 11px;
-  background: var(--blue-color);
+  background: var(--orange-color);
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 {
-  border: 1px solid var(--orange-color);
+  border: 1px solid var(--light-blue-color);
   padding: 4px;
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 .inner-box {
   width: 11px;
   height: 11px;
-  background: var(--orange-color);
+  background: var(--light-blue-color);
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-txt {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--white-color);
   padding: 0 0 0 8px;
+  line-height: 20px;
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container {
   max-width: 800px;
@@ -279,33 +290,8 @@
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch {
   background: var(--orange-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch:hover {
-  animation: pulse-animation 1s infinite;
-}
-@keyframes pulse-animation {
-  0% {
-    box-shadow: 0 0 0 0px var(--orange-color);
-  }
-  100% {
-    box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
-  }
-}
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities {
-  background: var(--blue-color);
-}
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities:hover {
-  animation: pulse-animation-blue 1s infinite;
-}
-@keyframes pulse-animation-blue {
-  0% {
-    box-shadow: 0 0 0 0px var(--blue-color);
-  }
-  100% {
-    box-shadow: 0 0 0 15px rgba(67, 131, 195, 0);
-  }
-}
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point:hover + .countries-spot-container {
-  display: block;
+  background: var(--light-blue-color);
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container {
   display: none;
@@ -335,7 +321,6 @@
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .country-name {
   font-size: 16px;
   font-weight: 700;
-  color: var(--orange-color);
   padding: 0 0 3px;
   text-transform: uppercase;
 }
@@ -343,11 +328,17 @@
   font-size: 12px;
   font-weight: 500;
   color: var(--black-color);
-  margin: 10px 0 0 15px;
+  margin: 6px 0 0 15px;
   text-transform: uppercase;
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .city-name li {
   line-height: 19px;
+}
+.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch + .countries-spot-container .country-name {
+  color: var(--orange-color);
+}
+.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities + .countries-spot-container .country-name {
+  color: var(--light-blue-color);
 }
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.branch {
   animation: pulse-animation 1s infinite;
@@ -355,14 +346,166 @@
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.entities {
   animation: pulse-animation-blue 1s infinite;
 }
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px var(--orange-color);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
+  }
+}
+@keyframes pulse-animation-blue {
+  0% {
+    box-shadow: 0 0 0 0px var(--light-blue-color);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(54, 98, 200, 0);
+  }
+}
 .our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-container {
   display: block;
+  z-index: 1;
 }
 
-.services-cards {
+.our-services-bg {
+  width: 100%;
+  background: var(--primary-white-color);
+}
+.our-services-bg .our-services-container {
+  max-width: 100%;
+  margin-inline: auto;
+  position: relative;
+}
+.our-services-bg .our-services-container .left-btm-abstract,
+.our-services-bg .our-services-container .right-top-abstract {
+  width: 290px;
+  height: 416px;
+  background-image: url("./../images/abstract-bg-btm.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  position: absolute;
+}
+.our-services-bg .our-services-container .left-btm-abstract {
+  bottom: 0;
+  left: 0;
+}
+.our-services-bg .our-services-container .right-top-abstract {
+  top: 0;
+  right: 0;
+  rotate: 180deg;
+}
+.our-services-bg .our-services-container .main-content-container {
+  height: 100%;
+  padding: 50px 15px;
+}
+.our-services-bg .our-services-container .main-content-container .content-container {
+  width: 100%;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .services-title-txt {
+  font-size: 38px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--orange-color);
+}
+.our-services-bg .our-services-container .main-content-container .content-container .services-subtitle-txt {
+  max-width: 500px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  padding: 10px 0 0;
+  margin-inline: auto;
+  color: var(--black-color);
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container {
+  padding: 30px 0 0;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card {
   height: 370px;
   flex-direction: column;
-  background: rgb(250, 249, 246);
+  background: var(--white-color);
   border-radius: 10px;
   border: 1px solid rgba(37, 37, 37, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part {
+  padding: 20px 25px;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .creative-img {
+  width: 100px;
+  margin-inline: auto;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px 0 0;
+  color: var(--blue-color);
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px 0 0;
+  color: var(--black-color);
+  text-wrap: wrap;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .btm-part {
+  height: 55px;
+  border-top: 1px solid rgba(37, 37, 37, 0.1);
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .btm-part p {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blue-color);
+  padding: 0;
+  border-bottom: 1px solid var(--blue-color);
+  transition: all 0.3s ease-in-out;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card:hover .btm-part {
+  background: var(--blue-color);
+  border-top: 1px solid var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card:hover .btm-part p {
+  font-size: 17px;
+  color: var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .learn-more-btn-container {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 14px 45px;
+  margin: 40px auto 0;
+  gap: 12px;
+  color: var(--black-color);
+  background: var(--white-color);
+  border: 1px solid var(--black-color);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .learn-more-btn-container:hover {
+  background: var(--black-color);
+  color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .learn-more-btn-container p {
+  font-size: 12px;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .learn-more-btn-container .arrow-img {
+  width: 20px;
 }/*# sourceMappingURL=why-excis.css.map */

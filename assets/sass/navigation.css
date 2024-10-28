@@ -1,7 +1,13 @@
 :root {
-  --black-color: #252525;
+  --primary-black-color: #000;
+  --primary-white-color: #fff;
+  --secondary-black-color: rgba(0, 0, 0, 0.5);
+  --secondary-white-color: rgba(255, 255, 255, 0.5);
+  --black-color: #121820;
   --white-color: #FAF9F6;
   --orange-color: #F58520;
+  --blue-color: #1B315D;
+  --grey-color: #808389;
 }
 
 .pg-nav-sticky {
@@ -164,8 +170,10 @@
   border: 1px solid var(--orange-color);
   background: var(--orange-color);
   color: var(--white-color);
+  transition: all 0.3s ease-in-out;
 }
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .right-content .contact-us-btn:hover {
   background: var(--white-color);
   color: var(--black-color);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=navigation.css.map */

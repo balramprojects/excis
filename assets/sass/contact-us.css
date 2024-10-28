@@ -1,3 +1,15 @@
+:root {
+  --primary-black-color: #000;
+  --primary-white-color: #fff;
+  --secondary-black-color: rgba(0, 0, 0, 0.5);
+  --secondary-white-color: rgba(255, 255, 255, 0.5);
+  --black-color: #121820;
+  --white-color: #FAF9F6;
+  --orange-color: #F58520;
+  --blue-color: #1B315D;
+  --grey-color: #808389;
+}
+
 .iti {
   width: 100%;
 }
