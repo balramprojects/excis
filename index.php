@@ -66,8 +66,6 @@ require_once('./constant.php');
             box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
         }
 
-
-
         .partner-cards {
             min-width: 248px;
             border: 1px solid rgb(255, 255, 255, 0.1);
@@ -600,7 +598,7 @@ require_once('./constant.php');
                             </div>
                         </div>
 
-                        <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
                             <p>View All</p>
                             <div class="arrow-img d-flex">
                                 <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
@@ -612,28 +610,25 @@ require_once('./constant.php');
         </div>
     </div>
 
+    <!-- Stats -->
     <div class="full-container">
-        <div style="width: 100%; background: linear-gradient(#1B315D, #354D7D);">
-            <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                <div style="width: 100%; padding: 80px 0;">
-                    <div style="max-width: 1000px; height: 110px; margin-inline: auto;"
-                        class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <p style="font-size: 80px; font-weight: 700; line-height: 80px; color: #FAF9F6;">50000+</p>
-                            <p style="font-size: 24px; font-weight: 300; padding: 10px 0 0; color: #FAF9F6;">Tickets Per
-                                Month</p>
+        <div class="stats-bg" data-aos="fade-up" data-aos-duration="1000">
+            <div class="main-content-container">
+                <div class="content-container">
+                    <div class="stats-space d-flex justify-content-between align-items-center">
+                        <div class="stats-column" data-aos="fade-right" data-aos-duration="1000">
+                            <p>50000+</p>
+                            <p>Tickets Per Month</p>
                         </div>
-                        <div style="height: 100%; padding: 0 .5px; margin: 0 40px; background: #fff;"></div>
-                        <div>
-                            <p style="font-size: 80px; font-weight: 700; line-height: 80px; color: #FAF9F6;">200+</p>
-                            <p style="font-size: 24px; font-weight: 300; padding: 10px 0 0; color: #FAF9F6;">Enterprise
-                                Clients</p>
+                        <div class="stats-line-breaker" data-aos="fade-up" data-aos-duration="1000"></div>
+                        <div class="stats-column" data-aos="fade-up" data-aos-duration="1000">
+                            <p>200+</p>
+                            <p>Enterprise Clients</p>
                         </div>
-                        <div style="height: 100%; padding: 0 .5px; margin: 0 40px; background: #fff;"></div>
-                        <div>
-                            <p style="font-size: 80px; font-weight: 700; line-height: 80px; color: #FAF9F6;">100+</p>
-                            <p style="font-size: 24px; font-weight: 300; padding: 10px 0 0; color: #FAF9F6;">Countries
-                            </p>
+                        <div class="stats-line-breaker" data-aos="fade-up" data-aos-duration="1000"></div>
+                        <div class="stats-column" data-aos="fade-left" data-aos-duration="1000">
+                            <p>100+</p>
+                            <p>Countries</p>
                         </div>
                     </div>
                 </div>
