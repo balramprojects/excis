@@ -1,34 +1,23 @@
 <div class="full-container">
-    <div style="width: 100%; background: #fff;">
-        <div style="max-width: 100%; margin-inline: auto; position: relative;">
-            <div
-                style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
-            </div>
-            <div
-                style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
-            </div>
+    <div class="contact-us-bg">
+        <div class="contact-us-bg-container">
+            <div class="left-btm-abstract"></div>
+            <div class="right-top-abstract"></div>
 
-            <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                <div
-                    style="width: 100%; height: 875px; background: rgba(202, 207, 215, 1); border-radius: 20px; overflow: hidden; position: relative;">
-
-                    <div
-                        style="width: 100%; height: 210px; background: linear-gradient(to bottom, rgba(27, 49, 93, 1), rgba(53, 77, 125, 1));">
-                        <div style="width: 50%; height: 100%;">
-                            <div class="d-flex justify-content-between align-items-start"
-                                style="height: 100%; flex-direction: column;">
-                                <div
-                                    style="font-size: 14px; font-weight: 300; padding: 5px 25px; margin: 30px; border-radius: 5px; background: #fff; color: #000; text-transform: uppercase;">
-                                    Contact Us
-                                </div>
-                                <div style="font-size: 35px; font-weight: 700; color: #fff; margin: 20px 30px;">
-                                    Partner With Us Today!
-                                </div>
+            <div class="main-content-container">
+                <div class="content-container">
+                    <div class="top-part">
+                        <div class="txt-content d-flex justify-content-between align-items-start">
+                            <div class="header-txt">
+                                Contact Us
+                            </div>
+                            <div class="header-subtxt">
+                                Partner With Us Today!
                             </div>
                         </div>
                     </div>
 
-                    <div style="width: 100%;" class="d-flex justify-content-between align-items-start">
+                    <div class="main-part-txt-section d-flex justify-content-between align-items-start">
                         <div style="width: 50%; height: 100%;">
                             <div style="height: 350px; margin: 20px 20px 20px 30px; flex-direction: column;"
                                 class="d-flex justify-content-between">
@@ -54,49 +43,6 @@
                                         <li>Transparent</li>
                                         <li>Competent</li>
                                     </ul>
-                                </div>
-
-                                <div style="display: none;">
-                                    <div style="font-size: 24px; font-weight: 600; line-height: 35px; color: #000;">
-                                        What happens next?
-                                    </div>
-                                    <div class="d-flex justify-content-start align-items-center">
-                                        <div class="d-flex">
-                                            <div
-                                                style="font-size: 24px; font-weight: 600; line-height: 30px; padding-right: 6px; color: #000;">
-                                                1
-                                            </div>
-                                            <div style="font-size: 12px; font-weight: 300; line-height: 15px;">
-                                                We Schedule a call at your convenience
-                                            </div>
-                                        </div>
-                                        <div
-                                            style="font-size: 30px; font-weight: 600; line-height:24px; padding: 0 10px; color: #000;">
-                                            >
-                                        </div>
-                                        <div class="d-flex">
-                                            <div
-                                                style="font-size: 24px; font-weight: 600; line-height: 30px; padding-right: 6px; color: #000;">
-                                                2
-                                            </div>
-                                            <div style="font-size: 12px; font-weight: 300; line-height: 15px;">
-                                                We Schedule a call at your convenience
-                                            </div>
-                                        </div>
-                                        <div
-                                            style="font-size: 30px; font-weight: 600; line-height:24px; padding: 0 10px; color: #000;">
-                                            >
-                                        </div>
-                                        <div class="d-flex">
-                                            <div
-                                                style="font-size: 24px; font-weight: 600; line-height: 30px; padding-right: 6px; color: #000;">
-                                                3
-                                            </div>
-                                            <div style="font-size: 12px; font-weight: 300; line-height: 15px;">
-                                                We Schedule a call at your convenience
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -439,7 +385,7 @@
                             <img src="<?php echo $desktop_images . 'iso-3.png'; ?>" alt="">
                         </div>
                         <div style="width: 60px;" class="d-flex">
-                            <img src="<?php echo $desktop_images . 'iso-4.png'; ?>" alt="">
+                            <img src="<?php echo $desktop_images . 'uk.png'; ?>" alt="">
                         </div>
                     </div>
                     <div style="padding: 15px 0 0;">

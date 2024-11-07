@@ -9,6 +9,8 @@ $orange-color: #F58520;
 $blue-color: #1B315D;
 $grey-color: #808389;
 
+$light-blue-color: rgb(54, 98, 200);
+
 :root {
     --primary-black-color: #{$primary-black-color};
     --primary-white-color: #{$primary-white-color};
@@ -20,6 +22,89 @@ $grey-color: #808389;
     --orange-color: #{$orange-color};
     --blue-color: #{$blue-color};
     --grey-color: #{$grey-color};
+
+    --light-blue-color: #{$light-blue-color};
+}
+
+.contact-us-bg {
+    width: 100%;
+    background: var(--primary-white-color);
+
+    .contact-us-bg-container {
+        max-width: 100%;
+        margin-inline: auto;
+        position: relative;
+
+        .left-btm-abstract,
+        .right-top-abstract {
+            width: 290px;
+            height: 416px;
+            background-image: url('./../images/abstract-bg-btm.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+            position: absolute;
+        }
+
+        .left-btm-abstract {
+            bottom: 0;
+            left: 0;
+        }
+
+        .right-top-abstract {
+            top: 0;
+            right: 0;
+            rotate: 180deg;
+        }
+
+        .main-content-container {
+            height: 100%;
+            padding: 50px 15px;
+
+            .content-container {
+                width: 100%;
+                height: 875px;
+                background: rgba(202, 207, 215);
+                border-radius: 20px;
+                overflow: hidden;
+                position: relative;
+
+                .top-part {
+                    width: 100%;
+                    height: 210px;
+                    background: linear-gradient(to bottom, rgba(27, 49, 93, 1), rgba(53, 77, 125, 1));
+
+                    .txt-content {
+                        width: 50%;
+                        height: 100%;
+                        flex-direction: column;
+
+                        .header-txt {
+                            font-size: 14px;
+                            font-weight: 300;
+                            padding: 5px 25px;
+                            margin: 30px;
+                            border-radius: 5px;
+                            background: var(--white-color);
+                            color: var(--black-color);
+                            text-transform: uppercase;
+                        }
+
+                        .header-subtxt {
+                            font-size: 35px;
+                            font-weight: 700;
+                            color: var(--white-color);
+                            margin: 20px 30px;
+                        }
+                    }
+                }
+
+                .main-part-txt-section {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 

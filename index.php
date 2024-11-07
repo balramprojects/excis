@@ -43,43 +43,6 @@ require_once('./constant.php');
         .submitBtn:hover {
             background: rgb(27, 49, 93, 1);
         }
-
-        .drop {
-            box-shadow: 0px 0px 1px 1px #cfd3da;
-        }
-
-        .core-values-card:hover .drop {
-            animation: drop 1.3s infinite;
-        }
-
-        @keyframes drop {
-            0% {
-                box-shadow: 0 0 0 0px rgb(27, 49, 93, 0.4);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(27, 49, 93, 0);
-            }
-        }
-
-        .case-studies-card:hover {
-            box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
-        }
-
-        .partner-cards {
-            min-width: 248px;
-            border: 1px solid rgb(255, 255, 255, 0.1);
-            filter: grayscale(1);
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .partner-cards:hover {
-            background: rgb(255, 255, 255, 1);
-            border: 1px solid #fff;
-            filter: grayscale(0);
-            transition: all .3s ease-in-out;
-        }
     </style>
 
 </head>
@@ -138,7 +101,7 @@ require_once('./constant.php');
 
                     <ul class="middle-content d-flex align-items-center">
                         <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'services'; ?>">
+                            <a href="<?php echo $desktop_url . 'services.php'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     Services
                                 </div>
@@ -205,11 +168,30 @@ require_once('./constant.php');
                         </li>
 
                         <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'industries'; ?>">
+                            <a href="<?php echo $desktop_url . 'industries.php'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     Industries
                                 </div>
                             </a>
+
+                            <div class="nav-tab-dropdown">
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <ul>
+                                        <li>Industries</li>
+                                        <li><a href="#">Retail</a></li>
+                                        <li><a href="#">Energy</a></li>
+                                        <li><a href="#">Life Sciences</a></li>
+                                        <li><a href="#">Financial Services (FS&I)</a></li>
+                                        <li><a href="#">Telecoms</a></li>
+                                        <li><a href="#">Utilities</a></li>
+                                        <li><a href="#">Public Sector</a></li>
+                                        <li><a href="#">Manufacturing</a></li>
+                                        <li><a href="#">Education</a></li>
+                                        <li><a href="#">IT & Consulting</a></li>
+                                        <li><a href="#">Consumer Goods</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
 
                         <li class="nav-block-container d-flex align-items-center">
@@ -221,7 +203,7 @@ require_once('./constant.php');
                         </li>
                     </ul>
 
-                    <a href="<?php echo $desktop_url . 'contact-us'; ?>" class="right-content d-flex align-items-center">
+                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="right-content d-flex align-items-center">
                         <div class="contact-us-btn d-flex justify-content-center align-items-center">
                             Contact Us
                         </div>
@@ -275,10 +257,10 @@ require_once('./constant.php');
                         </div>
                         <div class="d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
                             <div class="why-choose-title">
-                                <div class="why-choose-title-txt">
+                                <div class="title-txt">
                                     Why Choose Excis?
                                 </div>
-                                <div class="why-choose-subtitle-txt">
+                                <div class="subtitle-txt">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
                                 </div>
                             </div>
@@ -387,7 +369,7 @@ require_once('./constant.php');
                                 <img loading="lazy" src="<?php echo $desktop_images . 'world-map.png'; ?>" alt="Our Presence in World">
                             </div>
 
-                            <div class="countries-position active navimumbai" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="countries-position navimumbai" data-aos="zoom-in" data-aos-duration="1000">
                                 <div class="countries-spot-point branch"></div>
                                 <div class="countries-spot-container">
                                     <div class="country-name">India</div>
@@ -427,10 +409,10 @@ require_once('./constant.php');
                                 </div>
                             </div>
 
-                            <div class="countries-position uk">
+                            <div class="countries-position active uk">
                                 <div class="countries-spot-point branch"></div>
                                 <div class="countries-spot-container">
-                                    <div class="country-name">United Kingdom</div>
+                                    <div class="country-name">United Kingdom (HQ)</div>
                                     <ul class="city-name">
                                         <li>Bracknell</li>
                                     </ul>
@@ -472,17 +454,17 @@ require_once('./constant.php');
 
                 <div class="main-content-container">
                     <div class="content-container">
-                        <div class="services-title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
                             Our Services
                         </div>
-                        <div class="services-subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
                             quis culpa cumque, laboriosam deserunt unde?
                         </div>
 
                         <div class="service-cards-container">
                             <div class="cards">
-                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1500">
+                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
                                     <div class="top-part">
                                         <div class="creative-img d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
@@ -501,7 +483,7 @@ require_once('./constant.php');
                                     </div>
                                 </div>
 
-                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                     <div class="top-part">
                                         <div class="creative-img d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
@@ -520,7 +502,7 @@ require_once('./constant.php');
                                     </div>
                                 </div>
 
-                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
                                     <div class="top-part">
                                         <div class="creative-img d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Email Security">
@@ -539,7 +521,7 @@ require_once('./constant.php');
                                     </div>
                                 </div>
 
-                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1500">
+                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
                                     <div class="top-part">
                                         <div class="creative-img d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
@@ -558,7 +540,7 @@ require_once('./constant.php');
                                     </div>
                                 </div>
 
-                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                     <div class="top-part">
                                         <div class="creative-img d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
@@ -577,7 +559,7 @@ require_once('./constant.php');
                                     </div>
                                 </div>
 
-                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1500">
+                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
                                     <div class="top-part">
                                         <div class="creative-img d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
@@ -598,12 +580,14 @@ require_once('./constant.php');
                             </div>
                         </div>
 
-                        <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                            <p>View All</p>
-                            <div class="arrow-img d-flex">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                        <a href="#">
+                            <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                <p>View All</p>
+                                <div class="arrow-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -636,78 +620,65 @@ require_once('./constant.php');
         </div>
     </div>
 
+    <!-- Our Core Values & Case Studies -->
     <div class="full-container">
-        <div style="width: 100%; background: #fff;">
-            <div style="max-width: 100%; margin-inline: auto; position: relative;">
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
-                </div>
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
-                </div>
+        <div class="core-values-bg">
+            <div class="core-values-container">
+                <div class="left-btm-abstract"></div>
+                <div class="right-top-abstract"></div>
 
-                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                    <div style="width: 100%;">
-                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: #F58520;">
-                            Our Core Values
-                        </div>
-                        <div
-                            style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: #252525;">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                            quis culpa cumque, laboriosam deserunt unde?
-                        </div>
+                <div class="core-values">
+                    <div class="main-content-container">
+                        <div class="content-container">
+                            <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                                Our Core Values
+                            </div>
+                            <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet quis culpa cumque, laboriosam deserunt unde?
+                            </div>
 
-                        <div style="padding: 30px 0 0;">
-                            <div style="width: 100%; gap: 30px;"
-                                class="d-flex justify-content-between align-items-center">
-                                <div style="width: 100%; padding: 20px; background: #FAF9F6; border: 1px solid rgb(37, 37, 37, 0.2); border-radius: 10px; gap: 20px;"
-                                    class="core-values-card d-flex justify-content-start align-items-center">
-                                    <div style="height: 70px; width: 70px; border-radius: 50%;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="height: 55px; width: 55px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 50%;"
-                                            class="drop d-flex justify-content-center align-items-center">
-                                            <div style="width: 20px;" class="d-flex">
-                                                <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                            <div class="cards-container">
+                                <div class="cards d-flex justify-content-between align-items-center">
+                                    <div class="card d-flex justify-content-start align-items-center" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="icon-img d-flex justify-content-center align-items-center">
+                                            <div class="icon-img-bg d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Integrity & Ethics">
+                                                </div>
                                             </div>
+                                        </div>
+
+                                        <div class="title">
+                                            Integrity & Ethics
                                         </div>
                                     </div>
 
-                                    <div style="font-size: 22px; font-weight: 800; color: #252525;">
-                                        Integrity & Ethics
-                                    </div>
-                                </div>
-
-                                <div style="width: 100%; padding: 20px; background: #FAF9F6; border: 1px solid rgb(37, 37, 37, 0.2); border-radius: 10px; gap: 20px;"
-                                    class="core-values-card d-flex justify-content-start align-items-center">
-                                    <div style="height: 70px; width: 70px; border-radius: 50%;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="height: 55px; width: 55px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 50%;"
-                                            class="drop d-flex justify-content-center align-items-center">
-                                            <div style="width: 20px;" class="d-flex">
-                                                <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                    <div class="card d-flex justify-content-start align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="icon-img d-flex justify-content-center align-items-center">
+                                            <div class="icon-img-bg d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Emp Development">
+                                                </div>
                                             </div>
+                                        </div>
+
+                                        <div class="title">
+                                            Emp Development
                                         </div>
                                     </div>
 
-                                    <div style="font-size: 22px; font-weight: 800; color: #252525;">
-                                        Emp Development
-                                    </div>
-                                </div>
-
-                                <div style="width: 100%; padding: 20px; background: #FAF9F6; border: 1px solid rgb(37, 37, 37, 0.2); border-radius: 10px; gap: 20px;"
-                                    class="core-values-card d-flex justify-content-start align-items-center">
-                                    <div style="height: 70px; width: 70px; border-radius: 50%;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="height: 55px; width: 55px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 50%;"
-                                            class="drop d-flex justify-content-center align-items-center">
-                                            <div style="width: 20px;" class="d-flex">
-                                                <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                    <div class="card d-flex justify-content-start align-items-center" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="icon-img d-flex justify-content-center align-items-center">
+                                            <div class="icon-img-bg d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Trust & Teamwork">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div style="font-size: 22px; font-weight: 800; color: #252525;">
-                                        Trust & Teamwork
+                                        <div class="title">
+                                            Trust & Teamwork
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -715,117 +686,113 @@ require_once('./constant.php');
                     </div>
                 </div>
 
-                <div style="height: 100%; padding: 30px 15px 50px;" class="main-content-container">
-                    <div style="width: 100%;">
-                        <div style="font-size: 36px; font-weight: 500; text-align: center; color: #F58520;">
-                            Case Studies
-                        </div>
-                        <div
-                            style="max-width: 500px; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; padding: 10px 0 0; margin-inline: auto; color: #252525;">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                            quis culpa cumque, laboriosam deserunt unde?
-                        </div>
+                <div class="case-studies">
+                    <div class="main-content-container">
+                        <div class="content-container">
+                            <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                                Case Studies
+                            </div>
+                            <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
+                                quis culpa cumque, laboriosam deserunt unde?
+                            </div>
 
-                        <div style="padding: 30px 0 0;">
-                            <div style="width: 100%; gap: 30px;"
-                                class="d-flex justify-content-between align-items-start">
-                                <div style="width: 100%; padding: 20px; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                    class="case-studies-card">
-                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="width: 140px;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/case-studies-card-creative.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div style="width: 100%; padding: 10px 5px;">
-                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                            RETAIL
-                                        </div>
+                            <div class="case-studies-container">
+                                <div class="cards d-flex justify-content-between align-items-start">
+                                    <a href="#" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="card">
+                                            <div class="creative d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
+                                                </div>
+                                            </div>
+                                            <div class="txt-content">
+                                                <div class="case-study-type">
+                                                    RETAIL
+                                                </div>
 
-                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                        </div>
+                                                <div class="case-study-type-heading">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                                </div>
 
-                                        <div
-                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                        </div>
+                                                <div class="case-study-type-desc">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                                </div>
 
-                                        <div style="padding: 30px 0 0;">
-                                            <a href="#" style="font-size: 12px; font-weight: 700; color: #252525;">Read
-                                                More</a>
+                                                <div class="case-study-read-more">
+                                                    Read More...
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </a>
 
-                                <div style="width: 100%; padding: 20px; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                    class="case-studies-card">
-                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="width: 140px;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/case-studies-card-creative.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div style="width: 100%; padding: 10px 5px;">
-                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                            RETAIL
-                                        </div>
+                                    <a href="#" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="card">
+                                            <div class="creative d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
+                                                </div>
+                                            </div>
+                                            <div class="txt-content">
+                                                <div class="case-study-type">
+                                                    RETAIL
+                                                </div>
 
-                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                        </div>
+                                                <div class="case-study-type-heading">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                                </div>
 
-                                        <div
-                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                        </div>
+                                                <div class="case-study-type-desc">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                                </div>
 
-                                        <div style="padding: 30px 0 0;">
-                                            <a href="#" style="font-size: 12px; font-weight: 700; color: #252525;">Read
-                                                More</a>
+                                                <div class="case-study-read-more">
+                                                    Read More...
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </a>
 
-                                <div style="width: 100%; padding: 20px; background: #FDFDFD; border: 1px solid rgb(37, 37, 37, 0.1); border-radius: 10px;"
-                                    class="case-studies-card">
-                                    <div style="width: 100%; height: 176px; background: linear-gradient(to bottom, #1B315D, #354D7D); border-radius: 10px;"
-                                        class="d-flex justify-content-center align-items-center">
-                                        <div style="width: 140px;" class="d-flex">
-                                            <img loading="lazy" src="assets/images/case-studies-card-creative.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div style="width: 100%; padding: 10px 5px;">
-                                        <div style="font-size: 12px; font-weight: 700; color: rgb(37, 37, 37, 0.5);">
-                                            RETAIL
-                                        </div>
+                                    <a href="#" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="card">
+                                            <div class="creative d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
+                                                </div>
+                                            </div>
+                                            <div class="txt-content">
+                                                <div class="case-study-type">
+                                                    RETAIL
+                                                </div>
 
-                                        <div style="font-size: 20px; font-weight: 700; padding: 10px 0 0; color: #000;">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                        </div>
+                                                <div class="case-study-type-heading">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                                </div>
 
-                                        <div
-                                            style="font-size: 14px; font-weight: 400; line-height: 24px; padding: 10px 0 0; color: rgb(0, 0, 0, 0.5);">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                            distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                        </div>
+                                                <div class="case-study-type-desc">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                                </div>
 
-                                        <div style="padding: 30px 0 0;">
-                                            <a href="#" style="font-size: 12px; font-weight: 700; color: #252525;">Read
-                                                More</a>
+                                                <div class="case-study-read-more">
+                                                    Read More...
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div style="width: fit-content; padding: 14px 45px; margin: 40px auto 0; color: #252525; background: #fff; gap: 12px; border: 1px solid #252525; border-radius: 10px;"
-                            class="d-flex justify-content-center align-items-center">
-                            <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">View All</p>
-                            <div style="width: 20px;" class="d-flex">
-                                <img loading="lazy" src="assets/images/btn-arrow.png" alt="Excis Compliance">
-                            </div>
+
+                            <a href="#">
+                                <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <p>View All</p>
+                                    <div class="arrow-img d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -833,72 +800,63 @@ require_once('./constant.php');
         </div>
     </div>
 
-    <div class="full-container">
-        <div style="width: 100%; background: rgba(18, 24, 32, 1);">
-            <div style="height: 100%; padding: 80px 15px;" class="main-content-container">
-                <div style="font-size: 34px; font-weight: 500; color: #fff; text-align: center;">
+    <!-- Our Clients & Partners -->
+    <div class="full-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="partners-bg">
+            <div class="main-content-container">
+                <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
                     Lorem ipsum dolor sit amet.
                 </div>
 
-                <div style="margin-top: 50px; flex-wrap: wrap;" class="d-flex">
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-microsoft.png" alt="">
+                <div class="partner-cards d-flex" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 20px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-vmware.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-20 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-vmware.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-deutsche-bank.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-deutsche-bank.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-cisco.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-cisco.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-nokia.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-nokia.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-microsoft.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
                 </div>
@@ -907,10 +865,11 @@ require_once('./constant.php');
     </div>
 
     <?php
-    require("./footer.php");
+    include("./footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
         const countries = document.querySelectorAll('.countries-position');
