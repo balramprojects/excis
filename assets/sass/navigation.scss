@@ -224,6 +224,105 @@ $grey-color: #808389;
                         transition: all .3s ease-in-out;
                     }
                 }
+
+                .m-nav {
+                    height: 65px;
+                    gap: 20px;
+
+                    .global-icon-img {
+                        width: 25px;
+                    }
+
+                    .hamburger {
+                        width: 22px;
+                        height: 14px;
+                        border-top: 3px solid var(--black-color);
+                        border-bottom: 3px solid var(--black-color);
+
+                        .middle-line {
+                            width: 65%;
+                            height: 2.5px;
+                            background: var(--black-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .pg-nav-sticky {
+        .full-container {
+            .black-nav-container {
+                .main-content-container {
+                    .right-content {
+                        .img-and-txt {
+                            .icon-img {
+                                width: 22px;
+                            }
+
+                            p {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main-nav-container {
+                .main-content-container {
+                    .left-content {
+                        .logo-img {
+                            width: 55px;
+                        }
+                    }
+
+                    .right-content .contact-us-btn {
+                        height: 38px;
+                        width: 115px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pg-nav-sticky {
+        .full-container {
+            .black-nav-container {
+                .main-content-container {
+                    .left-content {
+                        height: 100%;
+                        gap: 15px;
+                    }
+
+                    .middle-content {
+                        display: none;
+                    }
+
+                    .right-content {
+                        .img-and-txt {
+                            gap: 8px;
+                        }
+                    }
+                }
+            }
+
+            .main-nav-container {
+                height: 60px;
+
+                .main-content-container {
+                    .middle-content {
+                        .nav-block-container {
+                            .nav-tab-item {
+                                height: 60px;
+                                padding: 0 11px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

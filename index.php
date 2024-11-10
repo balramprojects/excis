@@ -30,6 +30,7 @@ require_once('./constant.php');
     <link rel="stylesheet" href="assets/sass/navigation.css">
     <link rel="stylesheet" href="assets/sass/common.css">
     <link rel="stylesheet" href="assets/sass/contact-us.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -55,7 +56,7 @@ require_once('./constant.php');
     <!-- Navigation Panel -->
     <div class="pg-nav-sticky">
         <div class="full-container">
-            <div class="black-nav-container">
+            <div class="desktop black-nav-container">
                 <div class="main-content-container d-flex justify-content-between">
                     <div class="left-content d-flex">
                         <a href="#" title="Career">
@@ -83,7 +84,7 @@ require_once('./constant.php');
                     <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
                         <div class="img-and-txt d-flex">
                             <div class="icon-img d-flex align-items-center">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global Presence">
                             </div>
                             <p>Global | EN</p>
                         </div>
@@ -99,115 +100,133 @@ require_once('./constant.php');
                         </div>
                     </a>
 
-                    <ul class="middle-content d-flex align-items-center">
-                        <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'services.php'; ?>">
-                                <div class="nav-tab-item d-flex align-items-center">
-                                    Services
-                                </div>
-                            </a>
+                    <div class="desktop">
+                        <ul class="middle-content d-flex align-items-center">
+                            <li class="nav-block-container d-flex align-items-center">
+                                <a href="<?php echo $desktop_url . 'services.php'; ?>">
+                                    <div class="nav-tab-item d-flex align-items-center">
+                                        Services
+                                    </div>
+                                </a>
 
-                            <div class="nav-tab-dropdown">
-                                <div class="d-flex justify-content-center align-items-start">
-                                    <ul>
-                                        <li>Infrastructure</li>
-                                        <li><a href="#">Network</a></li>
-                                        <li><a href="#">Data Center Support</a></li>
-                                        <li><a href="#">End User Support</a></li>
-                                        <li><a href="#">Audio-Visual</a></li>
-                                        <li><a href="#">WiFi Services</a></li>
-                                        <li><a href="#">Operating System</a></li>
-                                        <li><a href="#">New Office + Migration <br> Solutions</a></li>
-                                        <li><a href="#">Helpdesk</a></li>
-                                        <li><a href="#">Storage As A Service (SAAS)</a></li>
-                                        <li><a href="#">Device As A Service (DAAS)</a></li>
-                                    </ul>
-
-                                    <div>
+                                <div class="nav-tab-dropdown">
+                                    <div class="d-flex justify-content-center align-items-start">
                                         <ul>
-                                            <li>Cyber Security Services</li>
-                                            <li><a href="#">Cyber Security Consulting</a></li>
-                                            <li><a href="#">End Point Security</a></li>
-                                            <li><a href="#">Network Security</a></li>
-                                            <li><a href="#">Application Security</a></li>
-                                            <li><a href="#">Web Security</a></li>
-                                            <li><a href="#">Email Security</a></li>
-                                            <li><a href="#">Hybrid Cloud Security</a></li>
+                                            <li>Infrastructure</li>
+                                            <li><a href="#">Network</a></li>
+                                            <li><a href="#">Data Center Support</a></li>
+                                            <li><a href="#">End User Support</a></li>
+                                            <li><a href="#">Audio-Visual</a></li>
+                                            <li><a href="#">WiFi Services</a></li>
+                                            <li><a href="#">Operating System</a></li>
+                                            <li><a href="#">New Office + Migration <br> Solutions</a></li>
+                                            <li><a href="#">Helpdesk</a></li>
+                                            <li><a href="#">Storage As A Service (SAAS)</a></li>
+                                            <li><a href="#">Device As A Service (DAAS)</a></li>
                                         </ul>
 
+                                        <div>
+                                            <ul>
+                                                <li>Cyber Security Services</li>
+                                                <li><a href="#">Cyber Security Consulting</a></li>
+                                                <li><a href="#">End Point Security</a></li>
+                                                <li><a href="#">Network Security</a></li>
+                                                <li><a href="#">Application Security</a></li>
+                                                <li><a href="#">Web Security</a></li>
+                                                <li><a href="#">Email Security</a></li>
+                                                <li><a href="#">Hybrid Cloud Security</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li>Development</li>
+                                                <li><a href="#">Software And Application Development</a></li>
+                                                <li><a href="#">API Integration</a></li>
+                                                <li><a href="#">Network And Systems Automation</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <ul>
+                                                <li>Cloud Services</li>
+                                                <li><a href="#">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
+                                                <li><a href="#">Private Cloud Solutions</a></li>
+                                                <li><a href="#">Hybrid Cloud</a></li>
+                                                <li><a href="#">Office 365 And G-Suite Migration + Integration</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li>Depot</li>
+                                                <li><a href="#">Warehousing</a></li>
+                                                <li><a href="#">Logistics</a></li>
+                                                <li><a href="#">Staging</a></li>
+                                                <li><a href="#">Wiping + Disposal</a></li>
+                                                <li><a href="#">PMO</a></li>
+                                                <li><a href="#">NOC Services</a></li>
+                                                <li><a href="#">SOC Services</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-block-container d-flex align-items-center">
+                                <a href="<?php echo $desktop_url . 'industries.php'; ?>">
+                                    <div class="nav-tab-item d-flex align-items-center">
+                                        Industries
+                                    </div>
+                                </a>
+
+                                <div class="nav-tab-dropdown">
+                                    <div class="d-flex justify-content-center align-items-start">
                                         <ul>
-                                            <li>Development</li>
-                                            <li><a href="#">Software And Application Development</a></li>
-                                            <li><a href="#">API Integration</a></li>
-                                            <li><a href="#">Network And Systems Automation</a></li>
+                                            <li>Industries</li>
+                                            <li><a href="#">Retail</a></li>
+                                            <li><a href="#">Energy</a></li>
+                                            <li><a href="#">Life Sciences</a></li>
+                                            <li><a href="#">Financial Services (FS&I)</a></li>
+                                            <li><a href="#">Telecoms</a></li>
+                                            <li><a href="#">Utilities</a></li>
+                                            <li><a href="#">Public Sector</a></li>
+                                            <li><a href="#">Manufacturing</a></li>
+                                            <li><a href="#">Education</a></li>
+                                            <li><a href="#">IT & Consulting</a></li>
+                                            <li><a href="#">Consumer Goods</a></li>
                                         </ul>
                                     </div>
+                                </div>
+                            </li>
 
-                                    <div>
-                                        <ul>
-                                            <li>Cloud Services</li>
-                                            <li><a href="#">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
-                                            <li><a href="#">Private Cloud Solutions</a></li>
-                                            <li><a href="#">Hybrid Cloud</a></li>
-                                            <li><a href="#">Office 365 And G-Suite Migration + Integration</a></li>
-                                        </ul>
-
-                                        <ul>
-                                            <li>Depot</li>
-                                            <li><a href="#">Warehousing</a></li>
-                                            <li><a href="#">Logistics</a></li>
-                                            <li><a href="#">Staging</a></li>
-                                            <li><a href="#">Wiping + Disposal</a></li>
-                                            <li><a href="#">PMO</a></li>
-                                            <li><a href="#">NOC Services</a></li>
-                                            <li><a href="#">SOC Services</a></li>
-                                        </ul>
+                            <li class="nav-block-container d-flex align-items-center">
+                                <a href="<?php echo $desktop_url . 'insights/'; ?>">
+                                    <div class="nav-tab-item d-flex align-items-center">
+                                        Insights
                                     </div>
-                                </div>
-                            </div>
-                        </li>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'industries.php'; ?>">
-                                <div class="nav-tab-item d-flex align-items-center">
-                                    Industries
+                    <div class="d-flex align-items-center">
+                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="right-content desktop">
+                            <div class="contact-us-btn d-flex justify-content-center align-items-center">
+                                Contact Us
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="mobile">
+                        <div class="m-nav d-flex align-items-center">
+                            <a href="#">
+                                <div class="global-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'global-presence-black.png'; ?>" alt="Global Presence">
                                 </div>
                             </a>
 
-                            <div class="nav-tab-dropdown">
-                                <div class="d-flex justify-content-center align-items-start">
-                                    <ul>
-                                        <li>Industries</li>
-                                        <li><a href="#">Retail</a></li>
-                                        <li><a href="#">Energy</a></li>
-                                        <li><a href="#">Life Sciences</a></li>
-                                        <li><a href="#">Financial Services (FS&I)</a></li>
-                                        <li><a href="#">Telecoms</a></li>
-                                        <li><a href="#">Utilities</a></li>
-                                        <li><a href="#">Public Sector</a></li>
-                                        <li><a href="#">Manufacturing</a></li>
-                                        <li><a href="#">Education</a></li>
-                                        <li><a href="#">IT & Consulting</a></li>
-                                        <li><a href="#">Consumer Goods</a></li>
-                                    </ul>
-                                </div>
+                            <div class="hamburger d-flex align-items-center justify-content-end">
+                                <div class="middle-line"></div>
                             </div>
-                        </li>
-
-                        <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'insights/'; ?>">
-                                <div class="nav-tab-item d-flex align-items-center">
-                                    Insights
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="right-content d-flex align-items-center">
-                        <div class="contact-us-btn d-flex justify-content-center align-items-center">
-                            Contact Us
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -244,7 +263,7 @@ require_once('./constant.php');
     </div>
 
     <!-- About Us -->
-    <div class="full-container">
+    <div class="full-container" style="display: none;">
         <div class="why-choose-bg">
             <div class="why-choose-container">
                 <div class="left-btm-abstract"></div>
@@ -332,7 +351,7 @@ require_once('./constant.php');
     </div>
 
     <!-- Our Global Presence -->
-    <div class="full-container">
+    <div class="full-container" style="display: none;">
         <div class="our-presence-bg">
             <div class="main-content-container">
                 <div class="our-presence-container">
@@ -446,7 +465,7 @@ require_once('./constant.php');
     </div>
 
     <!-- Our Services -->
-    <div class="full-container">
+    <div class="full-container" style="display: none;">
         <div class="our-services-bg">
             <div class="our-services-container">
                 <div class="left-btm-abstract"></div>
@@ -595,7 +614,7 @@ require_once('./constant.php');
     </div>
 
     <!-- Stats -->
-    <div class="full-container">
+    <div class="full-container" style="display: none;">
         <div class="stats-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="content-container">
@@ -621,7 +640,7 @@ require_once('./constant.php');
     </div>
 
     <!-- Our Core Values & Case Studies -->
-    <div class="full-container">
+    <div class="full-container" style="display: none;">
         <div class="core-values-bg">
             <div class="core-values-container">
                 <div class="left-btm-abstract"></div>
@@ -801,8 +820,8 @@ require_once('./constant.php');
     </div>
 
     <!-- Our Clients & Partners -->
-    <div class="full-container" data-aos="fade-up" data-aos-duration="1000">
-        <div class="partners-bg">
+    <div class="full-container" style="display: none;">
+        <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
                     Lorem ipsum dolor sit amet.

@@ -87,12 +87,14 @@ img {
   height: 100%;
 }
 
-.d-block {
+.d-block,
+.desktop {
   display: block;
 }
 
 ::-webkit-scrollbar,
-.d-none {
+.d-none,
+.mobile {
   display: none;
 }
 
@@ -146,7 +148,7 @@ img {
 }
 
 .main-content-container {
-  max-width: 1250px;
+  max-width: 1280px;
   position: relative;
   margin-inline: auto;
 }
@@ -155,4 +157,13 @@ img {
   max-width: 1170px;
   position: relative;
   margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }/*# sourceMappingURL=common.css.map */

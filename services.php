@@ -424,75 +424,16 @@ require_once('./constant.php');
 
                         <ul class="d-flex align-items-center" style="font-size: 13px; list-style-type: none;">
                             <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="<?php echo $desktop_url . 'services'; ?>">
+                                <a href="<?php echo $desktop_url . 'services.php'; ?>">
                                     <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
                                         class="nav-tab-item active d-flex align-items-center">
                                         Services
                                     </div>
                                 </a>
-
-                                <!-- <div style="position: absolute; top: 65px; left: 50%; transform: translate(-50%, 0); box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.05), -5px 5px 5px rgb(0, 0, 0, 0.05), 0px 5px 5px rgb(0, 0, 0, 0.05); padding: 0 50px 50px;  z-index: 1; background: rgb(250,249,246);"
-                                    class="nav-tab-dropdown">
-                                    <div class="d-flex justify-content-center align-items-start">
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
-                                        </ul>
-
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
-                                        </ul>
-                                    </div>
-                                </div> -->
                             </li>
 
                             <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
-                                <a href="<?php echo $desktop_url . 'industries'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries.php'; ?>">
                                     <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
                                         class="nav-tab-item d-flex align-items-center">
                                         Industries
@@ -510,7 +451,7 @@ require_once('./constant.php');
                             </li>
                         </ul>
 
-                        <a href="<?php echo $desktop_url . 'contact-us'; ?>" class="d-flex align-items-center">
+                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="d-flex align-items-center">
                             <div style="height: 42px; width: 129px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; background: #F58520; color: #FAF9F6; "
                                 class="d-flex justify-content-center align-items-center">
                                 Contact Us

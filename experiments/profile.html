@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Sora", sans-serif;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            background-image: url(./breamner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            position: relative;
+            transition: all .8s ease-in-out;
+        }
+
+        .profile-image:hover {
+            background-position: center;
+            transition: all .8s ease-in-out;
+        }
+
+        .profile-designation {
+            position: absolute;
+            left: -172px;
+            top: 30px;
+            max-width: 120px;
+            transition: all .8s ease-in-out;
+        }
+
+        .profile-image:hover .profile-designation {
+            left: 18px;
+            transition: all .8s ease-in-out;
+        }
+
+        .profile-designation p:first-child {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 30px;
+            color: #fff;
+        }
+
+        .profile-designation p:last-child {
+            font-size: 12px;
+            font-weight: 500;
+            color: #fff;
+            padding-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="width: 100%; padding: 20px 0 0 0; display: flex; justify-content: center; gap: 12px;">
+        <div style="width: 250px; height: 250px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image">
+                <div class="profile-designation">
+                    <p>Andrew Bremner</p>
+                    <p>Global Operations Director</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 250px; height: 250px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image">
+                <div class="profile-designation">
+                    <p>Thomas Lyskov</p>
+                    <p>Global Sales Director</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 250px; height: 250px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image">
+                <div class="profile-designation">
+                    <p>Anna Nel</p>
+                    <p>Chief Revenue Officer</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 250px; height: 250px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image">
+                <div class="profile-designation">
+                    <p>Karnakar Choutu</p>
+                    <p>Head Of Marketing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div style="width: 100%; padding: 20px 0 0 0; display: flex; justify-content: center; gap: 20px;">
+        <div style="width: 350px; height: 350px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image top">
+                <div class="profile-designation">
+                    <p>Andrew Bremner</p>
+                    <p>Global Operations Director</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 350px; height: 350px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image top">
+                <div class="profile-designation">
+                    <p>Thomas Lyskov</p>
+                    <p>Global Sales Director</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 350px; height: 350px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image top">
+                <div class="profile-designation">
+                    <p>Anna Nel</p>
+                    <p>Chief Revenue Officer</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 350px; height: 350px; border: 1px solid rgb(0, 0, 0, 0.1); overflow: hidden;">
+            <div class="profile-image top">
+                <div class="profile-designation">
+                    <p>Karnakar Choutu</p>
+                    <p>Head Of Marketing</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
