@@ -266,7 +266,7 @@ require_once('./constant.php');
     <div class="full-container">
         <div class="why-choose-bg">
             <div class="why-choose-container">
-                <div class="left-btm-abstract dekstop"></div>
+                <div class="left-btm-abstract desktop"></div>
                 <div class="right-top-abstract desktop"></div>
 
                 <div class="main-content-container">
@@ -279,7 +279,7 @@ require_once('./constant.php');
                             <div class="title-txt">
                                 Why Choose Excis?
                             </div>
-                            <a href="#">
+                            <a href="#" class="desktop">
                                 <div class="learn-more-btn d-flex justify-content-center align-items-center">
                                     <p>Learn More</p>
                                     <div class="arrow d-flex">
@@ -293,52 +293,120 @@ require_once('./constant.php');
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
                         </div>
 
-                        <div class="cards d-flex justify-content-between">
-                            <div class="vertical-card d-flex flex-column justify-content-between">
-                                <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="txt">
-                                        <div class="heading">
-                                            4 Hour SLA
+                        <div class="desktop">
+                            <div class="cards d-flex justify-content-between">
+                                <div class="vertical-card d-flex flex-column justify-content-between">
+                                    <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="txt">
+                                            <div class="heading">
+                                                4 Hour SLA
+                                            </div>
+                                            <div class="subtxt">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ea recusandae maxime perferendis! Eos quasi quod animi doloremque nobis nulla!
+                                            </div>
                                         </div>
-                                        <div class="subtxt">
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ea recusandae maxime perferendis! Eos quasi quod animi doloremque nobis nulla!
+                                        <div class="card-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="4 Hour SLA">
                                         </div>
                                     </div>
-                                    <div class="card-img">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="4 Hour SLA">
+                                    <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="txt">
+                                            <div class="heading">
+                                                24/7 Support
+                                            </div>
+                                            <div class="subtxt">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
+                                                sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                            </div>
+                                        </div>
+                                        <div class="card-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="24/7 Support">
+                                        </div>
+                                    </div>
+                                    <div class="extra-vertical-card">
+                                        <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="txt">
+                                                <div class="heading">
+                                                    Flexible IT Solutions
+                                                </div>
+                                                <div class="subtxt">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
+                                                    sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                                </div>
+                                            </div>
+                                            <div class="card-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="txt">
-                                        <div class="heading">
-                                            24/7 Support
+
+                                <div class="horizontal-card">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="txt">
+                                            <div class="heading">
+                                                Flexible IT Solutions
+                                            </div>
+
+                                            <div class="subtxt">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam illum
+                                                aperiam voluptates, numquam facere repellendus.
+                                            </div>
                                         </div>
-                                        <div class="subtxt">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
-                                            sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                        <div class="card-img-container">
+                                            <div class="card-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card-img">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="24/7 Support">
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="horizontal-card">
-                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class="txt">
-                                        <div class="heading">
-                                            Flexible IT Solutions
+                        <div class="mobile">
+                            <div class="cards d-flex flex-column">
+                                <div class="card">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                            </div>
+                                            <div class="titletxt">
+                                                4 Hour SLA
+                                            </div>
                                         </div>
-
-                                        <div class="subtxt">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam illum
-                                            aperiam voluptates, numquam facere repellendus.
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                         </div>
                                     </div>
-                                    <div class="card-img-container">
-                                        <div class="card-img">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
+                                </div>
+                                <div class="card">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
+                                            </div>
+                                            <div class="titletxt">
+                                                24/7 Support
+                                            </div>
+                                        </div>
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
+                                            </div>
+                                            <div class="titletxt">
+                                                Flexible IT Soultions
+                                            </div>
+                                        </div>
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -465,11 +533,11 @@ require_once('./constant.php');
     </div>
 
     <!-- Our Services -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="our-services-bg">
             <div class="our-services-container">
-                <div class="left-btm-abstract"></div>
-                <div class="right-top-abstract"></div>
+                <div class="left-btm-abstract desktop"></div>
+                <div class="right-top-abstract desktop"></div>
 
                 <div class="main-content-container">
                     <div class="content-container">
@@ -482,118 +550,170 @@ require_once('./constant.php');
                         </div>
 
                         <div class="service-cards-container">
-                            <div class="cards">
-                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class="top-part">
-                                        <div class="creative-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
+                            <div class="desktop">
+                                <div class="cards">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
+                                            </div>
+                                            <div class="title">
+                                                Help Desk
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
                                         </div>
-                                        <div class="title">
-                                            Help Desk
-                                        </div>
-                                        <div class="subtitle">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <p>Learn More</p>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="btm-part d-flex justify-content-center align-items-center">
-                                        <a href="#">
-                                            <p>Learn More</p>
-                                        </a>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
+                                            </div>
+                                            <div class="title">
+                                                Data Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Email Security">
+                                            </div>
+                                            <div class="title">
+                                                Email Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
+                                            </div>
+                                            <div class="title">
+                                                Web Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
+                                            </div>
+                                            <div class="title">
+                                                Application Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
+                                            </div>
+                                            <div class="title">
+                                                Hybrid Cloud
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="top-part">
-                                        <div class="creative-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
-                                        </div>
-                                        <div class="title">
-                                            Data Security
-                                        </div>
-                                        <div class="subtitle">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                        </div>
-                                    </div>
-                                    <div class="btm-part d-flex justify-content-center align-items-center">
-                                        <a href="#">
-                                            <p>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class="top-part">
-                                        <div class="creative-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Email Security">
-                                        </div>
-                                        <div class="title">
-                                            Email Security
-                                        </div>
-                                        <div class="subtitle">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                            <div class="mobile">
+                                <div class="cards d-flex flex-column">
+                                    <div class="card">
+                                        <div class="card-content d-flex justify-content-between align-items-center">
+                                            <div class="left-portion d-flex align-items-center">
+                                                <div class="card-icon-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                                </div>
+                                                <div class="titletxt">
+                                                    Help Desk
+                                                </div>
+                                            </div>
+                                            <div class="forward-arrow-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="btm-part d-flex justify-content-center align-items-center">
-                                        <a href="#">
-                                            <p>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
-                                    <div class="top-part">
-                                        <div class="creative-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
-                                        </div>
-                                        <div class="title">
-                                            Web Security
-                                        </div>
-                                        <div class="subtitle">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                    <div class="card">
+                                        <div class="card-content d-flex justify-content-between align-items-center">
+                                            <div class="left-portion d-flex align-items-center">
+                                                <div class="card-icon-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
+                                                </div>
+                                                <div class="titletxt">
+                                                    Data Security
+                                                </div>
+                                            </div>
+                                            <div class="forward-arrow-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="btm-part d-flex justify-content-center align-items-center">
-                                        <a href="#">
-                                            <p>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="top-part">
-                                        <div class="creative-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
+                                    <div class="card">
+                                        <div class="card-content d-flex justify-content-between align-items-center">
+                                            <div class="left-portion d-flex align-items-center">
+                                                <div class="card-icon-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
+                                                </div>
+                                                <div class="titletxt">
+                                                    Email Security
+                                                </div>
+                                            </div>
+                                            <div class="forward-arrow-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                            </div>
                                         </div>
-                                        <div class="title">
-                                            Application Security
-                                        </div>
-                                        <div class="subtitle">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                        </div>
-                                    </div>
-                                    <div class="btm-part d-flex justify-content-center align-items-center">
-                                        <a href="#">
-                                            <p>Learn More</p>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class="top-part">
-                                        <div class="creative-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
-                                        </div>
-                                        <div class="title">
-                                            Hybrid Cloud
-                                        </div>
-                                        <div class="subtitle">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                        </div>
-                                    </div>
-                                    <div class="btm-part d-flex justify-content-center align-items-center">
-                                        <a href="#">
-                                            <p>Learn More</p>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -601,7 +721,7 @@ require_once('./constant.php');
 
                         <a href="#">
                             <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                <p>View All</p>
+                                <p><span class="desktop">View All</span> <span class="mobile">View All Services</span></p>
                                 <div class="arrow-img d-flex">
                                     <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
                                 </div>
@@ -614,10 +734,10 @@ require_once('./constant.php');
     </div>
 
     <!-- Stats -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="stats-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
-                <div class="content-container">
+                <div class="content-container desktop">
                     <div class="stats-space d-flex justify-content-between align-items-center">
                         <div class="stats-column" data-aos="fade-right" data-aos-duration="1000">
                             <p>50000+</p>
@@ -632,6 +752,38 @@ require_once('./constant.php');
                         <div class="stats-column" data-aos="fade-left" data-aos-duration="1000">
                             <p>100+</p>
                             <p>Countries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <div class="content-container d-flex flex-column">
+                        <div class="stats-container d-flex justify-content-start" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="icon-img d-flex">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'trophy-icon.png'; ?>" alt="">
+                            </div>
+                            <div class="stats-txt">
+                                <p>50K+</p>
+                                <p>Tickets Per Month</p>
+                            </div>
+                        </div>
+                        <div class="stats-container d-flex justify-content-start" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="icon-img d-flex">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'trophy-icon.png'; ?>" alt="">
+                            </div>
+                            <div class="stats-txt">
+                                <p>200+</p>
+                                <p>Enterprise Clients</p>
+                            </div>
+                        </div>
+                        <div class="stats-container d-flex justify-content-start" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="icon-img d-flex">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'trophy-icon.png'; ?>" alt="">
+                            </div>
+                            <div class="stats-txt">
+                                <p>100+</p>
+                                <p>Countries</p>
+                            </div>
                         </div>
                     </div>
                 </div>
