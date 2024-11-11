@@ -42,257 +42,6 @@ require_once('../constant.php');
         .submitBtn:hover {
             background: rgb(27, 49, 93, 1);
         }
-
-        .drop {
-            box-shadow: 0px 0px 1px 1px #cfd3da;
-
-        }
-
-        .core-values-card:hover .drop {
-            animation: drop 1.3s infinite;
-        }
-
-        @keyframes drop {
-            0% {
-                box-shadow: 0 0 0 0px rgb(27, 49, 93, 0.4);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(27, 49, 93, 0);
-            }
-        }
-
-        .services-list,
-        .services-list-backdrop {
-            display: none;
-        }
-
-        .services:hover .services-list {
-            display: block;
-        }
-
-        .services:hover .services-list-backdrop {
-            display: block;
-        }
-
-        .services-list-backdrop:hover {
-            display: none;
-        }
-
-        .case-studies-card:hover {
-            box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
-        }
-
-        .countries-spot-container {
-            width: 150px;
-            background: white;
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            transform: translate(-50%, 0);
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.15);
-            display: none;
-        }
-
-        .countries-spot-point:hover+.countries-spot-container {
-            display: block;
-        }
-
-        .countries-spot-point {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point.blue {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #4383C3;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point:hover {
-            animation: pulse-animation 1s infinite;
-        }
-
-        .countries-spot-point.blue:hover {
-            animation: pulse-animation-blue 1s infinite;
-        }
-
-        @keyframes pulse-animation {
-            0% {
-                box-shadow: 0 0 0 0px rgb(245, 133, 32, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
-            }
-        }
-
-        @keyframes pulse-animation-blue {
-            0% {
-                box-shadow: 0 0 0 0px rgb(67, 131, 195, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(67, 131, 195, 0);
-            }
-        }
-
-        .countries-spot-container::after {
-            content: '';
-            width: 20px;
-            height: 10px;
-            position: absolute;
-            bottom: 0%;
-            left: 52%;
-            transform: translate(-50%, 96%);
-            background: #fff;
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.15);
-        }
-
-        .partner-cards {
-            min-width: 248px;
-            border: 1px solid rgb(255, 255, 255, 0.1);
-            filter: grayscale(1);
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .partner-cards:hover {
-            background: rgb(255, 255, 255, 1);
-            border: 1px solid #fff;
-            filter: grayscale(0);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti {
-            width: 100%;
-        }
-
-        .iti__flag-container {
-            margin-right: 5px;
-        }
-
-        .iti__selected-flag {
-            height: 101%;
-            padding: 0 9px;
-            background-size: contain;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            outline: none;
-        }
-
-        .iti__country-name {
-            margin-left: 10px;
-        }
-
-        .iti__country-list {
-            min-width: 300px;
-            width: 100%;
-            max-height: 150px;
-            margin: 0 0 0 -1px;
-            z-index: 1;
-        }
-
-        .iti__dial-code {
-            margin-left: 5px;
-        }
-
-        .iti--separate-dial-code {
-            margin: 6px 0 0 0;
-        }
-
-        .iti__selected-dial-code {
-            width: 36px;
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        .iti__arrow {
-            width: 10px;
-            height: 5px;
-            background: rgb(0, 0, 0, 0.9);
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            transform: rotate(0deg);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti__arrow.iti__arrow--up {
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            transform: rotate(-180deg);
-            transition: all .3s ease-in-out;
-        }
-
-        #phone::placeholder {
-            color: rgb(0, 0, 0, 0.25);
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .nav-tab-dropdown {
-            display: none;
-        }
-
-        #nav-tab:hover .nav-tab-dropdown,
-        .nav-tab-dropdown:hover {
-            display: block;
-        }
-
-        .nav-tab-item {
-            position: relative;
-        }
-
-        #nav-tab .nav-tab-item::after {
-            content: "";
-            width: 0%;
-            height: 4px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 5px 5px 0 0;
-            transition: all .1s ease-in-out;
-        }
-
-        #nav-tab .nav-tab-item.active::after {
-            width: 100%;
-        }
-
-        #nav-tab .nav-tab-item.active {
-            color: #F58520 !important;
-        }
-
-        #nav-tab:hover .nav-tab-item::after {
-            width: 100%;
-            transition: all .3s ease-in-out;
-        }
-
-        #nav-tab:hover .nav-tab-item {
-            color: #F58520 !important;
-            transition: all .2s ease-in-out;
-        }
     </style>
 
     <style>
@@ -310,12 +59,12 @@ require_once('../constant.php');
             margin-inline: auto;
         }
 
-        .cards {
+        .carousel .cards {
             display: flex;
             transition: transform 0.3s ease-in-out;
         }
 
-        .card {
+        .carousel .cards .card {
             flex: 0 0 31.6%;
             margin: 0 10px;
             background: rgba(250, 249, 246);
@@ -359,6 +108,55 @@ require_once('../constant.php');
         .prev-btn,
         .next-btn {
             z-index: 1;
+        }
+
+        .benefits-cards {
+            width: 98%;
+            margin-inline: auto;
+            padding: 50px 0 0;
+            gap: 20px;
+        }
+
+        .benefits-cards .benefits-card {
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .benefits-cards .benefits-card .card-content {
+            padding: 20px 20px 40px 20px;
+        }
+
+        .benefits-cards .benefits-card .card-content ul {
+            list-style-type: disc;
+            padding: 0 30px 0 50px;
+        }
+
+        .benefits-cards .benefits-card .card-content ul li {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #000;
+        }
+
+        .support-cards {
+            width: 98%;
+            margin-inline: auto;
+            padding: 50px 0 0;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .support-cards .support-card {
+            max-width: 400px;
+            height: 250px;
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .support-cards .support-card .card-content {
+            padding: 40px;
         }
     </style>
 
@@ -545,6 +343,7 @@ require_once('../constant.php');
         </div>
     </div>
 
+    <!-- Banner + Breadcrumb -->
     <div class="full-container">
         <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
             <div
@@ -574,6 +373,313 @@ require_once('../constant.php');
         </div>
     </div>
 
+    <!-- About Service -->
+    <div class="full-container">
+        <div style="width: 100%; background: #fff;">
+            <div style="max-width: 100%; margin-inline: auto; position: relative; overflow: hidden;">
+                <div class="main-content-container">
+                    <div style="padding: 50px 15px;" class="d-flex justify-content-between align-items-center">
+                        <div style="max-width: 600px;">
+                            <div style="font-size: 30px; font-weight: 500; line-height: 40px; color: #F58520;">
+                                Complete Data Center <br> Support Services
+                            </div>
+                            <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus, dicta veniam, quis, accusantium perspiciatis consectetur sapiente ab modi sed excepturi vitae. Sapiente velit quibusdam rerum natus enim culpa a nemo delectus illum consequuntur, architecto illo corporis sed cumque? Necessitatibus.
+                                <br> <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed ratione reiciendis minus amet! Quo sit quos reprehenderit blanditiis, qui exercitationem architecto commodi quidem similique ad culpa ipsum eum non fuga dolores aut dolorem eos, neque suscipit dicta cupiditate, nisi dolorum voluptatibus! Explicabo quisquam aspernatur quod, autem nemo sit velit libero, veritatis amet quis odit facere vel, unde dicta quas. Perferendis quaerat omnis unde harum necessitatibus debitis nam alias ratione reprehenderit recusandae, nisi incidunt. Asperiores laborum esse maxime sint amet?
+                                <br> <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae, ratione, qui neque temporibus deserunt omnis nemo soluta eum magni fuga consectetur! Libero, incidunt molestiae reprehenderit saepe omnis dicta. Recusandae!
+                            </div>
+                        </div>
+                        <div style="max-width: 360px;" class="d-flex">
+                            <img loading="lazy" src="../assets/images/data-center-creativity.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-container">
+        <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
+            <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
+                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
+                    What data center support services do we offer?
+                </div>
+                <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
+                    Our technicians are available around the clock so you can contact them anytime. The expert offers the end-to-end data center support solution quickly. You can stay in peace when our expert provides remote support service. We provide the following data center services with certified professionals and modern technologies.
+                </div>
+
+                <div class="support-cards d-flex">
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Technical Support
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                Our experienced technicians are available on-site to perform critical tasks and resolve issues quickly. They are experienced in diagnosing and fixing hardware and software issues, ensuring minimal downtime.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Installing Racks
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                We carry out careful rack installation, ensuring optimal space and organization of your equipment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Remote Monitoring
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                Our advanced monitoring tools keep a close eye on the health of your data center. We proactively identify and fix potential problems before they escalate, minimizing disruptions to your operations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Device Integration
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                Our experts are well-versed in integrating various devices into your data center, from servers to network equipment, ensuring smooth operations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Cloud Support
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                As cloud technology continues to play a key role in data center operations, we offer comprehensive cloud support services, including migration and management.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Of Working -->
+    <div class="full-container">
+        <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
+            <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
+                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
+                    Benefits of working with Excis
+                </div>
+                <div style="max-width: 650px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet molestiae deserunt accusamus consequuntur minima at tenetur iure!\
+                </div>
+
+                <div class="benefits-cards d-flex">
+                    <div class="benefits-card">
+                        <div class="card-content">
+                            <div style="width: 50px; margin-inline: auto;" class="flex">
+                                <img loading="lazy" src="../assets/images/sparkling-stars.png" alt="">
+                            </div>
+                            <div style="font-size: 20px; font-weight: 500; text-align: center; color: #1B315D; padding: 15px 0;">
+                                One Point of Contact
+                            </div>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefits-card">
+                        <div class="card-content">
+                            <div style="width: 50px; margin-inline: auto;" class="flex">
+                                <img loading="lazy" src="../assets/images/sparkling-stars.png" alt="">
+                            </div>
+                            <div style="font-size: 20px; font-weight: 500; text-align: center; color: #1B315D; padding: 15px 0;">
+                                Centralized Operations
+                            </div>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefits-card">
+                        <div class="card-content">
+                            <div style="width: 50px; margin-inline: auto;" class="flex">
+                                <img loading="lazy" src="../assets/images/sparkling-stars.png" alt="">
+                            </div>
+                            <div style="font-size: 20px; font-weight: 500; text-align: center; color: #1B315D; padding: 15px 0;">
+                                24/7 Global Coverage
+                            </div>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Core Values & Case Studies -->
+    <div class="full-container">
+        <div class="core-values-bg">
+            <div class="core-values-container">
+                <div class="left-btm-abstract"></div>
+                <div class="right-top-abstract"></div>
+
+                <div class="case-studies">
+                    <div class="main-content-container">
+                        <div class="content-container">
+                            <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                                Case Studies
+                            </div>
+                            <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
+                                quis culpa cumque, laboriosam deserunt unde?
+                            </div>
+
+                            <div class="case-studies-container">
+                                <div class="cards d-flex justify-content-between align-items-start">
+                                    <a href="#" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="card">
+                                            <div class="creative d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
+                                                </div>
+                                            </div>
+                                            <div class="txt-content">
+                                                <div class="case-study-type">
+                                                    RETAIL
+                                                </div>
+
+                                                <div class="case-study-type-heading">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                                </div>
+
+                                                <div class="case-study-type-desc">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                                </div>
+
+                                                <div class="case-study-read-more">
+                                                    Read More...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="card">
+                                            <div class="creative d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
+                                                </div>
+                                            </div>
+                                            <div class="txt-content">
+                                                <div class="case-study-type">
+                                                    RETAIL
+                                                </div>
+
+                                                <div class="case-study-type-heading">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                                </div>
+
+                                                <div class="case-study-type-desc">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                                </div>
+
+                                                <div class="case-study-read-more">
+                                                    Read More...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="card">
+                                            <div class="creative d-flex justify-content-center align-items-center">
+                                                <div class="img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
+                                                </div>
+                                            </div>
+                                            <div class="txt-content">
+                                                <div class="case-study-type">
+                                                    RETAIL
+                                                </div>
+
+                                                <div class="case-study-type-heading">
+                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
+                                                </div>
+
+                                                <div class="case-study-type-desc">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
+                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
+                                                </div>
+
+                                                <div class="case-study-read-more">
+                                                    Read More...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a href="#">
+                                <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                    <p>View All</p>
+                                    <div class="arrow-img d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start your Business Transformation -->
+    <div class="full-container">
+        <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
+            <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
+                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 35px; line-height: 50px; font-weight: 700; text-align: center;">
+                    Start your business transformation today with Excis!
+                </div>
+                <div style="max-width: 500px; margin-inline: auto; color: #fff; font-size: 16px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, impedit. Ipsa nemo eligendi laudantium totam.
+                </div>
+                <a href="#">
+                    <div style="width: fit-content; padding: 12px 40px; margin: 30px auto 0; background: transparent; border: 1px solid #fff; gap: 12px; border-radius: 10px;"
+                        class="d-flex justify-content-center align-items-center">
+                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #fff;">
+                            Contact Us</p>
+                        <div style="width: 20px;" class="d-flex">
+                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Other Services -->
     <div class="full-container">
         <div style="width: 100%; background: #fff;">
             <div style="max-width: 100%; margin-inline: auto; position: relative; overflow: hidden;">
@@ -588,7 +694,7 @@ require_once('../constant.php');
                     <div style="width: 100%;" class="d-flex justify-content-between align-items-start">
                         <div>
                             <div style="font-size: 32px; font-weight: 500; color: #F58520;">
-                                Services we’ve excelled in
+                                Explore Our Other Services
                             </div>
                             <div
                                 style="max-width: 60%; font-size: 14px; font-weight: 400; line-height: 20px; padding: 10px 0 0; color: rgba(37, 37, 37, 1);">
@@ -629,7 +735,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Oil & Gas
+                                            End User Computing
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -646,7 +752,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Banking & Financial
+                                            New Site Setups
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -663,7 +769,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Retail
+                                            SaaS
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -680,7 +786,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Infrastructure
+                                            PaaS
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -697,7 +803,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            IT Support
+                                            DaaS
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -714,7 +820,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Service Desk
+                                            WiFi Services
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -731,7 +837,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Storage Support
+                                            Audio-Visual
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -748,7 +854,7 @@ require_once('../constant.php');
     </div>
 
     <!-- Our Services -->
-    <div class="full-container">
+    <!-- <div class="full-container">
         <div class="our-services-bg" style="background: linear-gradient(to bottom, #1B315D, #354D7D);">
             <div class="our-services-container">
                 <div class="left-btm-abstract desktop"></div>
@@ -1051,94 +1157,65 @@ require_once('../constant.php');
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="full-container" style="margin: 50px 0;">
-        <div style="width: 100%; background: #fff">
-            <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
-                <div style="width: 100%;" class="d-flex justify-content-between align-items-center">
-                    <div style="font-size: 40px; font-weight: 700; line-height: 54px; color: #F58520;">
-                        Get Your Right Solution, <br> Connect with Excis Today!
-                    </div>
-                    <div style="width: fit-content; padding: 12px 14px; background: rgba(18, 24, 32); gap: 12px; border-radius: 10px;"
-                        class="d-flex justify-content-center align-items-center">
-                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #fff;">
-                            Let's Work Together</p>
-                        <div style="width: 20px;" class="d-flex">
-                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Our Clients & Partners -->
     <div class="full-container">
-        <div style="width: 100%; background: rgba(18, 24, 32);">
-            <div style="height: 100%; padding: 80px 15px;" class="main-content-container">
-                <div style="font-size: 34px; font-weight: 500; color: #fff; text-align: center;">
+        <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
+            <div class="main-content-container">
+                <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
                     Lorem ipsum dolor sit amet.
                 </div>
 
-                <div style="margin-top: 50px; flex-wrap: wrap;" class="d-flex">
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                <div class="partner-cards d-flex" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 20px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-vmware.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-20 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-vmware.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-deutsche-bank.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-deutsche-bank.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-cisco.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-cisco.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-nokia.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-nokia.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
                 </div>
@@ -1156,7 +1233,7 @@ require_once('../constant.php');
     <script>
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
-        const cards = document.querySelector('.cards');
+        const cards = document.querySelector('.carousel .cards');
 
         let cardIndex = 0;
         const cardWidth = 33.27; // Card width including margin
