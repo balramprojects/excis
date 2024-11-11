@@ -27,7 +27,7 @@
   background-image: url("./../images/abstract-bg-btm.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
 }
 .why-choose-bg .why-choose-container .left-btm-abstract {
@@ -56,23 +56,18 @@
   background: var(--black-color);
   border-radius: 4px;
 }
+.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title {
+  height: 72px;
+}
 .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .title-txt {
   font-size: 45px;
   font-weight: 700;
-  padding: 10px 0 0;
   color: var(--orange-color);
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .subtitle-txt {
-  font-size: 16px;
-  font-weight: 400;
-  padding: 5px 0 0;
-  color: var(--black-color);
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn {
+.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn {
   width: -moz-fit-content;
   width: fit-content;
   padding: 12px 26px;
-  margin: 25px 0 0;
   color: var(--white-color);
   background: var(--black-color);
   gap: 12px;
@@ -80,18 +75,25 @@
   border: 1px solid var(--black-color);
   transition: all 0.3s ease-in-out;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn s p {
+.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn p {
   font-size: 12px;
   font-weight: 600;
   text-wrap: nowrap;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn .arrow {
+.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn .arrow {
   width: 20px;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .learn-more-btn:hover {
+.why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn:hover {
   background: var(--white-color);
   color: var(--black-color);
   transition: all 0.3s ease-in-out;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .subtitle-txt {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 0 0;
+  color: var(--black-color);
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards {
   height: 100%;
@@ -383,7 +385,7 @@
   background-image: url("./../images/abstract-bg-btm.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
 }
 .our-services-bg .our-services-container .left-btm-abstract {
@@ -562,7 +564,7 @@
   background-image: url("./../images/abstract-bg-btm.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  opacity: 0.6;
+  opacity: 0.4;
   position: absolute;
 }
 .core-values-bg .core-values-container .left-btm-abstract {
@@ -810,4 +812,59 @@
 .partners-bg .main-content-container .partner-cards .card .logo-img-35 img,
 .partners-bg .main-content-container .partner-cards .card .logo-img-60 img {
   width: auto !important;
+}
+
+@media (max-width: 1280px) {
+  .why-choose-bg .why-choose-container .main-content-container .content-container .heading-txt {
+    padding: 7px 80px 7px 10px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .title-txt {
+    font-size: 40px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn {
+    padding: 12px 22px;
+    gap: 10px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn .arrow {
+    width: 18px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .subtitle-txt {
+    font-size: 15px;
+    padding: 0;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards {
+    padding: 30px 0 0 0;
+    gap: 20px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card {
+    gap: 20px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card {
+    padding: 25px 40px;
+    border-radius: 10px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .heading {
+    font-size: 22px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .subtxt {
+    width: 70%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card {
+    width: 55%;
+    border-radius: 10px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .heading {
+    font-size: 22px;
+    padding: 40px 40px 0 40px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .subtxt {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 40px 0 40px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container {
+    padding: 40px;
+  }
 }/*# sourceMappingURL=why-excis.css.map */

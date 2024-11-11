@@ -263,25 +263,21 @@ require_once('./constant.php');
     </div>
 
     <!-- About Us -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="why-choose-bg">
             <div class="why-choose-container">
-                <div class="left-btm-abstract"></div>
-                <div class="right-top-abstract"></div>
+                <div class="left-btm-abstract dekstop"></div>
+                <div class="right-top-abstract desktop"></div>
 
                 <div class="main-content-container">
                     <div class="content-container">
                         <div class="heading-txt" data-aos="fade-up" data-aos-duration="1000">
                             ABOUT US
                         </div>
-                        <div class="d-flex justify-content-between align-items-start" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="why-choose-title">
-                                <div class="title-txt">
-                                    Why Choose Excis?
-                                </div>
-                                <div class="subtitle-txt">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
-                                </div>
+
+                        <div class="why-choose-title d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="title-txt">
+                                Why Choose Excis?
                             </div>
                             <a href="#">
                                 <div class="learn-more-btn d-flex justify-content-center align-items-center">
@@ -291,6 +287,10 @@ require_once('./constant.php');
                                     </div>
                                 </div>
                             </a>
+                        </div>
+
+                        <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
                         </div>
 
                         <div class="cards d-flex justify-content-between">
