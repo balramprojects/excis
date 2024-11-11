@@ -1,5 +1,5 @@
 <?php
-require_once('./constant.php');
+require_once('../constant.php');
 ?>
 
 <!DOCTYPE html>
@@ -25,11 +25,11 @@ require_once('./constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/services">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="assets/sass/index.css">
-    <link rel="stylesheet" href="assets/sass/why-excis.css">
-    <link rel="stylesheet" href="assets/sass/navigation.css">
-    <link rel="stylesheet" href="assets/sass/common.css">
-    <link rel="stylesheet" href="assets/sass/contact-us.css">
+    <link rel="stylesheet" href="../assets/sass/index.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
+    <link rel="stylesheet" href="../assets/sass/common.css">
+    <link rel="stylesheet" href="../assets/sass/contact-us.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
@@ -416,7 +416,7 @@ require_once('./constant.php');
                     <div class="desktop">
                         <ul class="middle-content d-flex align-items-center">
                             <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'services.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'services'; ?>">
                                     <div class="nav-tab-item active d-flex align-items-center">
                                         Services
                                     </div>
@@ -427,7 +427,7 @@ require_once('./constant.php');
                                         <ul>
                                             <li>Infrastructure</li>
                                             <li><a href="#">Network</a></li>
-                                            <li><a href="#">Data Center Support</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
                                             <li><a href="#">End User Support</a></li>
                                             <li><a href="#">Audio-Visual</a></li>
                                             <li><a href="#">WiFi Services</a></li>
@@ -483,7 +483,7 @@ require_once('./constant.php');
                             </li>
 
                             <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'industries.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries'; ?>">
                                     <div class="nav-tab-item d-flex align-items-center">
                                         Industries
                                     </div>
@@ -549,25 +549,25 @@ require_once('./constant.php');
         <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
             <div
                 style="position: absolute; top: 0; left: 50%; height: 260px; width: max-content; transform: translate(-50%, 0);">
-                <img src="assets/images/inner-pages-banner.png" alt="">
+                <img src="../assets/images/inner-pages-banner.png" alt="">
             </div>
 
             <div style="height: 170px; width: max-content; position: absolute; top: 0; left: 0; opacity: 0.5">
-                <img src="assets/images/inner-pages-banner-abstract.png" alt="">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
             </div>
 
             <div
                 style="height: 170px; width: max-content; position: absolute; top: 0; right: 0; transform: scaleX(-1); opacity: 0.5">
-                <img src="assets/images/inner-pages-banner-abstract.png" alt="">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
             </div>
 
             <div style="height: 100%; padding: 0 15px;" class="main-content-container">
                 <div style="width: 100%; height: 100%; flex-direction: column;" class="d-flex justify-content-center">
                     <div style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 1);">
-                        Home - <span style="font-weight: 600;">Services</span>
+                        Home - Services - <span style="font-weight: 600;">Data Center Support</span>
                     </div>
                     <div style="font-size: 40px; font-weight: 600; padding: 5px 0 0; color: rgba(37, 37, 37, 1);">
-                        Services
+                        Data Center Support
                     </div>
                 </div>
             </div>
@@ -578,10 +578,10 @@ require_once('./constant.php');
         <div style="width: 100%; background: #fff;">
             <div style="max-width: 100%; margin-inline: auto; position: relative; overflow: hidden;">
                 <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
                 </div>
                 <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
                 </div>
 
                 <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
@@ -602,14 +602,14 @@ require_once('./constant.php');
                                     disabled>
                                     <div class="btn-arrow d-flex justify-content-center align-items-center">
                                         <div style="max-width: 12px;" class="d-flex">
-                                            <img src="./assets/images/prev-arrow-icon.png" alt="">
+                                            <img src="./../assets/images/prev-arrow-icon.png" alt="">
                                         </div>
                                     </div>
                                 </button>
                                 <button class="next-btn d-flex justify-content-center align-items-center" id="next-btn">
                                     <div class="btn-arrow d-flex justify-content-center align-items-center">
                                         <div style="max-width: 12px;" class="d-flex">
-                                            <img src="./assets/images/next-arrow-icon.png" alt="">
+                                            <img src="./../assets/images/next-arrow-icon.png" alt="">
                                         </div>
                                     </div>
                                 </button>
@@ -625,7 +625,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -642,7 +642,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -659,7 +659,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -676,7 +676,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -693,7 +693,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -710,7 +710,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -727,7 +727,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -1065,7 +1065,7 @@ require_once('./constant.php');
                         <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #fff;">
                             Let's Work Together</p>
                         <div style="width: 20px;" class="d-flex">
-                            <img loading="lazy" src="assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
                         </div>
                     </div>
                 </div>
@@ -1084,61 +1084,61 @@ require_once('./constant.php');
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-microsoft.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-lenovo.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-dell.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 20px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-vmware.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-vmware.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-deutsche-bank.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-deutsche-bank.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-cisco.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-cisco.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-nokia.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-nokia.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-microsoft.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-lenovo.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-dell.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -1147,7 +1147,7 @@ require_once('./constant.php');
     </div>
 
     <?php
-    include("./footer.php");
+    include("../footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>

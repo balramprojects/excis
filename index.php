@@ -114,7 +114,7 @@ include('./constant.php');
                                         <ul>
                                             <li>Infrastructure</li>
                                             <li><a href="#">Network</a></li>
-                                            <li><a href="#">Data Center Support</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
                                             <li><a href="#">End User Support</a></li>
                                             <li><a href="#">Audio-Visual</a></li>
                                             <li><a href="#">WiFi Services</a></li>
@@ -170,7 +170,7 @@ include('./constant.php');
                             </li>
 
                             <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'industries.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries'; ?>">
                                     <div class="nav-tab-item d-flex align-items-center">
                                         Industries
                                     </div>
@@ -419,7 +419,7 @@ include('./constant.php');
     </div>
 
     <!-- Our Global Presence -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="our-presence-bg">
             <div class="main-content-container">
                 <div class="our-presence-container">
@@ -792,7 +792,7 @@ include('./constant.php');
     </div>
 
     <!-- Our Core Values & Case Studies -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="core-values-bg">
             <div class="core-values-container">
                 <div class="left-btm-abstract"></div>
@@ -972,7 +972,7 @@ include('./constant.php');
     </div>
 
     <!-- Our Clients & Partners -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">

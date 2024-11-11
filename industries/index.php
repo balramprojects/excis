@@ -1,5 +1,5 @@
 <?php
-require_once('./constant.php');
+require_once('../constant.php');
 ?>
 
 <!DOCTYPE html>
@@ -25,11 +25,11 @@ require_once('./constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/industries">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="assets/sass/index.css">
-    <link rel="stylesheet" href="assets/sass/why-excis.css">
-    <link rel="stylesheet" href="assets/sass/navigation.css">
-    <link rel="stylesheet" href="assets/sass/common.css">
-    <link rel="stylesheet" href="assets/sass/contact-us.css">
+    <link rel="stylesheet" href="../assets/sass/index.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
+    <link rel="stylesheet" href="../assets/sass/common.css">
+    <link rel="stylesheet" href="../assets/sass/contact-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
 
@@ -364,160 +364,179 @@ require_once('./constant.php');
 
 <body>
 
-    <div id="landing-header-menu" style="position: sticky; top: 0; z-index: 2;">
+    <!-- Navigation Panel -->
+    <div class="pg-nav-sticky">
         <div class="full-container">
-            <div style="width: 100%; height: 52px; background: #121820;">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <div style="height: 100%; gap: 25px;" class="d-flex">
-                            <a href="#" title="Career">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    Career
-                                </div>
-                            </a>
-                            <a href="#" title="CSR">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    CSR
-                                </div>
-                            </a>
-                            <a href="#" title="News">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    News
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="d-flex align-items-center"
-                            style="font-size: 12px; text-align: center; color: #FAF9F6;">
-                            <p style="font-weight: 700;">Now Hiring : &nbsp;</p>
-                            <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
-                        </div>
-
-                        <a href="" class="d-flex align-items-center" style="padding: 0 10px 0 0;"
-                            title="Excis Worldwide">
-                            <div class="d-flex" style="gap: 16px;">
-                                <div style="width: 24px;" class="d-flex">
-                                    <img loading="lazy" src="assets/images/global-presence.png" alt="Global">
-                                </div>
-                                <p style="font-size: 16px; color: #FAF9F6;">
-                                    Global | EN
-                                </p>
+            <div class="desktop black-nav-container">
+                <div class="main-content-container d-flex justify-content-between">
+                    <div class="left-content d-flex">
+                        <a href="#" title="Career">
+                            <div class="block-txt d-flex align-items-center">
+                                Career
+                            </div>
+                        </a>
+                        <a href="#" title="CSR">
+                            <div class="block-txt d-flex align-items-center">
+                                CSR
+                            </div>
+                        </a>
+                        <a href="#" title="News">
+                            <div class="block-txt d-flex align-items-center">
+                                News
                             </div>
                         </a>
                     </div>
+
+                    <div class="middle-content d-flex align-items-center">
+                        <p>Now Hiring :</p>
+                        <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
+                    </div>
+
+                    <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
+                        <div class="img-and-txt d-flex">
+                            <div class="icon-img d-flex align-items-center">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global Presence">
+                            </div>
+                            <p>Global | EN</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
 
-        <div class="full-container">
-            <div
-                style="width: 100%; height: 65px; background: #FAF9F6; box-shadow: 0 0 10px rgb(0, 0, 0, 0.2); position: relative;">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <a href="<?php echo $desktop_url; ?>" title="Excis Logo" style="margin: 0 70px 0 0;"
-                            class="d-flex align-items-center">
-                            <div style="width: 60px;" class="d-flex">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
-                            </div>
-                        </a>
+            <div class="main-nav-container">
+                <div class="main-content-container d-flex justify-content-between">
+                    <a href="<?php echo $desktop_url; ?>" title="Excis Logo" class="left-content d-flex align-items-center">
+                        <div class="logo-img d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
+                        </div>
+                    </a>
 
-                        <ul class="d-flex align-items-center" style="font-size: 13px; list-style-type: none;">
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
+                    <div class="desktop">
+                        <ul class="middle-content d-flex align-items-center">
+                            <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'services'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item d-flex align-items-center">
+                                    <div class="nav-tab-item d-flex align-items-center">
                                         Services
                                     </div>
                                 </a>
 
-                                <!-- <div style="position: absolute; top: 65px; left: 50%; transform: translate(-50%, 0); box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.05), -5px 5px 5px rgb(0, 0, 0, 0.05), 0px 5px 5px rgb(0, 0, 0, 0.05); padding: 0 50px 50px;  z-index: 1; background: rgb(250,249,246);"
-                                    class="nav-tab-dropdown">
+                                <div class="nav-tab-dropdown">
                                     <div class="d-flex justify-content-center align-items-start">
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
+                                        <ul>
+                                            <li>Infrastructure</li>
+                                            <li><a href="#">Network</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
+                                            <li><a href="#">End User Support</a></li>
+                                            <li><a href="#">Audio-Visual</a></li>
+                                            <li><a href="#">WiFi Services</a></li>
+                                            <li><a href="#">Operating System</a></li>
+                                            <li><a href="#">New Office + Migration <br> Solutions</a></li>
+                                            <li><a href="#">Helpdesk</a></li>
+                                            <li><a href="#">Storage As A Service (SAAS)</a></li>
+                                            <li><a href="#">Device As A Service (DAAS)</a></li>
                                         </ul>
 
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
-                                        </ul>
+                                        <div>
+                                            <ul>
+                                                <li>Cyber Security Services</li>
+                                                <li><a href="#">Cyber Security Consulting</a></li>
+                                                <li><a href="#">End Point Security</a></li>
+                                                <li><a href="#">Network Security</a></li>
+                                                <li><a href="#">Application Security</a></li>
+                                                <li><a href="#">Web Security</a></li>
+                                                <li><a href="#">Email Security</a></li>
+                                                <li><a href="#">Hybrid Cloud Security</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li>Development</li>
+                                                <li><a href="#">Software And Application Development</a></li>
+                                                <li><a href="#">API Integration</a></li>
+                                                <li><a href="#">Network And Systems Automation</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <ul>
+                                                <li>Cloud Services</li>
+                                                <li><a href="#">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
+                                                <li><a href="#">Private Cloud Solutions</a></li>
+                                                <li><a href="#">Hybrid Cloud</a></li>
+                                                <li><a href="#">Office 365 And G-Suite Migration + Integration</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li>Depot</li>
+                                                <li><a href="#">Warehousing</a></li>
+                                                <li><a href="#">Logistics</a></li>
+                                                <li><a href="#">Staging</a></li>
+                                                <li><a href="#">Wiping + Disposal</a></li>
+                                                <li><a href="#">PMO</a></li>
+                                                <li><a href="#">NOC Services</a></li>
+                                                <li><a href="#">SOC Services</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </li>
 
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
+                            <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'industries'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item active d-flex align-items-center">
+                                    <div class="nav-tab-item active d-flex align-items-center">
                                         Industries
                                     </div>
                                 </a>
+
+                                <div class="nav-tab-dropdown">
+                                    <div class="d-flex justify-content-center align-items-start">
+                                        <ul>
+                                            <li>Industries</li>
+                                            <li><a href="#">Retail</a></li>
+                                            <li><a href="#">Energy</a></li>
+                                            <li><a href="#">Life Sciences</a></li>
+                                            <li><a href="#">Financial Services (FS&I)</a></li>
+                                            <li><a href="#">Telecoms</a></li>
+                                            <li><a href="#">Utilities</a></li>
+                                            <li><a href="#">Public Sector</a></li>
+                                            <li><a href="#">Manufacturing</a></li>
+                                            <li><a href="#">Education</a></li>
+                                            <li><a href="#">IT & Consulting</a></li>
+                                            <li><a href="#">Consumer Goods</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
 
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
+                            <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'insights/'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item d-flex align-items-center">
+                                    <div class="nav-tab-item d-flex align-items-center">
                                         Insights
                                     </div>
                                 </a>
                             </li>
                         </ul>
+                    </div>
 
-                        <a href="<?php echo $desktop_url . 'contact-us'; ?>" class="d-flex align-items-center">
-                            <div style="height: 42px; width: 129px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; background: #F58520; color: #FAF9F6; "
-                                class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center">
+                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="right-content desktop">
+                            <div class="contact-us-btn d-flex justify-content-center align-items-center">
                                 Contact Us
                             </div>
                         </a>
+                    </div>
+
+                    <div class="mobile">
+                        <div class="m-nav d-flex align-items-center">
+                            <a href="#">
+                                <div class="global-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'global-presence-black.png'; ?>" alt="Global Presence">
+                                </div>
+                            </a>
+
+                            <div class="hamburger d-flex align-items-center justify-content-end">
+                                <div class="middle-line"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -528,16 +547,16 @@ require_once('./constant.php');
         <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
             <div
                 style="position: absolute; top: 0; left: 50%; height: 260px; width: max-content; transform: translate(-50%, 0);">
-                <img src="assets/images/inner-pages-banner.png" alt="">
+                <img src="../assets/images/inner-pages-banner.png" alt="">
             </div>
 
             <div style="height: 170px; width: max-content; position: absolute; top: 0; left: 0; opacity: 0.5">
-                <img src="assets/images/inner-pages-banner-abstract.png" alt="">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
             </div>
 
             <div
                 style="height: 170px; width: max-content; position: absolute; top: 0; right: 0; transform: scaleX(-1); opacity: 0.5">
-                <img src="assets/images/inner-pages-banner-abstract.png" alt="">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
             </div>
 
             <div style="height: 100%; padding: 0 15px;" class="main-content-container">
@@ -557,10 +576,10 @@ require_once('./constant.php');
         <div style="width: 100%; background: #fff;">
             <div style="max-width: 100%; margin-inline: auto; position: relative;">
                 <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
                 </div>
                 <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
                 </div>
 
                 <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
@@ -584,7 +603,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -602,7 +621,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -620,7 +639,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -638,7 +657,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -656,7 +675,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -674,7 +693,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -692,7 +711,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -710,7 +729,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -728,7 +747,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -746,7 +765,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -764,7 +783,7 @@ require_once('./constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -803,7 +822,7 @@ require_once('./constant.php');
                         <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #fff;">
                             Contact Us</p>
                         <div style="width: 20px;" class="d-flex">
-                            <img loading="lazy" src="assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
                         </div>
                     </div>
                 </div>
@@ -974,7 +993,7 @@ require_once('./constant.php');
                     class="d-flex justify-content-between align-items-start">
                     <div style="max-width: 180px;">
                         <div style="max-width: 60px; margin-inline: auto;">
-                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                         </div>
                         <p
                             style="font-size: 44px; font-weight: 700; line-height: 50px; text-align: center; padding: 30px 0 0; color: #FAF9F6;">
@@ -985,7 +1004,7 @@ require_once('./constant.php');
                     </div>
                     <div style="max-width: 180px;">
                         <div style="max-width: 60px; margin-inline: auto;">
-                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                         </div>
                         <p
                             style="font-size: 44px; font-weight: 700; line-height: 50px; text-align: center; padding: 30px 0 0; color: #FAF9F6;">
@@ -997,7 +1016,7 @@ require_once('./constant.php');
                     </div>
                     <div style="max-width: 180px;">
                         <div style="max-width: 60px; margin-inline: auto;">
-                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                         </div>
                         <p
                             style="font-size: 44px; font-weight: 700; line-height: 50px; text-align: center; padding: 30px 0 0; color: #FAF9F6;">
@@ -1009,7 +1028,7 @@ require_once('./constant.php');
                     </div>
                     <div style="max-width: 180px;">
                         <div style="max-width: 60px; margin-inline: auto;">
-                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                         </div>
                         <p
                             style="font-size: 44px; font-weight: 700; line-height: 50px; text-align: center; padding: 30px 0 0; color: #FAF9F6;">
@@ -1021,7 +1040,7 @@ require_once('./constant.php');
                     </div>
                     <div style="max-width: 180px;">
                         <div style="max-width: 60px; margin-inline: auto;">
-                            <img loading="lazy" src="./assets/images/trophy-icon.png" alt="">
+                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
                         </div>
                         <p
                             style="font-size: 44px; font-weight: 700; line-height: 50px; text-align: center; padding: 30px 0 0; color: #FAF9F6;">
@@ -1047,61 +1066,61 @@ require_once('./constant.php');
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-microsoft.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-lenovo.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-dell.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 20px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-vmware.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-vmware.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-deutsche-bank.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-deutsche-bank.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-cisco.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-cisco.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-nokia.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-nokia.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-microsoft.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-lenovo.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
                         </div>
                     </div>
                     <div style="height: 100px; flex: 1;"
                         class="partner-cards d-flex justify-content-center align-items-center">
                         <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="assets/images/partner-dell.png" alt="">
+                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -1110,7 +1129,7 @@ require_once('./constant.php');
     </div>
 
     <?php
-    require("./footer.php");
+    include("../footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>

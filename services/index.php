@@ -416,7 +416,7 @@ include('../constant.php');
                     <div class="desktop">
                         <ul class="middle-content d-flex align-items-center">
                             <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'services.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'services'; ?>">
                                     <div class="nav-tab-item active d-flex align-items-center">
                                         Services
                                     </div>
@@ -427,7 +427,7 @@ include('../constant.php');
                                         <ul>
                                             <li>Infrastructure</li>
                                             <li><a href="#">Network</a></li>
-                                            <li><a href="#">Data Center Support</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
                                             <li><a href="#">End User Support</a></li>
                                             <li><a href="#">Audio-Visual</a></li>
                                             <li><a href="#">WiFi Services</a></li>
@@ -483,7 +483,7 @@ include('../constant.php');
                             </li>
 
                             <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'industries.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries'; ?>">
                                     <div class="nav-tab-item d-flex align-items-center">
                                         Industries
                                     </div>
