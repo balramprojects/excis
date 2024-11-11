@@ -26,7 +26,10 @@ require_once('../constant.php');
     <link rel="canonical" href="https://www.exc1s.com/insights/case-studies">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
     <link rel="stylesheet" href="../assets/sass/index.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
+    <link rel="stylesheet" href="../assets/sass/contact-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
 
@@ -52,483 +55,185 @@ require_once('../constant.php');
         .submitBtn:hover {
             background: rgb(27, 49, 93, 1);
         }
-
-        .drop {
-            box-shadow: 0px 0px 1px 1px #cfd3da;
-
-        }
-
-        .core-values-card:hover .drop {
-            animation: drop 1.3s infinite;
-        }
-
-        @keyframes drop {
-            0% {
-                box-shadow: 0 0 0 0px rgb(27, 49, 93, 0.4);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(27, 49, 93, 0);
-            }
-        }
-
-        .services-list,
-        .services-list-backdrop {
-            display: none;
-        }
-
-        .services:hover .services-list {
-            display: block;
-        }
-
-        .services:hover .services-list-backdrop {
-            display: block;
-        }
-
-        .services-list-backdrop:hover {
-            display: none;
-        }
-
-        .case-studies-card:hover {
-            box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
-        }
-
-        .countries-spot-container {
-            width: 150px;
-            background: white;
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            transform: translate(-50%, 0);
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.15);
-            display: none;
-        }
-
-        .countries-spot-point:hover+.countries-spot-container {
-            display: block;
-        }
-
-        .countries-spot-point {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point.blue {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #4383C3;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point:hover {
-            animation: pulse-animation 1s infinite;
-        }
-
-        .countries-spot-point.blue:hover {
-            animation: pulse-animation-blue 1s infinite;
-        }
-
-        @keyframes pulse-animation {
-            0% {
-                box-shadow: 0 0 0 0px rgb(245, 133, 32, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
-            }
-        }
-
-        @keyframes pulse-animation-blue {
-            0% {
-                box-shadow: 0 0 0 0px rgb(67, 131, 195, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(67, 131, 195, 0);
-            }
-        }
-
-        .countries-spot-container::after {
-            content: '';
-            width: 20px;
-            height: 10px;
-            position: absolute;
-            bottom: 0%;
-            left: 52%;
-            transform: translate(-50%, 96%);
-            background: #fff;
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.15);
-        }
-
-        .partner-cards {
-            min-width: 248px;
-            border: 1px solid rgb(255, 255, 255, 0.1);
-            filter: grayscale(1);
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .partner-cards:hover {
-            background: rgb(255, 255, 255, 1);
-            border: 1px solid #fff;
-            filter: grayscale(0);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti {
-            width: 100%;
-        }
-
-        .iti__flag-container {
-            margin-right: 5px;
-        }
-
-        .iti__selected-flag {
-            height: 101%;
-            padding: 0 9px;
-            background-size: contain;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            outline: none;
-        }
-
-        .iti__country-name {
-            margin-left: 10px;
-        }
-
-        .iti__country-list {
-            min-width: 300px;
-            width: 100%;
-            max-height: 150px;
-            margin: 0 0 0 -1px;
-            z-index: 1;
-        }
-
-        .iti__dial-code {
-            margin-left: 5px;
-        }
-
-        .iti--separate-dial-code {
-            margin: 6px 0 0 0;
-        }
-
-        .iti__selected-dial-code {
-            width: 36px;
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        .iti__arrow {
-            width: 10px;
-            height: 5px;
-            background: rgb(0, 0, 0, 0.9);
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            transform: rotate(0deg);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti__arrow.iti__arrow--up {
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            transform: rotate(-180deg);
-            transition: all .3s ease-in-out;
-        }
-
-        #phone::placeholder {
-            color: rgb(0, 0, 0, 0.25);
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .nav-tab-dropdown {
-            display: none;
-        }
-
-        #nav-tab:hover .nav-tab-dropdown,
-        .nav-tab-dropdown:hover {
-            display: block;
-        }
-
-        .nav-tab-item {
-            position: relative;
-        }
-
-        #nav-tab .nav-tab-item::after {
-            content: "";
-            width: 0%;
-            height: 4px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 5px 5px 0 0;
-            transition: all .1s ease-in-out;
-        }
-
-        #nav-tab .nav-tab-item.active::after {
-            width: 100%;
-        }
-
-        #nav-tab .nav-tab-item.active {
-            color: #F58520 !important;
-        }
-
-        #nav-tab:hover .nav-tab-item::after {
-            width: 100%;
-            transition: all .3s ease-in-out;
-        }
-
-        #nav-tab:hover .nav-tab-item {
-            color: #F58520 !important;
-            transition: all .2s ease-in-out;
-        }
-    </style>
-
-    <style>
-        .carousel-container {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 0 50px 0;
-        }
-
-        .carousel {
-            overflow: visible;
-            max-width: 1265px;
-            width: 100%;
-            margin-inline: auto;
-        }
-
-        .cards {
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .card {
-            flex: 0 0 31.6%;
-            background: rgba(250, 249, 246);
-            border: 1px solid rgba(227, 227, 227, 1);
-            border-radius: 8px;
-            z-index: 1;
-        }
-
-        button {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0);
-            background: #000;
-            cursor: pointer;
-        }
-
-        button .btn-arrow {
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: #F58520;
-        }
-
-        button:disabled {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0);
-            background: rgba(250, 249, 246);
-            /* cursor: not-allowed; */
-        }
-
-        button:disabled .btn-arrow {
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: #000;
-        }
-
-        .prev-btn,
-        .next-btn {
-            z-index: 1;
-        }
     </style>
 
 </head>
 
 <body>
 
-    <div id="landing-header-menu" style="position: sticky; top: 0; z-index: 2;">
+    <!-- Navigation Panel -->
+    <div class="pg-nav-sticky">
         <div class="full-container">
-            <div style="width: 100%; height: 52px; background: #121820;">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <div style="height: 100%; gap: 25px;" class="d-flex">
-                            <a href="#" title="Career">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    Career
-                                </div>
-                            </a>
-                            <a href="#" title="CSR">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    CSR
-                                </div>
-                            </a>
-                            <a href="#" title="News">
-                                <div style="height: 100%; font-size: 12px; color: #FAF9F6;"
-                                    class="d-flex align-items-center">
-                                    News
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="d-flex align-items-center"
-                            style="font-size: 12px; text-align: center; color: #FAF9F6;">
-                            <p style="font-weight: 700;">Now Hiring : &nbsp;</p>
-                            <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
-                        </div>
-
-                        <a href="#" class="d-flex align-items-center" style="padding: 0 10px 0 0;"
-                            title="Excis Worldwide">
-                            <div class="d-flex" style="gap: 16px;">
-                                <div style="width: 24px;" class="d-flex">
-                                    <img loading="lazy" src="../assets/images/global-presence.png" alt="Global">
-                                </div>
-                                <p style="font-size: 16px; color: #FAF9F6;">
-                                    Global | EN
-                                </p>
+            <div class="desktop black-nav-container">
+                <div class="main-content-container d-flex justify-content-between">
+                    <div class="left-content d-flex">
+                        <a href="#" title="Career">
+                            <div class="block-txt d-flex align-items-center">
+                                Career
+                            </div>
+                        </a>
+                        <a href="#" title="CSR">
+                            <div class="block-txt d-flex align-items-center">
+                                CSR
+                            </div>
+                        </a>
+                        <a href="#" title="News">
+                            <div class="block-txt d-flex align-items-center">
+                                News
                             </div>
                         </a>
                     </div>
+
+                    <div class="middle-content d-flex align-items-center">
+                        <p>Now Hiring :</p>
+                        <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
+                    </div>
+
+                    <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
+                        <div class="img-and-txt d-flex">
+                            <div class="icon-img d-flex align-items-center">
+                                <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global Presence">
+                            </div>
+                            <p>Global | EN</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
 
-        <div class="full-container">
-            <div
-                style="width: 100%; height: 65px; background: #FAF9F6; box-shadow: 0 0 10px rgb(0, 0, 0, 0.2); position: relative;">
-                <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                    <div style="width: 100%; height: 100%;" class="d-flex justify-content-between">
-                        <a href="<?php echo $desktop_url; ?>" title="Excis Logo" style="margin: 0 70px 0 0;"
-                            class="d-flex align-items-center">
-                            <div style="width: 60px;" class="d-flex">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
-                            </div>
-                        </a>
+            <div class="main-nav-container">
+                <div class="main-content-container d-flex justify-content-between">
+                    <a href="<?php echo $desktop_url; ?>" title="Excis Logo" class="left-content d-flex align-items-center">
+                        <div class="logo-img d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
+                        </div>
+                    </a>
 
-                        <ul class="d-flex align-items-center" style="font-size: 13px; list-style-type: none;">
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
+                    <div class="desktop">
+                        <ul class="middle-content d-flex align-items-center">
+                            <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'services'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item d-flex align-items-center">
+                                    <div class="nav-tab-item d-flex align-items-center">
                                         Services
                                     </div>
                                 </a>
 
-                                <!-- <div style="position: absolute; top: 65px; left: 50%; transform: translate(-50%, 0); box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.05), -5px 5px 5px rgb(0, 0, 0, 0.05), 0px 5px 5px rgb(0, 0, 0, 0.05); padding: 0 50px 50px;  z-index: 1; background: rgb(250,249,246);"
-                                    class="nav-tab-dropdown">
+                                <div class="nav-tab-dropdown">
                                     <div class="d-flex justify-content-center align-items-start">
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
+                                        <ul>
+                                            <li>Infrastructure</li>
+                                            <li><a href="#">Network</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
+                                            <li><a href="#">End User Support</a></li>
+                                            <li><a href="#">Audio-Visual</a></li>
+                                            <li><a href="#">WiFi Services</a></li>
+                                            <li><a href="#">Operating System</a></li>
+                                            <li><a href="#">New Office + Migration <br> Solutions</a></li>
+                                            <li><a href="#">Helpdesk</a></li>
+                                            <li><a href="#">Storage As A Service (SAAS)</a></li>
+                                            <li><a href="#">Device As A Service (DAAS)</a></li>
                                         </ul>
 
-                                        <ul style="list-style-type: none; padding: 10px 20px 0;">
-                                            <li
-                                                style="padding: 10px 0; font-size: 18px; font-weight: 700; color: #F58520; border-bottom: 1px solid rgba(37, 37, 37, 0.25);">
-                                                Services</li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Network</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Data
-                                                    Center Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">End
-                                                    User Support</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Audio-Visual</a>
-                                            </li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">WiFi
-                                                    Services</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px;">Operating
-                                                    System</a></li>
-                                            <li style="padding: 10px 0 0;"><a href="#"
-                                                    style="font-size: 14px; font-weight: 400px; color: #000; line-height: 20px; text-wrap: nowrap;">New
-                                                    Office + Migration <br> Solutions</a></li>
-                                        </ul>
+                                        <div>
+                                            <ul>
+                                                <li>Cyber Security Services</li>
+                                                <li><a href="#">Cyber Security Consulting</a></li>
+                                                <li><a href="#">End Point Security</a></li>
+                                                <li><a href="#">Network Security</a></li>
+                                                <li><a href="#">Application Security</a></li>
+                                                <li><a href="#">Web Security</a></li>
+                                                <li><a href="#">Email Security</a></li>
+                                                <li><a href="#">Hybrid Cloud Security</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li>Development</li>
+                                                <li><a href="#">Software And Application Development</a></li>
+                                                <li><a href="#">API Integration</a></li>
+                                                <li><a href="#">Network And Systems Automation</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <ul>
+                                                <li>Cloud Services</li>
+                                                <li><a href="#">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
+                                                <li><a href="#">Private Cloud Solutions</a></li>
+                                                <li><a href="#">Hybrid Cloud</a></li>
+                                                <li><a href="#">Office 365 And G-Suite Migration + Integration</a></li>
+                                            </ul>
+
+                                            <ul>
+                                                <li>Depot</li>
+                                                <li><a href="#">Warehousing</a></li>
+                                                <li><a href="#">Logistics</a></li>
+                                                <li><a href="#">Staging</a></li>
+                                                <li><a href="#">Wiping + Disposal</a></li>
+                                                <li><a href="#">PMO</a></li>
+                                                <li><a href="#">NOC Services</a></li>
+                                                <li><a href="#">SOC Services</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div> -->
+                                </div>
                             </li>
 
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
+                            <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'industries'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item d-flex align-items-center">
+                                    <div class="nav-tab-item d-flex align-items-center">
                                         Industries
                                     </div>
                                 </a>
+
+                                <div class="nav-tab-dropdown">
+                                    <div class="d-flex justify-content-center align-items-start">
+                                        <ul>
+                                            <li>Industries</li>
+                                            <li><a href="#">Retail</a></li>
+                                            <li><a href="#">Energy</a></li>
+                                            <li><a href="#">Life Sciences</a></li>
+                                            <li><a href="#">Financial Services (FS&I)</a></li>
+                                            <li><a href="#">Telecoms</a></li>
+                                            <li><a href="#">Utilities</a></li>
+                                            <li><a href="#">Public Sector</a></li>
+                                            <li><a href="#">Manufacturing</a></li>
+                                            <li><a href="#">Education</a></li>
+                                            <li><a href="#">IT & Consulting</a></li>
+                                            <li><a href="#">Consumer Goods</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
 
-                            <li id="nav-tab" class="d-flex align-items-center" style="cursor: pointer;">
+                            <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'insights/'; ?>">
-                                    <div style="height: 65px; font-size: 13px; font-weight: 400; color: #000; padding: 0 13px; cursor: pointer;"
-                                        class="nav-tab-item active d-flex align-items-center">
+                                    <div class="nav-tab-item active d-flex align-items-center">
                                         Insights
                                     </div>
                                 </a>
                             </li>
                         </ul>
+                    </div>
 
-                        <a href="<?php echo $desktop_url . 'contact-us'; ?>" class="d-flex align-items-center">
-                            <div style="height: 42px; width: 129px; font-size: 12px; font-weight: 600; text-align: center; border-radius: 10px; background: #F58520; color: #FAF9F6; "
-                                class="d-flex justify-content-center align-items-center">
+                    <div class="d-flex align-items-center">
+                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="right-content desktop">
+                            <div class="contact-us-btn d-flex justify-content-center align-items-center">
                                 Contact Us
                             </div>
                         </a>
+                    </div>
+
+                    <div class="mobile">
+                        <div class="m-nav d-flex align-items-center">
+                            <a href="#">
+                                <div class="global-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'global-presence-black.png'; ?>" alt="Global Presence">
+                                </div>
+                            </a>
+
+                            <div class="hamburger d-flex align-items-center justify-content-end">
+                                <div class="middle-line"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -831,72 +536,63 @@ require_once('../constant.php');
         </div>
     </div>
 
+    <!-- Our Clients & Partners -->
     <div class="full-container">
-        <div style="width: 100%; background: rgba(18, 24, 32);">
-            <div style="height: 100%; padding: 80px 15px;" class="main-content-container">
-                <div style="font-size: 34px; font-weight: 500; color: #fff; text-align: center;">
+        <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
+            <div class="main-content-container">
+                <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
                     Lorem ipsum dolor sit amet.
                 </div>
 
-                <div style="margin-top: 50px; flex-wrap: wrap;" class="d-flex">
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                <div class="partner-cards d-flex" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 20px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-vmware.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-20 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-vmware.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-deutsche-bank.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-deutsche-bank.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-cisco.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-cisco.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-nokia.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-nokia.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
                 </div>

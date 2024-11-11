@@ -41,257 +41,6 @@ require_once('../constant.php');
         .submitBtn:hover {
             background: rgb(27, 49, 93, 1);
         }
-
-        .drop {
-            box-shadow: 0px 0px 1px 1px #cfd3da;
-
-        }
-
-        .core-values-card:hover .drop {
-            animation: drop 1.3s infinite;
-        }
-
-        @keyframes drop {
-            0% {
-                box-shadow: 0 0 0 0px rgb(27, 49, 93, 0.4);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(27, 49, 93, 0);
-            }
-        }
-
-        .services-list,
-        .services-list-backdrop {
-            display: none;
-        }
-
-        .services:hover .services-list {
-            display: block;
-        }
-
-        .services:hover .services-list-backdrop {
-            display: block;
-        }
-
-        .services-list-backdrop:hover {
-            display: none;
-        }
-
-        .case-studies-card:hover {
-            box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
-        }
-
-        .countries-spot-container {
-            width: 150px;
-            background: white;
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            transform: translate(-50%, 0);
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.15);
-            display: none;
-        }
-
-        .countries-spot-point:hover+.countries-spot-container {
-            display: block;
-        }
-
-        .countries-spot-point {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point.blue {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #4383C3;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point:hover {
-            animation: pulse-animation 1s infinite;
-        }
-
-        .countries-spot-point.blue:hover {
-            animation: pulse-animation-blue 1s infinite;
-        }
-
-        @keyframes pulse-animation {
-            0% {
-                box-shadow: 0 0 0 0px rgb(245, 133, 32, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
-            }
-        }
-
-        @keyframes pulse-animation-blue {
-            0% {
-                box-shadow: 0 0 0 0px rgb(67, 131, 195, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(67, 131, 195, 0);
-            }
-        }
-
-        .countries-spot-container::after {
-            content: '';
-            width: 20px;
-            height: 10px;
-            position: absolute;
-            bottom: 0%;
-            left: 52%;
-            transform: translate(-50%, 96%);
-            background: #fff;
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.15);
-        }
-
-        .partner-cards {
-            min-width: 248px;
-            border: 1px solid rgb(255, 255, 255, 0.1);
-            filter: grayscale(1);
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .partner-cards:hover {
-            background: rgb(255, 255, 255, 1);
-            border: 1px solid #fff;
-            filter: grayscale(0);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti {
-            width: 100%;
-        }
-
-        .iti__flag-container {
-            margin-right: 5px;
-        }
-
-        .iti__selected-flag {
-            height: 101%;
-            padding: 0 9px;
-            background-size: contain;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            outline: none;
-        }
-
-        .iti__country-name {
-            margin-left: 10px;
-        }
-
-        .iti__country-list {
-            min-width: 300px;
-            width: 100%;
-            max-height: 150px;
-            margin: 0 0 0 -1px;
-            z-index: 1;
-        }
-
-        .iti__dial-code {
-            margin-left: 5px;
-        }
-
-        .iti--separate-dial-code {
-            margin: 6px 0 0 0;
-        }
-
-        .iti__selected-dial-code {
-            width: 36px;
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        .iti__arrow {
-            width: 10px;
-            height: 5px;
-            background: rgb(0, 0, 0, 0.9);
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            transform: rotate(0deg);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti__arrow.iti__arrow--up {
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            transform: rotate(-180deg);
-            transition: all .3s ease-in-out;
-        }
-
-        #phone::placeholder {
-            color: rgb(0, 0, 0, 0.25);
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .nav-tab-dropdown {
-            display: none;
-        }
-
-        #nav-tab:hover .nav-tab-dropdown,
-        .nav-tab-dropdown:hover {
-            display: block;
-        }
-
-        .nav-tab-item {
-            position: relative;
-        }
-
-        #nav-tab .nav-tab-item::after {
-            content: "";
-            width: 0%;
-            height: 4px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 5px 5px 0 0;
-            transition: all .1s ease-in-out;
-        }
-
-        #nav-tab .nav-tab-item.active::after {
-            width: 100%;
-        }
-
-        #nav-tab .nav-tab-item.active {
-            color: #F58520 !important;
-        }
-
-        #nav-tab:hover .nav-tab-item::after {
-            width: 100%;
-            transition: all .3s ease-in-out;
-        }
-
-        #nav-tab:hover .nav-tab-item {
-            color: #F58520 !important;
-            transition: all .2s ease-in-out;
-        }
     </style>
 
     <style>
@@ -1055,72 +804,63 @@ require_once('../constant.php');
         </div>
     </div>
 
+    <!-- Our Clients & Partners -->
     <div class="full-container">
-        <div style="width: 100%; background: rgba(18, 24, 32);">
-            <div style="height: 100%; padding: 80px 15px;" class="main-content-container">
-                <div style="font-size: 34px; font-weight: 500; color: #fff; text-align: center;">
+        <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
+            <div class="main-content-container">
+                <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
                     Lorem ipsum dolor sit amet.
                 </div>
 
-                <div style="margin-top: 50px; flex-wrap: wrap;" class="d-flex">
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                <div class="partner-cards d-flex" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 20px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-vmware.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-20 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-vmware.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-deutsche-bank.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-deutsche-bank.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-cisco.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-35 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-cisco.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-nokia.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-nokia.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-25 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-30 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
                         </div>
                     </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
+                    <div class="card d-flex justify-content-center align-items-center">
+                        <div class="logo-img-60 d-flex">
+                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
                         </div>
                     </div>
                 </div>
