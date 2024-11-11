@@ -1,5 +1,5 @@
 <?php
-require_once('./constant.php');
+include('./constant.php');
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +103,7 @@ require_once('./constant.php');
                     <div class="desktop">
                         <ul class="middle-content d-flex align-items-center">
                             <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'services.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'services'; ?>">
                                     <div class="nav-tab-item d-flex align-items-center">
                                         Services
                                     </div>
