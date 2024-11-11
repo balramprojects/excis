@@ -26,7 +26,10 @@ require_once('./constant.php');
     <link rel="canonical" href="https://www.exc1s.com/industries">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
     <link rel="stylesheet" href="assets/sass/index.css">
+    <link rel="stylesheet" href="assets/sass/why-excis.css">
+    <link rel="stylesheet" href="assets/sass/navigation.css">
     <link rel="stylesheet" href="assets/sass/common.css">
+    <link rel="stylesheet" href="assets/sass/contact-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
 
@@ -808,98 +811,151 @@ require_once('./constant.php');
         </div>
     </div>
 
+    <!-- About Us -->
     <div class="full-container">
-        <div style="width: 100%; background: #fff;">
-            <div style="max-width: 100%; margin-inline: auto; position: relative;">
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
-                </div>
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
-                </div>
+        <div class="why-choose-bg">
+            <div class="why-choose-container">
+                <div class="left-btm-abstract desktop"></div>
+                <div class="right-top-abstract desktop"></div>
 
-                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                    <div style="width: 100%;">
-                        <div
-                            style="width: fit-content; font-size: 13px; font-weight: 700; padding: 7px 90px 7px 10px; color: #FAF9F6; background: #252525; border-radius: 4px;">
+                <div class="main-content-container">
+                    <div class="content-container">
+                        <div class="heading-txt" data-aos="fade-up" data-aos-duration="1000">
                             ABOUT US
                         </div>
-                        <div class="d-flex justify-content-between align-items-start">
-                            <div>
-                                <div style="font-size: 48px; font-weight: 700; padding: 10px 0 0; color: #F58520;">
-                                    Why Choose Excis?
-                                </div>
-                                <div style="font-size: 18px; font-weight: 400; padding: 15px 0 0; color: #000;">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat minus cum
-                                    veritatis ipsum neque unde.
-                                </div>
+
+                        <div class="why-choose-title d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="title-txt">
+                                Why Choose Excis?
                             </div>
-                            <div style="width: fit-content; padding: 14px 30px; margin: 25px 0 0; color: #FAF9F6; background: #252525; gap: 12px; border-radius: 10px;"
-                                class="d-flex justify-content-center align-items-center">
-                                <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap;">Learn More</p>
-                                <div style="width: 20px;" class="d-flex">
-                                    <img loading="lazy" src="assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <a href="#" class="desktop">
+                                <div class="learn-more-btn d-flex justify-content-center align-items-center">
+                                    <p>Learn More</p>
+                                    <div class="arrow d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
+                        </div>
+
+                        <div class="desktop">
+                            <div class="cards d-flex justify-content-between">
+                                <div class="vertical-card d-flex flex-column justify-content-between">
+                                    <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="txt">
+                                            <div class="heading">
+                                                4 Hour SLA
+                                            </div>
+                                            <div class="subtxt">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ea recusandae maxime perferendis! Eos quasi quod animi doloremque nobis nulla!
+                                            </div>
+                                        </div>
+                                        <div class="card-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="4 Hour SLA">
+                                        </div>
+                                    </div>
+                                    <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="txt">
+                                            <div class="heading">
+                                                24/7 Support
+                                            </div>
+                                            <div class="subtxt">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
+                                                sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                            </div>
+                                        </div>
+                                        <div class="card-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="24/7 Support">
+                                        </div>
+                                    </div>
+                                    <div class="extra-vertical-card">
+                                        <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                                            <div class="txt">
+                                                <div class="heading">
+                                                    Flexible IT Solutions
+                                                </div>
+                                                <div class="subtxt">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
+                                                    sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                                </div>
+                                            </div>
+                                            <div class="card-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="horizontal-card">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="txt">
+                                            <div class="heading">
+                                                Flexible IT Solutions
+                                            </div>
+
+                                            <div class="subtxt">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam illum
+                                                aperiam voluptates, numquam facere repellendus.
+                                            </div>
+                                        </div>
+                                        <div class="card-img-container">
+                                            <div class="card-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div style="height: 100%; padding: 20px 0 0 0; gap: 30px;"
-                            class="d-flex justify-content-between">
-                            <div style="width: 100%;" class="">
-                                <div style="max-width: 100%; padding: 50px; border-radius: 10px;"
-                                    class="about-us-box d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div style="font-size: 24px; font-weight: 700;" class="heading">
-                                            4 Hour SLA
+                        <div class="mobile">
+                            <div class="cards d-flex flex-column">
+                                <div class="card">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                            </div>
+                                            <div class="titletxt">
+                                                4 Hour SLA
+                                            </div>
                                         </div>
-                                        <div style="width: 60%; font-size: 14px; font-weight: 400; line-height: 25px; padding: 20px 0 0; text-wrap: wrap;"
-                                            class="subtxt">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
-                                            sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                         </div>
-                                    </div>
-                                    <div style="width: 300px;">
-                                        <img loading="lazy" style="height: auto;" src="assets/images/about-us-creative.png"
-                                            alt="">
                                     </div>
                                 </div>
-                                <div style="max-width: 100%; padding: 50px; margin-top: 30px; border-radius: 10px;"
-                                    class="about-us-box d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div style="font-size: 24px; font-weight: 700;" class="heading">
-                                            24/7 Support
+                                <div class="card">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
+                                            </div>
+                                            <div class="titletxt">
+                                                24/7 Support
+                                            </div>
                                         </div>
-                                        <div style="width: 60%; font-size: 14px; font-weight: 400; line-height: 25px; padding: 20px 0 0; text-wrap: wrap;"
-                                            class="subtxt">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
-                                            sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                         </div>
-                                    </div>
-                                    <div style="width: 300px;">
-                                        <img loading="lazy" style="height: auto;" src="assets/images/about-us-creative.png"
-                                            alt="">
                                     </div>
                                 </div>
-                            </div>
-
-                            <div style="width: 55%; border-radius: 10px;" class="about-us-box">
-                                <div style="height: 100%; flex-direction: column;"
-                                    class="d-flex justify-content-between">
-                                    <div>
-                                        <div class="heading"
-                                            style="font-size: 24px; font-weight: 700; padding: 50px 50px 0 50px;">
-                                            Flexible IT Solutions
+                                <div class="card">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
+                                            </div>
+                                            <div class="titletxt">
+                                                Flexible IT Soultions
+                                            </div>
                                         </div>
-
-                                        <div class="subtxt"
-                                            style="font-size: 16px; font-weight: 400; line-height: 25px; padding: 15px 50px 0 50px;">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam illum
-                                            aperiam voluptates, numquam facere repellendus.
-                                        </div>
-                                    </div>
-                                    <div style="padding: 50px;">
-                                        <div style="width: 85%; margin-inline: auto;">
-                                            <img loading="lazy" src="assets/images/about-us-creative.png" alt="">
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                         </div>
                                     </div>
                                 </div>

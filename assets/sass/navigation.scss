@@ -105,22 +105,6 @@ $grey-color: #808389;
                     .nav-block-container {
                         cursor: pointer;
 
-                        &:hover {
-                            .nav-tab-item {
-                                color: var(--orange-color);
-                                transition: all .2s ease-in-out;
-
-                                &::after {
-                                    width: 100%;
-                                    transition: all .3s ease-in-out;
-                                }
-                            }
-
-                            .nav-tab-dropdown {
-                                display: block;
-                            }
-                        }
-
                         .nav-tab-item {
                             position: relative;
                             height: 65px;
@@ -201,6 +185,22 @@ $grey-color: #808389;
                                         color: var(--orange-color);
                                     }
                                 }
+                            }
+                        }
+
+                        &:hover {
+                            .nav-tab-item {
+                                color: var(--orange-color);
+                                transition: all .2s ease-in-out;
+
+                                &::after {
+                                    width: 100%;
+                                    transition: all .3s ease-in-out;
+                                }
+                            }
+
+                            .nav-tab-dropdown {
+                                display: block;
                             }
                         }
                     }
