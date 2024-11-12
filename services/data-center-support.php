@@ -160,6 +160,243 @@ require_once('../constant.php');
         }
     </style>
 
+    <style>
+        .pie-containers {
+            width: 600px;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-inline: auto;
+        }
+
+        .pie-containers-center-point {
+            width: 0;
+            height: 0;
+            position: relative;
+        }
+
+        .pie-containers-center-point .pie-container-center-circle {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: rgba(21, 35, 75);
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pie-containers-center-point .pie-slice {
+            width: 206px;
+            height: 300px;
+            position: absolute;
+            top: -300px;
+            left: 50%;
+            transform-origin: bottom;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 40px, 50% 100%, 0% 40px);
+            transform: translate(-50%, 0);
+            transition: all .5s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice.slice-1 {
+            transform: translate(-50%, 0) rotate(0deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-2 {
+            transform: translate(-50%, 0) rotate(45deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-3 {
+            transform: translate(-50%, 0) rotate(90deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-4 {
+            transform: translate(-50%, 0) rotate(135deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-5 {
+            transform: translate(-50%, 0) rotate(180deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-6 {
+            transform: translate(-50%, 0) rotate(225deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-7 {
+            transform: translate(-50%, 0) rotate(270deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-8 {
+            transform: translate(-50%, 0) rotate(315deg);
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle {
+            height: 250px;
+            width: 206px;
+            position: relative;
+            top: 40px;
+            background: rgba(233, 233, 233);
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+        }
+
+        .pie-containers-center-point .pie-slice.active .pie-triangle {
+            background: rgb(245, 133, 32);
+            top: 30px;
+            transition: all .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-left-curve-block,
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-right-curve-block {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            top: -2px;
+            background: #fff;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-left-curve-block {
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            left: 0;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-right-curve-block {
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            right: 0;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve,
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 1px;
+            background: rgba(233, 233, 233);
+            border-radius: 50%;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve {
+            left: 5.5px;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
+            right: 5.5px;
+        }
+
+        .pie-containers-center-point .pie-slice.active .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve,
+        .pie-containers-center-point .pie-slice.active .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
+            background: rgb(245, 133, 32);
+            transition: .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle-outer-circle {
+            height: 52px;
+            width: 52px;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(233, 233, 233);
+            border: 1.5px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0px 8px 3px -1px rgb(137, 147, 152);
+        }
+
+        .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle {
+            top: 0;
+            transition: all .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle {
+            background: rgb(21, 35, 75);
+            box-shadow: 0px 8px 3px -1px rgb(21, 35, 75, 0.5);
+            transition: all .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle-outer-circle .pie-triangle-inner-circle {
+            height: 42px;
+            width: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(191, 191, 191, 1);
+            border: 1.5px solid #fff;
+            border-radius: 50%;
+        }
+
+        .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle .pie-triangle-inner-circle {
+            background: rgb(245, 133, 32);
+            transition: all .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            max-width: 21px;
+            display: flex;
+        }
+
+        .pie-containers-center-point .pie-slice .txt-content {
+            position: absolute;
+            top: calc(50% - 15px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgba(115, 115, 115, 0.5);
+            font-size: 12px;
+            font-weight: 700;
+            text-wrap: wrap;
+        }
+
+        .pie-containers-center-point .pie-slice.active .txt-content {
+            top: calc(50% - 30px);
+            color: #fff;
+            font-size: 13px;
+            transition: all .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice.slice-1 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            transform: rotate(0deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-2 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            max-width: 15px;
+            transform: rotate(-45deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-3 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            max-width: 21px;
+            transform: rotate(-90deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-4 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            transform: rotate(-135deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-5 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            transform: rotate(-180deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-6 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            transform: rotate(-225deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-7 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            transform: rotate(-270deg);
+        }
+
+        .pie-containers-center-point .pie-slice.slice-8 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+            transform: rotate(-315deg);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -400,6 +637,7 @@ require_once('../constant.php');
         </div>
     </div>
 
+    <!-- Support Service -->
     <div class="full-container">
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
             <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
@@ -462,6 +700,224 @@ require_once('../constant.php');
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 As cloud technology continues to play a key role in data center operations, we offer comprehensive cloud support services, including migration and management.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-container">
+        <div style="width: 100%; background: #fff;">
+            <div style="max-width: 100%; margin-inline: auto; position: relative; overflow: hidden;">
+                <div
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
+                </div>
+                <div
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
+                </div>
+
+                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
+                    <div style="font-size: 36px; font-weight: 500; color: #F58520; text-align: center;">
+                        Explore Our Other Services
+                    </div>
+
+                    <div style="padding: 30px 0 0;" class="d-flex justify-content-between align-items-center">
+                        <div style="width: 50%;">
+                            <div class="pie-containers">
+                                <div class="pie-containers-center-point">
+                                    <div class="pie-container-center-circle">
+                                        <div style="width: 120px; display: flex;">
+                                            <img loading="lazy" style="height: 100%; width: 100%;" src="../assets/images/excis-logo.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon8.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            Cyber Security Solutions
+                                        </div>
+                                    </div>
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            WiFi Services
+                                        </div>
+                                    </div>
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            Network Security Solutions
+                                        </div>
+                                    </div>
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon4.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            Audio Visual Solutions
+                                        </div>
+                                    </div>
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            Data Center Support
+                                        </div>
+                                    </div>
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon6.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            End Support Solution
+                                        </div>
+                                    </div>
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon7.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            Data Storage Solutions
+                                        </div>
+                                    </div>
+                                    <div class="pie-slice">
+                                        <div class="pie-triangle">
+                                            <div class="pie-triangle-left-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                            <div class="pie-triangle-right-curve-block">
+                                                <div class="pie-triangle-curve"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pie-triangle-outer-circle">
+                                            <div class="pie-triangle-inner-circle">
+                                                <div class="icon-img">
+                                                    <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="txt-content">
+                                            Migration Solutions
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 50%;">
+                            <div style="max-width: 550px; margin-left: auto;">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    Cyber Security Solutions
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -853,312 +1309,6 @@ require_once('../constant.php');
         </div>
     </div>
 
-    <!-- Our Services -->
-    <!-- <div class="full-container">
-        <div class="our-services-bg" style="background: linear-gradient(to bottom, #1B315D, #354D7D);">
-            <div class="our-services-container">
-                <div class="left-btm-abstract desktop"></div>
-                <div class="right-top-abstract desktop"></div>
-
-                <div class="main-content-container">
-                    <div class="content-container">
-                        <div class="title-txt" style="color: #fff;" data-aos="zoom-out" data-aos-duration="1000">
-                            Our Services
-                        </div>
-                        <div class="subtitle-txt" style="color: #fff;" data-aos="zoom-out" data-aos-duration="1000">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                            quis culpa cumque, laboriosam deserunt unde?
-                        </div>
-
-                        <div class="service-cards-container">
-                            <div class="desktop">
-                                <div class="cards">
-                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
-                                            </div>
-                                            <div class="title">
-                                                Help Desk
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
-                                            </div>
-                                            <div class="title">
-                                                Data Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="Email Security">
-                                            </div>
-                                            <div class="title">
-                                                Email Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
-                                            </div>
-                                            <div class="title">
-                                                Web Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
-                                            </div>
-                                            <div class="title">
-                                                Application Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
-                                            </div>
-                                            <div class="title">
-                                                Hybrid Cloud
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
-                                            </div>
-                                            <div class="title">
-                                                Help Desk
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
-                                            </div>
-                                            <div class="title">
-                                                Data Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="Email Security">
-                                            </div>
-                                            <div class="title">
-                                                Email Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
-                                            </div>
-                                            <div class="title">
-                                                Web Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
-                                            </div>
-                                            <div class="title">
-                                                Application Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
-                                            </div>
-                                            <div class="title">
-                                                Hybrid Cloud
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mobile">
-                                <div class="cards d-flex flex-column">
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
-                                                </div>
-                                                <div class="titletxt">
-                                                    Help Desk
-                                                </div>
-                                            </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
-                                                </div>
-                                                <div class="titletxt">
-                                                    Data Security
-                                                </div>
-                                            </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
-                                                </div>
-                                                <div class="titletxt">
-                                                    Email Security
-                                                </div>
-                                            </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <!-- Our Clients & Partners -->
     <div class="full-container">
         <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
@@ -1229,6 +1379,43 @@ require_once('../constant.php');
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');
+
+        triangles.forEach(triangle => {
+
+            triangle.addEventListener('mouseenter', function() {
+
+                triangles.forEach(tri => {
+                    tri.classList.remove('active');
+                })
+
+                this.classList.add('active');
+            });
+
+            // triangle.addEventListener('mouseleave', function() {
+            //     this.classList.remove('active');
+            // });
+
+        });
+
+        window.onload = function() {
+            var n = 0;
+            var pieSlices = document.querySelectorAll(".pie-containers-center-point .pie-slice");
+
+            pieSlices.forEach((slice, index) => {
+                setTimeout(function() {
+                    var n = index + 1;
+                    slice.classList.add(`slice-${n}`);
+                }, 300 * (index + 1));
+            });
+
+            setTimeout(function() {
+                pieSlices[0].classList.add("active");
+            }, 3100);
+        };
+    </script>
 
     <script>
         const prevBtn = document.getElementById('prev-btn');
