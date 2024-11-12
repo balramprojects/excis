@@ -1,4 +1,4 @@
-<div class="full-container">
+<div class="full-container" style="display: none;">
     <div class="contact-us-bg">
         <div class="contact-us-bg-container">
             <div class="left-btm-abstract"></div>
@@ -168,7 +168,7 @@
     </div>
 </div>
 
-<div class="full-container">
+<div class="full-container" style="display: none;">
     <div style="width: 100%; background: rgba(18, 24, 32, 1);">
         <div style="height: 100%; padding: 50px 15px 0;" class="main-content-container">
             <div style="width: 100%; gap: 80px;" class="d-flex justify-content-between align-items-start">

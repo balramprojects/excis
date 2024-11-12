@@ -419,7 +419,7 @@ include('./constant.php');
     </div>
 
     <!-- Our Global Presence -->
-    <div class="full-container">
+    <div class="full-container" style="display: none;">
         <div class="our-presence-bg">
             <div class="main-content-container">
                 <div class="our-presence-container">
@@ -972,7 +972,7 @@ include('./constant.php');
     </div>
 
     <!-- Our Clients & Partners -->
-    <div class="full-container">
+    <div class="full-container" style="display: none;">
         <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">

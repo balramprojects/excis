@@ -801,7 +801,6 @@ $light-blue-color: rgb(54, 98, 200);
             }
         }
 
-
         .case-studies {
             .main-content-container {
                 height: 100%;
@@ -811,7 +810,7 @@ $light-blue-color: rgb(54, 98, 200);
                     width: 100%;
 
                     .title-txt {
-                        font-size: 36px;
+                        font-size: 38px;
                         font-weight: 500;
                         text-align: center;
                         color: var(--orange-color);
@@ -835,67 +834,71 @@ $light-blue-color: rgb(54, 98, 200);
                             width: 100%;
                             gap: 30px;
 
-                            .card {
-                                width: calc(100% - 40px);
-                                padding: 20px;
+                            a {
+                                max-width: 405px;
+                                width: 100%;
                                 background: var(--white-color);
                                 border: 1px solid rgb(37, 37, 37, 0.1);
                                 border-radius: 10px;
                                 transition: all .3s ease-in-out;
 
-                                .creative {
-                                    width: 100%;
-                                    height: 176px;
-                                    background: linear-gradient(to bottom, #1B315D, #354D7D);
-                                    border-radius: 10px;
+                                .card {
+                                    padding: 20px;
 
-                                    .img {
-                                        width: 140px;
-                                    }
-                                }
+                                    .creative {
+                                        width: 100%;
+                                        height: 176px;
+                                        background: linear-gradient(to bottom, #1B315D, #354D7D);
+                                        border-radius: 10px;
 
-                                .txt-content {
-                                    width: 100%;
-                                    padding: 10px 5px;
-
-                                    .case-study-type {
-                                        font-size: 12px;
-                                        font-weight: 700;
-                                        color: var(--grey-color);
+                                        .img {
+                                            width: 140px;
+                                        }
                                     }
 
-                                    .case-study-type-heading {
-                                        font-size: 20px;
-                                        font-weight: 700;
-                                        padding: 10px 0 0;
-                                        color: var(--black-color);
+                                    .txt-content {
+                                        width: 100%;
+                                        padding: 10px 5px;
+
+                                        .case-study-type {
+                                            font-size: 12px;
+                                            font-weight: 700;
+                                            color: var(--grey-color);
+                                        }
+
+                                        .case-study-type-heading {
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            padding: 10px 0 0;
+                                            color: var(--black-color);
+                                        }
+
+                                        .case-study-type-desc {
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 24px;
+                                            padding: 10px 0 0;
+                                            color: var(--grey-color);
+                                        }
+
+                                        .case-study-read-more {
+                                            padding: 30px 0 0;
+                                            font-size: 12px;
+                                            font-weight: 700;
+                                            color: var(--light-blue-color);
+                                            transition: all .3s ease-in-out;
+                                        }
                                     }
 
-                                    .case-study-type-desc {
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        line-height: 24px;
-                                        padding: 10px 0 0;
-                                        color: var(--grey-color);
-                                    }
-
-                                    .case-study-read-more {
-                                        padding: 30px 0 0;
-                                        font-size: 12px;
-                                        font-weight: 700;
-                                        color: var(--light-blue-color);
+                                    &:hover {
+                                        box-shadow: 0 0 10px 6px rgb(0, 0, 0, 0.05);
                                         transition: all .3s ease-in-out;
-                                    }
-                                }
 
-                                &:hover {
-                                    box-shadow: 0 0 10px 6px rgb(0, 0, 0, 0.05);
-                                    transition: all .3s ease-in-out;
-
-                                    .case-study-read-more {
-                                        font-size: 14px;
-                                        padding: 28px 0 0;
-                                        transition: all .3s ease-in-out;
+                                        .case-study-read-more {
+                                            font-size: 14px;
+                                            padding: 28px 0 0;
+                                            transition: all .3s ease-in-out;
+                                        }
                                     }
                                 }
                             }
@@ -1126,6 +1129,91 @@ $light-blue-color: rgb(54, 98, 200);
 
                     .stats-line-breaker {
                         margin: 0 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .core-values-bg {
+        .core-values-container {
+            .core-values {
+                .main-content-container {
+                    .content-container {
+                        .subtitle-txt {
+                            font-size: 15px;
+                        }
+
+                        .cards-container {
+                            .cards {
+                                gap: 15px;
+
+                                .card {
+                                    padding: 15px;
+                                    gap: 15px;
+
+                                    .icon-img {
+                                        height: 60px;
+                                        width: 60px;
+
+                                        .icon-img-bg {
+                                            height: 50px;
+                                            width: 50px;
+
+                                            .img {
+                                                width: 18px;
+                                            }
+                                        }
+                                    }
+
+                                    .title {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .case-studies {
+                .main-content-container {
+                    .content-container {
+                        .subtitle-txt {
+                            font-size: 15px;
+                        }
+
+                        .case-studies-container {
+                            .cards {
+                                gap: 15px;
+
+                                a .card {
+                                    padding: 15px;
+
+                                    .creative {
+                                        height: 170px;
+                                    
+                                        .img {
+                                            width: 130px;
+                                        }
+                                    }
+
+                                    .txt-content {
+                                        .case-study-type-heading {
+                                            font-size: 18px;
+                                        }
+
+                                        .case-study-type-desc {
+                                            line-height: 22px;
+                                        }
+
+                                        .case-study-read-more {
+                                            padding: 25px 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
