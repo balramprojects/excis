@@ -45,71 +45,6 @@ require_once('../constant.php');
     </style>
 
     <style>
-        .carousel-container {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 0 50px 0;
-        }
-
-        .carousel {
-            overflow: visible;
-            max-width: 1265px;
-            width: 100%;
-            margin-inline: auto;
-        }
-
-        .carousel .cards {
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .carousel .cards .card {
-            flex: 0 0 31.6%;
-            margin: 0 10px;
-            background: rgba(250, 249, 246);
-            border: 1px solid rgba(227, 227, 227, 1);
-            border-radius: 8px;
-            z-index: 1;
-        }
-
-        button {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0);
-            background: #000;
-            cursor: pointer;
-        }
-
-        button .btn-arrow {
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: #F58520;
-        }
-
-        button:disabled {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0);
-            background: rgba(250, 249, 246);
-            /* cursor: not-allowed; */
-        }
-
-        button:disabled .btn-arrow {
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: #000;
-        }
-
-        .prev-btn,
-        .next-btn {
-            z-index: 1;
-        }
-
         .benefits-cards {
             width: 98%;
             margin-inline: auto;
@@ -1167,37 +1102,6 @@ require_once('../constant.php');
                 pieSlices[0].classList.add("active");
             }, 3100);
         };
-    </script>
-
-    <script>
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const cards = document.querySelector('.carousel .cards');
-
-        let cardIndex = 0;
-        const cardWidth = 33.27; // Card width including margin
-        const visibleCards = 3;
-        const totalCards = cards.children.length;
-
-        function updateCarousel() {
-            cards.style.transform = `translateX(${-cardIndex * cardWidth}%)`;
-            prevBtn.disabled = cardIndex === 0;
-            nextBtn.disabled = cardIndex >= totalCards - visibleCards;
-        }
-
-        prevBtn.addEventListener('click', () => {
-            if (cardIndex > 0) {
-                cardIndex--;
-                updateCarousel();
-            }
-        });
-
-        nextBtn.addEventListener('click', () => {
-            if (cardIndex < totalCards - visibleCards) {
-                cardIndex++;
-                updateCarousel();
-            }
-        });
     </script>
 
     <script>
