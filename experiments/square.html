@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .scroll-box {
+            width: 500px;
+            height: 500px;
+            overflow-y: scroll;
+            /* Scrollable content */
+            position: relative;
+            background: linear-gradient(to bottom, #1B315D, #354D7D);
+            /* Blue gradient background */
+            -webkit-mask-image: linear-gradient(to bottom,
+                    rgba(0, 0, 0, 0),
+                    /* Fully transparent at the top */
+                    rgba(0, 0, 0, 1) 20%,
+                    /* Fully opaque from 20% */
+                    rgba(0, 0, 0, 1) 80%,
+                    /* Fully opaque until 80% */
+                    rgba(0, 0, 0, 0)
+                    /* Fully transparent at the bottom */
+                );
+            mask-image: linear-gradient(to bottom,
+                    rgba(0, 0, 0, 0),
+                    /* Fully transparent at the top */
+                    rgba(0, 0, 0, 1) 20%,
+                    /* Fully opaque from 20% */
+                    rgba(0, 0, 0, 1) 80%,
+                    /* Fully opaque until 80% */
+                    rgba(0, 0, 0, 0)
+                    /* Fully transparent at the bottom */
+                );
+            mask-size: 100% 100%;
+            mask-repeat: no-repeat;
+        }
+
+        .content {
+            padding: 20px;
+            font-size: 16px;
+            color: white;
+            /* Content color to be visible on blue background */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scroll-box">
+        <div class="content">
+            <!-- Your scrolling content goes here -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatibus deserunt labore quibusdam,
+                non facilis dolores expedita maiores corrupti rem nostrum quis itaque nemo, obcaecati similique quasi.
+                Explicabo officia voluptates quis odio dolore aliquid similique animi sequi modi voluptatibus libero
+                atque asperiores necessitatibus obcaecati minima natus totam aut corrupti, harum dicta recusandae id.
+                Incidunt praesentium, obcaecati voluptatem tempore consequatur aut, fugiat eos doloremque corrupti id
+                repellendus natus rem odio excepturi quisquam debitis perspiciatis ad doloribus, blanditiis enim dolore.
+                Explicabo, odit! Reiciendis, aperiam? Ad magni laudantium sit consectetur architecto temporibus
+                dignissimos numquam et minima, voluptates ratione, odit harum a mollitia. Consequatur, earum numquam.
+                Quis corporis et earum dolor vitae. Tenetur, sequi repudiandae ex expedita quo consequatur iste iure
+                quos voluptates ea nobis itaque doloribus. Rerum, repudiandae. Atque voluptas praesentium dolorem
+                suscipit saepe, eligendi quisquam incidunt? Autem dolorem quam sed quas architecto ipsa alias facere,
+                dolor suscipit, in dignissimos dolore reiciendis placeat vitae laboriosam obcaecati! Alias pariatur
+                nesciunt unde facilis adipisci. Id minus ut nemo cumque similique maxime, nostrum dicta impedit quidem
+                temporibus ullam magnam quaerat deleniti sint labore ipsam rem exercitationem atque eligendi tempore
+                possimus veritatis! Nisi quo repudiandae nostrum quam fuga doloribus ut repellendus, eum, earum voluptas
+                qui quia ea beatae nesciunt possimus sunt. Minima aperiam doloribus nostrum eum beatae quod. Excepturi
+                soluta, modi necessitatibus eum rem neque nisi earum itaque eveniet provident sint accusamus voluptatem
+                error. Culpa obcaecati assumenda beatae, aut doloribus repudiandae id asperiores? Sit et quos obcaecati
+                nesciunt quas ratione ut quisquam eligendi consequatur consequuntur adipisci pariatur nihil mollitia
+                temporibus, nisi doloribus a. Provident ex non atque. Labore, deserunt odio iste veniam explicabo
+                consequatur facilis molestiae qui, sed numquam ipsa enim! Molestiae nisi et eius expedita totam
+                asperiores distinctio, velit amet quasi corporis veniam soluta deleniti vero. Quos explicabo aliquam
+                asperiores odit at illo dolore, adipisci fugiat.</p>
+            <p>Additional content here...</p>
+            <p>More content...</p>
+            <!-- Keep adding content to make it scrollable -->
+        </div>
+    </div>
+
+
+</body>
+
+</html>
