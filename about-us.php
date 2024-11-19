@@ -359,15 +359,6 @@ include('constant.php');
                             <img loading="lazy" src="assets/images/data-center-creativity.png" alt="">
                         </div>
                     </div>
-
-                    <div style="padding: 50px 15px;">
-                        <div style="max-width: 700px; margin-inline: auto; font-size: 30px; font-weight: 500; line-height: 40px; text-align: center; color: #F58520;">
-                            Lorem Ipsum
-                        </div>
-                        <div style="max-width: 700px; margin-inline: auto; padding: 15px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; text-align: center; color: #000;">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi qui est officiis molestias voluptatibus, eaque neque itaque iusto obcaecati inventore? psum dolor sit amet consectetur, adipisicing elit.
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -383,7 +374,7 @@ include('constant.php');
                 <div class="main-content-container" style="padding: 0 15px !important;">
                     <div class="content-container">
                         <div class="d-flex">
-                            <div style="width: 50%; padding: 50px 0;">
+                            <div style="width: 50%; padding: 100px 0;">
                                 <div>
                                     <div style="width: fit-content; font-size: 13px; font-weight: 700; padding: 4px 60px 4px 10px; background: #fff; color: #000; border-radius: 4px;">
                                         JOURNEY
@@ -397,8 +388,8 @@ include('constant.php');
                                 </div>
                             </div>
                             <div style="width: 50%;">
-                                <div style="height: 450px; padding: 0 0 0 50px; overflow: scroll; mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1) 70%, rgb(53, 77, 125, 0.1));">
-                                    <div class="d-flex justify-content-start align-items-center" style="padding: 100px 0 0;">
+                                <div style="height: 610px; padding: 0 0 0 50px; overflow: scroll; mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1) 70%, rgb(53, 77, 125, 0.1));">
+                                    <div class="d-flex justify-content-start align-items-center" style="padding: 200px 0 0;">
                                         <div style="margin: 0 0 0 -50px;" class="d-flex justify-content-center align-items-center">
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
@@ -636,125 +627,233 @@ include('constant.php');
                             Meet Our Leadership Team
                         </div>
 
-                        <div style="max-width: 900px; margin-inline: auto; padding: 30px 0 0;">
-                            <div style="gap: 20px; flex-wrap: wrap;" class="d-flex justify-content-between">
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
+                        <div class="about-us-card-container">
+                            <div class="card-flex d-flex justify-content-between">
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/bert.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Bert Uitterlinden</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">CEO-Owner</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Bert Uitterlinden</p>
+                                            <p>CEO-Owner</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/bertu/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/bert.png" alt="">
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/finn.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Finn Lyskov</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Director-Owner</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Finn Lyskov</p>
+                                            <p>Director-Owner</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/finn-lyskov-002005a/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/thomas.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Thomas Lyskov</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Global Sales Director</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Thomas Lyskov</p>
+                                            <p>Global Sales Director</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/thomaslyskov/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/anna.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Anna Nel</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Chief Revenue Officer</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Anna Nel</p>
+                                            <p>Chief Revenue Officer</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/anna-nel-133136a6/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/bert.png" alt="">
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/rodica.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Rodica Petrea</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Global Operations Director</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Rodica Petrea</p>
+                                            <p>Global Operations Director</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/rodica-petrea-825b2447/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/bert.png" alt="">
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/max.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Max Uitterlinden</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Head of IT</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Max Uitterlinden</p>
+                                            <p>Head of IT</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/maximilian-uitterlinden-a7b48b224/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/gabrielle.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Gabrielle D’arch</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Head of Global Service Delivery</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Gabrielle D’arch</p>
+                                            <p>Head of Global Service Delivery</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/gabrielle-d-arch-81b1149a/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/theo.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Theo Ramarolahy</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Head of Remote Services and Coordination</p>
+                                    <div class="card-info">
+                                        <div class="txt" style="padding: 6.6px 15px;">
+                                            <p>Theo Ramarolahy</p>
+                                            <p>Head of Remote Services & Coordination</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/theo-ramarolahy/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/andrew.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Andrew Bremner</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Global Operations Director</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Andrew Bremner</p>
+                                            <p>Global Operations Director</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/bremnerandrew/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/jean.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Jean Oosthuizen</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Head of Contract Management</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Jean Oosthuizen</p>
+                                            <p>Head of Contract Management</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/jean-oosthuizen-a203aaa/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/bert.png" alt="">
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/dawn.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Dawn Everts</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Head of Global Transition</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Dawn Everts</p>
+                                            <p>Head of Global Transition</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/dawn-everts-4a4a2766/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <div style="max-width: 210px; width: 100%; background: #FAF9F6; border-radius: 10px;">
-                                    <div style="width: 100%;" class="d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/bert.png" alt="">
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/douglas.png" alt="">
                                     </div>
-                                    <div style="padding: 15px;">
-                                        <p style="font-size: 16px; font-weight: 700; text-align: center;">Douglas Houle</p>
-                                        <p style="font-size: 12px; font-weight: 500; text-align: center;">Head of Transition NA & LATAM</p>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Douglas Houle</p>
+                                            <p>Head of Transition NA & LATAM</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/douglashoule/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

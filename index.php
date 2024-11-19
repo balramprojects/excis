@@ -103,6 +103,13 @@ include('./constant.php');
                     <div class="desktop">
                         <ul class="middle-content d-flex align-items-center">
                             <li class="nav-block-container d-flex align-items-center">
+                                <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <div class="nav-tab-item d-flex align-items-center">
+                                        About Us
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'services'; ?>">
                                     <div class="nav-tab-item d-flex align-items-center">
                                         Services
@@ -421,629 +428,84 @@ include('./constant.php');
     <!-- Our Global Presence -->
     <div class="full-container">
         <div class="our-presence-bg">
-            <div class="main-content-container">
-                <div class="our-presence-container">
-                    <div class="title" data-aos="zoom-out" data-aos-duration="1000">
-                        Our Global Presence
+            <div class="desktop">
+                <div class="default-data-card-slide">
+                    <div class="data d-flex flex-column">
+                        <div>
+                            <p>120+</p>
+                            <p>Delivery Centers</p>
+                            <p>
+                                Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
+                            </p>
+                        </div>
+                        <div>
+                            <p>20+</p>
+                            <p>Branches</p>
+                            <p>
+                                Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
+                            </p>
+                        </div>
                     </div>
-                    <div class="subtxt" data-aos="zoom-out" data-aos-duration="1000">
-                        Lorem ipsum, dolor sit adipisicing elit. Quia, omnis quae. Sequi
-                        quis culpa cumque, deserunt unde?
-                    </div>
+                </div>
+            </div>
 
-                    <div class="our-presence-map d-flex justify-content-center align-items-center">
-                        <div class="map-legends-container d-flex">
-                            <div class="d-flex" data-aos="fade-right" data-aos-duration="1000">
+            <div class="countries-data-card-slide">
+                <div>
+                    <div class="slide-nav d-flex justify-content-between">
+                        <select class="countryCityDropdown">
+                            <option value="" selected disabled>Select a Region</option>
+                        </select>
+                        <div class="slide-close-btn">
+                            ×
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+                include("./global-presence-location-data.php");
+                ?>
+            </div>
+
+            <div class="exact-black-container">
+                <div class="main-content-container">
+                    <div class="our-presence-container">
+                        <div class="title" data-aos="zoom-out" data-aos-duration="1000">
+                            Our Global Presence
+                        </div>
+                        <div class="subtxt" data-aos="zoom-out" data-aos-duration="1000">
+                            Lorem ipsum, dolor sit adipisicing elit. Quia, omnis quae. Sequi
+                            quis culpa cumque, deserunt unde?
+                        </div>
+
+                        <div class="our-presence-map d-flex justify-content-center align-items-center">
+                            <div class="map-legends-container d-flex">
+                                <!-- <div class="d-flex" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="legends-box1">
-                                    <div class="inner-box"></div>
-                                </div>
-                                <div class="legends-txt">
-                                    Excis Offices
-                                </div>
-                            </div>
-                            <div class="d-flex" data-aos="fade-left" data-aos-duration="1000">
-                                <div class="legends-box2">
                                     <div class="inner-box"></div>
                                 </div>
                                 <div class="legends-txt">
                                     Excis Entities
                                 </div>
                             </div>
-                        </div>
+                             <div class="d-flex" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="legends-box2">
+                                    <div class="inner-box"></div>
+                                </div>
+                                <div class="legends-txt">
+                                    Excis Entities
+                                </div>
+                            </div> -->
 
-                        <div class="map-container" data-aos="zoom-in" data-aos-duration="1000">
-                            <div class="map-img">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'world-map.png'; ?>" alt="Our Presence in World">
-                            </div>
-
-                            <div class="countries-position navimumbai">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">India</div>
-                                    <ul class="city-name">
-                                        <li>Navi-Mumbai</li>
-                                    </ul>
+                                <div class="d-flex" data-aos="fade-left" data-aos-duration="1000">
+                                    <select class="countryCityDropdown">
+                                        <option value="" selected disabled>Select a Region</option>
+                                    </select>
                                 </div>
                             </div>
 
-                            <div class="countries-position noida">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">India</div>
-                                    <ul class="city-name">
-                                        <li>Noida</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position israel">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Israel</div>
-                                    <ul class="city-name">
-                                        <li>Kiryat Yam</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position madagascar">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Madagascar</div>
-                                    <ul class="city-name">
-                                        <li>Antananarivo</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position russia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Russia</div>
-                                    <ul class="city-name">
-                                        <li>Moscow</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position saudi-arabia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Saudi Arabia</div>
-                                    <ul class="city-name">
-                                        <li>Riyadh</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position southafrica">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">South Africa</div>
-                                    <ul class="city-name">
-                                        <li>Capetown</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position thailand">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Thailand</div>
-                                    <ul class="city-name">
-                                        <li>Phuket</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position turkey">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Turkey</div>
-                                    <ul class="city-name">
-                                        <li>Cankaya-Ankara</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position dubai">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">UAE</div>
-                                    <ul class="city-name">
-                                        <li>Dubai</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position active uk">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">United Kingdom (HQ)</div>
-                                    <ul class="city-name">
-                                        <li>Bracknell</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position mexico">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Mexico</div>
-                                    <ul class="city-name">
-                                        <li>Playa del Carmen</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position pakistan">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Pakistan</div>
-                                    <ul class="city-name">
-                                        <li>Islamabad</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position japan">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Japan</div>
-                                    <ul class="city-name">
-                                        <li>Tokyo</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position south-korea">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">South Korea</div>
-                                    <ul class="city-name">
-                                        <li>Seoul</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position shangai">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">China</div>
-                                    <ul class="city-name">
-                                        <li>Jiading, Shangai</li>
-                                        <li>Hongkou, Shangai</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position hongkong">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Hongkong</div>
-                                    <ul class="city-name">
-                                        <li>North Point</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position vietnam">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Vietnam</div>
-                                    <ul class="city-name">
-                                        <li>Ho Chi Minh City</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position malaysia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Malaysia</div>
-                                    <ul class="city-name">
-                                        <li>Kuala Lumpur</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position singapore">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Singapore</div>
-                                    <ul class="city-name">
-                                        <li>Peninsula Plaza</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position indonesia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Indonesia</div>
-                                    <ul class="city-name">
-                                        <li>Jakarta</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position philippines">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Philippines</div>
-                                    <ul class="city-name">
-                                        <li>Pasig</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position australia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Australia</div>
-                                    <ul class="city-name">
-                                        <li>Southport</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position new-zealand">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">New Zealand</div>
-                                    <ul class="city-name">
-                                        <li>Wellington</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position canada">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Canada</div>
-                                    <ul class="city-name">
-                                        <li>Montreal Quebec</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position usa">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">USA</div>
-                                    <ul class="city-name">
-                                        <li>Sussex Delaware</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position puerto-rico">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Puerto Rico</div>
-                                    <ul class="city-name">
-                                        <li>Las Piedras</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position nevis">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Nevis</div>
-                                    <ul class="city-name">
-                                        <li>Charlestown</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position colombia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Colombia</div>
-                                    <ul class="city-name">
-                                        <li>Valle del Cauca</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position brazil">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Brazil</div>
-                                    <ul class="city-name">
-                                        <li>Porto Velho Itajubá</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position uruguay">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Uruguay</div>
-                                    <ul class="city-name">
-                                        <li>Montevideo</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position kenya">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Kenya</div>
-                                    <ul class="city-name">
-                                        <li>Nairobi</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position nigeria">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Nigeria</div>
-                                    <ul class="city-name">
-                                        <li>Anthony Lagos</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position morocco">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Morocco</div>
-                                    <ul class="city-name">
-                                        <li>Casablanca</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position algeria">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Algeria</div>
-                                    <ul class="city-name">
-                                        <li>El Djazair</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position tunisia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Tunisia</div>
-                                    <ul class="city-name">
-                                        <li>Tunis</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position egypt">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Egypt</div>
-                                    <ul class="city-name">
-                                        <li>Cairo</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position portugal">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Portugal</div>
-                                    <ul class="city-name">
-                                        <li>Lisbon</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position spain">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Terrassa (Barcelona)</div>
-                                    <ul class="city-name">
-                                        <li>Spain</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position italy">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Italy</div>
-                                    <ul class="city-name">
-                                        <li>Rieti</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position greece">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Greece</div>
-                                    <ul class="city-name">
-                                        <li>Athens</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position bulgaria">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Bulgaria</div>
-                                    <ul class="city-name">
-                                        <li>Blagoevgrad</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position romania">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Romania</div>
-                                    <ul class="city-name">
-                                        <li>Quadra Place</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position norway">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Norway</div>
-                                    <ul class="city-name">
-                                        <li>Oslo</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position sweden">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Sweden</div>
-                                    <ul class="city-name">
-                                        <li>Lund</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position denmark">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Denmark</div>
-                                    <ul class="city-name">
-                                        <li>Nykøbing Falster</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position ireland">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Ireland</div>
-                                    <ul class="city-name">
-                                        <li>Dublin</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position belgium">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Belgium</div>
-                                    <ul class="city-name">
-                                        <li>Wommelgem</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position netherlands">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Netherlands</div>
-                                    <ul class="city-name">
-                                        <li>CW Eindhoven</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position germany">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Germany</div>
-                                    <ul class="city-name">
-                                        <li>Lich</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position switzerland">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Switzerland</div>
-                                    <ul class="city-name">
-                                        <li>Zug</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position slovakia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Slovakia</div>
-                                    <ul class="city-name">
-                                        <li>Bratislava</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position hungary">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Hungary</div>
-                                    <ul class="city-name">
-                                        <li>Honvéd u.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position poland">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Poland</div>
-                                    <ul class="city-name">
-                                        <li>Kraków</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position ukraine">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Ukraine</div>
-                                    <ul class="city-name">
-                                        <li>Lviv</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position paris">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">France</div>
-                                    <ul class="city-name">
-                                        <li>Paris</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position angola">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Angola</div>
-                                    <ul class="city-name">
-                                        <li>Luanda</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position serbia">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Serbia</div>
-                                    <ul class="city-name">
-                                        <li>Topola</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="countries-position senegal">
-                                <div class="countries-spot-point branch"></div>
-                                <div class="countries-spot-container">
-                                    <div class="country-name">Senegal</div>
-                                    <ul class="city-name">
-                                        <li>Sacre Coeur 3, Dakar</li>
-                                    </ul>
+                            <div class="map-container" data-aos="zoom-in" data-aos-duration="1000">
+                                <div class="map-img">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'world-map.png'; ?>" alt="Our Presence in World">
                                 </div>
                             </div>
                         </div>
@@ -1493,7 +955,7 @@ include('./constant.php');
     </div>
 
     <!-- Our Clients & Partners -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
@@ -1563,23 +1025,7 @@ include('./constant.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <script>
-        const countries = document.querySelectorAll('.countries-position');
-
-        countries.forEach(country => {
-            country.addEventListener('mouseover', () => {
-                countries.forEach(country => {
-                    country.classList.remove('active');
-                })
-
-                country.classList.add('active');
-            });
-
-            country.addEventListener('mouseout', () => {
-                country.classList.add('active');
-            });
-        });
-    </script>
+    <script src="assets\js\global-presence-map.js"></script>
 
     <script>
         // Initialize the intl-tel-input plugin
