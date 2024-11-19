@@ -240,6 +240,118 @@ $light-blue-color: rgb(54, 98, 200);
 .our-presence-bg {
     width: 100%;
     background: var(--black-color);
+    position: relative;
+
+    .default-data-card-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 100%;
+        background: var(--white-color);
+
+        .data {
+            padding: 200px 15px 50px;
+            gap: 60px;
+
+            div p {
+                font-size: 20px;
+                font-weight: 700;
+                padding: 5px 0 0;
+                color: var(--black-color);
+
+                &:first-child {
+                    font-size: 35px;
+                    font-weight: 900;
+                    line-height: 40px;
+                    color: var(--orange-color);
+                }
+
+                &:last-child {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    padding: 20px 0 0;
+                    color: var(--black-color);
+                }
+            }
+        }
+    }
+
+    .countries-data-card-slide {
+        position: absolute;
+        top: 0;
+        left: -350px;
+        width: 350px;
+        height: 100%;
+        background: var(--orange-color);
+        color: #fff;
+        transition: all .5s ease-in-out;
+
+        .slide-nav {
+            padding: 200px 15px 50px;
+
+            .countryCityDropdown {
+                width: 250px;
+                height: 40px;
+                outline: none;
+                padding: 0 5px;
+                border-radius: 6px;
+                border: 2px solid transparent;
+                cursor: pointer;
+
+                &:hover {
+                    border: 2px solid var(--grey-color);
+                }
+            }
+
+            .slide-close-btn {
+                font-size: 30px;
+                font-weight: 900;
+                color: var(--white-color);
+                cursor: pointer;
+                transform: rotate(0deg);
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    transform: rotate(720deg);
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+
+        .country-data {
+            padding: 0 15px 50px;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                padding: 20px 0 0;
+                color: var(--white-color);
+            }
+
+            .country {
+                font-size: 30px;
+                font-weight: 900;
+                line-height: 40px;
+                padding: 0;
+                color: var(--white-color);
+            }
+
+            .city {
+                font-size: 20px;
+                font-weight: 700;
+                padding: 5px 0 0;
+                color: var(--black-color);
+            }
+        }
+    }
 
     .main-content-container {
         height: 100%;
@@ -412,8 +524,8 @@ $light-blue-color: rgb(54, 98, 200);
                         }
 
                         &.canada {
-                            top: 47%;
-                            left: 27.5%;
+                            top: 43%;
+                            left: 17%;
                         }
 
                         &.usa {
