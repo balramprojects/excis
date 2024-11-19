@@ -589,6 +589,7 @@ function highlightCountryPosition(selectedValue) {
             const countrySlideClassActive = countrySlide.querySelector(`.country-data.${uniqueClass}`);
             if (countrySlideClassActive) {
                 countrySlide.style.left = "0px";
+                countrySlide.style.opacity = "1";
                 countrySlideClassActive.classList.add('active');
             } else {
                 alert('No data available');
@@ -621,10 +622,13 @@ countries.forEach(country => {
 });
 
 // Slide Close Button
-
 const slideCloseBtn = document.querySelector('.countries-data-card-slide .slide-nav .slide-close-btn');
 const countrySlide = document.querySelector('.countries-data-card-slide');
 
 slideCloseBtn.onclick = () => {
-    countrySlide.style.left = "-350px";
+
+    if (countrySlide.style.left == "0px" && countrySlide.style.opacity == "1") {
+        countrySlide.style.left = "-360px";
+        countrySlide.style.opacity = "0";
+    }
 }

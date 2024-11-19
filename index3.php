@@ -44,10 +44,6 @@ include('./constant.php');
         .submitBtn:hover {
             background: rgb(27, 49, 93, 1);
         }
-
-        .countryCityDropdown {
-            width: 250px;
-        }
     </style>
 
 </head>
@@ -425,30 +421,32 @@ include('./constant.php');
     <!-- Our Global Presence -->
     <div class="full-container">
         <div class="our-presence-bg">
-            <div class="default-data-card-slide">
-                <div class="data d-flex flex-column">
-                    <div>
-                        <p>120+</p>
-                        <p>Delivery Centers</p>
-                        <p>
-                            Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
-                        </p>
-                    </div>
-                    <div>
-                        <p>20+</p>
-                        <p>Branches</p>
-                        <p>
-                            Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
-                        </p>
+            <div class="desktop">
+                <div class="default-data-card-slide">
+                    <div class="data d-flex flex-column">
+                        <div>
+                            <p>120+</p>
+                            <p>Delivery Centers</p>
+                            <p>
+                                Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
+                            </p>
+                        </div>
+                        <div>
+                            <p>20+</p>
+                            <p>Branches</p>
+                            <p>
+                                Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="countries-data-card-slide">
-                <div class="desktop">
+                <div>
                     <div class="slide-nav d-flex justify-content-between">
                         <select class="countryCityDropdown">
-                            <option value="" selected disabled>Select a city...</option>
+                            <option value="" selected disabled>Select a Region</option>
                         </select>
                         <div class="slide-close-btn">
                             ×
@@ -461,7 +459,7 @@ include('./constant.php');
                 ?>
             </div>
 
-            <div style="width: calc(100% - 350px); margin-left: 350px;">
+            <div class="exact-black-container">
                 <div class="main-content-container">
                     <div class="our-presence-container">
                         <div class="title" data-aos="zoom-out" data-aos-duration="1000">
@@ -493,7 +491,7 @@ include('./constant.php');
 
                                 <div class="d-flex" data-aos="fade-left" data-aos-duration="1000">
                                     <select class="countryCityDropdown">
-                                        <option value="" selected disabled>Select a city...</option>
+                                        <option value="" selected disabled>Select a Region</option>
                                     </select>
                                 </div>
                             </div>

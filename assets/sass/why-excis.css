@@ -193,7 +193,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 360px;
   height: 100%;
   background: var(--white-color);
 }
@@ -223,12 +223,13 @@
 .our-presence-bg .countries-data-card-slide {
   position: absolute;
   top: 0;
-  left: -350px;
-  width: 350px;
+  left: -360px;
+  width: 360px;
   height: 100%;
   background: var(--orange-color);
   color: #fff;
-  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 .our-presence-bg .countries-data-card-slide .slide-nav {
   padding: 200px 15px 50px;
@@ -284,20 +285,24 @@
   padding: 5px 0 0;
   color: var(--black-color);
 }
-.our-presence-bg .main-content-container {
+.our-presence-bg .exact-black-container {
+  width: calc(100% - 360px);
+  margin-left: 360px;
+}
+.our-presence-bg .exact-black-container .main-content-container {
   height: 100%;
   padding: 50px 15px;
 }
-.our-presence-bg .main-content-container .our-presence-container {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container {
   width: 100%;
 }
-.our-presence-bg .main-content-container .our-presence-container .title {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .title {
   font-size: 38px;
   font-weight: 500;
   text-align: center;
   color: var(--white-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .subtxt {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .subtxt {
   max-width: 600px;
   font-size: 16px;
   font-weight: 400;
@@ -307,286 +312,298 @@
   margin-inline: auto;
   color: var(--grey-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map {
   width: 100%;
   padding: 50px 0 0;
   flex-direction: column;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container {
   gap: 40px;
   padding: 0 0 30px 0;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 {
   border: 1px solid var(--orange-color);
   padding: 4px;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 .inner-box {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 .inner-box {
   width: 11px;
   height: 11px;
   background: var(--orange-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 {
   border: 1px solid var(--light-blue-color);
   padding: 4px;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 .inner-box {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 .inner-box {
   width: 11px;
   height: 11px;
   background: var(--light-blue-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-txt {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-txt {
   font-size: 15px;
   color: var(--white-color);
   padding: 0 0 0 8px;
   line-height: 20px;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .countryCityDropdown {
+  width: 250px;
+  height: 40px;
+  outline: none;
+  padding: 0 5px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .countryCityDropdown:hover {
+  border: 2px solid var(--grey-color);
+}
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container {
   max-width: 800px;
   position: relative;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .map-img {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .map-img {
   max-width: 100%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position {
   position: absolute;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.navimumbai {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.navimumbai {
   top: 63%;
   left: 67.1%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.thailand {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.thailand {
   top: 66.4%;
   left: 73.9%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.dubai {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.dubai {
   top: 59.8%;
   left: 62.8%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.saudi-arabia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.saudi-arabia {
   top: 60%;
   left: 60%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.israel {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.israel {
   top: 55.5%;
   left: 56.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.turkey {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.turkey {
   top: 51.5%;
   left: 55%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.noida {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.noida {
   top: 57.6%;
   left: 68.6%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.pakistan {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.pakistan {
   top: 51.5%;
   left: 66.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.japan {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.japan {
   top: 53.9%;
   left: 85.8%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.south-korea {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.south-korea {
   top: 53.5%;
   left: 82.3%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.shangai {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.shangai {
   top: 56%;
   left: 80%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.hongkong {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.hongkong {
   top: 60.4%;
   left: 78.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.vietnam {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.vietnam {
   top: 65%;
   left: 76.3%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.malaysia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.malaysia {
   top: 68%;
   left: 74.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.singapore {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.singapore {
   top: 69.3%;
   left: 75.2%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.indonesia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.indonesia {
   top: 72.5%;
   left: 76%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.philippines {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.philippines {
   top: 64.5%;
   left: 80.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.australia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.australia {
   top: 82.5%;
   left: 89.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.new-zealand {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.new-zealand {
   top: 90%;
   left: 94.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.canada {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.canada {
   top: 43%;
   left: 17%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.usa {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.usa {
   top: 51.6%;
   left: 26.6%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.mexico {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.mexico {
   top: 60%;
   left: 22.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.puerto-rico {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.puerto-rico {
   top: 61.6%;
   left: 26.7%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.nevis {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.nevis {
   top: 62%;
   left: 28%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.colombia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.colombia {
   top: 69%;
   left: 25%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.brazil {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.brazil {
   top: 79%;
   left: 35%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.uruguay {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.uruguay {
   top: 86%;
   left: 31%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.southafrica {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.southafrica {
   top: 85.5%;
   left: 52.2%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.madagascar {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.madagascar {
   top: 78.8%;
   left: 59.7%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.kenya {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.kenya {
   top: 69%;
   left: 58%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.nigeria {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.nigeria {
   top: 66.5%;
   left: 47.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.morocco {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.morocco {
   top: 55%;
   left: 44.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.algeria {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.algeria {
   top: 54%;
   left: 47%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.tunisia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.tunisia {
   top: 53.5%;
   left: 49.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.egypt {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.egypt {
   top: 55.7%;
   left: 55%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.portugal {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.portugal {
   top: 51.5%;
   left: 44%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.spain {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.spain {
   top: 50.5%;
   left: 47.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.italy {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.italy {
   top: 50.4%;
   left: 49.4%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.greece {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.greece {
   top: 52.5%;
   left: 52.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.bulgaria {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.bulgaria {
   top: 50.5%;
   left: 53.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.romania {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.romania {
   top: 49%;
   left: 54.6%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.russia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.russia {
   top: 39%;
   left: 58.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.norway {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.norway {
   top: 39%;
   left: 48.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.sweden {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.sweden {
   top: 40.5%;
   left: 49.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.denmark {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.denmark {
   top: 42%;
   left: 49.2%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.ireland {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.ireland {
   top: 44%;
   left: 44%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.uk {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.uk {
   top: 45%;
   left: 46.1%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.belgium {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.belgium {
   top: 44.6%;
   left: 48%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.netherlands {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.netherlands {
   top: 43.6%;
   left: 48.7%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.germany {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.germany {
   top: 45%;
   left: 50%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.switzerland {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.switzerland {
   top: 48%;
   left: 51%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.slovakia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.slovakia {
   top: 45.5%;
   left: 53%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.hungary {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.hungary {
   top: 45.8%;
   left: 53.8%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.poland {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.poland {
   top: 44%;
   left: 53.7%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.ukraine {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.ukraine {
   top: 45%;
   left: 55%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.paris {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.paris {
   top: 46%;
   left: 46.5%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.angola {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.angola {
   top: 72.2%;
   left: 50.3%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.serbia {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.serbia {
   top: 50%;
   left: 52%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.senegal {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.senegal {
   top: 63.5%;
   left: 42%;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point {
   height: 6px;
   width: 6px;
   position: absolute;
@@ -596,13 +613,13 @@
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch {
   background: var(--orange-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities {
   background: var(--light-blue-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container {
   display: none;
   width: 180px;
   background: var(--white-color);
@@ -614,7 +631,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container::after {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container::after {
   content: "";
   width: 20px;
   height: 10px;
@@ -627,32 +644,32 @@
           clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .country-name {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .country-name {
   font-size: 16px;
   font-weight: 700;
   padding: 0 0 3px;
   text-transform: uppercase;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .city-name {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .city-name {
   font-size: 12px;
   font-weight: 500;
   color: var(--black-color);
   margin: 6px 0 0 15px;
   text-transform: uppercase;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .city-name li {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .city-name li {
   line-height: 19px;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch + .countries-spot-container .country-name {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch + .countries-spot-container .country-name {
   color: var(--orange-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities + .countries-spot-container .country-name {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities + .countries-spot-container .country-name {
   color: var(--light-blue-color);
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.branch {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.branch {
   animation: pulse-animation 1s infinite;
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.entities {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.entities {
   animation: pulse-animation-blue 1s infinite;
 }
 @keyframes pulse-animation {
@@ -671,7 +688,7 @@
     box-shadow: 0 0 0 15px rgba(54, 98, 200, 0);
   }
 }
-.our-presence-bg .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-container {
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-container {
   display: block;
   z-index: 1;
 }
@@ -1433,6 +1450,170 @@
   }
   .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card:hover .card-content .left-portion .titletxt {
     color: var(--black-color);
+  }
+  .our-presence-bg .countries-data-card-slide {
+    top: 60px;
+    left: -600px;
+    width: 100%;
+    height: calc(100dvh - 60px);
+  }
+  .our-presence-bg .countries-data-card-slide .slide-nav {
+    padding: 50px 15px 50px;
+  }
+  .our-presence-bg .exact-black-container {
+    width: 100%;
+    margin: 0;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .title {
+    font-size: 25px;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .subtxt {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map {
+    width: 100%;
+    padding: 50px 0 0;
+    flex-direction: column;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container {
+    gap: 40px;
+    padding: 0 0 30px 0;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 {
+    border: 1px solid var(--orange-color);
+    padding: 4px;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box1 .inner-box {
+    width: 11px;
+    height: 11px;
+    background: var(--orange-color);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 {
+    border: 1px solid var(--light-blue-color);
+    padding: 4px;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-box2 .inner-box {
+    width: 11px;
+    height: 11px;
+    background: var(--light-blue-color);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .legends-txt {
+    font-size: 15px;
+    color: var(--white-color);
+    padding: 0 0 0 8px;
+    line-height: 20px;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .countryCityDropdown {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    padding: 0 5px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-legends-container .countryCityDropdown:hover {
+    border: 2px solid var(--grey-color);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container {
+    max-width: 800px;
+    position: relative;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .map-img {
+    max-width: 100%;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position {
+    position: absolute;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch {
+    background: var(--orange-color);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities {
+    background: var(--light-blue-color);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container {
+    display: none;
+    width: 180px;
+    background: var(--white-color);
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    transform: translate(-50%, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container::after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 52%;
+    transform: translate(-50%, 96%);
+    background: var(--white-color);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
+            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .country-name {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 0 3px;
+    text-transform: uppercase;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .city-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--black-color);
+    margin: 6px 0 0 15px;
+    text-transform: uppercase;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-container .city-name li {
+    line-height: 19px;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.branch + .countries-spot-container .country-name {
+    color: var(--orange-color);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position .countries-spot-point.entities + .countries-spot-container .country-name {
+    color: var(--light-blue-color);
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.branch {
+    animation: pulse-animation 1s infinite;
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-point.entities {
+    animation: pulse-animation-blue 1s infinite;
+  }
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px var(--orange-color);
+    }
+    100% {
+      box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
+    }
+  }
+  @keyframes pulse-animation-blue {
+    0% {
+      box-shadow: 0 0 0 0px var(--light-blue-color);
+    }
+    100% {
+      box-shadow: 0 0 0 15px rgba(54, 98, 200, 0);
+    }
+  }
+  .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map .map-container .countries-position.active .countries-spot-container {
+    display: block;
+    z-index: 1;
   }
   .our-services-bg .our-services-container .main-content-container .content-container .title-txt {
     font-size: 25px;
