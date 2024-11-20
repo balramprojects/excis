@@ -68,8 +68,8 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 12px 26px;
-  color: var(--white-color);
-  background: var(--black-color);
+  background: var(--white-color);
+  color: var(--black-color);
   gap: 12px;
   border-radius: 10px;
   border: 1px solid var(--black-color);
@@ -84,8 +84,8 @@
   width: 20px;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn:hover {
-  background: var(--white-color);
-  color: var(--black-color);
+  color: var(--white-color);
+  background: var(--black-color);
   transition: all 0.3s ease-in-out;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .subtitle-txt {

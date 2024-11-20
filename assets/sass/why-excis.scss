@@ -86,8 +86,8 @@ $light-blue-color: rgb(54, 98, 200);
                     .learn-more-btn {
                         width: fit-content;
                         padding: 12px 26px;
-                        color: var(--white-color);
-                        background: var(--black-color);
+                        background: var(--white-color);
+                        color: var(--black-color);
                         gap: 12px;
                         border-radius: 10px;
                         border: 1px solid var(--black-color);
@@ -104,8 +104,8 @@ $light-blue-color: rgb(54, 98, 200);
                         }
 
                         &:hover {
-                            background: var(--white-color);
-                            color: var(--black-color);
+                            color: var(--white-color);
+                            background: var(--black-color);
                             transition: all .3s ease-in-out;
                         }
                     }

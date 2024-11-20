@@ -113,9 +113,10 @@
   left: 50%;
   transform: translate(-50%, 0);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05), -5px 5px 5px rgba(0, 0, 0, 0.05), 0px 5px 5px rgba(0, 0, 0, 0.05);
-  padding: 0 50px 50px;
+  padding: 0 25px 25px;
   z-index: 1;
   background: var(--white-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown:hover {
   display: block;
@@ -128,14 +129,6 @@
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul li {
   padding: 10px 0 0;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul li:first-child {
-  padding: 10px 0;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--black-color);
-  border-bottom: 1px solid rgba(37, 37, 37, 0.25);
-  text-wrap: nowrap;
-}
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul li a {
   font-size: 14px;
   font-weight: 400px;
@@ -146,7 +139,15 @@
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul li:hover a {
   font-weight: 700;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul:hover li:first-child {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul .title {
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black-color);
+  border-bottom: 1px solid rgba(37, 37, 37, 0.25);
+  text-wrap: nowrap;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul:hover .title {
   color: var(--orange-color);
 }
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container:hover .nav-tab-item {

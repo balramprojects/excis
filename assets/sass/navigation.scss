@@ -142,9 +142,10 @@ $grey-color: #808389;
                             left: 50%;
                             transform: translate(-50%, 0);
                             box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.05), -5px 5px 5px rgb(0, 0, 0, 0.05), 0px 5px 5px rgb(0, 0, 0, 0.05);
-                            padding: 0 50px 50px;
+                            padding: 0 25px 25px;
                             z-index: 1;
                             background: var(--white-color);
+                            border-top: 1px solid rgba(0, 0, 0, 0.1);
 
                             &:hover {
                                 display: block;
@@ -157,15 +158,6 @@ $grey-color: #808389;
 
                                 li {
                                     padding: 10px 0 0;
-
-                                    &:first-child {
-                                        padding: 10px 0;
-                                        font-size: 18px;
-                                        font-weight: 700;
-                                        color: var(--black-color);
-                                        border-bottom: 1px solid rgba(37, 37, 37, 0.25);
-                                        text-wrap: nowrap;
-                                    }
 
                                     a {
                                         font-size: 14px;
@@ -180,10 +172,17 @@ $grey-color: #808389;
                                     }
                                 }
 
-                                &:hover {
-                                    li:first-child {
-                                        color: var(--orange-color);
-                                    }
+                                .title {
+                                    padding: 10px 0;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    color: var(--black-color);
+                                    border-bottom: 1px solid rgba(37, 37, 37, 0.25);
+                                    text-wrap: nowrap;
+                                }
+
+                                &:hover .title {
+                                    color: var(--orange-color);
                                 }
                             }
                         }

@@ -119,58 +119,58 @@ include('./constant.php');
                                 <div class="nav-tab-dropdown">
                                     <div class="d-flex justify-content-center align-items-start">
                                         <ul>
-                                            <li>Infrastructure</li>
-                                            <li><a href="#">Network</a></li>
+                                            <li class="title">Infrastructure</li>
+                                            <li><a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
-                                            <li><a href="#">End User Support</a></li>
-                                            <li><a href="#">Audio-Visual</a></li>
-                                            <li><a href="#">WiFi Services</a></li>
-                                            <li><a href="#">Operating System</a></li>
-                                            <li><a href="#">New Office + Migration <br> Solutions</a></li>
-                                            <li><a href="#">Helpdesk</a></li>
-                                            <li><a href="#">Storage As A Service (SAAS)</a></li>
-                                            <li><a href="#">Device As A Service (DAAS)</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End User Support</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">Audio-Visual</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating System</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration <br> Solutions</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (SAAS)</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service (DAAS)</a></li>
                                         </ul>
 
                                         <div>
                                             <ul>
-                                                <li>Cyber Security Services</li>
-                                                <li><a href="#">Cyber Security Consulting</a></li>
-                                                <li><a href="#">End Point Security</a></li>
-                                                <li><a href="#">Network Security</a></li>
-                                                <li><a href="#">Application Security</a></li>
-                                                <li><a href="#">Web Security</a></li>
-                                                <li><a href="#">Email Security</a></li>
-                                                <li><a href="#">Hybrid Cloud Security</a></li>
-                                            </ul>
-
-                                            <ul>
-                                                <li>Development</li>
-                                                <li><a href="#">Software And Application Development</a></li>
-                                                <li><a href="#">API Integration</a></li>
-                                                <li><a href="#">Network And Systems Automation</a></li>
+                                                <li class="title">Cyber Security Services</li>
+                                                <li><a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">Cyber Security Consulting</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">End Point Security</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">Network Security</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">Application Security</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">Web Security</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">Email Security</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">Hybrid Cloud Security</a></li>
                                             </ul>
                                         </div>
 
                                         <div>
                                             <ul>
-                                                <li>Cloud Services</li>
-                                                <li><a href="#">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
-                                                <li><a href="#">Private Cloud Solutions</a></li>
-                                                <li><a href="#">Hybrid Cloud</a></li>
-                                                <li><a href="#">Office 365 And G-Suite Migration + Integration</a></li>
+                                                <li class="title">Cloud Services</li>
+                                                <li><a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>">Private Cloud Solutions</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">Hybrid Cloud</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/office-365-and-g-suite-migration-and-integraion.php'; ?>">Office 365 And G-Suite Migration + Integration</a></li>
                                             </ul>
 
                                             <ul>
-                                                <li>Depot</li>
-                                                <li><a href="#">Warehousing</a></li>
-                                                <li><a href="#">Logistics</a></li>
-                                                <li><a href="#">Staging</a></li>
-                                                <li><a href="#">Wiping + Disposal</a></li>
-                                                <li><a href="#">PMO</a></li>
-                                                <li><a href="#">NOC Services</a></li>
-                                                <li><a href="#">SOC Services</a></li>
+                                                <li class="title">Development</li>
+                                                <li><a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>">Software And Application Development</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/api-integration.php'; ?>">API Integration</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/network-and-system-automation.php'; ?>">Network And System Automation</a></li>
                                             </ul>
+
+                                            <!-- <ul>
+                                                <li class="title">Depot</li>
+                                                <li><a href="<?php echo $desktop_url . 'services/warehousing.php'; ?>">Warehousing</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/logistics.php'; ?>">Logistics</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/staging.php'; ?>">Staging</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/wiping-and-disposal.php'; ?>">Wiping + Disposal</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/pmo.php'; ?>">PMO</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/noc-services.php'; ?>">NOC Services</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/soc-services.php'; ?>">SOC Services</a></li>
+                                            </ul> -->
                                         </div>
                                     </div>
                                 </div>
@@ -186,18 +186,17 @@ include('./constant.php');
                                 <div class="nav-tab-dropdown">
                                     <div class="d-flex justify-content-center align-items-start">
                                         <ul>
-                                            <li>Industries</li>
-                                            <li><a href="#">Retail</a></li>
-                                            <li><a href="#">Energy</a></li>
-                                            <li><a href="#">Life Sciences</a></li>
-                                            <li><a href="#">Financial Services (FS&I)</a></li>
-                                            <li><a href="#">Telecoms</a></li>
-                                            <li><a href="#">Utilities</a></li>
-                                            <li><a href="#">Public Sector</a></li>
-                                            <li><a href="#">Manufacturing</a></li>
-                                            <li><a href="#">Education</a></li>
-                                            <li><a href="#">IT & Consulting</a></li>
-                                            <li><a href="#">Consumer Goods</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>">Utilities</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>">Public Sector</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>">Manufacturing</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/education.php'; ?>">Education</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/it-and-consulting.php'; ?>">IT & Consulting</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>">Consumer Goods</a></li>
                                         </ul>
                                     </div>
                                 </div>
