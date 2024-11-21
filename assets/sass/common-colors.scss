@@ -1,0 +1,27 @@
+$primary-black-color: #000;
+$primary-white-color: #fff;
+$secondary-black-color: rgba(0, 0, 0, 0.5);
+$secondary-white-color: rgba(255, 255, 255, 0.5);
+
+$black-color: #121820;
+$white-color: #FAF9F6;
+$orange-color: #F58520;
+$blue-color: #1B315D;
+$grey-color: #808389;
+
+$box-shadow-color: rgb(0, 0, 0, 0.15);
+
+:root {
+    --primary-black-color: #{$primary-black-color};
+    --primary-white-color: #{$primary-white-color};
+    --secondary-black-color: #{$secondary-black-color};
+    --secondary-white-color: #{$secondary-white-color};
+
+    --black-color: #{$black-color};
+    --white-color: #{$white-color};
+    --orange-color: #{$orange-color};
+    --blue-color: #{$blue-color};
+    --grey-color: #{$grey-color};
+
+    --box-shadow-color: #{$box-shadow-color};
+}

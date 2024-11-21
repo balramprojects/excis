@@ -30,6 +30,7 @@ require_once('../constant.php');
     <link rel="stylesheet" href="../assets/sass/navigation.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
     <link rel="stylesheet" href="../assets/sass/contact-us.css">
+    <link rel="stylesheet" href="../assets/sass/services.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
@@ -177,9 +178,16 @@ require_once('../constant.php');
             top: 40px;
             background: rgba(233, 233, 233);
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+            cursor: pointer;
         }
 
         .pie-containers-center-point .pie-slice.active .pie-triangle {
+            background: rgb(245, 133, 32);
+            top: 30px;
+            transition: all .2s ease-in-out;
+        }
+
+        .pie-containers-center-point .pie-slice:hover .pie-triangle {
             background: rgb(245, 133, 32);
             top: 30px;
             transition: all .2s ease-in-out;
@@ -224,6 +232,12 @@ require_once('../constant.php');
             right: 5.5px;
         }
 
+        .pie-containers-center-point .pie-slice:hover .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve,
+        .pie-containers-center-point .pie-slice:hover .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
+            background: rgb(245, 133, 32);
+            transition: .2s ease-in-out;
+        }
+
         .pie-containers-center-point .pie-slice.active .pie-triangle .pie-triangle-left-curve-block .pie-triangle-curve,
         .pie-containers-center-point .pie-slice.active .pie-triangle .pie-triangle-right-curve-block .pie-triangle-curve {
             background: rgb(245, 133, 32);
@@ -246,12 +260,15 @@ require_once('../constant.php');
             box-shadow: 0px 8px 3px -1px rgb(137, 147, 152);
         }
 
-        .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle {
+        .pie-containers-center-point .pie-slice:hover .pie-triangle-outer-circle {
             top: 0;
+            background: rgb(21, 35, 75);
+            box-shadow: 0px 8px 3px -1px rgb(21, 35, 75, 0.5);
             transition: all .2s ease-in-out;
         }
 
         .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle {
+            top: 0;
             background: rgb(21, 35, 75);
             box-shadow: 0px 8px 3px -1px rgb(21, 35, 75, 0.5);
             transition: all .2s ease-in-out;
@@ -266,6 +283,11 @@ require_once('../constant.php');
             background: rgba(191, 191, 191, 1);
             border: 1.5px solid #fff;
             border-radius: 50%;
+        }
+
+        .pie-containers-center-point .pie-slice:hover .pie-triangle-outer-circle .pie-triangle-inner-circle {
+            background: rgb(245, 133, 32);
+            transition: all .2s ease-in-out;
         }
 
         .pie-containers-center-point .pie-slice.active .pie-triangle-outer-circle .pie-triangle-inner-circle {
@@ -288,6 +310,13 @@ require_once('../constant.php');
             font-size: 12px;
             font-weight: 700;
             text-wrap: wrap;
+        }
+
+        .pie-containers-center-point .pie-slice:hover .txt-content {
+            top: calc(50% - 30px);
+            color: #fff;
+            font-size: 13px;
+            transition: all .2s ease-in-out;
         }
 
         .pie-containers-center-point .pie-slice.active .txt-content {
@@ -335,6 +364,10 @@ require_once('../constant.php');
             max-width: 550px;
             margin-left: auto;
             display: none;
+        }
+
+        .pie-section-info-card:hover {
+            display: block;
         }
 
         .pie-section-info-card.active {
@@ -1252,24 +1285,21 @@ require_once('../constant.php');
 
         triangles.forEach(triangle => {
 
-            triangle.addEventListener('mouseenter', function() {
-
-                // Remove 'active' class from all triangles
-                triangles.forEach(tri => {
-                    tri.classList.remove('active');
-                });
-
-                // Add 'active' class to the hovered triangle
-                this.classList.add('active');
+            triangle.onclick = function() {
 
                 // Extract the class that starts with "slice-"
-                const className = this.className;
+                const className = triangle.className;
                 const sliceClass = className.split(' ').find(cls => cls.startsWith('slice-'));
 
                 // If sliceClass exists, extract the number after "slice-"
                 const sliceNumber = sliceClass ? sliceClass.split('-')[1] : '';
 
-                console.log(sliceNumber); // This will output the number, e.g., '7'
+                // Remove 'active' class from all triangles
+                triangles.forEach(triangle => {
+                    triangle.classList.remove('active');
+                });
+
+                triangle.classList.add('active');
 
                 // Remove 'active' class from all info cards
                 infoCards.forEach(card => {
@@ -1280,12 +1310,7 @@ require_once('../constant.php');
                 if (sliceNumber && infoCards[sliceNumber - 1]) {
                     infoCards[sliceNumber - 1].classList.add('active');
                 }
-            });
-
-            // If you need the 'mouseleave' event uncomment this block
-            // triangle.addEventListener('mouseleave', function() {
-            //     this.classList.remove('active');
-            // });
+            }
         });
 
         window.onload = function() {

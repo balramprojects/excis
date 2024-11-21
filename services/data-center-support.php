@@ -178,6 +178,7 @@ require_once('../constant.php');
             top: 40px;
             background: rgba(233, 233, 233);
             clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+            cursor: pointer;
         }
 
         .pie-containers-center-point .pie-slice.active .pie-triangle {
@@ -363,6 +364,10 @@ require_once('../constant.php');
             max-width: 550px;
             margin-left: auto;
             display: none;
+        }
+
+        .pie-section-info-card:hover {
+            display: block;
         }
 
         .pie-section-info-card.active {
