@@ -330,6 +330,16 @@ require_once('../constant.php');
         .pie-containers-center-point .pie-slice.slice-8 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
             transform: rotate(-315deg);
         }
+
+        .pie-section-info-card {
+            max-width: 550px;
+            margin-left: auto;
+            display: none;
+        }
+
+        .pie-section-info-card.active {
+            display: block;
+        }
     </style>
 
 </head>
@@ -385,6 +395,13 @@ require_once('../constant.php');
 
                     <div class="desktop">
                         <ul class="middle-content d-flex align-items-center">
+                            <li class="nav-block-container d-flex align-items-center">
+                                <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <div class="nav-tab-item d-flex align-items-center">
+                                        About Us
+                                    </div>
+                                </a>
+                            </li>
                             <li class="nav-block-container d-flex align-items-center">
                                 <a href="<?php echo $desktop_url . 'services'; ?>">
                                     <div class="nav-tab-item active d-flex align-items-center">
@@ -535,10 +552,10 @@ require_once('../constant.php');
             <div style="height: 100%; padding: 0 15px;" class="main-content-container">
                 <div style="width: 100%; height: 100%; flex-direction: column;" class="d-flex justify-content-center">
                     <div style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 1);">
-                        Home - Services - <span style="font-weight: 600;">Network</span>
+                        Home - Services - <span style="font-weight: 600;">Data Center Support</span>
                     </div>
                     <div style="font-size: 40px; font-weight: 600; padding: 5px 0 0; color: rgba(37, 37, 37, 1);">
-                        Network
+                        Data Center Support
                     </div>
                 </div>
             </div>
@@ -553,14 +570,14 @@ require_once('../constant.php');
                     <div style="padding: 50px 15px;" class="d-flex justify-content-between align-items-center">
                         <div style="max-width: 600px;">
                             <div style="font-size: 30px; font-weight: 500; line-height: 40px; color: #F58520;">
-                                Complete Network Service
+                                Complete Data Center <br> Support Services
                             </div>
                             <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                In today’s competitive business environment, nearly all enterprises rely on competitive networking technology to facilitate both internal and external business processes. Given the ever-evolving nature of network systems, it becomes increasingly challenging to monitor trends and maintain a competitive edge. Furthermore, meeting customer expectations demands substantial effort and dedication. These factors underscore the compelling reasons to collaborate with professional networking service providers.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus, dicta veniam, quis, accusantium perspiciatis consectetur sapiente ab modi sed excepturi vitae. Sapiente velit quibusdam rerum natus enim culpa a nemo delectus illum consequuntur, architecto illo corporis sed cumque? Necessitatibus.
                                 <br> <br>
-                                Professional networking services offer significant cost-effectiveness and enhance organizational flexibility. Notably, they provide access to specialized skills that may not be readily available within the company. This encompasses networking, security, and communications expertise. The network management services offered by experts not only control operational expenses but also support a diverse range of technologies within the workplace.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed ratione reiciendis minus amet! Quo sit quos reprehenderit blanditiis, qui exercitationem architecto commodi quidem similique ad culpa ipsum eum non fuga dolores aut dolorem eos, neque suscipit dicta cupiditate, nisi dolorum voluptatibus! Explicabo quisquam aspernatur quod, autem nemo sit velit libero, veritatis amet quis odit facere vel, unde dicta quas. Perferendis quaerat omnis unde harum necessitatibus debitis nam alias ratione reprehenderit recusandae, nisi incidunt. Asperiores laborum esse maxime sint amet?
                                 <br> <br>
-                                By entrusting networking professionals to handle your organization’s concerns, you can rest assured that they will proactively identify, diagnose, and resolve networking-related issues. These experts provide routine monitoring as part of their network management services, delivering numerous benefits to your business. These include streamlined problem management, enhanced performance, and the avoidance of downtime.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae, ratione, qui neque temporibus deserunt omnis nemo soluta eum magni fuga consectetur! Libero, incidunt molestiae reprehenderit saepe omnis dicta. Recusandae!
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
@@ -576,27 +593,68 @@ require_once('../constant.php');
     <div class="full-container">
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
             <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
-                <div style="color: #fff; font-size: 30px; line-height: 40px; font-weight: 500;">
-                    Why is network service essential for businesses?
+                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
+                    What data center support services do we offer?
+                </div>
+                <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
+                    Our technicians are available around the clock so you can contact them anytime. The expert offers the end-to-end data center support solution quickly. You can stay in peace when our expert provides remote support service. We provide the following data center services with certified professionals and modern technologies.
                 </div>
 
-                <div style="color: #fff; font-size: 16px; line-height: 24px; font-weight: 400; text-align: start; padding: 20px 0 0;">
-                    In today’s competitive business landscape, meeting IT requirements is paramount for maintaining a competitive advantage. Organizations of all sizes can benefit from networking services to address their comprehensive IT needs.
-                    <br> <br>
-                    Here are compelling reasons why professional networking services are indispensable :
-                    <br>
-                    <ul style="margin: 6px 0 0 20px;">
-                        <li style="padding: 3px 0 0;"><b>Enhanced IT operations:</b> Professional networking services provide reliable and high-speed networks with enhanced support and security measures.</li>
-                        <li style="padding: 3px 0 0;"><b>Minimized operational costs:</b> By leveraging networking services, businesses can optimize their operations and reduce expenses.</li>
-                        <li style="padding: 3px 0 0;"><b>Preventing security breaches and IT issues:</b> Networking professionals ensure the robust security of your organization’s systems and data.</li>
-                    </ul>
-                </div>
+                <div class="support-cards d-flex">
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Technical Support
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                Our experienced technicians are available on-site to perform critical tasks and resolve issues quickly. They are experienced in diagnosing and fixing hardware and software issues, ensuring minimal downtime.
+                            </div>
+                        </div>
+                    </div>
 
-                <div style="color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; padding: 50px 0 0;">
-                    Access the most effective networking services for your business!
-                </div>
-                <div style="color: #fff; font-size: 16px; line-height: 24px; font-weight: 400; text-align: start; padding: 20px 0 0;">
-                    Are you seeking the optimal networking services for your organization? Consider partnering with Excis, a specialized provider offering comprehensive end-to-end networking solutions tailored to businesses of all sizes. Our expertise enables us to transform your business and differentiate it through the latest technologies and innovative tools. At an affordable cost, we deliver exceptional services, including cloud networks, workforce mobility, and networked security.
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Installing Racks
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                We carry out careful rack installation, ensuring optimal space and organization of your equipment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Remote Monitoring
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                Our advanced monitoring tools keep a close eye on the health of your data center. We proactively identify and fix potential problems before they escalate, minimizing disruptions to your operations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Device Integration
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                Our experts are well-versed in integrating various devices into your data center, from servers to network equipment, ensuring smooth operations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Cloud Support
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                As cloud technology continues to play a key role in data center operations, we offer comprehensive cloud support services, including migration and management.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -791,9 +849,170 @@ require_once('../constant.php');
                             </div>
                         </div>
                         <div style="width: 50%;">
-                            <div style="max-width: 550px; margin-left: auto;">
+                            <div class="pie-section-info-card active">
                                 <div style="font-size: 28px; font-weight: 500; color: #F58520;">
                                     Cyber Security Solutions
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="pie-section-info-card">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    WiFi Services
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="slice3" class="pie-section-info-card">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    Network Security Solutions
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="slice4" class="pie-section-info-card">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    Audio Video Solutions
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="slice5" class="pie-section-info-card">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    Data Center Support
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="slice6" class="pie-section-info-card">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    End Support Solutions
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="slice7" class="pie-section-info-card">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    Data Storage Solutions
+                                </div>
+                                <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
+                                    We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
+                                    <br> <br>
+                                    With our managed data center support services, you have all the support you need with your data center management. As a service, we can provide the people, security, and technology that your business needs to optimize your cloud and IT infrastructure. And knowing how busy you are running your operation, you can have the peace of mind knowing that we will support you remotely. With our management and automation capabilities, you will have more time to focus on your strategic initiatives.
+                                    <br> <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum distinctio quasi itaque architecto odit vitae laboriosam, delectus odio nulla sunt cumque iusto neque deserunt placeat eum ad blanditiis? Aperiam modi odio doloremque, fugiat ipsam repellat esse accusantium error inventore facilis.
+                                </div>
+                                <a href="#">
+                                    <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
+                                        class="d-flex justify-content-center align-items-center">
+                                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
+                                            Learn More</p>
+                                        <div style="width: 20px;" class="d-flex">
+                                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div id="slice8" class="pie-section-info-card">
+                                <div style="font-size: 28px; font-weight: 500; color: #F58520;">
+                                    Migration Solutions
                                 </div>
                                 <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
                                     We are focused on your unique business needs and will work hard to ensure your network is in safe hands. With managed services for your data center, you can work hard doing your thing while we work hard doing our thing.
@@ -1029,21 +1248,44 @@ require_once('../constant.php');
     <script>
         const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');
 
+        const infoCards = document.querySelectorAll('.pie-section-info-card');
+
         triangles.forEach(triangle => {
 
             triangle.addEventListener('mouseenter', function() {
 
+                // Remove 'active' class from all triangles
                 triangles.forEach(tri => {
                     tri.classList.remove('active');
-                })
+                });
 
+                // Add 'active' class to the hovered triangle
                 this.classList.add('active');
+
+                // Extract the class that starts with "slice-"
+                const className = this.className;
+                const sliceClass = className.split(' ').find(cls => cls.startsWith('slice-'));
+
+                // If sliceClass exists, extract the number after "slice-"
+                const sliceNumber = sliceClass ? sliceClass.split('-')[1] : '';
+
+                console.log(sliceNumber); // This will output the number, e.g., '7'
+
+                // Remove 'active' class from all info cards
+                infoCards.forEach(card => {
+                    card.classList.remove('active');
+                });
+
+                // Add 'active' class to the corresponding info card (use sliceNumber - 1 if needed)
+                if (sliceNumber && infoCards[sliceNumber - 1]) {
+                    infoCards[sliceNumber - 1].classList.add('active');
+                }
             });
 
+            // If you need the 'mouseleave' event uncomment this block
             // triangle.addEventListener('mouseleave', function() {
             //     this.classList.remove('active');
             // });
-
         });
 
         window.onload = function() {
