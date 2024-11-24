@@ -842,26 +842,37 @@ include('./constant.php');
     <script src="assets\js\global-presence-map.js"></script>
 
     <script>
-        // Initialize the intl-tel-input plugin
-        var input = document.querySelector("#phone");
-        var iti = window.intlTelInput(input, {
-            initialCountry: "auto",
-            separateDialCode: true,
-            geoIpLookup: function(success, failure) {
-                $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
-                    var countryCode = (resp && resp.country) ? resp.country : "us";
-                    success(countryCode);
-                });
-            }
-            // },
-            // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // just for formatting/placeholders etc
-        });
+        // Mobile Nav Menu Hamburger
+        const hamburger = document.querySelector('.m-nav .m-menu .hamburger');
+        const mNavSlider = document.querySelector('.m-nav-slider');
+        const mNavCloseBtn = document.querySelector('.m-nav .m-menu .nav-menu-close-btn');
+        const body = document.querySelector('body');
 
-        // Log the selected country on change
-        input.addEventListener("countrychange", function() {
-            var selectedCountryData = iti.getSelectedCountryData();
-            // console.log("Selected country:", selectedCountryData.name, selectedCountryData.dialCode);
-            // console.log("Selected country phone code:", selectedCountryData.dialCode);
+        hamburger.onclick = () => {
+            mNavSlider.classList.add('active');
+            mNavCloseBtn.classList.add('active');
+            hamburger.classList.remove('active');
+            body.style.overflow = "hidden";
+        }
+
+        mNavCloseBtn.onclick = () => {
+            mNavSlider.classList.remove('active');
+            mNavCloseBtn.classList.remove('active');
+            hamburger.classList.add('active');
+            body.style.overflow = "auto";
+        }
+
+        // Mobile Menu Accordion 
+        const details = document.querySelectorAll(".m-nav-slider .container .menu-list details:not(details details)");
+
+        details.forEach(detail => {
+            detail.addEventListener("click", () => {
+                details.forEach(otherDetail => {
+                    if (otherDetail !== detail) {
+                        otherDetail.removeAttribute("open");
+                    }
+                });
+            });
         });
     </script>
 

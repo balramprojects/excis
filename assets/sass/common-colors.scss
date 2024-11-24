@@ -10,6 +10,7 @@ $blue-color: #1B315D;
 $grey-color: #808389;
 
 $box-shadow-color: rgb(0, 0, 0, 0.15);
+$border-color: rgb(0, 0, 0, 0.1);
 
 :root {
     --primary-black-color: #{$primary-black-color};
@@ -24,4 +25,5 @@ $box-shadow-color: rgb(0, 0, 0, 0.15);
     --grey-color: #{$grey-color};
 
     --box-shadow-color: #{$box-shadow-color};
+    --border-color: #{$border-color};
 }
