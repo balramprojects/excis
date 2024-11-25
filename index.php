@@ -29,7 +29,7 @@ include('./constant.php');
     <link rel="stylesheet" href="assets/sass/why-excis.css">
     <link rel="stylesheet" href="assets/sass/navigation.css">
     <link rel="stylesheet" href="assets/sass/common.css">
-    <link rel="stylesheet" href="assets/sass/contact-us.css">
+    <link rel="stylesheet" href="assets/sass/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
@@ -167,7 +167,7 @@ include('./constant.php');
                                 </div>
 
                                 <div class="horizontal-card">
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="txt">
                                             <div class="heading">
                                                 Flexible IT Solutions
@@ -244,19 +244,19 @@ include('./constant.php');
     </div>
 
     <!-- Our Global Presence -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="our-presence-bg">
             <div class="desktop">
                 <div class="default-data-card-slide">
                     <div class="data d-flex flex-column">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <p>120+</p>
                             <p>Delivery Centers</p>
                             <p>
                                 Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
                             </p>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <p>20+</p>
                             <p>Branches</p>
                             <p>
@@ -267,37 +267,35 @@ include('./constant.php');
                 </div>
             </div>
 
-            <div class="countries-data-card-slide">
-                <div>
-                    <div class="slide-nav d-flex justify-content-between">
-                        <select class="countryCityDropdown">
-                            <option value="" selected disabled>Select a Region</option>
-                        </select>
-                        <div class="slide-close-btn">
-                            ×
-                        </div>
+            <div class="countries-data-card-slide desktop">
+                <div class="slide-nav d-flex justify-content-between">
+                    <select class="countryCityDropdown">
+                        <option value="" selected disabled>Select a Region</option>
+                    </select>
+                    <div class="slide-close-btn">
+                        ×
                     </div>
                 </div>
 
                 <?php
-                include("./global-presence-location-data.php");
+                include("templates/global-presence-location-data.php");
                 ?>
             </div>
 
             <div class="exact-black-container">
                 <div class="main-content-container">
                     <div class="our-presence-container">
-                        <div class="title" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="title" data-aos="fade-up" data-aos-duration="1000">
                             Our Global Presence
                         </div>
-                        <div class="subtxt" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="subtxt" data-aos="fade-up" data-aos-duration="1000">
                             Lorem ipsum, dolor sit adipisicing elit. Quia, omnis quae. Sequi
                             quis culpa cumque, deserunt unde?
                         </div>
 
                         <div class="our-presence-map d-flex justify-content-center align-items-center">
                             <div class="map-legends-container d-flex">
-                                <!-- <div class="d-flex" data-aos="fade-right" data-aos-duration="1000">
+                                <!-- <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="legends-box1">
                                     <div class="inner-box"></div>
                                 </div>
@@ -305,7 +303,7 @@ include('./constant.php');
                                     Excis Entities
                                 </div>
                             </div>
-                             <div class="d-flex" data-aos="fade-left" data-aos-duration="1000">
+                             <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="legends-box2">
                                     <div class="inner-box"></div>
                                 </div>
@@ -314,14 +312,14 @@ include('./constant.php');
                                 </div>
                             </div> -->
 
-                                <div class="d-flex" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
                                     <select class="countryCityDropdown">
                                         <option value="" selected disabled>Select a Region</option>
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="map-container" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="map-container" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="map-img">
                                     <img loading="lazy" src="<?php echo $desktop_images . 'world-map.png'; ?>" alt="Our Presence in World">
                                 </div>
@@ -334,7 +332,7 @@ include('./constant.php');
     </div>
 
     <!-- Our Services -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="our-services-bg">
             <div class="our-services-container">
                 <div class="left-btm-abstract desktop"></div>
@@ -342,10 +340,10 @@ include('./constant.php');
 
                 <div class="main-content-container">
                     <div class="content-container">
-                        <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="title-txt" data-aos="fade-up" data-aos-duration="1000">
                             Our Services
                         </div>
-                        <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                        <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
                             quis culpa cumque, laboriosam deserunt unde?
                         </div>
@@ -353,7 +351,7 @@ include('./constant.php');
                         <div class="service-cards-container">
                             <div class="desktop">
                                 <div class="cards">
-                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
                                                 <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
@@ -366,7 +364,7 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'helpdesk.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -385,13 +383,13 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'data-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
                                                 <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Email Security">
@@ -404,13 +402,13 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'email-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
                                                 <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
@@ -423,7 +421,7 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'web-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -442,13 +440,13 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'application-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
                                                 <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
@@ -461,7 +459,7 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'hybrid-cloud.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -471,51 +469,57 @@ include('./constant.php');
 
                             <div class="mobile">
                                 <div class="cards d-flex flex-column">
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                    <a href="<?php echo $desktop_url . 'helpdesk.php'; ?>">
+                                        <div class="card">
+                                            <div class="card-content d-flex justify-content-between align-items-center">
+                                                <div class="left-portion d-flex align-items-center">
+                                                    <div class="card-icon-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                                    </div>
+                                                    <div class="titletxt">
+                                                        Help Desk
+                                                    </div>
                                                 </div>
-                                                <div class="titletxt">
-                                                    Help Desk
+                                                <div class="forward-arrow-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                                 </div>
-                                            </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
+                                    </a>
+                                    <a href="<?php echo $desktop_url . 'data-security.php'; ?>">
+                                        <div class="card">
+                                            <div class="card-content d-flex justify-content-between align-items-center">
+                                                <div class="left-portion d-flex align-items-center">
+                                                    <div class="card-icon-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
+                                                    </div>
+                                                    <div class="titletxt">
+                                                        Data Security
+                                                    </div>
                                                 </div>
-                                                <div class="titletxt">
-                                                    Data Security
+                                                <div class="forward-arrow-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                                 </div>
-                                            </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
+                                    </a>
+                                    <a href="<?php echo $desktop_url . 'email-security.php'; ?>">
+                                        <div class="card">
+                                            <div class="card-content d-flex justify-content-between align-items-center">
+                                                <div class="left-portion d-flex align-items-center">
+                                                    <div class="card-icon-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
+                                                    </div>
+                                                    <div class="titletxt">
+                                                        Email Security
+                                                    </div>
                                                 </div>
-                                                <div class="titletxt">
-                                                    Email Security
+                                                <div class="forward-arrow-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                                 </div>
-                                            </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -535,12 +539,12 @@ include('./constant.php');
     </div>
 
     <!-- Stats -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="stats-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="content-container desktop">
                     <div class="stats-space d-flex justify-content-between align-items-center">
-                        <div class="stats-column" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="stats-column" data-aos="fade-up" data-aos-duration="1000">
                             <p>50000+</p>
                             <p>Tickets Per Month</p>
                         </div>
@@ -550,7 +554,7 @@ include('./constant.php');
                             <p>Enterprise Clients</p>
                         </div>
                         <div class="stats-line-breaker" data-aos="fade-up" data-aos-duration="1000"></div>
-                        <div class="stats-column" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="stats-column" data-aos="fade-up" data-aos-duration="1000">
                             <p>100+</p>
                             <p>Countries</p>
                         </div>
@@ -593,25 +597,25 @@ include('./constant.php');
     </div>
 
     <!-- Our Core Values & Case Studies -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="core-values-bg">
             <div class="core-values-container">
-                <div class="left-btm-abstract"></div>
-                <div class="right-top-abstract"></div>
+                <div class="left-btm-abstract desktop"></div>
+                <div class="right-top-abstract desktop"></div>
 
                 <div class="core-values">
                     <div class="main-content-container">
                         <div class="content-container">
-                            <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                            <div class="title-txt" data-aos="fade-up" data-aos-duration="1000">
                                 Our Core Values
                             </div>
-                            <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                            <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet quis culpa cumque, laboriosam deserunt unde?
                             </div>
 
                             <div class="cards-container">
                                 <div class="cards d-flex justify-content-between align-items-center">
-                                    <div class="card d-flex justify-content-start align-items-center" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="card d-flex justify-content-start align-items-center" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="icon-img d-flex justify-content-center align-items-center">
                                             <div class="icon-img-bg d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
@@ -639,7 +643,7 @@ include('./constant.php');
                                         </div>
                                     </div>
 
-                                    <div class="card d-flex justify-content-start align-items-center" data-aos="fade-left" data-aos-duration="1000">
+                                    <div class="card d-flex justify-content-start align-items-center" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="icon-img d-flex justify-content-center align-items-center">
                                             <div class="icon-img-bg d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
@@ -661,17 +665,17 @@ include('./constant.php');
                 <div class="case-studies">
                     <div class="main-content-container">
                         <div class="content-container">
-                            <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                            <div class="title-txt" data-aos="fade-up" data-aos-duration="1000">
                                 Case Studies
                             </div>
-                            <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                            <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
                                 quis culpa cumque, laboriosam deserunt unde?
                             </div>
 
                             <div class="case-studies-container">
                                 <div class="cards d-flex justify-content-between align-items-start">
-                                    <a href="#" data-aos="fade-right" data-aos-duration="1000">
+                                    <a href="#" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="card">
                                             <div class="creative d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
@@ -727,7 +731,7 @@ include('./constant.php');
                                         </div>
                                     </a>
 
-                                    <a href="#" data-aos="fade-left" data-aos-duration="1000">
+                                    <a href="#" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="card">
                                             <div class="creative d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
@@ -773,10 +777,10 @@ include('./constant.php');
     </div>
 
     <!-- Our Clients & Partners -->
-    <div class="full-container" style="display: none;">
+    <div class="full-container">
         <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
-                <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                <div class="title-txt" data-aos="fade-up" data-aos-duration="1000">
                     Lorem ipsum dolor sit amet.
                 </div>
 
@@ -835,6 +839,10 @@ include('./constant.php');
             </div>
         </div>
     </div>
+
+    <?php
+    include("templates/footer.php");
+    ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

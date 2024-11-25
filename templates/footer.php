@@ -1,8 +1,8 @@
 <div class="full-container">
     <div class="contact-us-bg">
         <div class="contact-us-bg-container">
-            <div class="left-btm-abstract"></div>
-            <div class="right-top-abstract"></div>
+            <div class="left-btm-abstract desktop"></div>
+            <div class="right-top-abstract desktop"></div>
 
             <div class="main-content-container">
                 <div class="content-container">
