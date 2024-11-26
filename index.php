@@ -36,16 +36,6 @@ include('./constant.php');
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <style>
-        .submitBtn {
-            background: rgb(27, 49, 93, 0.8);
-        }
-
-        .submitBtn:hover {
-            background: rgb(27, 49, 93, 1);
-        }
-    </style>
-
 </head>
 
 <body>
@@ -131,7 +121,7 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="card-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="4 Hour SLA">
+                                            <img loading="lazy" src="<?php echo $desktop_images . '4-hour-sla.png'; ?>" alt="4 Hour SLA">
                                         </div>
                                     </div>
                                     <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
@@ -145,7 +135,7 @@ include('./constant.php');
                                             </div>
                                         </div>
                                         <div class="card-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="24/7 Support">
+                                            <img loading="lazy" src="<?php echo $desktop_images . '24-7-support.png'; ?>" alt="24/7 Support">
                                         </div>
                                     </div>
                                     <div class="extra-vertical-card">
@@ -160,7 +150,7 @@ include('./constant.php');
                                                 </div>
                                             </div>
                                             <div class="card-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'flexible-it-solution.png'; ?>" alt="Flexible IT Solution">
                                             </div>
                                         </div>
                                     </div>
@@ -180,7 +170,7 @@ include('./constant.php');
                                         </div>
                                         <div class="card-img-container">
                                             <div class="card-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'about-us-creative.png'; ?>" alt="Flexible IT Solution">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'flexible-it-solution.png'; ?>" alt="Flexible IT Solution">
                                             </div>
                                         </div>
                                     </div>
@@ -881,6 +871,30 @@ include('./constant.php');
                     }
                 });
             });
+        });
+    </script>
+
+    <script>
+        // Initialize the intl-tel-input plugin
+        var input = document.querySelector("#phone");
+        var iti = window.intlTelInput(input, {
+            initialCountry: "auto",
+            separateDialCode: true,
+            geoIpLookup: function(success, failure) {
+                $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "us";
+                    success(countryCode);
+                });
+            }
+            // },
+            // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // just for formatting/placeholders etc
+        });
+
+        // Log the selected country on change
+        input.addEventListener("countrychange", function() {
+            var selectedCountryData = iti.getSelectedCountryData();
+            // console.log("Selected country:", selectedCountryData.name, selectedCountryData.dialCode);
+            // console.log("Selected country phone code:", selectedCountryData.dialCode);
         });
     </script>
 

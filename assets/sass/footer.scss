@@ -1,5 +1,69 @@
 @import 'common-colors';
 
+.iti {
+    width: 100%;
+}
+
+.iti__flag-container {
+    margin-right: 5px;
+}
+
+.iti__selected-flag {
+    height: 101%;
+    padding: 0 9px;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+}
+
+.iti__country-name {
+    margin-left: 10px;
+}
+
+.iti__country-list {
+    min-width: 300px;
+    width: 100%;
+    max-height: 150px;
+    margin: 0 0 0 -1px;
+    z-index: 1;
+}
+
+.iti__dial-code {
+    margin-left: 5px;
+}
+
+.iti--separate-dial-code {
+    margin: 6px 0 0 0;
+}
+
+.iti__selected-dial-code {
+    width: 36px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.iti__arrow {
+    width: 10px;
+    height: 5px;
+    background: rgb(0, 0, 0, 0.9);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transform: rotate(0deg);
+    transition: all .3s ease-in-out;
+}
+
+.iti__arrow.iti__arrow--up {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(-180deg);
+    transition: all .3s ease-in-out;
+}
+
 .contact-us-bg {
     width: 100%;
     background: var(--primary-white-color);
@@ -75,80 +139,645 @@
 
                 .main-part-txt-section {
                     width: 100%;
+
+                    .container {
+                        width: 50%;
+                        height: 100%;
+
+                        .txt-content {
+                            height: 350px;
+                            margin: 20px 20px 20px 30px;
+
+                            .txt1 {
+                                font-size: 18px;
+                                font-weight: 300;
+                                line-height: 35px;
+                                padding: 50px 0 0;
+                                color: var(--black-color);
+                            }
+
+                            .txt2 {
+                                font-size: 24px;
+                                font-weight: 600;
+                                line-height: 35px;
+                                color: var(--black-color);
+
+                                span a {
+                                    color: var(--black-color);
+                                }
+                            }
+
+                            ul {
+                                max-width: 400px;
+                                font-size: 16px;
+                                font-weight: 300;
+                                line-height: 30px;
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                padding: 10px 0 0 20px;
+                                color: var(--black-color);
+                            }
+                        }
+                    }
+                }
+
+                .contact-form {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 50%;
+                    height: 100%;
+
+                    .container {
+                        margin: 70px 30px 20px 0;
+                        background: var(--primary-white-color);
+                        max-width: 100%;
+                        height: 770px;
+                        box-shadow: 0 0 10px 5px var(--box-shadow-color);
+
+                        .heading-txt {
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 55px;
+                            text-transform: capitalize;
+                            text-align: center;
+                            border-bottom: 1px solid var(--secondary-black-color);
+                        }
+
+                        .container1 {
+                            gap: 20px;
+                            margin: 20px 30px;
+
+                            .txtBox {
+                                width: 100%;
+
+                                label {
+                                    font-size: 14px;
+                                    color: rgb(0, 0, 0, 0.7);
+                                }
+
+                                input {
+                                    height: 36px;
+                                    width: calc(100% - 22px);
+                                    font-size: 15px;
+                                    padding: 2px 10px 0 10px;
+                                    margin: 6px 0 0;
+                                    outline: none;
+                                    border: 1px solid rgb(0, 0, 0, 0.3);
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+
+                        .container2 {
+                            margin: 20px 30px;
+
+                            .txtBox {
+                                width: 100%;
+
+                                label {
+                                    font-size: 14px;
+                                    color: rgb(0, 0, 0, 0.7);
+                                }
+
+                                input {
+                                    height: 36px;
+                                    width: calc(100% - 22px);
+                                    font-size: 15px;
+                                    padding: 2px 10px 0 10px;
+                                    margin: 6px 0 0;
+                                    outline: none;
+                                    border: 1px solid rgb(0, 0, 0, 0.3);
+                                    border-radius: 4px;
+
+                                    &#phone {
+                                        width: 100%;
+                                        height: 40px;
+                                        letter-spacing: 1px;
+
+                                        &::placeholder {
+                                            color: rgb(0, 0, 0, 0.25);
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            letter-spacing: 2px;
+                                        }
+                                    }
+                                }
+
+                                textarea {
+                                    width: calc(100% - 32px);
+                                    padding: 12px 15px;
+                                    margin: 6px 0 0;
+                                    outline: none;
+                                    border: 1px solid rgb(0, 0, 0, 0.3);
+                                    border-radius: 4px;
+                                    resize: none;
+                                }
+
+                                .departments-checkbox {
+                                    width: 100%;
+                                    gap: 4px 10px;
+                                    display: grid;
+                                    grid-template-columns: repeat(4, 1fr);
+
+                                    .department {
+                                        margin: 10px 0 0;
+                                        gap: 5px;
+
+                                        input {
+                                            width: 18px;
+                                            height: 18px;
+                                            border: 1px solid rgb(0, 0, 0, 0.3);
+                                            border-radius: 3px;
+                                            margin: 0;
+                                            cursor: pointer;
+                                        }
+
+                                        label {
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            line-height: 20px;
+                                            color: rgb(0, 0, 0, 0.9);
+                                            text-wrap: nowrap;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .submitBtn {
+                                height: 46px;
+                                width: 100px;
+                                font-size: 15px;
+                                font-weight: 500;
+                                background: rgb(27, 49, 93, 0.8);
+                                color: var(--white-color);
+                                border-radius: 5px;
+                                outline: none;
+                                border: none;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background: rgb(27, 49, 93, 1);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-
-.iti {
+.footer-bg {
     width: 100%;
+    background: var(--black-color);
+
+    .main-content-container {
+        height: 100%;
+        padding: 50px 15px 0;
+
+        .content-container {
+            width: 100%;
+            gap: 50px;
+
+            .container1 {
+                .companyName {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: var(--orange-color);
+                    text-transform: uppercase;
+                    text-wrap: nowrap;
+                }
+
+                .description {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                    padding: 15px 0 0;
+                    color: var(--white-color);
+                }
+
+                .social-icons {
+                    width: 60%;
+                    padding: 30px 0 0;
+
+                    .icon-img {
+                        height: 22px;
+
+                        img {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+
+            .container2 {
+                .serviceTitle {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: var(--orange-color);
+                    text-transform: capitalize;
+                    text-wrap: nowrap;
+
+                    &.p-t-15 {
+                        padding-top: 15px;
+                    }
+                }
+
+                .serviceName {
+                    padding: 8px 0 0;
+                    line-height: 24px;
+
+                    a {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: var(--white-color);
+                        text-wrap: nowrap;
+                    }
+                }
+            }
+
+            .container3 {
+                .isoTxt {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba(250, 249, 246, 1);
+                    text-wrap: nowrap;
+                }
+
+                .iso-imgs {
+                    padding: 10px 0 0;
+                    gap: 10px;
+
+                    .iso-img {
+                        height: 50px;
+
+                        img {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .divider {
+            width: 100%;
+            padding: 25px 0 0;
+            border-bottom: 1px solid var(--white-color);
+        }
+
+        .footer-btm {
+            height: 70px;
+
+            .copyright-txt {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--white-color);
+            }
+
+            .policies .policy {
+                padding: 0 15px 0;
+
+                a {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--white-color);
+                }
+            }
+        }
+    }
 }
 
-.iti__flag-container {
-    margin-right: 5px;
+@media (max-width: 1080px) {
+    .contact-us-bg {
+        .contact-us-bg-container {
+            .main-content-container {
+                .content-container {
+                    height: 815px;
+
+                    .top-part {
+                        height: 170px;
+
+                        .txt-content {
+                            .header-txt {
+                                font-size: 12px;
+                                padding: 5px 20px;
+                                margin: 30px 20px;
+                            }
+
+                            .header-subtxt {
+                                font-size: 25px;
+                                margin: 20px;
+                            }
+                        }
+                    }
+
+                    .main-part-txt-section {
+                        .container {
+                            .txt-content {
+                                height: 320px;
+                                margin: 20px;
+
+                                .txt1 {
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    padding: 30px 0 0;
+                                }
+
+                                .txt2 {
+                                    font-size: 22px;
+                                    line-height: 32px;
+                                }
+
+                                ul {
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-form {
+                        .container {
+                            margin: 70px 20px 20px 0;
+                            height: 720px;
+
+                            .heading-txt {
+                                font-size: 18px;
+                            }
+
+                            .container1 {
+                                gap: 15px;
+                                margin: 15px;
+
+                                .txtBox {
+                                    label {
+                                        font-size: 13px;
+                                    }
+
+                                    input {
+                                        height: 30px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+
+                            .container2 {
+                                margin: 15px;
+
+                                .txtBox {
+                                    label {
+                                        font-size: 13px;
+                                    }
+
+                                    input {
+                                        height: 30px;
+                                        font-size: 13px;
+
+                                        &#phone {
+                                            height: 34px;
+
+                                            &::placeholder {
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+
+                                    .departments-checkbox {
+                                        gap: 4px 8px;
+                                        grid-template-columns: repeat(3, 1fr);
+
+                                        .department {
+                                            margin: 10px 0 0;
+                                            gap: 5px;
+
+                                            input {
+                                                width: 16px;
+                                                height: 16px;
+                                            }
+
+                                            label {
+                                                font-size: 13px;
+                                                line-height: 18px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .submitBtn {
+                                    height: 40px;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.iti__selected-flag {
-    height: 101%;
-    padding: 0 9px;
-    background-size: contain;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: none;
-}
+@media (max-width: 600px) {
+    .contact-us-bg {
+        .contact-us-bg-container {
+            .main-content-container {
+                padding: 50px 0;
 
-.iti__country-name {
-    margin-left: 10px;
-}
+                .content-container {
+                    height: 1225px;
+                    background: var(--primary-white-color);
 
-.iti__country-list {
-    min-width: 300px;
-    width: 100%;
-    max-height: 150px;
-    margin: 0 0 0 -1px;
-    z-index: 1;
-}
+                    .top-part {
+                        height: 160px;
 
-.iti__dial-code {
-    margin-left: 5px;
-}
+                        .txt-content {
+                            width: 100%;
 
-.iti--separate-dial-code {
-    margin: 6px 0 0 0;
-}
+                            .header-txt {
+                                font-weight: 500;
+                                padding: 5px 25px 5px 10px;
+                                margin: 50px 15px 0;
+                            }
 
-.iti__selected-dial-code {
-    width: 36px;
-    font-size: 15px;
-    font-weight: 700;
-}
+                            .header-subtxt {
+                                font-size: 24px;
+                                font-weight: 500;
+                                margin: 0 15px 40px;
+                            }
+                        }
+                    }
 
-.iti__arrow {
-    width: 10px;
-    height: 5px;
-    background: rgb(0, 0, 0, 0.9);
-    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    transform: rotate(0deg);
-    transition: all .3s ease-in-out;
-}
+                    .main-part-txt-section {
+                        width: 100%;
+                        background: rgb(202, 207, 215);
 
-.iti__arrow.iti__arrow--up {
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    transform: rotate(-180deg);
-    transition: all .3s ease-in-out;
-}
+                        .container {
+                            width: 100%;
 
-#phone::placeholder {
-    color: rgb(0, 0, 0, 0.25);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
+                            .txt-content {
+                                height: 235px;
+                                margin: 15px;
+
+                                .txt1 {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    padding: 15px 0 0;
+                                }
+
+                                .txt2 {
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                }
+
+                                ul {
+                                    width: 100%;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    padding: 10px 0 0 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .contact-form {
+                        width: 100%;
+
+                        .container {
+                            margin: 425px 0 0;
+                            height: 785px;
+                            box-shadow: none;
+
+                            .container1 {
+                                flex-direction: column;
+                            }
+
+                            .container2 {
+                                .submitBtn {
+                                    height: 40px;
+                                    width: 160px;
+                                    background: var(--black-color);
+                                    border-radius: 10px;
+
+                                    &:hover {
+                                        background: var(--black-color);
+                                        color: var(--white-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bg {
+        .main-content-container {
+            .content-container {
+                gap: 20px;
+                flex-direction: column;
+
+                .container1 {
+                    max-width: 270px;
+
+                    .companyName {
+                        font-size: 18px;
+                    }
+
+                    .description {
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        letter-spacing: 1px;
+                        padding: 15px 0 0;
+                        color: var(--white-color);
+                    }
+
+                    .social-icons {
+                        width: 90%;
+                        padding: 30px 0 0;
+                    }
+                }
+
+                .container2 {
+                    max-width: 270px;
+
+                    .serviceTitle {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: var(--orange-color);
+                        text-transform: capitalize;
+                        text-wrap: nowrap;
+
+                        &.p-t-15 {
+                            padding-top: 15px;
+                        }
+                    }
+
+                    .serviceName {
+                        padding: 8px 0 0;
+                        line-height: 24px;
+
+                        a {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: var(--white-color);
+                            text-wrap: nowrap;
+                        }
+                    }
+                }
+
+                .container3 {
+                    .isoTxt {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: rgba(250, 249, 246, 1);
+                        text-wrap: nowrap;
+                    }
+
+                    .iso-imgs {
+                        padding: 10px 0 0;
+                        gap: 10px;
+
+                        .iso-img {
+                            height: 50px;
+
+                            img {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .divider {
+                width: 100%;
+                padding: 0;
+                margin: 20px 0;
+                border-bottom: 1px solid var(--white-color);
+            }
+
+            .footer-btm {
+                height: 70px;
+                flex-direction: column-reverse;
+
+                .copyright-txt {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--white-color);
+                }
+
+                .policies .policy {
+                    padding: 0 15px 0;
+
+                    a {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
 }

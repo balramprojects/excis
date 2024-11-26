@@ -18,24 +18,19 @@
                     </div>
 
                     <div class="main-part-txt-section d-flex justify-content-between align-items-start">
-                        <div style="width: 50%; height: 100%;">
-                            <div style="height: 350px; margin: 20px 20px 20px 30px; flex-direction: column;"
-                                class="d-flex justify-content-between">
-                                <div
-                                    style="font-size: 18px; font-weight: 300; line-height: 35px; padding: 50px 0 0; color: #000;">
-                                    We’re happy to answer any questions you may have and help you determine which of
-                                    our services best fit your needs.
+                        <div class="container">
+                            <div class="txt-content d-flex flex-column justify-content-between">
+                                <div class="txt1">
+                                    We’re happy to answer any questions you may have and help you determine which of our services best fit your needs.
                                 </div>
-                                <div style="font-size: 24px; font-weight: 600; line-height: 35px; color: #000;">
-                                    Call us at <span><a href="tel:+44 1344930900" style="color: #000;">+44
-                                            1344930900</a></span>
+                                <div class="txt2">
+                                    Call us at <span><a href="tel:+44 1344930900">+44 1344930900</a></span>
                                 </div>
                                 <div>
-                                    <div style="font-size: 24px; font-weight: 600; line-height: 35px; color: #000;">
+                                    <div class="txt2">
                                         Your benefits:
                                     </div>
-                                    <ul
-                                        style="max-width: 400px; font-size: 16px; font-weight: 300; line-height: 30px; display: grid; grid-template-columns: repeat(2, 1fr); padding: 10px 0 0 20px; color: #000;">
+                                    <ul>
                                         <li>Results-Driven</li>
                                         <li>Client-Oriented</li>
                                         <li>Problem Solving</li>
@@ -48,118 +43,80 @@
                         </div>
                     </div>
 
-                    <div style="position: absolute; top: 0; right: 0; width: 50%; height: 100%;">
-                        <div
-                            style="margin: 70px 30px 20px 0; background: #fff; max-width: 100%; height: 770px; box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.2);">
-                            <div
-                                style="font-size: 20px; font-weight: 600; line-height: 55px; text-transform: capitalize; text-align: center; border-bottom: 1px solid rgb(0, 0, 0, 0.5);">
+                    <div class="contact-form">
+                        <div class="container">
+                            <div class="heading-txt">
                                 Schedule a Call with Us
                             </div>
-                            <div>
-                                <div style="gap: 30px; margin: 20px 30px;" class="d-flex">
-                                    <div style="width: 100%;">
-                                        <label for="firstName"
-                                            style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">First
-                                            Name</label> <br>
-                                        <input type="text" name="firstName" placeholder=""
-                                            style="height: 36px; width: calc(100% - 22px); font-size: 15px; padding: 2px 10px 0 10px; margin: 6px 0 0; outline: none; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 4px;">
+                            <form action="">
+                                <div class="container1 d-flex">
+                                    <div class="txtBox">
+                                        <label for="firstName">First Name</label> <br>
+                                        <input type="text" name="firstName" placeholder="">
                                     </div>
-                                    <div style="width: 100%;">
-                                        <label for="lastName"
-                                            style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">Last
-                                            Name</label> <br>
-                                        <input type="text" name="lastName" placeholder=""
-                                            style="height: 36px; width: calc(100% - 22px); font-size: 15px; padding: 2px 10px 0 10px; margin: 6px 0 0; outline: none; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 4px;">
+                                    <div class="txtBox">
+                                        <label for="lastName">Last Name</label> <br>
+                                        <input type="text" name="lastName" placeholder="">
                                     </div>
                                 </div>
 
-                                <div style="margin: 20px 30px;" class="d-flex">
-                                    <div style="width: 100%;">
-                                        <label for="companyName"
-                                            style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">Company
-                                            / Organization</label> <br>
-                                        <input type="text" name="companyName" placeholder=""
-                                            style="height: 36px; width: calc(100% - 22px); font-size: 15px; padding: 2px 10px 0 10px; margin: 6px 0 0; outline: none; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 4px;">
+                                <div class="container2 d-flex">
+                                    <div class="txtBox">
+                                        <label for="companyName">Company / Organization</label> <br>
+                                        <input type="text" name="companyName" placeholder="">
                                     </div>
                                 </div>
 
-                                <div style="margin: 20px 30px;" class="d-flex">
-                                    <div style="width: 100%;">
-                                        <label for="companyEmail"
-                                            style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">Company
-                                            Email</label> <br>
-                                        <input type="email" name="companyEmail" placeholder=""
-                                            style="height: 36px; width: calc(100% - 22px); font-size: 15px; padding: 2px 10px 0 10px; margin: 6px 0 0; outline: none; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 4px;">
+                                <div class="container2 d-flex">
+                                    <div class="txtBox">
+                                        <label for="companyEmail">Company Email</label> <br>
+                                        <input type="email" name="companyEmail" placeholder="">
                                     </div>
                                 </div>
 
-                                <div style="margin: 20px 30px;" class="d-flex">
-                                    <div style="width: 100%;">
-                                        <label for="phoneNumber"
-                                            style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">Phone</label>
-                                        <br>
-                                        <input type="tel" name="phoneNumber" id="phone"
-                                            style="width: 100%; height: 40px; font-size: 15px; font-weight: 400; letter-spacing: 1px; margin: 6px 0 0 0; outline: none; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 4px;">
+                                <div class="container2 d-flex">
+                                    <div class="txtBox">
+                                        <label for="phoneNumber">Phone</label> <br>
+                                        <input type="tel" name="phoneNumber" id="phone">
                                     </div>
                                 </div>
 
-                                <div style="margin: 20px 30px;" class="d-flex">
-                                    <div style="width: 100%;">
-                                        <p style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">How
-                                            Can We Help You?
-                                        </p>
+                                <div class="container2 d-flex">
+                                    <div class="txtBox">
+                                        <label>How Can We Help You?</label> <br>
 
-                                        <div
-                                            style="width: 50%; gap: 10px; display: grid; grid-template-columns: repeat(2, 1fr);">
-                                            <div class="d-flex justify-content-start align-items-center"
-                                                style="margin: 10px 0 0; gap: 5px;">
-                                                <input type="checkbox" name="services" id=""
-                                                    style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
-                                                <label for="services"
-                                                    style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Services</label>
+                                        <div class="departments-checkbox">
+                                            <div class="department d-flex justify-content-start align-items-center">
+                                                <input type="checkbox" name="sales" id="">
+                                                <label for="sales">Sales</label>
                                             </div>
-                                            <div class="d-flex justify-content-start align-items-center"
-                                                style="margin: 10px 0 0; gap: 5px;">
-                                                <input type="checkbox" name="sales" id=""
-                                                    style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
-                                                <label for="sales"
-                                                    style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Sales</label>
+                                            <div class="department d-flex justify-content-start align-items-center">
+                                                <input type="checkbox" name="careers" id="">
+                                                <label for="careers">Careers</label>
                                             </div>
-                                            <div class="d-flex justify-content-start align-items-center"
-                                                style="margin: 10px 0 0; gap: 5px;">
-                                                <input type="checkbox" name="recruitment" id=""
-                                                    style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
-                                                <label for="recruitment"
-                                                    style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Recruitment</label>
+                                            <div class="department d-flex justify-content-start align-items-center">
+                                                <input type="checkbox" name="hr" id="">
+                                                <label for="hr">HR</label>
                                             </div>
-                                            <div class="d-flex justify-content-start align-items-center"
-                                                style="margin: 10px 0 0; gap: 5px;">
-                                                <input type="checkbox" name="partner" id=""
-                                                    style="width: 18px; height: 18px; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 3px;">
-                                                <label for="partner"
-                                                    style="font-size: 14px; font-weight: 600; line-height: 20px; color: rgb(0, 0, 0, 0.9);">Partner</label>
+                                            <div class="department d-flex justify-content-start align-items-center">
+                                                <input type="checkbox" name="other" id="">
+                                                <label for="other">Other</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div style="margin: 20px 30px; overflow: hidden;" class="d-flex">
-                                    <div style="width: 99%;">
-                                        <label for="message"
-                                            style="font-size: 14px; font-weight: 400; color: rgb(0, 0, 0, 0.7);">Message</label>
-                                        <br>
-                                        <textarea name="message" id="" rows="6"
-                                            style="width: calc(100% - 28px); padding: 12px 15px; margin: 6px 0 0; outline: none; border: 1px solid rgb(0, 0, 0, 0.3); border-radius: 4px; resize: none;"
-                                            placeholder="To better assist you, please describe how we can help..."></textarea>
+                                <div class="container2 d-flex">
+                                    <div class="txtBox">
+                                        <label for="message">Message</label> <br>
+                                        <textarea name="message" id="" rows="6" placeholder="To better assist you, please describe how we can help..."></textarea>
                                     </div>
                                 </div>
 
-                                <div style="margin: 20px 30px;" class="d-flex justify-content-center">
-                                    <input type="submit" value="Submit"
-                                        style="height: 48px; width: 100px; font-size: 15px; font-weight: 500; color: #fff; border-radius: 5px; outline: none; border: none; cursor: pointer;"
-                                        class="submitBtn">
+                                <div class="container2 d-flex justify-content-center">
+                                    <input type="submit" value="Submit" class="submitBtn">
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -169,250 +126,275 @@
 </div>
 
 <div class="full-container">
-    <div style="width: 100%; background: rgba(18, 24, 32, 1);">
-        <div style="height: 100%; padding: 50px 15px 0;" class="main-content-container">
-            <div style="width: 100%; gap: 80px;" class="d-flex justify-content-between align-items-start">
-                <div>
-                    <div
-                        style="font-size: 18px; font-weight: 700; color: rgba(245, 133, 32, 1); text-transform: uppercase; text-wrap: nowrap;">
+    <div class="footer-bg">
+        <div class="main-content-container">
+            <div class="content-container d-flex justify-content-between align-items-start">
+                <div class="container1">
+                    <div class="companyName">
                         Excis Compliance Ltd.
                     </div>
-                    <div
-                        style="font-size: 13px; font-weight: 300; line-height: 20px; letter-spacing: 1px; padding: 15px 0 0; color: rgba(250, 249, 246, 1);">
+                    <div class="description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellat? Lorem ipsum
                         dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus tenetur, necessitatibus
                         officiis quisquam consectetur. Blanditiis autem ipsum eos aut?
                     </div>
-                    <div style="width: 60%; padding: 30px 0 0;"
-                        class="d-flex justify-content-between align-items-center">
-                        <div style="height: 22px;">
-                            <img src="<?php echo $desktop_images . 'facebook.png'; ?>" style="width: auto;" alt="">
-                        </div>
-                        <div style="height: 22px;">
-                            <img src="<?php echo $desktop_images . 'youtube.png'; ?>" style="width: auto;" alt="">
-                        </div>
-                        <div style="height: 22px;">
-                            <img src="<?php echo $desktop_images . 'instagram.png'; ?>" style="width: auto;" alt="">
-                        </div>
-                        <div style="height: 22px;">
-                            <img src="<?php echo $desktop_images . 'twitter.png'; ?>" style="width: auto;" alt="">
-                        </div>
-                        <div style="height: 22px;">
-                            <img src="<?php echo $desktop_images . 'linkedin.png'; ?>" style="width: auto;" alt="">
+                    <div class="desktop">
+                        <div class="social-icons d-flex justify-content-between align-items-center">
+                            <a href="#">
+                                <div class="icon-img d-flex">
+                                    <img src="<?php echo $desktop_images . 'facebook.png'; ?>" alt="Facebook">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="icon-img d-flex">
+                                    <img src="<?php echo $desktop_images . 'youtube.png'; ?>" alt="Youtube">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="icon-img d-flex">
+                                    <img src="<?php echo $desktop_images . 'instagram.png'; ?>" alt="Instagram">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="icon-img d-flex">
+                                    <img src="<?php echo $desktop_images . 'twitter.png'; ?>" alt="Twitter">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="icon-img d-flex">
+                                    <img src="<?php echo $desktop_images . 'linkedin.png'; ?>" alt="Linkedin">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div
-                            style="font-size: 18px; font-weight: 700; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
-                            Our Services
+
+                <div class="container3 mobile">
+                    <div class="isoTxt">
+                        ISO Certfications Certified <br> Covering The UK and India
+                    </div>
+                    <div class="iso-imgs">
+                        <div class="iso-imgs d-flex justify-content-between align-item-center">
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-9001.jpg'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-14001.jpg'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-27001.jpg'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-45001.jpg'; ?>" alt="">
+                            </div>
                         </div>
-                        <div style="padding: 10px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Network</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Data
-                                Center Support</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">End-User
-                                Support</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Audio-Visual</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">WiFi
-                                Services</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Cybersecurity
-                                Consulting</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">API
-                                Integration</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Warehousing</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Audio-Visual</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">WiFi
-                                Services</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Cybersecurity
-                                Consulting</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">All
-                                Services &nbsp; -></a>
+                        <div class="iso-imgs d-flex justify-content-start align-item-center">
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/uk.png'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/india.png'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/cyber-essentials.png'; ?>" alt="">
+                            </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="container2">
+                    <div class="serviceTitle">
+                        Our Services
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Network</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Data Center Support</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">End-User Support</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Audio-Visual</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">WiFi Services</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Cybersecurity Consulting</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">API Integration</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Warehousing</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Audio-Visual</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">WiFi Services</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Cybersecurity Consulting</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">All Services &nbsp; -></a>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="serviceTitle">
+                        Industries
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Retail</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Energy</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Life Sciences</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Financial Services (FS&I)</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Telecoms</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Utilities</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Public Sector</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Manufacturing</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">Education</a>
+                    </div>
+                    <div class="serviceName">
+                        <a href="#">IT & Consulting</a>
+                    </div>
+                </div>
+                <div class="container2">
                     <div>
-                        <div
-                            style="font-size: 18px; font-weight: 700; padding: 20px 0 0; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
+                        <div class="serviceTitle">
                             About Us
                         </div>
-                        <div style="padding: 10px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Why
-                                Excis</a>
+                        <div class="serviceName">
+                            <a href="#">Why Excis</a>
                         </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Career
-                                Opportunities</a>
+                        <div class="serviceName">
+                            <a href="#">Career Opportunities</a>
                         </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">CSR</a>
+                        <div class="serviceName">
+                            <a href="#">CSR</a>
                         </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Worldwide</a>
+                        <div class="serviceName">
+                            <a href="#">Worldwide</a>
                         </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Partners</a>
+                        <div class="serviceName">
+                            <a href="#">Partners</a>
                         </div>
                     </div>
-                </div>
-                <div>
                     <div>
-                        <div
-                            style="font-size: 18px; font-weight: 700; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
-                            Industries
-                        </div>
-                        <div style="padding: 10px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Retail</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Energy</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Life
-                                Sciences</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Financial
-                                Services (FS&I)</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Telecoms</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Utilities</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Public
-                                Sector</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Manufacturing</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Education</a>
-                        </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">IT
-                                & Consulting</a>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div
-                            style="font-size: 18px; font-weight: 700; padding: 20px 0 0; color: rgba(245, 133, 32, 1); text-transform: capitalize; text-wrap: nowrap;">
+                        <div class="serviceTitle p-t-15">
                             Insights
                         </div>
-                        <div style="padding: 10px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Blogs/Case
-                                Studies</a>
+                        <div class="serviceName">
+                            <a href="#">Blogs/Case Studies</a>
                         </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">News</a>
+                        <div class="serviceName">
+                            <a href="#">News</a>
                         </div>
-                        <div style="padding: 5px 0 0; line-height: 24px;">
-                            <a href="#"
-                                style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Research
-                                & Development</a>
+                        <div class="serviceName">
+                            <a href="#">Research & Development</a>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div
-                        style="font-size: 16px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">
-                        ISO Certfications Certified <br> Covering The UK
+
+                <div class="container3 desktop">
+                    <div class="isoTxt">
+                        ISO Certfications Certified <br> Covering The UK and India
                     </div>
-                    <div style="padding: 20px 0 0; gap: 10px;"
-                        class="d-flex justify-content-between align-itemcenter">
-                        <div style="width: 60px;" class="d-flex">
-                            <img src="<?php echo $desktop_images . 'iso-1.png'; ?>" alt="">
+                    <div class="iso-imgs">
+                        <div class="iso-imgs d-flex justify-content-between align-item-center">
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-9001.jpg'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-14001.jpg'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-27001.jpg'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/iso-45001.jpg'; ?>" alt="">
+                            </div>
                         </div>
-                        <div style="width: 60px;" class="d-flex">
-                            <img src="<?php echo $desktop_images . 'iso-2.png'; ?>" alt="">
-                        </div>
-                        <div style="width: 60px;" class="d-flex">
-                            <img src="<?php echo $desktop_images . 'iso-3.png'; ?>" alt="">
-                        </div>
-                        <div style="width: 60px;" class="d-flex">
-                            <img src="<?php echo $desktop_images . 'uk.png'; ?>" alt="">
-                        </div>
-                    </div>
-                    <div style="padding: 15px 0 0;">
-                        <div style="width: 100px;" class="d-flex">
-                            <img src="<?php echo $desktop_images . 'cyber-essentials.png'; ?>" alt="">
+                        <div class="iso-imgs d-flex justify-content-start align-item-center">
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/uk.png'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/india.png'; ?>" alt="">
+                            </div>
+                            <div class="iso-img d-flex">
+                                <img src="<?php echo $desktop_images . 'iso/cyber-essentials.png'; ?>" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="width: 100%; padding: 25px 0 0; border-bottom: 1px solid #fff;"></div>
-            <div style="height: 70px;" class="d-flex justify-content-between align-items-center">
-                <div style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">
+            <div class="divider"></div>
+
+            <div class="container1">
+                <div class="mobile">
+                    <div class="social-icons d-flex justify-content-between align-items-center">
+                        <a href="#">
+                            <div class="icon-img d-flex">
+                                <img src="<?php echo $desktop_images . 'facebook.png'; ?>" alt="Facebook">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-img d-flex">
+                                <img src="<?php echo $desktop_images . 'youtube.png'; ?>" alt="Youtube">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-img d-flex">
+                                <img src="<?php echo $desktop_images . 'instagram.png'; ?>" alt="Instagram">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-img d-flex">
+                                <img src="<?php echo $desktop_images . 'twitter.png'; ?>" alt="Twitter">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="icon-img d-flex">
+                                <img src="<?php echo $desktop_images . 'linkedin.png'; ?>" alt="Linkedin">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-btm d-flex justify-content-between align-items-center">
+                <div class="copyright-txt">
                     ©2024 Excis Compliance Ltd. All Rights Reserved.
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <div style="padding: 0 15px 0;">
-                        <a href="#" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">General
-                            Policies</a>
+                <div class="policies d-flex justify-content-center align-items-center">
+                    <div class="policy">
+                        <a href="#">General Policies</a>
                     </div>
-                    <div style="padding: 0 15px 0;">
-                        <a href="#"
-                            style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">Privacy/
-                            Cookies Policy</a>
+                    <div class="policy">
+                        <a href="#">Privacy/Cookies Policy</a>
                     </div>
-                    <div style="padding: 0 15px 0;">
-                        <a href="#" style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1);">Terms
-                            and Conditions</a>
+                    <div class="policy">
+                        <a href="#">Terms and Conditions</a>
                     </div>
                 </div>
             </div>

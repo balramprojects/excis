@@ -109,7 +109,7 @@
   background: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   max-width: 100%;
-  padding: 30px 50px;
+  padding: 5px 50px;
   border-radius: 10px;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt {
@@ -139,7 +139,7 @@
   color: var(--white-color);
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .card-img {
-  width: 350px;
+  width: 450px;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .extra-vertical-card {
   display: none;
@@ -169,10 +169,10 @@
   color: var(--grey-color);
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container {
-  padding: 50px;
+  padding: 30px;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container .card-img {
-  width: 85%;
+  width: 69%;
   margin-inline: auto;
 }
 .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card:hover {
@@ -1000,10 +1000,10 @@
 }
 .core-values-bg .core-values-container .case-studies .main-content-container .content-container .case-studies-container .cards {
   width: 100%;
-  gap: 30px;
+  gap: 25px;
 }
 .core-values-bg .core-values-container .case-studies .main-content-container .content-container .case-studies-container .cards a {
-  max-width: 405px;
+  max-width: 430px;
   width: 100%;
   background: var(--white-color);
   border: 1px solid rgba(37, 37, 37, 0.1);
