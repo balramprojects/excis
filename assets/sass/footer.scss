@@ -777,6 +777,10 @@
                         summary {
                             list-style: none;
 
+                            &::-webkit-details-marker {
+                                display: none;
+                            }
+
                             span {
                                 height: 55px;
                                 color: var(--white-color);

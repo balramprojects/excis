@@ -654,6 +654,9 @@
   .footer-bg .main-content-container .content-container .footer-list details summary {
     list-style: none;
   }
+  .footer-bg .main-content-container .content-container .footer-list details summary::-webkit-details-marker {
+    display: none;
+  }
   .footer-bg .main-content-container .content-container .footer-list details summary span {
     height: 55px;
     color: var(--white-color);

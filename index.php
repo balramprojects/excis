@@ -851,15 +851,51 @@ include('./constant.php');
         }
 
         // Mobile Menu Accordion 
+        // Select top-level <details> (not nested within other <details>)
         const details = document.querySelectorAll(".m-nav-slider .container .menu-list details:not(details details)");
 
+        // Add click event listener to top-level <details>
         details.forEach(detail => {
             detail.addEventListener("click", () => {
+                // Close other top-level <details> if they are not the clicked one
                 details.forEach(otherDetail => {
                     if (otherDetail !== detail) {
                         otherDetail.removeAttribute("open");
                     }
                 });
+
+                // Close any open nested <details> inside other <details>
+                const allMenuSubDetails = document.querySelectorAll(".m-nav-slider .container .menu-list details details");
+                allMenuSubDetails.forEach(subDetail => {
+                    if (!detail.contains(subDetail)) {
+                        subDetail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+
+        // Select nested <details> (within other <details>)
+        const menuSubDetails = document.querySelectorAll(".m-nav-slider .container .menu-list details details");
+
+        // Add click event listener to nested <details>
+        menuSubDetails.forEach(detail => {
+            detail.addEventListener("click", (event) => {
+                // Close other nested <details> if they are not the clicked one
+                menuSubDetails.forEach(otherDetail => {
+                    if (otherDetail !== detail) {
+                        otherDetail.removeAttribute("open");
+                    }
+                });
+
+                // Close all top-level <details> except the one containing this nested <details>
+                details.forEach(topDetail => {
+                    if (!topDetail.contains(detail)) {
+                        topDetail.removeAttribute("open");
+                    }
+                });
+
+                // Stop the event from bubbling to the parent <details>
+                event.stopPropagation();
             });
         });
 

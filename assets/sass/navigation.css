@@ -317,6 +317,9 @@
   .m-nav-slider .container .menu-list details summary {
     list-style: none;
   }
+  .m-nav-slider .container .menu-list details summary ::-webkit-details-marker {
+    display: none;
+  }
   .m-nav-slider .container .menu-list details summary span {
     height: 45px;
     color: var(--black-color);

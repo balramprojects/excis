@@ -372,6 +372,10 @@
                     summary {
                         list-style: none;
 
+                        ::-webkit-details-marker {
+                            display: none;
+                        }
+
                         span {
                             height: 45px;
                             color: var(--black-color);
