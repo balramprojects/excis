@@ -29,7 +29,7 @@ require_once('../constant.php');
     <link rel="stylesheet" href="../assets/sass/why-excis.css">
     <link rel="stylesheet" href="../assets/sass/navigation.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
-    <link rel="stylesheet" href="../assets/sass/contact-us.css">
+    <link rel="stylesheet" href="../assets/sass/footer.css">
     <link rel="stylesheet" href="../assets/sass/services.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
@@ -1090,11 +1090,18 @@ require_once('../constant.php');
     </div>
 
     <?php
-    include("../footer.php");
+    include("../templates/footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script>
+        const navItem = document.querySelectorAll('.middle-content .nav-block-container');
+        navItem[1].querySelector('a .nav-tab-item').classList.add('active');
+    </script>
+
 
     <script>
         const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');
