@@ -712,7 +712,7 @@ include('constant.php');
                                     <div class="card-info">
                                         <div class="txt">
                                             <p>Rodica Petrea</p>
-                                            <p>Global Operations Director</p>
+                                            <p>Chief Financial Officer</p>
                                         </div>
                                         <a href="https://www.linkedin.com/in/rodica-petrea-825b2447/">
                                             <div class="member-linkedin">
