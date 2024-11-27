@@ -372,7 +372,7 @@
                     summary {
                         list-style: none;
 
-                        ::-webkit-details-marker {
+                        &::-webkit-details-marker {
                             display: none;
                         }
 
@@ -436,6 +436,10 @@
 
                             summary {
                                 list-style: none;
+
+                                &::-webkit-details-marker {
+                                    display: none;
+                                }
 
                                 span {
                                     height: 40px;

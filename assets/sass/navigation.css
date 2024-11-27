@@ -317,7 +317,7 @@
   .m-nav-slider .container .menu-list details summary {
     list-style: none;
   }
-  .m-nav-slider .container .menu-list details summary ::-webkit-details-marker {
+  .m-nav-slider .container .menu-list details summary::-webkit-details-marker {
     display: none;
   }
   .m-nav-slider .container .menu-list details summary span {
@@ -374,6 +374,9 @@
   }
   .m-nav-slider .container .menu-list details .htp-accord-list details summary {
     list-style: none;
+  }
+  .m-nav-slider .container .menu-list details .htp-accord-list details summary::-webkit-details-marker {
+    display: none;
   }
   .m-nav-slider .container .menu-list details .htp-accord-list details summary span {
     height: 40px;
