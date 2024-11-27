@@ -25,12 +25,12 @@ include('constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/services">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="assets/sass/index.css">
-    <link rel="stylesheet" href="assets/sass/why-excis.css">
-    <link rel="stylesheet" href="assets/sass/navigation.css">
     <link rel="stylesheet" href="assets/sass/common.css">
-    <link rel="stylesheet" href="assets/sass/footer.css">
+    <link rel="stylesheet" href="assets/sass/navigation.css">
     <link rel="stylesheet" href="assets/sass/banners.css">
+    <link rel="stylesheet" href="assets/sass/inner-pages.css">
+    <link rel="stylesheet" href="assets/sass/footer.css">
+    <link rel="stylesheet" href="assets/sass/why-excis.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
@@ -72,14 +72,10 @@ include('constant.php');
     </div>
 
     <div class="full-container">
-        <div style="width: 100%; background: #fff;">
-            <div style="max-width: 100%; margin-inline: auto; position: relative; overflow: hidden;">
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: -100px; left: 0;">
-                </div>
-                <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: -100px; right: 0;">
-                </div>
+        <div class="about-service-bg">
+            <div class="about-service-container">
+                <div class="left-btm-abstract dekstop"></div>
+                <div class="right-top-abstract desktop"></div>
 
                 <div style="padding: 50px 15px;" class="main-content-container">
                     <div class="d-flex justify-content-between align-items-center">
@@ -194,8 +190,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2007 - UK</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Retail operations started in UK</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2007 - Europe </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Excis expanded across Benelux, Hungary, Italy and the UK </p>
                                         </div>
                                     </div>
 
@@ -212,8 +208,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2009 - Mexico</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Retail operations started in Mexico</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2012 - Madgascar</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Technical operations Started in Madagascar </p>
                                         </div>
                                     </div>
 
@@ -230,8 +226,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2011 - Madgascar</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Retail operations started in Madgascar</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2015 - South Africa and India Office </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">South Africa Office and India Office 2nd line support and Experts, with Smart Centre </p>
                                         </div>
                                     </div>
 
@@ -248,8 +244,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2013 - South Africa</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Retail operations started in South Africa</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2016 - US Office </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">US Office, US Coordination desk and Service Delivery </p>
                                         </div>
                                     </div>
 
@@ -266,8 +262,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2015 - India</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Retail operations started in India</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2017 - Mexico Office </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Mexico Office Coordination desk Helpdesk, HR Partner Management </p>
                                         </div>
                                     </div>
 
@@ -284,8 +280,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2017 - India</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Office started in India</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2018 - Sun Model </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Service Desk Follow the Sun Model Final setup </p>
                                         </div>
                                     </div>
 
@@ -302,26 +298,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2019 - India</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Noida Office started in India</p>
-                                        </div>
-                                    </div>
-
-                                    <div style="height: 40px; width: 2px; background: #F58520;"></div>
-
-                                    <div class="d-flex justify-content-start align-items-center">
-                                        <div style="margin: 0 0 0 -50px;" class="d-flex justify-content-center align-items-center">
-                                            <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
-                                                <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
-                                                    <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2021 - India</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Noida Office closed in India</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2019 - Global Entities </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Global IT Services Company Excis 50 entities worldwide </p>
                                         </div>
                                     </div>
 
@@ -338,8 +316,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2023 - India</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Recruitment started in India</p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2023 - Further Expansion                                            </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">60+ global entities. Fully established in the US + Canada                                            </p>
                                         </div>
                                     </div>
                                 </div>

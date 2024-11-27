@@ -25,275 +25,15 @@ include('../constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/services">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="../assets/sass/index.css">
-    <link rel="stylesheet" href="../assets/sass/why-excis.css">
-    <link rel="stylesheet" href="../assets/sass/navigation.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
-    <link rel="stylesheet" href="../assets/sass/contact-us.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
+    <link rel="stylesheet" href="../assets/sass/banners.css">
+    <link rel="stylesheet" href="../assets/sass/inner-pages.css">
+    <link rel="stylesheet" href="../assets/sass/footer.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
-
-    <style>
-        .submitBtn {
-            background: rgb(27, 49, 93, 0.8);
-        }
-
-        .submitBtn:hover {
-            background: rgb(27, 49, 93, 1);
-        }
-
-        .drop {
-            box-shadow: 0px 0px 1px 1px #cfd3da;
-
-        }
-
-        .core-values-card:hover .drop {
-            animation: drop 1.3s infinite;
-        }
-
-        @keyframes drop {
-            0% {
-                box-shadow: 0 0 0 0px rgb(27, 49, 93, 0.4);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(27, 49, 93, 0);
-            }
-        }
-
-        .services-list,
-        .services-list-backdrop {
-            display: none;
-        }
-
-        .services:hover .services-list {
-            display: block;
-        }
-
-        .services:hover .services-list-backdrop {
-            display: block;
-        }
-
-        .services-list-backdrop:hover {
-            display: none;
-        }
-
-        .case-studies-card:hover {
-            box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
-        }
-
-        .countries-spot-container {
-            width: 150px;
-            background: white;
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            transform: translate(-50%, 0);
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.15);
-            display: none;
-        }
-
-        .countries-spot-point:hover+.countries-spot-container {
-            display: block;
-        }
-
-        .countries-spot-point {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point.blue {
-            height: 6px;
-            width: 6px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #4383C3;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0px 0px 1px 1px #0000001a;
-        }
-
-        .countries-spot-point:hover {
-            animation: pulse-animation 1s infinite;
-        }
-
-        .countries-spot-point.blue:hover {
-            animation: pulse-animation-blue 1s infinite;
-        }
-
-        @keyframes pulse-animation {
-            0% {
-                box-shadow: 0 0 0 0px rgb(245, 133, 32, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgba(245, 133, 32, 0);
-            }
-        }
-
-        @keyframes pulse-animation-blue {
-            0% {
-                box-shadow: 0 0 0 0px rgb(67, 131, 195, 1);
-            }
-
-            100% {
-                box-shadow: 0 0 0 15px rgb(67, 131, 195, 0);
-            }
-        }
-
-        .countries-spot-container::after {
-            content: '';
-            width: 20px;
-            height: 10px;
-            position: absolute;
-            bottom: 0%;
-            left: 52%;
-            transform: translate(-50%, 96%);
-            background: #fff;
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            box-shadow: 0 0 5px 5px rgb(0, 0, 0, 0.15);
-        }
-
-        .partner-cards {
-            min-width: 248px;
-            border: 1px solid rgb(255, 255, 255, 0.1);
-            filter: grayscale(1);
-            transition: all .3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .partner-cards:hover {
-            background: rgb(255, 255, 255, 1);
-            border: 1px solid #fff;
-            filter: grayscale(0);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti {
-            width: 100%;
-        }
-
-        .iti__flag-container {
-            margin-right: 5px;
-        }
-
-        .iti__selected-flag {
-            height: 101%;
-            padding: 0 9px;
-            background-size: contain;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            outline: none;
-        }
-
-        .iti__country-name {
-            margin-left: 10px;
-        }
-
-        .iti__country-list {
-            min-width: 300px;
-            width: 100%;
-            max-height: 150px;
-            margin: 0 0 0 -1px;
-            z-index: 1;
-        }
-
-        .iti__dial-code {
-            margin-left: 5px;
-        }
-
-        .iti--separate-dial-code {
-            margin: 6px 0 0 0;
-        }
-
-        .iti__selected-dial-code {
-            width: 36px;
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        .iti__arrow {
-            width: 10px;
-            height: 5px;
-            background: rgb(0, 0, 0, 0.9);
-            clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
-            border-left: none;
-            border-right: none;
-            border-top: none;
-            transform: rotate(0deg);
-            transition: all .3s ease-in-out;
-        }
-
-        .iti__arrow.iti__arrow--up {
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            transform: rotate(-180deg);
-            transition: all .3s ease-in-out;
-        }
-
-        #phone::placeholder {
-            color: rgb(0, 0, 0, 0.25);
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-
-        .nav-tab-dropdown {
-            display: none;
-        }
-
-        #nav-tab:hover .nav-tab-dropdown,
-        .nav-tab-dropdown:hover {
-            display: block;
-        }
-
-        .nav-tab-item {
-            position: relative;
-        }
-
-        #nav-tab .nav-tab-item::after {
-            content: "";
-            width: 0%;
-            height: 4px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: #F58520;
-            border-radius: 5px 5px 0 0;
-            transition: all .1s ease-in-out;
-        }
-
-        #nav-tab .nav-tab-item.active::after {
-            width: 100%;
-        }
-
-        #nav-tab .nav-tab-item.active {
-            color: #F58520 !important;
-        }
-
-        #nav-tab:hover .nav-tab-item::after {
-            width: 100%;
-            transition: all .3s ease-in-out;
-        }
-
-        #nav-tab:hover .nav-tab-item {
-            color: #F58520 !important;
-            transition: all .2s ease-in-out;
-        }
-    </style>
 
     <style>
         .carousel-container {
@@ -303,19 +43,19 @@ include('../constant.php');
             padding: 0 0 50px 0;
         }
 
-        .carousel {
+        .carousel-container .carousel {
             overflow: visible;
             max-width: 1265px;
             width: 100%;
             margin-inline: auto;
         }
 
-        .cards {
+        .carousel-container .carousel .cards {
             display: flex;
             transition: transform 0.3s ease-in-out;
         }
 
-        .card {
+        .carousel-container .carousel .cards .card {
             flex: 0 0 31.6%;
             margin: 0 10px;
             background: rgba(250, 249, 246);
@@ -366,207 +106,31 @@ include('../constant.php');
 
 <body>
 
-    <!-- Navigation Panel -->
-    <div class="pg-nav-sticky">
-        <div class="full-container">
-            <div class="desktop black-nav-container">
-                <div class="main-content-container d-flex justify-content-between">
-                    <div class="left-content d-flex">
-                        <a href="#" title="Career">
-                            <div class="block-txt d-flex align-items-center">
-                                Career
-                            </div>
-                        </a>
-                        <a href="#" title="CSR">
-                            <div class="block-txt d-flex align-items-center">
-                                CSR
-                            </div>
-                        </a>
-                        <a href="#" title="News">
-                            <div class="block-txt d-flex align-items-center">
-                                News
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="middle-content d-flex align-items-center">
-                        <p>Now Hiring :</p>
-                        <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
-                    </div>
-
-                    <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
-                        <div class="img-and-txt d-flex">
-                            <div class="icon-img d-flex align-items-center">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global Presence">
-                            </div>
-                            <p>Global | EN</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="main-nav-container">
-                <div class="main-content-container d-flex justify-content-between">
-                    <a href="<?php echo $desktop_url; ?>" title="Excis Logo" class="left-content d-flex align-items-center">
-                        <div class="logo-img d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
-                        </div>
-                    </a>
-
-                    <div class="desktop">
-                        <ul class="middle-content d-flex align-items-center">
-                            <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'services'; ?>">
-                                    <div class="nav-tab-item active d-flex align-items-center">
-                                        Services
-                                    </div>
-                                </a>
-
-                                <div class="nav-tab-dropdown">
-                                    <div class="d-flex justify-content-center align-items-start">
-                                        <ul>
-                                            <li>Infrastructure</li>
-                                            <li><a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End User Support</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">Audio-Visual</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating System</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration <br> Solutions</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (SAAS)</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service (DAAS)</a></li>
-                                        </ul>
-
-                                        <div>
-                                            <ul>
-                                                <li>Cyber Security Services</li>
-                                                <li><a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">Cyber Security Consulting</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">End Point Security</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">Network Security</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">Application Security</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">Web Security</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">Email Security</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">Hybrid Cloud Security</a></li>
-                                            </ul>
-
-                                            <ul>
-                                                <li>Development</li>
-                                                <li><a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>">Software And Application Development</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/api-integration.php'; ?>">API Integration</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/network-and-system-automation.php'; ?>">Network And System Automation</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <ul>
-                                                <li>Cloud Services</li>
-                                                <li><a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>">Private Cloud Solutions</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">Hybrid Cloud</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/office-365-and-g-suite-migration-and-integraion.php'; ?>">Office 365 And G-Suite Migration + Integration</a></li>
-                                            </ul>
-
-                                            <!-- <ul>
-                                                <li>Depot</li>
-                                                <li><a href="<?php echo $desktop_url . 'services/warehousing.php'; ?>">Warehousing</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/logistics.php'; ?>">Logistics</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/staging.php'; ?>">Staging</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/wiping-and-disposal.php'; ?>">Wiping + Disposal</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/pmo.php'; ?>">PMO</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/noc-services.php'; ?>">NOC Services</a></li>
-                                                <li><a href="<?php echo $desktop_url . 'services/soc-services.php'; ?>">SOC Services</a></li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'industries'; ?>">
-                                    <div class="nav-tab-item d-flex align-items-center">
-                                        Industries
-                                    </div>
-                                </a>
-
-                                <div class="nav-tab-dropdown">
-                                    <div class="d-flex justify-content-center align-items-start">
-                                        <ul>
-                                            <li>Industries</li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>">Utilities</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>">Public Sector</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>">Manufacturing</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/education.php'; ?>">Education</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/it-and-consulting.php'; ?>">IT & Consulting</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>">Consumer Goods</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'insights/'; ?>">
-                                    <div class="nav-tab-item d-flex align-items-center">
-                                        Insights
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="d-flex align-items-center">
-                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="right-content desktop">
-                            <div class="contact-us-btn d-flex justify-content-center align-items-center">
-                                Contact Us
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="mobile">
-                        <div class="m-nav d-flex align-items-center">
-                            <a href="#">
-                                <div class="global-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'global-presence-black.png'; ?>" alt="Global Presence">
-                                </div>
-                            </a>
-
-                            <div class="hamburger d-flex align-items-center justify-content-end">
-                                <div class="middle-line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+    include("../templates/navigation.php");
+    ?>
 
     <div class="full-container">
-        <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
-            <div
-                style="position: absolute; top: 0; left: 50%; height: 260px; width: max-content; transform: translate(-50%, 0);">
-                <img src="../assets/images/inner-pages-banner.png" alt="">
+        <div class="pages-banner">
+            <div class="banner-bg-map-img">
+                <picture>
+                    <source srcset="../assets/images/inner-pages-banner-mobile.png" media="(max-width: 600px)">
+                    <img src="../assets/images/inner-pages-banner.png" alt="Banner">
+                </picture>
+            </div>
+            <div class="banner-left-abstract desktop">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
+            </div>
+            <div class="banner-right-abstract desktop">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
             </div>
 
-            <div style="height: 170px; width: max-content; position: absolute; top: 0; left: 0; opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div
-                style="height: 170px; width: max-content; position: absolute; top: 0; right: 0; transform: scaleX(-1); opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                <div style="width: 100%; height: 100%; flex-direction: column;" class="d-flex justify-content-center">
-                    <div style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 1);">
-                        Home - <span style="font-weight: 600;">Services</span>
+            <div class="main-content-container">
+                <div class="banner-txt d-flex flex-column justify-content-center">
+                    <div class="breadcrumb">
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <span class="page">Services</span>
                     </div>
-                    <div style="font-size: 40px; font-weight: 600; padding: 5px 0 0; color: rgba(37, 37, 37, 1);">
+                    <div class="page-title">
                         Services
                     </div>
                 </div>
@@ -1073,85 +637,21 @@ include('../constant.php');
         </div>
     </div>
 
-    <div class="full-container">
-        <div style="width: 100%; background: rgba(18, 24, 32);">
-            <div style="height: 100%; padding: 80px 15px;" class="main-content-container">
-                <div style="font-size: 34px; font-weight: 500; color: #fff; text-align: center;">
-                    Lorem ipsum dolor sit amet.
-                </div>
-
-                <div style="margin-top: 50px; flex-wrap: wrap;" class="d-flex">
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 20px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-vmware.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-deutsche-bank.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 35px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-cisco.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-nokia.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 25px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-microsoft.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 30px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-lenovo.png" alt="">
-                        </div>
-                    </div>
-                    <div style="height: 100px; flex: 1;"
-                        class="partner-cards d-flex justify-content-center align-items-center">
-                        <div style="height: 60px;" class="d-flex">
-                            <img loading="lazy" style="width: auto;" src="../assets/images/partner-dell.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+    include("../templates/partners.php");
+    ?>
 
     <?php
-    include("../footer.php");
+    include("../templates/footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        const navItem = document.querySelectorAll('.middle-content .nav-block-container');
+        navItem[1].querySelector('a .nav-tab-item').classList.add('active');
+    </script>
 
     <script>
         const prevBtn = document.getElementById('prev-btn');

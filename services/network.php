@@ -25,25 +25,15 @@ require_once('../constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/services">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="../assets/sass/index.css">
-    <link rel="stylesheet" href="../assets/sass/why-excis.css">
-    <link rel="stylesheet" href="../assets/sass/navigation.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
-    <link rel="stylesheet" href="../assets/sass/contact-us.css">
-    <link rel="stylesheet" href="../assets/sass/services.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
+    <link rel="stylesheet" href="../assets/sass/banners.css">
+    <link rel="stylesheet" href="../assets/sass/inner-pages.css">
+    <link rel="stylesheet" href="../assets/sass/footer.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
-
-    <style>
-        .submitBtn {
-            background: rgb(27, 49, 93, 0.8);
-        }
-
-        .submitBtn:hover {
-            background: rgb(27, 49, 93, 1);
-        }
-    </style>
 
     <style>
         .benefits-cards {
@@ -383,29 +373,27 @@ require_once('../constant.php');
     include("../templates/navigation.php");
     ?>
 
-    <!-- Banner + Breadcrumb -->
     <div class="full-container">
-        <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
-            <div
-                style="position: absolute; top: 0; left: 50%; height: 260px; width: max-content; transform: translate(-50%, 0);">
-                <img src="../assets/images/inner-pages-banner.png" alt="">
+        <div class="pages-banner">
+            <div class="banner-bg-map-img">
+                <picture>
+                    <source srcset="../assets/images/inner-pages-banner-mobile.png" media="(max-width: 600px)">
+                    <img src="../assets/images/inner-pages-banner.png" alt="Banner">
+                </picture>
+            </div>
+            <div class="banner-left-abstract desktop">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
+            </div>
+            <div class="banner-right-abstract desktop">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
             </div>
 
-            <div style="height: 170px; width: max-content; position: absolute; top: 0; left: 0; opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div
-                style="height: 170px; width: max-content; position: absolute; top: 0; right: 0; transform: scaleX(-1); opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                <div style="width: 100%; height: 100%; flex-direction: column;" class="d-flex justify-content-center">
-                    <div style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 1);">
-                        Home - Services - <span style="font-weight: 600;">Network</span>
+            <div class="main-content-container">
+                <div class="banner-txt d-flex flex-column justify-content-center">
+                    <div class="breadcrumb">
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Network</span>
                     </div>
-                    <div style="font-size: 40px; font-weight: 600; padding: 5px 0 0; color: rgba(37, 37, 37, 1);">
+                    <div class="page-title">
                         Network
                     </div>
                 </div>
@@ -421,14 +409,14 @@ require_once('../constant.php');
                     <div style="padding: 50px 15px;" class="d-flex justify-content-between align-items-center">
                         <div style="max-width: 600px;">
                             <div style="font-size: 30px; font-weight: 500; line-height: 40px; color: #F58520;">
-                                Complete Network <br> Support Services
+                                Complete Network Services
                             </div>
                             <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus, dicta veniam, quis, accusantium perspiciatis consectetur sapiente ab modi sed excepturi vitae. Sapiente velit quibusdam rerum natus enim culpa a nemo delectus illum consequuntur, architecto illo corporis sed cumque? Necessitatibus.
+                                In today’s challenging world, almost all businesses rely on competitive networking technology for their internal and external business processes. Since the network systems are ever-changing, it is challenging to follow up on the trends and stay ahead of the competitors. Additionally, meeting the customer’s expectations consumes more effort and hard work. These are the primary reasons to join hands with the professional offering networking services.
                                 <br> <br>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed ratione reiciendis minus amet! Quo sit quos reprehenderit blanditiis, qui exercitationem architecto commodi quidem similique ad culpa ipsum eum non fuga dolores aut dolorem eos, neque suscipit dicta cupiditate, nisi dolorum voluptatibus! Explicabo quisquam aspernatur quod, autem nemo sit velit libero, veritatis amet quis odit facere vel, unde dicta quas. Perferendis quaerat omnis unde harum necessitatibus debitis nam alias ratione reprehenderit recusandae, nisi incidunt. Asperiores laborum esse maxime sint amet?
+                                Professional networking service is highly cost-effective and maximizes your company’s flexibility. Besides, you will get access to skills that may not be accessible internally. It includes networking, security, and communications. The experts’ network service helps control the company’s expenses while supporting a diverse mix of technology in the office.
                                 <br> <br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae, ratione, qui neque temporibus deserunt omnis nemo soluta eum magni fuga consectetur! Libero, incidunt molestiae reprehenderit saepe omnis dicta. Recusandae!
+                                While having networking professionals, you do not worry about anything because they will prevent, diagnose and solve networking-related issues. Experts provide routine monitoring as part of the network management services. It brings tons of benefits to your business, such as ease of managing problems, better performance, and avoiding downtime.
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
@@ -445,17 +433,17 @@ require_once('../constant.php');
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
             <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
                 <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
-                    What data center support services do we offer?
+                    Why does a business need network service?
                 </div>
                 <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
-                    Our technicians are available around the clock so you can contact them anytime. The expert offers the end-to-end data center support solution quickly. You can stay in peace when our expert provides remote support service. We provide the following data center services with certified professionals and modern technologies.
+                    Every business must fulfill its IT requirements to remain competitive in today’s business world. Companies of all sizes should benefit from networking services to meet all their IT concerns. Here are the reasons to utilize the professional networking service!
                 </div>
 
                 <div class="support-cards d-flex">
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Technical Support
+                                Enhanced IT operations
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Our experienced technicians are available on-site to perform critical tasks and resolve issues quickly. They are experienced in diagnosing and fixing hardware and software issues, ensuring minimal downtime.
@@ -466,7 +454,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Installing Racks
+                                Reliable and high-speed network with better support and security
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 We carry out careful rack installation, ensuring optimal space and organization of your equipment.
@@ -477,7 +465,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Remote Monitoring
+                                Minimized cost of operations
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Our advanced monitoring tools keep a close eye on the health of your data center. We proactively identify and fix potential problems before they escalate, minimizing disruptions to your operations.
@@ -488,23 +476,21 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Device Integration
+                                Prevent security breaches and IT issues
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Our experts are well-versed in integrating various devices into your data center, from servers to network equipment, ensuring smooth operations.
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="support-card">
-                        <div class="card-content">
-                            <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Cloud Support
-                            </div>
-                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                As cloud technology continues to play a key role in data center operations, we offer comprehensive cloud support services, including migration and management.
-                            </div>
-                        </div>
+                <div style="padding: 50px 0 0;">
+                    <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
+                        Access the best network service!
+                    </div>
+                    <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
+                        Do you look for the best networking services for your firm? Hire us! Excis is specialized in offering end-to-end networking solutions for companies of all sizes. We help transform your business and stand out from the crowd with the latest technologies and tools. At an affordable rate, we render the best services, such as cloud networks, workforce mobility, and networked security.
                     </div>
                 </div>
             </div>
@@ -954,7 +940,6 @@ require_once('../constant.php');
         </div>
     </div>
 
-    <!-- Our Core Values & Case Studies -->
     <div class="full-container">
         <div class="core-values-bg">
             <div class="core-values-container">
@@ -964,17 +949,17 @@ require_once('../constant.php');
                 <div class="case-studies">
                     <div class="main-content-container">
                         <div class="content-container">
-                            <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
+                            <div class="title-txt" data-aos="fade-up" data-aos-duration="1000">
                                 Case Studies
                             </div>
-                            <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
+                            <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
                                 quis culpa cumque, laboriosam deserunt unde?
                             </div>
 
                             <div class="case-studies-container">
                                 <div class="cards d-flex justify-content-between align-items-start">
-                                    <a href="#" data-aos="fade-right" data-aos-duration="1000">
+                                    <a href="#" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="card">
                                             <div class="creative d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
@@ -1030,7 +1015,7 @@ require_once('../constant.php');
                                         </div>
                                     </a>
 
-                                    <a href="#" data-aos="fade-left" data-aos-duration="1000">
+                                    <a href="#" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="card">
                                             <div class="creative d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
@@ -1090,11 +1075,20 @@ require_once('../constant.php');
     </div>
 
     <?php
-    include("../footer.php");
+    include("../templates/partners.php");
+    ?>
+
+    <?php
+    include("../templates/footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        const navItem = document.querySelectorAll('.middle-content .nav-block-container');
+        navItem[1].querySelector('a .nav-tab-item').classList.add('active');
+    </script>
 
     <script>
         const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');

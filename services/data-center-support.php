@@ -25,25 +25,15 @@ require_once('../constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/services">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="../assets/sass/index.css">
-    <link rel="stylesheet" href="../assets/sass/why-excis.css">
-    <link rel="stylesheet" href="../assets/sass/navigation.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
+    <link rel="stylesheet" href="../assets/sass/banners.css">
+    <link rel="stylesheet" href="../assets/sass/inner-pages.css">
     <link rel="stylesheet" href="../assets/sass/footer.css">
-    <link rel="stylesheet" href="../assets/sass/services.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
-
-    <style>
-        .submitBtn {
-            background: rgb(27, 49, 93, 0.8);
-        }
-
-        .submitBtn:hover {
-            background: rgb(27, 49, 93, 1);
-        }
-    </style>
 
     <style>
         .benefits-cards {
@@ -383,29 +373,27 @@ require_once('../constant.php');
     include("../templates/navigation.php");
     ?>
 
-    <!-- Banner + Breadcrumb -->
     <div class="full-container">
-        <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
-            <div
-                style="position: absolute; top: 0; left: 50%; height: 260px; width: max-content; transform: translate(-50%, 0);">
-                <img src="../assets/images/inner-pages-banner.png" alt="">
+        <div class="pages-banner">
+            <div class="banner-bg-map-img">
+                <picture>
+                    <source srcset="../assets/images/inner-pages-banner-mobile.png" media="(max-width: 600px)">
+                    <img src="../assets/images/inner-pages-banner.png" alt="Banner">
+                </picture>
+            </div>
+            <div class="banner-left-abstract desktop">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
+            </div>
+            <div class="banner-right-abstract desktop">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
             </div>
 
-            <div style="height: 170px; width: max-content; position: absolute; top: 0; left: 0; opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div
-                style="height: 170px; width: max-content; position: absolute; top: 0; right: 0; transform: scaleX(-1); opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                <div style="width: 100%; height: 100%; flex-direction: column;" class="d-flex justify-content-center">
-                    <div style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 1);">
-                        Home - Services - <span style="font-weight: 600;">Data Center Support</span>
+            <div class="main-content-container">
+                <div class="banner-txt d-flex flex-column justify-content-center">
+                    <div class="breadcrumb">
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Data Center Support</span>
                     </div>
-                    <div style="font-size: 40px; font-weight: 600; padding: 5px 0 0; color: rgba(37, 37, 37, 1);">
+                    <div class="page-title">
                         Data Center Support
                     </div>
                 </div>
@@ -424,11 +412,7 @@ require_once('../constant.php');
                                 Complete Data Center <br> Support Services
                             </div>
                             <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus, dicta veniam, quis, accusantium perspiciatis consectetur sapiente ab modi sed excepturi vitae. Sapiente velit quibusdam rerum natus enim culpa a nemo delectus illum consequuntur, architecto illo corporis sed cumque? Necessitatibus.
-                                <br> <br>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed ratione reiciendis minus amet! Quo sit quos reprehenderit blanditiis, qui exercitationem architecto commodi quidem similique ad culpa ipsum eum non fuga dolores aut dolorem eos, neque suscipit dicta cupiditate, nisi dolorum voluptatibus! Explicabo quisquam aspernatur quod, autem nemo sit velit libero, veritatis amet quis odit facere vel, unde dicta quas. Perferendis quaerat omnis unde harum necessitatibus debitis nam alias ratione reprehenderit recusandae, nisi incidunt. Asperiores laborum esse maxime sint amet?
-                                <br> <br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae, ratione, qui neque temporibus deserunt omnis nemo soluta eum magni fuga consectetur! Libero, incidunt molestiae reprehenderit saepe omnis dicta. Recusandae!
+                                If you need to increase the performance and security of the application, you can use a data center support service. We have experienced professionals to provide the support service you require with data center management. Besides, our professionals offer the security your business needs to optimize the IT infrastructure and cloud. We put more effort into providing the most excellent service for clients. You can hire us and get the full hardware maintenance service.
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
@@ -455,10 +439,10 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Technical Support
+                                Lorem
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                Our experienced technicians are available on-site to perform critical tasks and resolve issues quickly. They are experienced in diagnosing and fixing hardware and software issues, ensuring minimal downtime.
+                                We monitor the OEM platform performance and offer a better solution that helps the business achieve its results.
                             </div>
                         </div>
                     </div>
@@ -466,10 +450,10 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Installing Racks
+                                Lorem
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                We carry out careful rack installation, ensuring optimal space and organization of your equipment.
+                                Our specialists manage data center server management like operating systems, physical servers, virtualization hypervisors, and others.
                             </div>
                         </div>
                     </div>
@@ -477,10 +461,10 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Remote Monitoring
+                                Lorem
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                Our advanced monitoring tools keep a close eye on the health of your data center. We proactively identify and fix potential problems before they escalate, minimizing disruptions to your operations.
+                                Also, we handle all models of servers and offer around-the-clock access to the service, software, or tools you require.
                             </div>
                         </div>
                     </div>
@@ -488,10 +472,10 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Device Integration
+                                Lorem
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                Our experts are well-versed in integrating various devices into your data center, from servers to network equipment, ensuring smooth operations.
+                                With the help of the ITIL service-delivery framework, our data center service is developed to provide the best practices.
                             </div>
                         </div>
                     </div>
@@ -499,10 +483,21 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Cloud Support
+                                Lorem
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                As cloud technology continues to play a key role in data center operations, we offer comprehensive cloud support services, including migration and management.
+                                Our on-site hardware maintenance helps you to reduce downtime in the business. The expert takes care of regular data center tasks that increase business productivity.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="card-content">
+                            <div style="font-size: 24px; font-weight: 700; color: #000;">
+                                Lorem
+                            </div>
+                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+                                When you hire our service, you can get secure and conditioned on-site space for placing employees' focus on business operations. Also, we offer shared safe space for storage requirements in the data center.
                             </div>
                         </div>
                     </div>
@@ -1088,6 +1083,10 @@ require_once('../constant.php');
             </div>
         </div>
     </div>
+
+    <?php
+    include("../templates/partners.php");
+    ?>
 
     <?php
     include("../templates/footer.php");
