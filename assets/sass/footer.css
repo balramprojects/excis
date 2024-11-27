@@ -708,7 +708,8 @@
     flex-direction: column;
   }
   .footer-bg .main-content-container .content-container .container1 {
-    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
   }
   .footer-bg .main-content-container .content-container .container1 .companyName {
     font-size: 18px;

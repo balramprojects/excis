@@ -1,0 +1,115 @@
+:root {
+  --primary-black-color: #000;
+  --primary-white-color: #fff;
+  --secondary-black-color: rgba(0, 0, 0, 0.5);
+  --secondary-white-color: rgba(255, 255, 255, 0.5);
+  --black-color: #121820;
+  --white-color: #FAF9F6;
+  --orange-color: #F58520;
+  --blue-color: #1B315D;
+  --grey-color: #808389;
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+.pages-banner {
+  height: 260px;
+  width: 100%;
+  background: var(--white-color);
+  position: relative;
+}
+.pages-banner .banner-bg-map-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 260px;
+  width: -moz-max-content;
+  width: max-content;
+  transform: translate(-50%, 0);
+}
+.pages-banner .banner-left-abstract,
+.pages-banner .banner-right-abstract {
+  height: 170px;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+}
+.pages-banner .banner-left-abstract {
+  left: 0;
+  transform: scaleX(1);
+}
+.pages-banner .banner-right-abstract {
+  right: 0;
+  transform: scaleX(-1);
+}
+.pages-banner .main-content-container {
+  height: 100%;
+  padding: 0 15px;
+}
+.pages-banner .main-content-container .banner-txt {
+  width: 100%;
+  height: 100%;
+}
+.pages-banner .main-content-container .banner-txt .breadcrumb {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+}
+.pages-banner .main-content-container .banner-txt .breadcrumb a {
+  color: var(--black-color);
+}
+.pages-banner .main-content-container .banner-txt .breadcrumb span.page {
+  font-weight: 600;
+}
+.pages-banner .main-content-container .banner-txt .page-title {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 5px 0 0;
+  color: var(--black-color);
+}
+
+@media (max-width: 1280px) {
+  .pages-banner .banner-left-abstract,
+  .pages-banner .banner-right-abstract {
+    top: -75px;
+  }
+}
+@media (max-width: 1080px) {
+  .pages-banner .main-content-container .banner-txt .page-title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 900px) {
+  .pages-banner {
+    height: 210px;
+  }
+  .pages-banner .banner-bg-map-img {
+    height: 210px;
+  }
+  .pages-banner .banner-left-abstract,
+  .pages-banner .banner-right-abstract {
+    height: 145px;
+  }
+  .pages-banner .main-content-container .banner-txt .breadcrumb {
+    font-size: 14px;
+  }
+  .pages-banner .main-content-container .banner-txt .page-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .pages-banner {
+    height: 185px;
+    top: 65px;
+    padding-bottom: 65px;
+  }
+  .pages-banner .banner-bg-map-img {
+    max-height: 190px;
+    height: 100%;
+  }
+  .pages-banner .main-content-container .banner-txt .page-title {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=banners.css.map */
