@@ -1101,6 +1101,7 @@
   text-align: center;
 }
 .partners-bg .main-content-container .partner-cards {
+  padding: 0 110px;
   margin-top: 50px;
   flex-wrap: wrap;
 }
@@ -1506,6 +1507,9 @@
   .partners-bg .main-content-container .title-txt {
     font-size: 32px;
   }
+  .partners-bg .main-content-container .partner-cards {
+    padding: 0 90px;
+  }
   .partners-bg .main-content-container .partner-cards .card {
     height: 80px;
     min-width: 170px;
@@ -1875,6 +1879,7 @@
     padding: 50px 15px;
   }
   .partners-bg .main-content-container .partner-cards {
+    padding: 0;
     margin-top: 30px;
   }
   .partners-bg .main-content-container .title-txt {

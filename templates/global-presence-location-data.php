@@ -21,11 +21,14 @@
 <div class="country-data australia">
     <p class="country">Australia</p>
     <p class="city">Southport</p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate a facere maiores amet odit magnam, fugit, optio, officiis ipsam harum exercitationem ducimus incidunt aperiam obcaecati ullam earum sunt quae illum!
-        <br> <br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero laudantium asperiores commodi provident, voluptatibus accusantium reiciendis mollitia labore dolor earum?
-    </p>
+    <div>
+        <p style="font-size: 18px; font-weight: 700; color: #fff;">Scale</p>
+        <ul style="padding: 10px 0 0 15px;">
+            <li style="font-size: 14px; font-weight: 500; line-height: 30px; color: #000;">Started in 2009 in Southport</li>
+            <li style="font-size: 14px; font-weight: 500; line-height: 30px; color: #000;">500+ Employees</li>
+            <li style="font-size: 14px; font-weight: 500; line-height: 30px; color: #000;">2 Delivery Center</li>
+        </ul>
+    </div>
 </div>
 
 <div class="country-data belgium">

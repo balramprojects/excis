@@ -472,6 +472,20 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .footer-bg {
+        .main-content-container {
+            .content-container {
+                flex-wrap: wrap;
+
+                .container1 {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1080px) {
     .contact-us-bg {
         .contact-us-bg-container {
@@ -595,6 +609,144 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bg {
+        .main-content-container {
+            .content-container {
+                width: 100%;
+                gap: 50px;
+
+                .container1 {
+                    .companyName {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: var(--orange-color);
+                        text-transform: uppercase;
+                        text-wrap: nowrap;
+                    }
+
+                    .description {
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        letter-spacing: 1px;
+                        padding: 15px 0 0;
+                        color: var(--white-color);
+                    }
+
+                    .social-icons {
+                        width: 60%;
+                        padding: 30px 0 0;
+
+                        .icon-img {
+                            height: 22px;
+
+                            img {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+                .container2 {
+                    .serviceTitle {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: var(--orange-color);
+                        text-transform: capitalize;
+                        text-wrap: nowrap;
+
+                        &.p-t-15 {
+                            padding-top: 15px;
+                        }
+                    }
+
+                    .serviceName {
+                        padding: 8px 0 0;
+                        line-height: 24px;
+
+                        a {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: var(--white-color);
+                            text-wrap: nowrap;
+                        }
+                    }
+                }
+
+                .container3 {
+                    .isoTxt {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: rgba(250, 249, 246, 1);
+                        text-wrap: nowrap;
+                    }
+
+                    .iso-imgs {
+                        padding: 15px 0 0;
+                        gap: 10px;
+
+                        .iso-img {
+                            height: 50px;
+
+                            img {
+                                width: auto;
+                            }
+                        }
+
+                        .countries-flag {
+                            height: 50px;
+                            width: 50px;
+
+                            &.uk {
+                                background: url('../images/iso/uk.png');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                            }
+
+                            &.india {
+                                background: url('../images/iso/india.png');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                            }
+                        }
+
+                        .cyber-essentials {
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+
+            .divider {
+                width: 100%;
+                padding: 25px 0 0;
+                border-bottom: 1px solid var(--white-color);
+            }
+
+            .footer-btm {
+                height: 70px;
+
+                .copyright-txt {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--white-color);
+                }
+
+                .policies .policy {
+                    padding: 0 15px 0;
+
+                    a {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: var(--white-color);
                     }
                 }
             }

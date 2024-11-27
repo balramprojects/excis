@@ -180,7 +180,7 @@ include('./constant.php');
 
                         <div class="mobile">
                             <div class="cards d-flex flex-column">
-                                <div class="card">
+                                <div class="card" data-aos="fade-up" data-aos-duration="1000">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -195,7 +195,7 @@ include('./constant.php');
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" data-aos="fade-up" data-aos-duration="1000">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -210,7 +210,7 @@ include('./constant.php');
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card" data-aos="fade-up" data-aos-duration="1000">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -258,18 +258,22 @@ include('./constant.php');
             </div>
 
             <div class="countries-data-card-slide desktop">
-                <div class="slide-nav d-flex justify-content-between">
-                    <select class="countryCityDropdown">
-                        <option value="" selected disabled>Select a Region</option>
-                    </select>
-                    <div class="slide-close-btn">
-                        ×
+                <div class="mobile">
+                    <div class="slide-nav d-flex justify-content-between">
+                        <select class="countryCityDropdown">
+                            <option value="" selected disabled>Select a Region</option>
+                        </select>
+                        <div class="slide-close-btn">
+                            ×
+                        </div>
                     </div>
                 </div>
 
-                <?php
-                include("templates/global-presence-location-data.php");
-                ?>
+                <div style="padding: 210px 15px 50px;">
+                    <?php
+                    include("templates/global-presence-location-data.php");
+                    ?>
+                </div>
             </div>
 
             <div class="exact-black-container">

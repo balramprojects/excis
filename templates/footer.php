@@ -304,9 +304,7 @@
                         <div class="iso-imgs d-flex justify-content-start align-item-center">
                             <div class="countries-flag uk"></div>
                             <div class="countries-flag india"></div>
-                        </div>
-                        <div class="iso-imgs d-flex justify-content-start align-item-center">
-                            <div class="cyber-essentials d-flex">
+                            <div class="iso-img d-flex">
                                 <img src="<?php echo $desktop_images . 'iso/cyber-essentials.png'; ?>" alt="">
                             </div>
                         </div>
@@ -369,9 +367,7 @@
                         <div class="iso-imgs d-flex justify-content-start align-item-center">
                             <div class="countries-flag uk"></div>
                             <div class="countries-flag india"></div>
-                        </div>
-                        <div class="iso-imgs d-flex justify-content-start align-item-center">
-                            <div class="cyber-essentials d-flex">
+                            <div class="iso-img d-flex">
                                 <img src="<?php echo $desktop_images . 'iso/cyber-essentials.png'; ?>" alt="">
                             </div>
                         </div>
