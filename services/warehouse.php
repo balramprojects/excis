@@ -391,10 +391,10 @@ require_once('../constant.php');
             <div class="main-content-container">
                 <div class="banner-txt d-flex flex-column justify-content-center">
                     <div class="breadcrumb">
-                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">End User Support</span>
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Warehouse</span>
                     </div>
                     <div class="page-title">
-                        End User Support
+                        Warehouse
                     </div>
                 </div>
             </div>
@@ -409,10 +409,10 @@ require_once('../constant.php');
                     <div style="padding: 50px 15px;" class="d-flex justify-content-between align-items-center">
                         <div style="max-width: 600px;">
                             <div style="font-size: 30px; font-weight: 500; line-height: 40px; color: #F58520;">
-                                Complete End User Support <br> Services
+                                Complete Warehouse Service
                             </div>
                             <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                End-user support service plays a vital role in the success of the business. IT companies put more effort into developing new IT software and strategies. Sometimes, problems occur in the software, but IT experts don’t have enough time to fix issues that affect the company’s profit. Employees who spend more time on everyday matters don’t have to concentrate on other things. End-user support offer solution for any problems in the software and application.
+                                For every factory and industry, a warehouse is, of course, a place for storage purposes. However, it will discover a new solution and do third-party logistics forever. When you want a warehouse solution, you can consult an Excis firm. Of course, they deliver end-to-end service to make the requirements more accessible. However, it will give you steady results by focusing on extended services. Thus, it is fully optimized, and we carry out a specific solution to stand among the best. They consider a vital role in ultimately identifying the warehouse services and fulfilling the desires. Warehouse service from Excis is giving a 100% satisfactory solution.
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
@@ -429,50 +429,29 @@ require_once('../constant.php');
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
             <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
                 <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
-                    Why use our end-user support?
+                    Manage the initial points
                 </div>
                 <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
-                    As a result of handling requests sent through various channels, end-user support analyzes the customer experience. If you face problems, you don’t want to think about how to fix them. Just log in to our end-user support service and get help from the experienced Excis team. The expert understands the issue and suggests a quick solution. Let’s see why you should use our end-user support service:
+                    Our warehouse services deliver end-to-end stock management services. Thus, it will provide a complete solution by noticing logistics and warehouse management. They come with same-day shipping by initializing the customer locations. It will fulfill any size and entirely depends on the spare part procurement. Our warehouse services rely on asset storage needs that are fully functional and convey the best solution forever. The stock management should be flexible and able to optimize changes in the ethical device disposal for the stocks. Onsite labor has to notice some changes in the warehouse management. Business owners prefer our warehouse services to expand their objectives anyways.
                 </div>
 
-                <div class="support-cards d-flex justify-content-between">
-                    <div class="support-card">
-                        <div class="card-content">
-                            <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Years of experience
-                            </div>
-                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000; height: 115px; overflow: auto;">
-                                We have experienced and skilled professionals for end-user support services. Professionals have the interpersonal and technical knowledge to get the best service. Besides, experts have resolved complicated technical issues in the software.
-                            </div>
-                        </div>
+                <div style="padding: 50px 0 0;">
+                    <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
+                        Increase core business
                     </div>
-
-                    <div class="support-card">
-                        <div class="card-content">
-                            <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Quick solution
-                            </div>
-                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000; height: 115px; overflow: auto;">
-                                We offer around-the-clock remote support services with certified professionals. The expert is always ready to answer phone inquiries. You can speak with the expert by phone or text through email at your convenience. In addition, the expert understands the issue and suggests an end-to-end solution, letting you maintain business productivity.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="support-card">
-                        <div class="card-content">
-                            <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Business operations
-                            </div>
-                            <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000; height: 115px; overflow: auto;">
-                                You can concentrate on the business activity when you join your hands with us. Your service should be smooth and effective if you need to achieve your business goal. Thus, you need to eliminate the technical issue in the business. Our end-user support specialists offer instant help that allows you to handle your project without delay.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="padding: 30px 0 0;">
                     <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
-                        Excis supports over two-hundred enterprises with talented IT professionals. We offer end-user support and other IT services at an affordable price.
+                        Warehouse services are always giving a salient role in doing business well. It includes ethical device disposal and means for developing the business. Onsite labor services from our Excise provide a solution to examine the warehouse development. The benefits from our stock management must be flexible enough in giving ideas and device repairs and changes. Our Excise is always offering warehouse services for small and medium businesses. Thus, you must get the benefits at an affordable price as well. We give you a complete solution and decide on additional storage space for your business.
+                    </div>
+                </div>
+
+                <div style="padding: 50px 0 0;">
+                    <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
+                        Automated features
+                    </div>
+                    <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
+                        Storage system allows the data centers to gain the flexible scale capacity for running the business needs. The storage system is secure and available to authorized users, so the data will be placed on HDDs or solid-state media. STaaS ultimately increases safety and reduces data sprawl. These also easily aid in infrastructure consolidation.
+                        <br> <br>
+                        Excis Compliance Ltd is the leading in providing the organization and businesses to securely store data. Our expert team handles the data to reduce your workload. Your data remains safe and secure in our high-end data centers giving you absolute control of your data.
                     </div>
                 </div>
             </div>
@@ -858,7 +837,8 @@ require_once('../constant.php');
         </div>
     </div>
 
-    <!-- <div class="full-container">
+    <!-- Benefits Of Working -->
+    <div class="full-container">
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
             <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
                 <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
@@ -921,6 +901,7 @@ require_once('../constant.php');
         </div>
     </div>
 
+    <!-- Our Core Values & Case Studies -->
     <div class="full-container">
         <div class="core-values-bg">
             <div class="core-values-container">
@@ -1030,7 +1011,7 @@ require_once('../constant.php');
                                 <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
                                     <p>View All</p>
                                     <div class="arrow-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
                                     </div>
                                 </div>
                             </a>
@@ -1039,7 +1020,7 @@ require_once('../constant.php');
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Start your Business Transformation -->
     <div class="full-container">
@@ -1054,6 +1035,10 @@ require_once('../constant.php');
             </div>
         </div>
     </div>
+
+    <?php
+    include("../templates/partners.php");
+    ?>
 
     <?php
     include("../templates/footer.php");

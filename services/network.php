@@ -876,8 +876,7 @@ require_once('../constant.php');
         </div>
     </div>
 
-    <!-- Benefits Of Working -->
-    <div class="full-container">
+    <!-- <div class="full-container">
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
             <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
                 <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
@@ -938,9 +937,9 @@ require_once('../constant.php');
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="full-container">
+    <!-- <div class="full-container">
         <div class="core-values-bg">
             <div class="core-values-container">
                 <div class="left-btm-abstract"></div>
@@ -1049,7 +1048,7 @@ require_once('../constant.php');
                                 <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
                                     <p>View All</p>
                                     <div class="arrow-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -1058,7 +1057,7 @@ require_once('../constant.php');
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Start your Business Transformation -->
     <div class="full-container">
@@ -1073,10 +1072,6 @@ require_once('../constant.php');
             </div>
         </div>
     </div>
-
-    <?php
-    include("../templates/partners.php");
-    ?>
 
     <?php
     include("../templates/footer.php");

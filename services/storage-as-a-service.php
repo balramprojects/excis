@@ -432,7 +432,8 @@ require_once('../constant.php');
                     Increasing demands for performance
                 </div>
                 <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
-                    With the use of Storage As A Service, it is quite a convenient option to compute, network as well as store the files with specifying the encryption. Increasing demand for performance and scalability is higher. Google Cloud Platform, AWS, Microsoft Azure public clouds, and many others allow the user to scale storage. These give a better option to move data from local storage into the Cloud archives. </div>
+                    With the use of Storage As A Service, it is quite a convenient option to compute, network as well as store the files with specifying the encryption. Increasing demand for performance and scalability is higher. Google Cloud Platform, AWS, Microsoft Azure public clouds, and many others allow the user to scale storage. These give a better option to move data from local storage into the Cloud archives.
+                </div>
 
                 <div style="padding: 50px 0 0;">
                     <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
