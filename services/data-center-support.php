@@ -435,11 +435,11 @@ require_once('../constant.php');
                     Our technicians are available around the clock so you can contact them anytime. The expert offers the end-to-end data center support solution quickly. You can stay in peace when our expert provides remote support service. We provide the following data center services with certified professionals and modern technologies.
                 </div>
 
-                <div class="support-cards d-flex">
+                <div class="support-cards d-flex justify-content-between">
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Lorem
+                                Optimized OEM Solutions
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 We monitor the OEM platform performance and offer a better solution that helps the business achieve its results.
@@ -450,7 +450,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Lorem
+                                Comprehensive Server Management
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Our specialists manage data center server management like operating systems, physical servers, virtualization hypervisors, and others.
@@ -461,7 +461,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Lorem
+                                24/7 Server Solutions
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Also, we handle all models of servers and offer around-the-clock access to the service, software, or tools you require.
@@ -472,7 +472,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Lorem
+                                ITIL-Driven Service Delivery
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 With the help of the ITIL service-delivery framework, our data center service is developed to provide the best practices.
@@ -483,7 +483,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Lorem
+                                On-Site Hardware Support
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Our on-site hardware maintenance helps you to reduce downtime in the business. The expert takes care of regular data center tasks that increase business productivity.
@@ -494,12 +494,18 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Lorem
+                                Secure On-Site Solutions
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 When you hire our service, you can get secure and conditioned on-site space for placing employees' focus on business operations. Also, we offer shared safe space for storage requirements in the data center.
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div style="padding: 30px 0 0;">
+                    <div style="max-width: 800px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
+                        Our technicians are available around the clock so you can contact them anytime. The expert offers the end-to-end data center support solution quickly. You can stay in peace when our expert provides remote support service. We provide the following data center services with certified professionals and modern technologies.
                     </div>
                 </div>
             </div>

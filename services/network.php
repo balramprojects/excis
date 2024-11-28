@@ -439,7 +439,7 @@ require_once('../constant.php');
                     Every business must fulfill its IT requirements to remain competitive in today’s business world. Companies of all sizes should benefit from networking services to meet all their IT concerns. Here are the reasons to utilize the professional networking service!
                 </div>
 
-                <div class="support-cards d-flex">
+                <div class="support-cards d-flex justify-content-between">
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
@@ -454,7 +454,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Reliable and high-speed network with better support and security
+                                Secure High-Speed Network
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 We carry out careful rack installation, ensuring optimal space and organization of your equipment.
@@ -465,7 +465,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Minimized cost of operations
+                                Cost-Efficient Operations
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Our advanced monitoring tools keep a close eye on the health of your data center. We proactively identify and fix potential problems before they escalate, minimizing disruptions to your operations.
@@ -476,7 +476,7 @@ require_once('../constant.php');
                     <div class="support-card">
                         <div class="card-content">
                             <div style="font-size: 24px; font-weight: 700; color: #000;">
-                                Prevent security breaches and IT issues
+                                Proactive IT Security
                             </div>
                             <div style="padding: 18px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
                                 Our experts are well-versed in integrating various devices into your data center, from servers to network equipment, ensuring smooth operations.
@@ -485,7 +485,7 @@ require_once('../constant.php');
                     </div>
                 </div>
 
-                <div style="padding: 50px 0 0;">
+                <div style="padding: 30px 0 0;">
                     <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
                         Access the best network service!
                     </div>

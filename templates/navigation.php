@@ -79,16 +79,22 @@
                                         <li><a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service (DAAS)</a></li>
                                     </ul>
 
-                                    <ul>
-                                        <li class="title">Cyber Security Services</li>
-                                        <li><a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">Cyber Security Consulting</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">End Point Security</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">Network Security</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">Application Security</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">Web Security</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">Email Security</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">Hybrid Cloud Security</a></li>
-                                    </ul>
+                                    <div>
+                                        <ul>
+                                            <li class="title">Cyber Security Services</li>
+                                            <li><a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">Cyber Security Consulting</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">End Point Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">Network Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">Application Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">Web Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">Email Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">Hybrid Cloud Security</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li class="title">Depot</li>
+                                            <li><a href="<?php echo $desktop_url . 'services/warehousing.php'; ?>">Warehousing</a></li>
+                                        </ul>
+                                    </div>
 
                                     <div>
                                         <ul>
@@ -376,7 +382,7 @@
                             </div>
                         </details>
 
-                        <!-- <details>
+                        <details>
                             <summary>
                                 <span>
                                     <h3>Depot</h3>
@@ -389,7 +395,7 @@
                                         Warehousing
                                     </div>
                                 </a>
-                                <a href="<?php echo $desktop_url . 'services/logistics.php'; ?>" class="list-item-link">
+                                <!-- <a href="<?php echo $desktop_url . 'services/logistics.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Logistics
                                     </div>
@@ -418,9 +424,9 @@
                                     <div class="list-item">
                                         SOC Services
                                     </div>
-                                </a>
+                                </a> -->
                             </div>
-                        </details> -->
+                        </details>
                     </div>
                 </details>
 
