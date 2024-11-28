@@ -173,37 +173,37 @@
                             Our Services
                         </div>
                         <div class="serviceName">
-                            <a href="#">Network</a>
+                            <a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Data Center Support</a>
+                            <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">End-User Support</a>
+                            <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End-User Support</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Audio-Visual</a>
+                            <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">Audio-Visual</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">WiFi Services</a>
+                            <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Operating Systems</a>
+                            <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating Systems</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">New Office + Migration Solutions</a>
+                            <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration Solutions</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Helpdesk</a>
+                            <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Storage As A Service</a>
+                            <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Device As A Service</a>
+                            <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">All Services &nbsp; -></a>
+                            <a href="<?php echo $desktop_url . 'services'; ?>">All Services &nbsp; -></a>
                         </div>
                     </div>
 
@@ -212,37 +212,37 @@
                             Industries
                         </div>
                         <div class="serviceName">
-                            <a href="#">Retail</a>
+                            <a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Energy</a>
+                            <a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Life Sciences</a>
+                            <a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Financial Services (FS&I)</a>
+                            <a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Telecoms</a>
+                            <a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Utilities</a>
+                            <a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>">Utilities</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Public Sector</a>
+                            <a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>">Public Sector</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Manufacturing</a>
+                            <a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>">Manufacturing</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Education</a>
+                            <a href="<?php echo $desktop_url . 'industries/education.php'; ?>">Education</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">IT & Consulting</a>
+                            <a href="<?php echo $desktop_url . 'industries/it-and-consulting.php'; ?>">IT & Consulting</a>
                         </div>
                         <div class="serviceName">
-                            <a href="#">Consumer Goods</a>
+                            <a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>">Consumer Goods</a>
                         </div>
                     </div>
 
@@ -322,7 +322,7 @@
                             <a href="#">General Policies</a>
                         </div>
                         <div class="policy">
-                            <a href="#">Privacy/Cookies Policy</a>
+                            <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">Privacy/Cookies Policy</a>
                         </div>
                         <div class="policy">
                             <a href="#">Terms and Conditions</a>
@@ -598,7 +598,7 @@
                         <div class="policies">
                             <div class="policy d-flex justify-content-center align-items-center">
                                 <a href="#">General Policies</a>
-                                <a href="#">/Privacy/Cookies Policy</a>
+                                <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">/Privacy/Cookies Policy</a>
                             </div>
                             <div class="policy d-flex justify-content-center align-items-center">
                                 <a href="#">Terms and Conditions</a>
