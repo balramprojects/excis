@@ -92,7 +92,7 @@
                                         </ul>
                                         <ul>
                                             <li class="title">Depot</li>
-                                            <li><a href="<?php echo $desktop_url . 'services/warehousing.php'; ?>">Warehousing</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/warehouse.php'; ?>">Warehouse</a></li>
                                         </ul>
                                     </div>
 
@@ -114,7 +114,7 @@
 
                                         <!-- <ul>
                                                 <li class="title">Depot</li>
-                                                <li><a href="<?php echo $desktop_url . 'services/warehousing.php'; ?>">Warehousing</a></li>
+                                                <li><a href="<?php echo $desktop_url . 'services/warehouse.php'; ?>">Warehouse</a></li>
                                                 <li><a href="<?php echo $desktop_url . 'services/logistics.php'; ?>">Logistics</a></li>
                                                 <li><a href="<?php echo $desktop_url . 'services/staging.php'; ?>">Staging</a></li>
                                                 <li><a href="<?php echo $desktop_url . 'services/wiping-and-disposal.php'; ?>">Wiping + Disposal</a></li>
@@ -390,9 +390,9 @@
                                 </span>
                             </summary>
                             <div class="htp-accord-list">
-                                <a href="<?php echo $desktop_url . 'services/warehousing.php'; ?>" class="list-item-link">
+                                <a href="<?php echo $desktop_url . 'services/warehouse.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Warehousing
+                                        Warehouse
                                     </div>
                                 </a>
                                 <!-- <a href="<?php echo $desktop_url . 'services/logistics.php'; ?>" class="list-item-link">
