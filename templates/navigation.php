@@ -75,7 +75,7 @@
                                         <li><a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating System</a></li>
                                         <li><a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration <br> Solutions</a></li>
                                         <li><a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (SAAS)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (STaaS)</a></li>
                                         <li><a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service (DAAS)</a></li>
                                     </ul>
 
@@ -268,7 +268,7 @@
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Storage As A Service (SAAS)
+                                        Storage As A Service (STaaS)
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>" class="list-item-link">
