@@ -377,8 +377,8 @@ require_once('constant.php');
         <div class="pages-banner">
             <div class="banner-bg-map-img">
                 <picture>
-                    <source srcset="assets/images/inner-pages-banner-mobile.png" media="(max-width: 600px)">
-                    <img src="assets/images/inner-pages-banner.png" alt="Banner">
+                    <source srcset="<?php echo $desktop_images . 'inner-pages-banner-mobile.webp'; ?>" media="(max-width: 600px)">
+                    <img src="<?php echo $desktop_images . 'inner-pages-banner.png'; ?>" alt="Banner">
                 </picture>
             </div>
             <div class="banner-left-abstract desktop">
@@ -411,7 +411,7 @@ require_once('constant.php');
                     </div>
 
 
-                    <ul style="list-style-type: decimal; padding: 0 0 0 25px;">
+                    <ul style="list-style-type: decimal; padding: 0 0 0 40px;">
                         <li style="font-size: 24px; font-weight: 700; color: #000; padding: 30px 0 0;">
                             <div style="line-height: 30px;">
                                 This Notice
