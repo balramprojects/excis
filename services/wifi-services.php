@@ -417,8 +417,8 @@ require_once('../constant.php');
                                 Some people use the wifi service for residential purposes, while others get it for commercial use. We have years of experience in the field, so it is guaranteed that you get top-notch service. Our experts care for everything and provide a stable and fast wifi connection. In addition, we offer plenty of plans for high-speed wifi connections at a reasonable cost. The internet is used in many sectors of education, business, and others because of the increasing demand for live streaming.
                             </div>
                         </div>
-                        <div style="max-width: 360px;" class="d-flex">
-                            <img loading="lazy" src="../assets/images/data-center-creativity.png" alt="">
+                        <div style="max-width: 400px;" class="d-flex">
+                            <img loading="lazy" src="../assets/images/wifi-services-creativity.png" alt="">
                         </div>
                     </div>
                 </div>

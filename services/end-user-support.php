@@ -416,7 +416,7 @@ require_once('../constant.php');
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
-                            <img loading="lazy" src="../assets/images/data-center-creativity.png" alt="">
+                            <img loading="lazy" src="../assets/images/end-user-support-creativity.png" alt="">
                         </div>
                     </div>
                 </div>

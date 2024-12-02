@@ -419,8 +419,8 @@ require_once('../constant.php');
                                 While having networking professionals, you do not worry about anything because they will prevent, diagnose and solve networking-related issues. Experts provide routine monitoring as part of the network management services. It brings tons of benefits to your business, such as ease of managing problems, better performance, and avoiding downtime.
                             </div>
                         </div>
-                        <div style="max-width: 360px;" class="d-flex">
-                            <img loading="lazy" src="../assets/images/data-center-creativity.png" alt="">
+                        <div style="max-width: 400px;" class="d-flex">
+                            <img loading="lazy" src="../assets/images/network-creativity.png" alt="">
                         </div>
                     </div>
                 </div>

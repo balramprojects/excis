@@ -94,18 +94,23 @@ include('./constant.php');
                             <div class="title-txt">
                                 Why Choose Excis?
                             </div>
-                            <a href="#" class="desktop">
-                                <div class="learn-more-btn d-flex justify-content-center align-items-center">
-                                    <p>Learn More</p>
-                                    <div class="arrow d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
-                                    </div>
+
+                            <div class="desktop">
+                                <div class="learn-more-btn-container d-flex justify-content-center align-items-center">
+                                    <a href="#">
+                                        <div class="learn-more-btn d-flex align-items-center">
+                                            <p>Learn More</p>
+                                            <div class="arrow d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
 
                         <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, architecto!
+                            Excis delivers reliable, 24/7 multilingual IT support and tailored solutions across 190+ countries, ensuring seamless global operations.
                         </div>
 
                         <div class="desktop">
@@ -117,10 +122,10 @@ include('./constant.php');
                                                 4 Hour SLA
                                             </div>
                                             <div class="subtxt">
-                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ea recusandae maxime perferendis! Eos quasi quod animi doloremque nobis nulla!
+                                                Experience swift issue resolution with a guaranteed four-hour service-level agreement, minimizing downtime and ensuring seamless business operations for enhanced productivity and efficiency.
                                             </div>
                                         </div>
-                                        <div class="card-img d-flex">
+                                        <div class="card-img d-flex" style="width: 610px;">
                                             <img loading="lazy" src="<?php echo $desktop_images . '4-hour-sla.png'; ?>" alt="4 Hour SLA">
                                         </div>
                                     </div>
@@ -130,11 +135,10 @@ include('./constant.php');
                                                 24/7 Support
                                             </div>
                                             <div class="subtxt">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
-                                                sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                                Our tailored, scalable IT solutions adapt to your unique business requirements, providing flexibility and precision to support growth and changing needs.
                                             </div>
                                         </div>
-                                        <div class="card-img d-flex">
+                                        <div class="card-img d-flex" style="width: 505px;">
                                             <img loading="lazy" src="<?php echo $desktop_images . '24-7-support.png'; ?>" alt="24/7 Support">
                                         </div>
                                     </div>
@@ -145,8 +149,7 @@ include('./constant.php');
                                                     Flexible IT Solutions
                                                 </div>
                                                 <div class="subtxt">
-                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aliquid iusto
-                                                    sunt dignissimos eum architecto, natus mollitia temporibus nulla rem.
+                                                    Enjoy uninterrupted operations with our reliable, around-the-clock global support, delivering technical assistance whenever and wherever you need it.
                                                 </div>
                                             </div>
                                             <div class="card-img d-flex">
@@ -164,8 +167,7 @@ include('./constant.php');
                                             </div>
 
                                             <div class="subtxt">
-                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam illum
-                                                aperiam voluptates, numquam facere repellendus.
+                                                Enjoy uninterrupted operations with our reliable, around-the-clock global support, delivering technical assistance whenever and wherever you need it.
                                             </div>
                                         </div>
                                         <div class="card-img-container">
@@ -180,6 +182,29 @@ include('./constant.php');
 
                         <div class="mobile">
                             <div class="cards d-flex flex-column">
+                                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="card-content">
+                                        <div class="top-titleTxt d-flex justify-content-between align-items-center">
+                                            <div class="left-portion d-flex align-items-center">
+                                                <div class="card-icon-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                                </div>
+                                                <div class="titletxt">
+                                                    4 Hour SLA
+                                                </div>
+                                            </div>
+                                            <div class="forward-arrow-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="btm-descTxt">
+                                            Experience swift issue resolution with a guaranteed four-hour service-level agreement, minimizing downtime and ensuring seamless business operations for enhanced productivity and efficiency.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                                 <div class="card" data-aos="fade-up" data-aos-duration="1000">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
@@ -236,7 +261,8 @@ include('./constant.php');
     <!-- Our Global Presence -->
     <div class="full-container">
         <div class="our-presence-bg">
-            <div class="desktop">
+
+            <!-- <div class="desktop">
                 <div class="default-data-card-slide">
                     <div class="data d-flex flex-column">
                         <div data-aos="fade-up" data-aos-duration="1000">
@@ -255,9 +281,9 @@ include('./constant.php');
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="countries-data-card-slide desktop">
+            <!-- <div class="countries-data-card-slide desktop">
                 <div class="mobile">
                     <div class="slide-nav d-flex justify-content-between">
                         <select class="countryCityDropdown">
@@ -274,7 +300,7 @@ include('./constant.php');
                     include("templates/global-presence-location-data.php");
                     ?>
                 </div>
-            </div>
+            </div> -->
 
             <div class="exact-black-container">
                 <div class="main-content-container">
@@ -283,8 +309,7 @@ include('./constant.php');
                             Our Global Presence
                         </div>
                         <div class="subtxt" data-aos="fade-up" data-aos-duration="1000">
-                            Lorem ipsum, dolor sit adipisicing elit. Quia, omnis quae. Sequi
-                            quis culpa cumque, deserunt unde?
+                            Excis operates in over 190 countries, offering seamless IT support and services across the globe. Our extensive reach ensures reliable, localized assistance wherever you are. We are committed to delivering excellence worldwide.
                         </div>
 
                         <div class="our-presence-map d-flex justify-content-center align-items-center">
@@ -306,11 +331,11 @@ include('./constant.php');
                                 </div>
                             </div> -->
 
-                                <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
+                                <!-- <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
                                     <select class="countryCityDropdown">
                                         <option value="" selected disabled>Select a Region</option>
                                     </select>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="map-container" data-aos="fade-up" data-aos-duration="1000">
@@ -338,8 +363,7 @@ include('./constant.php');
                             Our Services
                         </div>
                         <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                            quis culpa cumque, laboriosam deserunt unde?
+                            We offer comprehensive IT services, including end-user computing, networking, onsite support, and multilingual 24/7 assistance. With tailored solutions and global reach, we ensure your business stays connected and operates efficiently.
                         </div>
 
                         <div class="service-cards-container">
@@ -348,17 +372,17 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-service-icon.png'; ?>" alt="Data Security">
                                             </div>
                                             <div class="title">
-                                                Help Desk
+                                                Data Center Support
                                             </div>
                                             <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                                Comprehensive support for your data center infrastructure, ensuring optimal performance, uptime, and security.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'helpdesk.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -367,17 +391,17 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Application Security">
                                             </div>
                                             <div class="title">
-                                                Data Security
+                                                Cyber Security Consulting
                                             </div>
                                             <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                                Expert guidance to protect your business from evolving cyber threats with tailored security strategies and solutions.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'data-security.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -386,74 +410,74 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Email Security">
-                                            </div>
-                                            <div class="title">
-                                                Email Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'email-security.php'; ?>">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
-                                            </div>
-                                            <div class="title">
-                                                Web Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'web-security.php'; ?>">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
-                                            </div>
-                                            <div class="title">
-                                                Application Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'application-security.php'; ?>">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Hybrid Cloud">
                                             </div>
                                             <div class="title">
                                                 Hybrid Cloud
                                             </div>
                                             <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                                Seamless integration of private and public cloud environments, offering flexibility, scalability, and secure data management.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'hybrid-cloud.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Email Security">
+                                            </div>
+                                            <div class="title">
+                                                Network
+                                            </div>
+                                            <div class="subtitle">
+                                                Reliable network management and optimization services to ensure fast, secure, and efficient connectivity for your business.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/network.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'helpdesk-service-icon.png'; ?>" alt="Help Desk">
+                                            </div>
+                                            <div class="title">
+                                                Help Desk
+                                            </div>
+                                            <div class="subtitle">
+                                                24/7 support to resolve technical issues and ensure smooth IT operations for your team.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Web Security">
+                                            </div>
+                                            <div class="title">
+                                                End-User Support
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -518,14 +542,16 @@ include('./constant.php');
                             </div>
                         </div>
 
-                        <a href="#">
-                            <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                <p><span class="desktop">View All</span> <span class="mobile">View All Services</span></p>
-                                <div class="arrow-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                        <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="<?php echo $desktop_url . 'services'; ?>">
+                                <div class="learn-more-btn d-flex align-items-center">
+                                    <p>View All</p>
+                                    <div class="arrow d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -604,7 +630,7 @@ include('./constant.php');
                                 Our Core Values
                             </div>
                             <div class="subtitle-txt" data-aos="fade-up" data-aos-duration="1000">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet quis culpa cumque, laboriosam deserunt unde?
+                                We prioritize integrity, innovation, and collaboration in everything we do. Our commitment to excellence drives us to deliver exceptional IT solutions, fostering trust and long-term partnerships with our clients and teams worldwide.
                             </div>
 
                             <div class="cards-container">
@@ -613,7 +639,7 @@ include('./constant.php');
                                         <div class="icon-img d-flex justify-content-center align-items-center">
                                             <div class="icon-img-bg d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Integrity & Ethics">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'core-values-integrity-and-ethics-icon.png'; ?>" alt="Integrity & Ethics">
                                                 </div>
                                             </div>
                                         </div>
@@ -627,13 +653,13 @@ include('./constant.php');
                                         <div class="icon-img d-flex justify-content-center align-items-center">
                                             <div class="icon-img-bg d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Emp Development">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'core-values-organizational-growth-icon.png'; ?>" alt="Organizational Growth">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="title">
-                                            Emp Development
+                                            Organizational Growth
                                         </div>
                                     </div>
 
@@ -641,7 +667,7 @@ include('./constant.php');
                                         <div class="icon-img d-flex justify-content-center align-items-center">
                                             <div class="icon-img-bg d-flex justify-content-center align-items-center">
                                                 <div class="img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Trust & Teamwork">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'core-values-trust-and-teamwork-icon.png'; ?>" alt="Trust & Teamwork">
                                                 </div>
                                             </div>
                                         </div>
@@ -656,7 +682,7 @@ include('./constant.php');
                     </div>
                 </div>
 
-                <div class="case-studies">
+                <div class="case-studies" style="display: none;">
                     <div class="main-content-container">
                         <div class="content-container">
                             <div class="title-txt" data-aos="fade-up" data-aos-duration="1000">

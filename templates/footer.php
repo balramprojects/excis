@@ -135,9 +135,7 @@
                             Excis Compliance Ltd.
                         </div>
                         <div class="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellat? Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus tenetur, necessitatibus
-                            officiis quisquam consectetur. Blanditiis autem ipsum eos aut?
+                            Excis is a global IT services company providing 24/7 multilingual support and onsite assistance in 190+ countries, specializing in end-user computing and networking.
                         </div>
                         <div class="social-icons d-flex justify-content-between align-items-center">
                             <a href="#">
@@ -215,22 +213,23 @@
                             <a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a>
                         </div>
                         <div class="serviceName">
+                            <a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a>
+                        </div>
+                        <div class="serviceName">
+                            <a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a>
+                        </div>
+
+                        <!-- <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a>
+                            <a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>">Public Sector</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>">Utilities</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>">Public Sector</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>">Manufacturing</a>
@@ -243,12 +242,10 @@
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>">Consumer Goods</a>
-                        </div>
-                    </div>
+                        </div> -->
 
-                    <div class="container2">
                         <div>
-                            <div class="serviceTitle">
+                            <div class="serviceTitle p-t-15">
                                 About Us
                             </div>
                             <div class="serviceName">
@@ -258,15 +255,18 @@
                                 <a href="#">Career Opportunities</a>
                             </div>
                             <div class="serviceName">
+                                <a href="#">Worldwide</a>
+                            </div>
+                            <!-- <div class="serviceName">
                                 <a href="#">CSR</a>
                             </div>
                             <div class="serviceName">
-                                <a href="#">Worldwide</a>
-                            </div>
-                            <div class="serviceName">
                                 <a href="#">Partners</a>
-                            </div>
+                            </div> -->
                         </div>
+                    </div>
+
+                    <!-- <div class="container2">
                         <div>
                             <div class="serviceTitle p-t-15">
                                 Insights
@@ -281,7 +281,7 @@
                                 <a href="#">Research & Development</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="container3">
                         <div class="isoTxt">
@@ -318,15 +318,15 @@
                         ©2024 Excis Compliance Ltd. All Rights Reserved.
                     </div>
                     <div class="policies d-flex justify-content-center align-items-center">
-                        <div class="policy">
+                        <!-- <div class="policy">
                             <a href="#">General Policies</a>
-                        </div>
+                        </div> -->
                         <div class="policy">
                             <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">Privacy/Cookies Policy</a>
                         </div>
-                        <div class="policy">
+                        <!-- <div class="policy">
                             <a href="#">Terms and Conditions</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -340,9 +340,7 @@
                             Excis Compliance Ltd.
                         </div>
                         <div class="description">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, repellat? Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit. Obcaecati temporibus tenetur, necessitatibus
-                            officiis quisquam consectetur. Blanditiis autem ipsum eos aut?
+                            Excis is a global IT services company providing 24/7 multilingual support and onsite assistance in 190+ countries, specializing in end-user computing and networking.
                         </div>
                     </div>
 
@@ -455,22 +453,22 @@
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Energy
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Life Sciences
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
                                         Financial Services (FS&I)
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Telecoms
+                                    </div>
+                                </a>
+                                <!-- <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Energy
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Life Sciences
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
@@ -497,7 +495,7 @@
                                     <div class="list-item">
                                         IT & Consulting
                                     </div>
-                                </a>
+                                </a> -->
                             </div>
                         </details>
 
@@ -521,19 +519,19 @@
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        CSR
+                                        Worldwide
                                     </div>
                                 </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
+                                <!-- <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Worldwide
+                                        CSR
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Partners
                                     </div>
-                                </a>
+                                </a> -->
                             </div>
                         </details>
 
@@ -597,12 +595,12 @@
                     <div class="footer-btm">
                         <div class="policies">
                             <div class="policy d-flex justify-content-center align-items-center">
-                                <a href="#">General Policies</a>
-                                <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">/Privacy/Cookies Policy</a>
+                                <!-- <a href="#">General Policies</a> -->
+                                <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">Privacy/Cookies Policy</a>
                             </div>
-                            <div class="policy d-flex justify-content-center align-items-center">
+                            <!-- <div class="policy d-flex justify-content-center align-items-center">
                                 <a href="#">Terms and Conditions</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="copyright-txt">
                             ©2024 Excis Compliance Ltd. All Rights Reserved.
