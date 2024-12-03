@@ -114,65 +114,54 @@ include('./constant.php');
                         </div>
 
                         <div class="desktop">
-                            <div class="cards d-flex justify-content-between">
-                                <div class="vertical-card d-flex flex-column justify-content-between">
-                                    <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="txt">
-                                            <div class="heading">
-                                                4 Hour SLA
-                                            </div>
-                                            <div class="subtxt">
-                                                Experience swift issue resolution with a guaranteed four-hour service-level agreement, minimizing downtime and ensuring seamless business operations for enhanced productivity and efficiency.
-                                            </div>
-                                        </div>
-                                        <div class="card-img d-flex" style="width: 610px;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . '4-hour-sla.png'; ?>" alt="4 Hour SLA">
-                                        </div>
-                                    </div>
-                                    <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="txt">
-                                            <div class="heading">
-                                                24/7 Support
-                                            </div>
-                                            <div class="subtxt">
-                                                Our tailored, scalable IT solutions adapt to your unique business requirements, providing flexibility and precision to support growth and changing needs.
-                                            </div>
-                                        </div>
-                                        <div class="card-img d-flex" style="width: 505px;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . '24-7-support.png'; ?>" alt="24/7 Support">
-                                        </div>
-                                    </div>
-                                    <div class="extra-vertical-card">
-                                        <div class="card d-flex justify-content-between align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                            <div class="txt">
-                                                <div class="heading">
-                                                    Flexible IT Solutions
+                            <div class="grid-cards">
+                                <div class="card item1" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="card-box d-flex align-items-center">
+                                        <div class="card-content d-flex justify-content-between align-items-center">
+                                            <div class="card-txt">
+                                                <div class="headTxt">
+                                                    4 Hour SLA
                                                 </div>
-                                                <div class="subtxt">
-                                                    Enjoy uninterrupted operations with our reliable, around-the-clock global support, delivering technical assistance whenever and wherever you need it.
+                                                <div class="subTxt">
+                                                    Experience swift issue resolution with a guaranteed four-hour service-level agreement, minimizing downtime and ensuring seamless business operations for enhanced productivity and efficiency.
                                                 </div>
                                             </div>
-                                            <div class="card-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'flexible-it-solution.png'; ?>" alt="Flexible IT Solution">
+                                            <div class="card-creative d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . '4-hour-sla.png'; ?>" alt="4 Hour SLA">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="horizontal-card">
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="txt">
-                                            <div class="heading">
-                                                Flexible IT Solutions
+                                <div class="card item1" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="card-box d-flex align-items-center">
+                                        <div class="card-content d-flex justify-content-between align-items-center">
+                                            <div class="card-txt">
+                                                <div class="headTxt">
+                                                    24/7 Support
+                                                </div>
+                                                <div class="subTxt">
+                                                    Our tailored, scalable IT solutions adapt to your unique business requirements, providing flexibility and precision to support growth and changing needs.
+                                                </div>
                                             </div>
-
-                                            <div class="subtxt">
-                                                Enjoy uninterrupted operations with our reliable, around-the-clock global support, delivering technical assistance whenever and wherever you need it.
+                                            <div class="card-creative d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . '24-7-support.png'; ?>" alt="24/7 Support">
                                             </div>
                                         </div>
-                                        <div class="card-img-container">
-                                            <div class="card-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'flexible-it-solution.png'; ?>" alt="Flexible IT Solution">
+                                    </div>
+                                </div>
+                                <div class="card item2" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="card-box d-flex align-items-center">
+                                        <div class="card-content horizontal d-flex flex-column justify-content-between align-items-center">
+                                            <div class="card-txt">
+                                                <div class="headTxt">
+                                                    Flexible IT Solutions
+                                                </div>
+                                                <div class="subTxt">
+                                                    Enjoy uninterrupted operations with our reliable, around-the-clock global support, delivering technical assistance whenever and wherever you need it.
+                                                </div>
+                                            </div>
+                                            <div class="card-creative d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'flexible-it-solution.png'; ?>" alt="Flexible IT Solutions">
                                             </div>
                                         </div>
                                     </div>
@@ -187,7 +176,7 @@ include('./constant.php');
                                         <div class="top-titleTxt d-flex justify-content-between align-items-center">
                                             <div class="left-portion d-flex align-items-center">
                                                 <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . '4-hour-sla.png'; ?>" alt="">
                                                 </div>
                                                 <div class="titletxt">
                                                     4 Hour SLA
@@ -202,51 +191,43 @@ include('./constant.php');
                                         </div>
                                     </div>
                                 </div>
-
-
-
                                 <div class="card" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="card-content d-flex justify-content-between align-items-center">
-                                        <div class="left-portion d-flex align-items-center">
-                                            <div class="card-icon-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                    <div class="card-content">
+                                        <div class="top-titleTxt d-flex justify-content-between align-items-center">
+                                            <div class="left-portion d-flex align-items-center">
+                                                <div class="card-icon-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . '24-7-support.png'; ?>" alt="">
+                                                </div>
+                                                <div class="titletxt">
+                                                    24/7 Support
+                                                </div>
                                             </div>
-                                            <div class="titletxt">
-                                                4 Hour SLA
+                                            <div class="forward-arrow-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                             </div>
                                         </div>
-                                        <div class="forward-arrow-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                        <div class="btm-descTxt">
+                                            Our tailored, scalable IT solutions adapt to your unique business requirements, providing flexibility and precision to support growth and changing needs.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="card-content d-flex justify-content-between align-items-center">
-                                        <div class="left-portion d-flex align-items-center">
-                                            <div class="card-icon-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
+                                    <div class="card-content">
+                                        <div class="top-titleTxt d-flex justify-content-between align-items-center">
+                                            <div class="left-portion d-flex align-items-center">
+                                                <div class="card-icon-img d-flex">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'flexible-it-solution.png'; ?>" alt="">
+                                                </div>
+                                                <div class="titletxt">
+                                                    Flexible IT Soultions
+                                                </div>
                                             </div>
-                                            <div class="titletxt">
-                                                24/7 Support
-                                            </div>
-                                        </div>
-                                        <div class="forward-arrow-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="card-content d-flex justify-content-between align-items-center">
-                                        <div class="left-portion d-flex align-items-center">
-                                            <div class="card-icon-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
-                                            </div>
-                                            <div class="titletxt">
-                                                Flexible IT Soultions
+                                            <div class="forward-arrow-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
                                             </div>
                                         </div>
-                                        <div class="forward-arrow-img d-flex">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                        <div class="btm-descTxt">
+                                            Enjoy uninterrupted operations with our reliable, around-the-clock global support, delivering technical assistance whenever and wherever you need it.
                                         </div>
                                     </div>
                                 </div>
@@ -808,6 +789,29 @@ include('./constant.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="assets\js\global-presence-map.js"></script>
+
+    <script>
+        const whyChoose = document.querySelectorAll('.why-choose-bg .mobile .cards .card');
+
+        whyChoose.forEach(card => {
+
+            const whyChooseCard = card.querySelector('.card-content .top-titleTxt');
+
+            whyChooseCard.onclick = () => {
+
+                const isActive = card.classList.contains('active');
+
+                whyChoose.forEach(removeCardActive => {
+                    removeCardActive.classList.remove('active');
+                })
+
+                if (!isActive) {
+                    card.classList.add('active');
+                }
+
+            }
+        })
+    </script>
 
     <script>
         // Mobile Nav Menu Hamburger

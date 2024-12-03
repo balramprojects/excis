@@ -8,10 +8,10 @@
                 <div class="content-container">
                     <div class="top-part">
                         <div class="txt-content d-flex justify-content-between align-items-start">
-                            <div class="header-txt">
+                            <div class="header-txt" data-aos="fade-up" data-aos-duration="1000">
                                 Contact Us
                             </div>
-                            <div class="header-subtxt">
+                            <div class="header-subtxt" data-aos="fade-up" data-aos-duration="1000">
                                 Partner With Us Today!
                             </div>
                         </div>
@@ -20,14 +20,14 @@
                     <div class="main-part-txt-section d-flex justify-content-between align-items-start">
                         <div class="container">
                             <div class="txt-content d-flex flex-column justify-content-between">
-                                <div class="txt1">
+                                <div class="txt1" data-aos="fade-up" data-aos-duration="1000">
                                     We’re happy to answer any questions you may have and help you determine which of our services best fit your needs.
                                 </div>
-                                <div class="txt2">
+                                <div class="txt2" data-aos="fade-up" data-aos-duration="1000">
                                     Call us at <span><a href="tel:+44 1344930900">+44 1344930900</a></span>
                                 </div>
                                 <div>
-                                    <div class="txt2">
+                                    <div class="txt2" data-aos="fade-up" data-aos-duration="1000">
                                         Your benefits:
                                     </div>
                                     <ul>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    <div class="contact-form">
+                    <div class="contact-form" data-aos="fade-up" data-aos-duration="1000">
                         <div class="container">
                             <div class="heading-txt">
                                 Schedule a Call with Us
@@ -127,7 +127,7 @@
 
 <div class="full-container">
     <div class="footer-bg">
-        <div class="desktop">
+        <div class="desktop" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="content-container d-flex justify-content-between align-items-start">
                     <div class="container1">
@@ -332,23 +332,23 @@
             </div>
         </div>
 
-        <div class="mobile">
+        <div class="mobile" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
                 <div class="content-container d-flex justify-content-between align-items-start">
                     <div class="container1">
-                        <div class="companyName">
+                        <div class="companyName" data-aos="fade-up" data-aos-duration="1000">
                             Excis Compliance Ltd.
                         </div>
-                        <div class="description">
+                        <div class="description" data-aos="fade-up" data-aos-duration="1000">
                             Excis is a global IT services company providing 24/7 multilingual support and onsite assistance in 190+ countries, specializing in end-user computing and networking.
                         </div>
                     </div>
 
                     <div class="container3">
-                        <div class="isoTxt">
+                        <div class="isoTxt" data-aos="fade-up" data-aos-duration="1000">
                             ISO Certfications Certified <br> Covering The UK and India
                         </div>
-                        <div class="iso-imgs d-flex justify-content-between align-item-center">
+                        <div class="iso-imgs d-flex justify-content-between align-item-center" data-aos="fade-up" data-aos-duration="1000">
                             <div class="iso-img d-flex">
                                 <img src="<?php echo $desktop_images . 'iso/iso-9001.jpg'; ?>" alt="">
                             </div>
@@ -362,7 +362,7 @@
                                 <img src="<?php echo $desktop_images . 'iso/iso-45001.jpg'; ?>" alt="">
                             </div>
                         </div>
-                        <div class="iso-imgs d-flex justify-content-start align-item-center">
+                        <div class="iso-imgs d-flex justify-content-start align-item-center" data-aos="fade-up" data-aos-duration="1000">
                             <div class="countries-flag uk"></div>
                             <div class="countries-flag india"></div>
                             <div class="iso-img d-flex">
@@ -372,7 +372,7 @@
                     </div>
 
                     <div class="footer-list">
-                        <details>
+                        <details data-aos="fade-up" data-aos-duration="1000">
                             <summary>
                                 <span>
                                     <h3>Our Services</h3>
@@ -438,7 +438,7 @@
                             </div>
                         </details>
 
-                        <details>
+                        <details data-aos="fade-up" data-aos-duration="1000">
                             <summary>
                                 <span>
                                     <h3>Industries</h3>
@@ -499,7 +499,7 @@
                             </div>
                         </details>
 
-                        <details>
+                        <details data-aos="fade-up" data-aos-duration="1000">
                             <summary>
                                 <span>
                                     <h3>About Us</h3>
@@ -535,7 +535,7 @@
                             </div>
                         </details>
 
-                        <details>
+                        <!-- <details data-aos="fade-up" data-aos-duration="1000">
                             <summary>
                                 <span>
                                     <h3>Insights</h3>
@@ -559,10 +559,10 @@
                                     </div>
                                 </a>
                             </div>
-                        </details>
+                        </details> -->
                     </div>
 
-                    <div class="container1">
+                    <div class="container1" data-aos="fade-up" data-aos-duration="1000">
                         <div class="social-icons d-flex justify-content-center align-items-center">
                             <a href="#">
                                 <div class="icon-img d-flex">

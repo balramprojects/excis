@@ -16,7 +16,7 @@
   width: 100%;
 }
 .learn-more-btn-container .learn-more-btn {
-  padding: 12px 26px;
+  padding: 12px 30px;
   background: var(--white-color);
   color: var(--black-color);
   gap: 12px;
@@ -99,92 +99,72 @@
   padding: 5px 0 0;
   color: var(--black-color);
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards {
-  height: 100%;
-  padding: 20px 0 0 0;
-  gap: 25px;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card {
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 0 0;
   gap: 25px;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card {
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card {
+  height: 100%;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card.item1 {
+  grid-column: 1/span 2;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card.item2 {
+  grid-column: 3;
+  grid-row: 1/span 2;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box {
+  height: 100%;
   background: var(--white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  padding: 0 50px;
+  border: 1px solid var(--border-color);
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt {
-  padding: 42px 0;
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content {
+  padding: 0 50px;
+  gap: 50px;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .heading {
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-txt {
+  max-width: 60%;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-txt .headTxt {
   font-size: 24px;
   font-weight: 700;
   color: var(--orange-color);
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .subtxt {
-  width: 80%;
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-txt .subTxt {
   font-size: 14px;
-  font-weight: 400;
   line-height: 25px;
   padding: 20px 0 0;
   text-wrap: wrap;
   color: var(--grey-color);
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card:hover {
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-creative {
+  height: 100%;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal {
+  padding: 50px 0;
+  gap: 50px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal .card-txt {
+  max-width: 100%;
+  padding: 0 50px;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal .card-creative {
+  width: 60%;
+}
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box:hover {
   background: linear-gradient(#1B315D, #354D7D);
   border: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card:hover .txt .heading,
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card:hover .txt .subtxt {
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box:hover .card-content .card-txt .headTxt {
   color: var(--white-color);
 }
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .card-img {
-  width: 450px;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .extra-vertical-card {
-  display: none;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card {
-  width: 55%;
-  border-radius: 10px;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card {
-  height: 100%;
-  flex-direction: column;
-  background: var(--white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .heading {
-  font-size: 24px;
-  font-weight: 700;
-  padding: 50px 50px 0 50px;
-  color: var(--orange-color);
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .subtxt {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
-  padding: 15px 50px 0 50px;
-  color: var(--grey-color);
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container {
-  padding: 30px;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container .card-img {
-  width: 63%;
-  margin-inline: auto;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card:hover {
-  background: linear-gradient(#1B315D, #354D7D);
-  border: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
-}
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card:hover .txt .heading,
-.why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card:hover .txt .subtxt {
+.why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box:hover .card-content .card-txt .subTxt {
   color: var(--white-color);
 }
 
@@ -1105,51 +1085,26 @@
   .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .title-txt {
     font-size: 40px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn {
-    padding: 12px 22px;
-    gap: 10px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .why-choose-title .learn-more-btn .arrow {
-    width: 18px;
-  }
   .why-choose-bg .why-choose-container .main-content-container .content-container .subtitle-txt {
     font-size: 15px;
     padding: 0;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards {
-    padding: 30px 0 0 0;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards {
     gap: 20px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card {
-    gap: 20px;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content {
+    padding: 0 40px;
+    gap: 40px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card {
-    padding: 25px 40px;
-    border-radius: 10px;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal {
+    padding: 40px 0;
+    gap: 40px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .heading {
-    font-size: 22px;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal .card-txt {
+    padding: 0 40px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .subtxt {
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal .card-creative {
     width: 70%;
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card {
-    width: 55%;
-    border-radius: 10px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .heading {
-    font-size: 22px;
-    padding: 40px 40px 0 40px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .subtxt {
-    font-size: 14px;
-    line-height: 24px;
-    padding: 12px 40px 0 40px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container {
-    padding: 40px;
   }
   .our-services-bg .our-services-container .main-content-container .content-container .subtitle-txt {
     font-size: 15px;
@@ -1258,45 +1213,25 @@
   .why-choose-bg .why-choose-container .main-content-container .content-container .subtitle-txt {
     font-size: 14px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards {
-    padding: 25px 0 0 0;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards {
     gap: 15px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card {
-    gap: 15px;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content {
+    padding: 0 30px;
+    gap: 30px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card {
-    padding: 20px 30px;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-txt .headTxt {
+    font-size: 22px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt {
-    padding: 10px 0;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-txt .subTxt {
+    padding: 15px 0 0;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .heading {
-    font-size: 20px;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal {
+    padding: 30px 0;
+    gap: 30px;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .subtxt {
-    width: 75%;
-    font-size: 13px;
-    line-height: 22px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card {
-    width: 60%;
-    border-radius: 10px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .heading {
-    font-size: 20px;
-    padding: 30px 30px 0 30px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .txt .subtxt {
-    font-size: 13px;
-    line-height: 22px;
-    padding: 12px 30px 0 30px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container {
-    padding: 30px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card .card .card-img-container .card-img {
-    width: 75%;
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal .card-txt {
+    padding: 0 30px;
   }
   .our-services-bg .our-services-container .main-content-container .content-container .title-txt {
     font-size: 32px;
@@ -1416,16 +1351,36 @@
     height: 50px;
   }
 }
+@media (max-width: 900px) {
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card.item1 {
+    grid-column: 1/span 3;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card.item2 {
+    grid-column: 1/span 3;
+    grid-row: 3/span 1;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-txt {
+    max-width: 65%;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content .card-creative {
+    height: 100%;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal {
+    padding: 0 30px;
+    gap: 30px;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal.flex-column {
+    flex-direction: row;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal .card-txt {
+    max-width: 65%;
+    padding: 0;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .grid-cards .card .card-box .card-content.horizontal .card-creative {
+    width: 70%;
+  }
+}
 @media (max-width: 768px) {
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .card .txt .subtxt {
-    width: 85%;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .vertical-card .extra-vertical-card {
-    display: block;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .horizontal-card {
-    display: none;
-  }
   .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1483,7 +1438,7 @@
     overflow: hidden;
     cursor: pointer;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card .card-content .top-titleTxt {
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card .card-content {
     padding: 15px 20px;
   }
   .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card .card-content .top-titleTxt .left-portion {
@@ -1499,6 +1454,8 @@
   }
   .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card .card-content .top-titleTxt .forward-arrow-img {
     max-width: 16px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
   }
   .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card .card-content .btm-descTxt {
     height: 0;
@@ -1507,16 +1464,21 @@
     line-height: 20px;
     padding: 0;
     color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
   }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card .card-content .top-titleTxt.active {
-    padding: 15px 20px 10px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card .card-content .top-titleTxt.active + .btm-descTxt {
-    height: 100%;
-    padding: 0 20px 15px;
-  }
-  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card:hover .card-content .left-portion .titletxt {
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card.active .card-content .top-titleTxt .left-portion .titletxt {
     color: var(--black-color);
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card.active .card-content .btm-descTxt {
+    height: 100%;
+    padding: 10px 0 0;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .why-choose-bg .why-choose-container .main-content-container .content-container .cards .card.active .card-content .forward-arrow-img {
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-in-out;
   }
   .our-presence-bg .countries-data-card-slide {
     top: 60px;
