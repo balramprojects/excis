@@ -964,8 +964,7 @@
                         }
 
                         .htp-accord-list {
-                            background: var(--white-color);
-                            color: var(--black-color);
+                            background: rgb(245, 133, 32, 0.1);
                             font-size: 14px;
                             font-weight: 400;
                             display: flex;
@@ -973,13 +972,13 @@
                             overflow: hidden;
 
                             .list-item-link {
-                                border-bottom: 1px solid var(--border-color);
+                                border-bottom: 1px solid rgb(255, 255, 255, 0.3);
 
                                 .list-item {
-                                    height: 40px;
+                                    height: 50px;
                                     font-size: 14px;
                                     font-weight: 400;
-                                    color: var(--black-color);
+                                    color: var(--white-color);
                                     display: flex;
                                     align-items: center;
                                     transition: all .3s ease-in-out;
@@ -993,27 +992,23 @@
 
                         &[open] {
                             summary span {
-                                padding: 0 15px;
-                                background: var(--white-color);
                                 color: var(--black-color);
-                                border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+                                border-bottom: 1px solid rgb(255, 255, 255, 0.3);
                                 transition: all .3s ease-in-out;
 
                                 h3 {
                                     font-weight: 700;
+                                    color: var(--orange-color);
                                 }
 
                                 .arrow {
-                                    background: var(--black-color);
+                                    background: var(--orange-color);
                                     transform: rotate(-180deg);
                                     transition: all .3s ease-in-out;
                                 }
                             }
 
                             .htp-accord-list {
-                                max-height: 290px;
-                                overflow-y: auto;
-
                                 .list-item-link .list-item {
                                     padding: 0 15px;
                                     transition: all .3s ease-in-out;

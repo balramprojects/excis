@@ -801,8 +801,7 @@
     transition: all 0.3s ease-in-out;
   }
   .footer-bg .main-content-container .content-container .footer-list details .htp-accord-list {
-    background: var(--white-color);
-    color: var(--black-color);
+    background: rgba(245, 133, 32, 0.1);
     font-size: 14px;
     font-weight: 400;
     display: flex;
@@ -810,13 +809,13 @@
     overflow: hidden;
   }
   .footer-bg .main-content-container .content-container .footer-list details .htp-accord-list .list-item-link {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
   .footer-bg .main-content-container .content-container .footer-list details .htp-accord-list .list-item-link .list-item {
-    height: 40px;
+    height: 50px;
     font-size: 14px;
     font-weight: 400;
-    color: var(--black-color);
+    color: var(--white-color);
     display: flex;
     align-items: center;
     transition: all 0.3s ease-in-out;
@@ -825,23 +824,18 @@
     border-bottom: none;
   }
   .footer-bg .main-content-container .content-container .footer-list details[open] summary span {
-    padding: 0 15px;
-    background: var(--white-color);
     color: var(--black-color);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease-in-out;
   }
   .footer-bg .main-content-container .content-container .footer-list details[open] summary span h3 {
     font-weight: 700;
+    color: var(--orange-color);
   }
   .footer-bg .main-content-container .content-container .footer-list details[open] summary span .arrow {
-    background: var(--black-color);
+    background: var(--orange-color);
     transform: rotate(-180deg);
     transition: all 0.3s ease-in-out;
-  }
-  .footer-bg .main-content-container .content-container .footer-list details[open] .htp-accord-list {
-    max-height: 290px;
-    overflow-y: auto;
   }
   .footer-bg .main-content-container .content-container .footer-list details[open] .htp-accord-list .list-item-link .list-item {
     padding: 0 15px;
