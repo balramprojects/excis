@@ -353,7 +353,7 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-service-icon.png'; ?>" alt="Data Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Data Center Support">
                                             </div>
                                             <div class="title">
                                                 Data Center Support
@@ -372,7 +372,7 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Application Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Cyber Security Consulting">
                                             </div>
                                             <div class="title">
                                                 Cyber Security Consulting
@@ -410,7 +410,7 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Email Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Network">
                                             </div>
                                             <div class="title">
                                                 Network
@@ -448,7 +448,7 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Web Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="End-User Support">
                                             </div>
                                             <div class="title">
                                                 End-User Support
@@ -468,53 +468,53 @@ include('./constant.php');
 
                             <div class="mobile">
                                 <div class="cards d-flex flex-column">
-                                    <a href="<?php echo $desktop_url . 'helpdesk.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">
                                         <div class="card">
                                             <div class="card-content d-flex justify-content-between align-items-center">
                                                 <div class="left-portion d-flex align-items-center">
                                                     <div class="card-icon-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="">
                                                     </div>
                                                     <div class="titletxt">
-                                                        Help Desk
+                                                        Data Center Support
                                                     </div>
                                                 </div>
                                                 <div class="forward-arrow-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="<?php echo $desktop_url . 'data-security.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">
                                         <div class="card">
                                             <div class="card-content d-flex justify-content-between align-items-center">
                                                 <div class="left-portion d-flex align-items-center">
                                                     <div class="card-icon-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Cyber Security Consulting">
                                                     </div>
                                                     <div class="titletxt">
-                                                        Data Security
+                                                        Cyber Security Consulting
                                                     </div>
                                                 </div>
                                                 <div class="forward-arrow-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="<?php echo $desktop_url . 'email-security.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">
                                         <div class="card">
                                             <div class="card-content d-flex justify-content-between align-items-center">
                                                 <div class="left-portion d-flex align-items-center">
                                                     <div class="card-icon-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Hybrid Cloud">
                                                     </div>
                                                     <div class="titletxt">
-                                                        Email Security
+                                                        Hybrid Cloud
                                                     </div>
                                                 </div>
                                                 <div class="forward-arrow-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                                    <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
                                                 </div>
                                             </div>
                                         </div>
