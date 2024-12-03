@@ -57,6 +57,13 @@
                             </a>
                         </li>
                         <li class="nav-block-container d-flex align-items-center">
+                            <a href="<?php echo $desktop_url . 'why-us.php'; ?>">
+                                <div class="nav-tab-item d-flex align-items-center">
+                                    Why Us
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-block-container d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'services'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     Services
@@ -67,28 +74,28 @@
                                 <div class="d-flex justify-content-center align-items-start">
                                     <ul>
                                         <li class="title">Infrastructure</li>
-                                        <li><a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End User Support</a></li>
                                         <li><a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">Audio-Visual</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating System</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration <br> Solutions</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (SaaS)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
                                         <li><a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service (DaaS)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End User Support</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration <br> Solutions</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating System</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (SaaS)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a></li>
                                     </ul>
 
                                     <div>
                                         <ul>
                                             <li class="title">Cyber Security Services</li>
-                                            <li><a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">Cyber Security Consulting</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">End Point Security</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">Network Security</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">Application Security</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">Web Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">Cyber Security Consulting</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">Email Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">End Point Security</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">Hybrid Cloud Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">Network Security</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">Web Security</a></li>
                                         </ul>
                                         <ul>
                                             <li class="title">Depot</li>
@@ -99,17 +106,17 @@
                                     <div>
                                         <ul>
                                             <li class="title">Cloud Services</li>
-                                            <li><a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>">Private Cloud Solutions</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">Hybrid Cloud</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/office-365-and-g-suite-migration-and-integraion.php'; ?>">Office 365 And G-Suite Migration + Integration</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>">Private Cloud Solutions</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
                                         </ul>
 
                                         <ul>
                                             <li class="title">Development</li>
-                                            <li><a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>">Software And Application Development</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/api-integration.php'; ?>">API Integration</a></li>
                                             <li><a href="<?php echo $desktop_url . 'services/network-and-system-automation.php'; ?>">Network And System Automation</a></li>
+                                            <li><a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>">Software And Application Development</a></li>
                                         </ul>
 
                                         <!-- <ul>
@@ -137,9 +144,12 @@
                             <div class="nav-tab-dropdown">
                                 <div class="d-flex justify-content-center align-items-start">
                                     <ul>
-                                        <li><a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'industries/healthcare.php'; ?>">Healthcare</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'industries/oil-and-gas.php'; ?>">Oil & Gas</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a></li>
+
                                         <!-- <li><a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>">Utilities</a></li>
@@ -205,6 +215,12 @@
                     </div>
                 </a>
 
+                <a href="<?php echo $desktop_url . 'why-us.php'; ?>">
+                    <div class="details d-flex align-items-center">
+                        Why Us
+                    </div>
+                </a>
+
                 <details>
                     <summary>
                         <span>
@@ -226,9 +242,9 @@
                                 </span>
                             </summary>
                             <div class="htp-accord-list">
-                                <a href="<?php echo $desktop_url . 'services/network.php'; ?>" class="list-item-link">
+                                <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Network
+                                        Audio Visual
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>" class="list-item-link">
@@ -236,29 +252,14 @@
                                         Data Center Support
                                     </div>
                                 </a>
+                                <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Device As A Service (DaaS)
+                                    </div>
+                                </a>
                                 <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         End User Support
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Audio Visual
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        WiFi Services
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Operating System
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        New Office + Migration <br> Solutions
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>" class="list-item-link">
@@ -266,14 +267,29 @@
                                         Helpdesk
                                     </div>
                                 </a>
+                                <a href="<?php echo $desktop_url . 'services/network.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Network
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        New Office + Migration <br> Solutions
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Operating System
+                                    </div>
+                                </a>
                                 <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Storage As A Service (SaaS)
                                     </div>
                                 </a>
-                                <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>" class="list-item-link">
+                                <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Device As A Service (DaaS)
+                                        WiFi Services
                                     </div>
                                 </a>
                             </div>
@@ -287,29 +303,14 @@
                                 </span>
                             </summary>
                             <div class="htp-accord-list">
-                                <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Cyber Security Consulting
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        End Point Security
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network-security.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Network Securitys
-                                    </div>
-                                </a>
                                 <a href="<?php echo $desktop_url . 'services/application-security.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Application Security
                                     </div>
                                 </a>
-                                <a href="<?php echo $desktop_url . 'services/web-security.php'; ?>" class="list-item-link">
+                                <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Web Security
+                                        Cyber Security Consulting
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/email-security.php'; ?>" class="list-item-link">
@@ -317,9 +318,24 @@
                                         Email Security
                                     </div>
                                 </a>
+                                <a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        End Point Security
+                                    </div>
+                                </a>
                                 <a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Hybrid Cloud Security
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/network-security.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Network Securitys
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/web-security.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Web Security
                                     </div>
                                 </a>
                             </div>
@@ -333,16 +349,6 @@
                                 </span>
                             </summary>
                             <div class="htp-accord-list">
-                                <a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Public Cloud Integration And Migration (AWS, Azure, GCP)
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Private Cloud Solutions
-                                    </div>
-                                </a>
                                 <a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Hybrid Cloud
@@ -351,6 +357,16 @@
                                 <a href="<?php echo $desktop_url . 'services/office-365-and-g-suite-migration-and-integraion.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Office 365 And G-Suite Migration + Integration
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Private Cloud Solutions
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Public Cloud Integration And Migration (AWS, Azure, GCP)
                                     </div>
                                 </a>
                             </div>
@@ -364,11 +380,6 @@
                                 </span>
                             </summary>
                             <div class="htp-accord-list">
-                                <a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Software And Application Development
-                                    </div>
-                                </a>
                                 <a href="<?php echo $desktop_url . 'services/api-integration.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         API Integration
@@ -377,6 +388,11 @@
                                 <a href="<?php echo $desktop_url . 'services/network-and-system-automation.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Network And System Automation
+                                    </div>
+                                </a>
+                                <a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>" class="list-item-link">
+                                    <div class="list-item">
+                                        Software And Application Development
                                     </div>
                                 </a>
                             </div>
@@ -443,24 +459,24 @@
                                 Home
                             </div>
                         </a>
-                        <a href="<?php echo $desktop_url . 'industries/retail.php'; ?>" class="list-item-link">
-                            <div class="list-item">
-                                Retail
-                            </div>
-                        </a>
-                        <a href="<?php echo $desktop_url . 'industries/energy.php'; ?>" class="list-item-link">
-                            <div class="list-item">
-                                Energy
-                            </div>
-                        </a>
-                        <a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>" class="list-item-link">
-                            <div class="list-item">
-                                Life Sciences
-                            </div>
-                        </a>
                         <a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>" class="list-item-link">
                             <div class="list-item">
                                 Financial Services (FS&I)
+                            </div>
+                        </a>
+                        <a href="<?php echo $desktop_url . 'industries/healthcare.php'; ?>" class="list-item-link">
+                            <div class="list-item">
+                                Healthcare
+                            </div>
+                        </a>
+                        <a href="<?php echo $desktop_url . 'industries/oil-and-gas.php'; ?>" class="list-item-link">
+                            <div class="list-item">
+                                Oil and Gas
+                            </div>
+                        </a>
+                        <a href="<?php echo $desktop_url . 'industries/retail.php'; ?>" class="list-item-link">
+                            <div class="list-item">
+                                Retail
                             </div>
                         </a>
                         <a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>" class="list-item-link">
@@ -468,19 +484,10 @@
                                 Telecoms
                             </div>
                         </a>
-                        <a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>" class="list-item-link">
+
+                        <!-- <a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>" class="list-item-link">
                             <div class="list-item">
-                                Utilities
-                            </div>
-                        </a>
-                        <a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>" class="list-item-link">
-                            <div class="list-item">
-                                Public Sector
-                            </div>
-                        </a>
-                        <a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>" class="list-item-link">
-                            <div class="list-item">
-                                Manufacturing
+                                Consumer Goods
                             </div>
                         </a>
                         <a href="<?php echo $desktop_url . 'industries/education.php'; ?>" class="list-item-link">
@@ -488,16 +495,36 @@
                                 Education
                             </div>
                         </a>
+                        <a href="<?php echo $desktop_url . 'industries/energy.php'; ?>" class="list-item-link">
+                            <div class="list-item">
+                                Energy
+                            </div>
+                        </a>
                         <a href="<?php echo $desktop_url . 'industries/it-and-consulting.php'; ?>" class="list-item-link">
                             <div class="list-item">
                                 IT & Consulting
                             </div>
                         </a>
-                        <a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>" class="list-item-link">
+                        <a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>" class="list-item-link">
                             <div class="list-item">
-                                Consumer Goods
+                                Life Sciences
                             </div>
                         </a>
+                        <a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>" class="list-item-link">
+                            <div class="list-item">
+                                Manufacturing
+                            </div>
+                        </a>
+                        <a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>" class="list-item-link">
+                            <div class="list-item">
+                                Public Sector
+                            </div>
+                        </a>
+                        <a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>" class="list-item-link">
+                            <div class="list-item">
+                                Utilities
+                            </div>
+                        </a> -->
                     </div>
                 </details>
 

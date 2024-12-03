@@ -104,13 +104,10 @@ include('constant.php');
     <div class="full-container">
         <div class="our-services-bg" style="background: linear-gradient(to bottom, #1B315D, #354D7D);">
             <div class="our-services-container">
-                <div class="left-btm-abstract desktop"></div>
-                <div class="right-top-abstract desktop"></div>
-
-                <div class="main-content-container" style="padding: 0 15px !important;">
+                <div class="main-content-container" style="padding: 0 15px;">
                     <div class="content-container">
                         <div class="d-flex">
-                            <div style="width: 50%; padding: 100px 0;">
+                            <div style="width: 50%; height: fit-content; padding: 150px 0; position: sticky; top: 65px;">
                                 <div>
                                     <div style="width: fit-content; font-size: 13px; font-weight: 700; padding: 4px 60px 4px 10px; background: #fff; color: #000; border-radius: 4px;">
                                         JOURNEY
@@ -119,13 +116,15 @@ include('constant.php');
                                         The Journey Of <span style="color: #F58520;">Excis</span>
                                     </div>
                                     <div style="max-width: 550px; font-size: 14px; font-weight: 14px; line-height: 22px; color: #fff; padding: 20px 0 0;">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure soluta, quos deserunt nisi omnis quam unde tempore placeat, quo error cupiditate natus? Enim, soluta aspernatur? Dolorum incidunt ducimus amet fuga alias veniam quasi eveniet odio sunt est, nesciunt voluptatibus nulla!
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nesciunt quas unde nam non dolor. Impedit praesentium ipsa nam provident est ex tempore, velit ipsam inventore voluptates, dolorem possimus amet nesciunt animi similique recusandae suscipit tempora enim asperiores adipisci! Sapiente sequi eos ad. Eaque optio nam reprehenderit suscipit voluptas error.
+                                        <br> <br>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora amet expedita a ut ducimus maiores neque officiis possimus iure, illum sunt iusto laborum maxime similique magni tempore aspernatur! Iusto doloribus at molestias numquam adipisci id illum possimus eveniet expedita beatae vel exercitationem earum, perferendis voluptas laudantium ullam animi nisi!
                                     </div>
                                 </div>
                             </div>
                             <div style="width: 50%;">
-                                <div style="height: 610px; padding: 0 0 0 50px; overflow: scroll; mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1) 70%, rgb(53, 77, 125, 0.1));">
-                                    <div class="d-flex justify-content-start align-items-center" style="padding: 200px 0 0;">
+                                <div style="padding: 0 0 0 50px; mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1) 80%, rgb(53, 77, 125, 0.1));">
+                                    <div class="d-flex justify-content-start align-items-center" style="padding: 270px 0 0;">
                                         <div style="margin: 0 0 0 -50px;" class="d-flex justify-content-center align-items-center">
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
@@ -305,7 +304,7 @@ include('constant.php');
 
                                     <div style="height: 40px; width: 2px; background: #F58520;"></div>
 
-                                    <div class="d-flex justify-content-start align-items-center" style="padding: 0 0 100px;">
+                                    <div class="d-flex justify-content-start align-items-center" style="padding: 0 0 270px;">
                                         <div style="margin: 0 0 0 -50px;" class="d-flex justify-content-center align-items-center">
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
@@ -316,8 +315,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2023 - Further Expansion                                            </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">60+ global entities. Fully established in the US + Canada                                            </p>
+                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2023 - Further Expansion </p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">60+ global entities. Fully established in the US + Canada </p>
                                         </div>
                                     </div>
                                 </div>
