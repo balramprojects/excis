@@ -31,12 +31,12 @@
                                         Your benefits:
                                     </div>
                                     <ul>
-                                        <li>Results-Driven</li>
-                                        <li>Client-Oriented</li>
-                                        <li>Problem Solving</li>
-                                        <li>Independent</li>
-                                        <li>Transparent</li>
-                                        <li>Competent</li>
+                                        <li data-aos="fade-up" data-aos-duration="1000">Results-Driven</li>
+                                        <li data-aos="fade-up" data-aos-duration="1000">Client-Oriented</li>
+                                        <li data-aos="fade-up" data-aos-duration="1000">Problem Solving</li>
+                                        <li data-aos="fade-up" data-aos-duration="1000">Independent</li>
+                                        <li data-aos="fade-up" data-aos-duration="1000">Transparent</li>
+                                        <li data-aos="fade-up" data-aos-duration="1000">Competent</li>
                                     </ul>
                                 </div>
                             </div>
@@ -372,7 +372,7 @@
                     </div>
 
                     <div class="footer-list">
-                        <details data-aos="fade-up" data-aos-duration="1000">
+                        <details>
                             <summary>
                                 <span>
                                     <h3>Our Services</h3>
@@ -438,7 +438,7 @@
                             </div>
                         </details>
 
-                        <details data-aos="fade-up" data-aos-duration="1000">
+                        <details>
                             <summary>
                                 <span>
                                     <h3>Industries</h3>
@@ -499,7 +499,7 @@
                             </div>
                         </details>
 
-                        <details data-aos="fade-up" data-aos-duration="1000">
+                        <details>
                             <summary>
                                 <span>
                                     <h3>About Us</h3>
@@ -562,7 +562,7 @@
                         </details> -->
                     </div>
 
-                    <div class="container1" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="container1">
                         <div class="social-icons d-flex justify-content-center align-items-center">
                             <a href="#">
                                 <div class="icon-img d-flex">

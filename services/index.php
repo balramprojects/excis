@@ -189,7 +189,7 @@ include('../constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'oil-and-gas-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -206,7 +206,7 @@ include('../constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'banking-and-financial-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -223,7 +223,7 @@ include('../constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'retail-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
@@ -240,11 +240,11 @@ include('../constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'healthcare-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Infrastructure
+                                            Healthcare
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -257,45 +257,11 @@ include('../constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'telecom-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            IT Support
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sit.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Service Desk
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sit.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Storage Support
+                                            Telecom
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
@@ -445,22 +411,20 @@ include('../constant.php');
                                         </div>
                                     </div>
 
-
-
                                     <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="Email Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'audio-visual-service-icon.png'; ?>" alt="Audio Visual">
                                             </div>
                                             <div class="title">
-                                                Email Security
+                                                Audio Visual
                                             </div>
                                             <div class="subtitle">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -469,17 +433,17 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'wifi-services-icon.png'; ?>" alt="WiFi Services">
                                             </div>
                                             <div class="title">
-                                                Web Security
+                                                WiFi Services
                                             </div>
                                             <div class="subtitle">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -488,17 +452,17 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'opearting-system-service-icon.png'; ?>" alt="Operating System">
                                             </div>
                                             <div class="title">
-                                                Application Security
+                                                Operating System
                                             </div>
                                             <div class="subtitle">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -507,17 +471,17 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'new-office-and-migration-solutions-service-icon.png'; ?>" alt="New Office + Migration Solutions">
                                             </div>
                                             <div class="title">
-                                                Hybrid Cloud
+                                                New Office + Migration Solutions
                                             </div>
                                             <div class="subtitle">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -526,17 +490,17 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="Help Desk">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'storage-as-a-service-icon.png'; ?>" alt="Storage As A Service (SaaS)">
                                             </div>
                                             <div class="title">
-                                                Help Desk
+                                                Storage as a Service (SaaS)
                                             </div>
                                             <div class="subtitle">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
@@ -545,93 +509,17 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="Data Security">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'device-as-a-service-icon.png'; ?>" alt="Device as a Service (Daas)">
                                             </div>
                                             <div class="title">
-                                                Data Security
+                                                Device as a Service (Daas)
                                             </div>
                                             <div class="subtitle">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="Email Security">
-                                            </div>
-                                            <div class="title">
-                                                Email Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-icon.png'; ?>" alt="Web Security">
-                                            </div>
-                                            <div class="title">
-                                                Web Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-icon.png'; ?>" alt="Application Security">
-                                            </div>
-                                            <div class="title">
-                                                Application Security
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
-                                                <p>Learn More</p>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="top-part">
-                                            <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-icon.png'; ?>" alt="Hybrid Cloud">
-                                            </div>
-                                            <div class="title">
-                                                Hybrid Cloud
-                                            </div>
-                                            <div class="subtitle">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
-                                            </div>
-                                        </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="#">
+                                            <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>

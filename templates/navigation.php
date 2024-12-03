@@ -75,8 +75,8 @@
                                         <li><a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating System</a></li>
                                         <li><a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration <br> Solutions</a></li>
                                         <li><a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (STaaS)</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service (DAAS)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service (SaaS)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service (DaaS)</a></li>
                                     </ul>
 
                                     <div>
@@ -138,16 +138,16 @@
                                 <div class="d-flex justify-content-center align-items-start">
                                     <ul>
                                         <li><a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a></li>
+                                        <!-- <li><a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>">Utilities</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>">Public Sector</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>">Manufacturing</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/education.php'; ?>">Education</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/it-and-consulting.php'; ?>">IT & Consulting</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>">Consumer Goods</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>">Consumer Goods</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -243,7 +243,7 @@
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Ausio Visual
+                                        Audio Visual
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>" class="list-item-link">
@@ -268,12 +268,12 @@
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Storage As A Service (STaaS)
+                                        Storage As A Service (SaaS)
                                     </div>
                                 </a>
                                 <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Device As A Service (DAAS)
+                                        Device As A Service (DaaS)
                                     </div>
                                 </a>
                             </div>

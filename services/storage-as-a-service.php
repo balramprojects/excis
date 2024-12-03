@@ -391,10 +391,10 @@ require_once('../constant.php');
             <div class="main-content-container">
                 <div class="banner-txt d-flex flex-column justify-content-center">
                     <div class="breadcrumb">
-                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Storage As a Service (STaaS)</span>
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Storage As a Service (SaaS)</span>
                     </div>
                     <div class="page-title">
-                        Storage As a Service (STaaS)
+                        Storage As a Service (SaaS)
                     </div>
                 </div>
             </div>
