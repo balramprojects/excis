@@ -1,8 +1,8 @@
 <!-- Navigation Panel -->
 <div class="full-container">
     <div class="desktop black-nav-container">
-        <div class="main-content-container d-flex justify-content-between align-items-center">
-            <div class="left-content d-flex">
+        <div class="main-content-container d-flex justify-content-center align-items-center">
+            <!-- <div class="left-content d-flex">
                 <a href="#" title="Career">
                     <div class="block-txt d-flex align-items-center">
                         Career
@@ -18,21 +18,21 @@
                         News
                     </div>
                 </a>
-            </div>
+            </div> -->
 
             <div class="middle-content d-flex align-items-center">
                 <p>Now Hiring :</p>
                 <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
             </div>
 
-            <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
+            <!-- <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
                 <div class="img-and-txt d-flex">
                     <div class="icon-img d-flex">
                         <img src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global Presence">
                     </div>
                     <p>Global | EN</p>
                 </div>
-            </a>
+            </a> -->
         </div>
     </div>
 </div>

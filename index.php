@@ -63,7 +63,7 @@ include('./constant.php');
                         <div class="slogan-sub-txt">
                             &nbsp; Your Global IT Solution
                         </div>
-                        <a href="#">
+                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
                             <div class="banner-btn d-flex justify-content-center align-items-center">
                                 <p>Let's Work Together</p>
                                 <div class="arrow d-flex">
@@ -97,7 +97,7 @@ include('./constant.php');
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-center align-items-center">
-                                    <a href="#">
+                                    <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
                                             <p>Learn More</p>
                                             <div class="arrow d-flex">
