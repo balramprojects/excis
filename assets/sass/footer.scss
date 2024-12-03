@@ -379,12 +379,20 @@
                 .serviceTitle {
                     font-size: 18px;
                     font-weight: 700;
-                    color: var(--orange-color);
                     text-transform: capitalize;
                     text-wrap: nowrap;
+                    cursor: pointer;
 
                     &.p-t-15 {
                         padding-top: 15px;
+                    }
+
+                    &:hover {
+                        font-weight: 900;
+                    }
+
+                    a {
+                        color: var(--orange-color);
                     }
                 }
 
@@ -397,6 +405,10 @@
                         font-weight: 400;
                         color: var(--white-color);
                         text-wrap: nowrap;
+
+                        &:hover {
+                            color: rgb(255, 255, 255, 0.7);
+                        }
                     }
                 }
             }

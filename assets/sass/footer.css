@@ -354,12 +354,18 @@
 .footer-bg .main-content-container .content-container .container2 .serviceTitle {
   font-size: 18px;
   font-weight: 700;
-  color: var(--orange-color);
   text-transform: capitalize;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 .footer-bg .main-content-container .content-container .container2 .serviceTitle.p-t-15 {
   padding-top: 15px;
+}
+.footer-bg .main-content-container .content-container .container2 .serviceTitle:hover {
+  font-weight: 900;
+}
+.footer-bg .main-content-container .content-container .container2 .serviceTitle a {
+  color: var(--orange-color);
 }
 .footer-bg .main-content-container .content-container .container2 .serviceName {
   padding: 8px 0 0;
@@ -370,6 +376,9 @@
   font-weight: 400;
   color: var(--white-color);
   text-wrap: nowrap;
+}
+.footer-bg .main-content-container .content-container .container2 .serviceName a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 .footer-bg .main-content-container .content-container .container3 .isoTxt {
   font-size: 16px;

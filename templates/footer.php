@@ -168,37 +168,37 @@
 
                     <div class="container2">
                         <div class="serviceTitle">
-                            Our Services
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End-User Support</a>
+                        <a href="<?php echo $desktop_url . 'services.php'; ?>">Our Services</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">Audio-Visual</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a>
+                            <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating Systems</a>
+                            <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration Solutions</a>
+                            <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End-User Support</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a>
                         </div>
                         <div class="serviceName">
+                            <a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a>
+                        </div>
+                        <div class="serviceName">
+                            <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration Solutions</a>
+                        </div>
+                        <div class="serviceName">
+                            <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating Systems</a>
+                        </div>
+                        <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service</a>
+                            <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'services'; ?>">All Services &nbsp; -></a>
@@ -207,13 +207,19 @@
 
                     <div class="container2">
                         <div class="serviceTitle">
-                            Industries
+                            <a href="<?php echo $desktop_url . 'industries'; ?>">Industries</a>
+                        </div>
+                        <div class="serviceName">
+                            <a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a>
+                        </div>
+                        <div class="serviceName">
+                            <a href="<?php echo $desktop_url . 'industries/healthcare.php'; ?>">Healthcare</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a>
+                            <a href="<?php echo $desktop_url . 'industries/oil-and-gas.php'; ?>">Oil & Gas</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a>
@@ -246,17 +252,18 @@
 
                         <div>
                             <div class="serviceTitle p-t-15">
-                                About Us
+                                <a href="<?php echo $desktop_url . 'about-us.php'; ?>">About Us</a>
                             </div>
-                            <div class="serviceName">
-                                <a href="#">Why Excis</a>
+                            <div class="serviceTitle p-t-15">
+                                <a href="<?php echo $desktop_url . 'why-us.php'; ?>">Why Excis</a>
                             </div>
-                            <div class="serviceName">
-                                <a href="#">Career Opportunities</a>
+                            <div class="serviceTitle p-t-15">
+                                <a href="<?php echo $desktop_url . 'careers.php'; ?>">Careers</a>
                             </div>
-                            <div class="serviceName">
-                                <a href="#">Worldwide</a>
+                            <div class="serviceTitle p-t-15">
+                                <a href="<?php echo $desktop_url . 'worldwide.php'; ?>">Worldwide</a>
                             </div>
+
                             <!-- <div class="serviceName">
                                 <a href="#">CSR</a>
                             </div>
