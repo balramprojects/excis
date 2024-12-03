@@ -290,8 +290,7 @@ include('../constant.php');
                             Our Services
                         </div>
                         <div class="subtitle-txt" style="color: #fff;" data-aos="zoom-out" data-aos-duration="1000">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                            quis culpa cumque, laboriosam deserunt unde?
+                            We offer comprehensive IT services, including end-user computing, networking, onsite support, and multilingual 24/7 assistance. With tailored solutions and global reach, we ensure your business stays connected and operates efficiently.
                         </div>
 
                         <div class="service-cards-container">
@@ -520,6 +519,253 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-point-security-service-icon.png'; ?>" alt="End Point Security">
+                                            </div>
+                                            <div class="title">
+                                                End Point Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-security-service-icon.png'; ?>" alt="Network Security">
+                                            </div>
+                                            <div class="title">
+                                                Network Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-service-icon.png'; ?>" alt="Application Security">
+                                            </div>
+                                            <div class="title">
+                                                Application Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-service-icon.png'; ?>" alt="Web Security">
+                                            </div>
+                                            <div class="title">
+                                                Web Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-service-icon.png'; ?>" alt="Email Security">
+                                            </div>
+                                            <div class="title">
+                                                Email Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-security-service-icon.png'; ?>" alt="Hybrid Cloud Security">
+                                            </div>
+                                            <div class="title">
+                                                Hybrid Cloud Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'warehouse-service-icon.png'; ?>" alt="Warehouse">
+                                            </div>
+                                            <div class="title">
+                                                Warehouse
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/warehouse.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'public-cloud-integartion-and-migration-service-icon.png'; ?>" alt="Device as a Service (Daas)">
+                                            </div>
+                                            <div class="title">
+                                                Public Cloud Integration + Migration
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'private-cloud-solutions-service-icon.png'; ?>" alt="Private Cloud Solutions">
+                                            </div>
+                                            <div class="title">
+                                                Private Cloud Solutions
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'office-365-and-g-suite-migration-and-integration-service-icon.png'; ?>" alt="Office 365 And G-Suite Migration + Integration">
+                                            </div>
+                                            <div class="title">
+                                                Office 365 And G-Suite Migration + Integration
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/office-365-and-g-suite-migration-and-integration.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'software-and-application-development-service-icon.png'; ?>" alt="Software and Application Development">
+                                            </div>
+                                            <div class="title">
+                                                Software and Application Development
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'api-integration-service-icon.png'; ?>" alt="API Integration">
+                                            </div>
+                                            <div class="title">
+                                                API Integration
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/api-integration.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-and-system-automation-service-icon.png'; ?>" alt="Network And System Automation">
+                                            </div>
+                                            <div class="title">
+                                            Network And System Automation
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/network-and-system-automation.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
                                         </div>
