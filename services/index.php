@@ -1253,7 +1253,7 @@ include('../constant.php');
 
     <script>
         const navItem = document.querySelectorAll('.middle-content .nav-block-container');
-        navItem[1].querySelector('a .nav-tab-item').classList.add('active');
+        navItem[2].querySelector('a .nav-tab-item').classList.add('active');
     </script>
 
     <script>

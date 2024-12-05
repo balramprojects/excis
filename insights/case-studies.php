@@ -25,11 +25,13 @@ require_once('../constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/insights/case-studies">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="../assets/sass/index.css">
-    <link rel="stylesheet" href="../assets/sass/why-excis.css">
-    <link rel="stylesheet" href="../assets/sass/navigation.css">
     <link rel="stylesheet" href="../assets/sass/common.css">
-    <link rel="stylesheet" href="../assets/sass/contact-us.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
+    <link rel="stylesheet" href="../assets/sass/banners.css">
+    <link rel="stylesheet" href="../assets/sass/inner-pages.css">
+    <link rel="stylesheet" href="../assets/sass/footer.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
+    <link rel="stylesheet" href="../assets/sass/services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
 
@@ -47,221 +49,37 @@ require_once('../constant.php');
             height: 3px;
             background: #000;
         }
-
-        .submitBtn {
-            background: rgb(27, 49, 93, 0.8);
-        }
-
-        .submitBtn:hover {
-            background: rgb(27, 49, 93, 1);
-        }
     </style>
 
 </head>
 
 <body>
 
-    <!-- Navigation Panel -->
-    <div class="pg-nav-sticky">
-        <div class="full-container">
-            <div class="desktop black-nav-container">
-                <div class="main-content-container d-flex justify-content-between">
-                    <div class="left-content d-flex">
-                        <a href="#" title="Career">
-                            <div class="block-txt d-flex align-items-center">
-                                Career
-                            </div>
-                        </a>
-                        <a href="#" title="CSR">
-                            <div class="block-txt d-flex align-items-center">
-                                CSR
-                            </div>
-                        </a>
-                        <a href="#" title="News">
-                            <div class="block-txt d-flex align-items-center">
-                                News
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="middle-content d-flex align-items-center">
-                        <p>Now Hiring :</p>
-                        <p>Are you a driven and motivated 1st Line IT Support Engineer?</p>
-                    </div>
-
-                    <a href="#" class="right-content d-flex align-items-center" title="Excis Worldwide">
-                        <div class="img-and-txt d-flex">
-                            <div class="icon-img d-flex align-items-center">
-                                <img loading="lazy" src="<?php echo $desktop_images . 'global-presence.png'; ?>" alt="Global Presence">
-                            </div>
-                            <p>Global | EN</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="main-nav-container">
-                <div class="main-content-container d-flex justify-content-between">
-                    <a href="<?php echo $desktop_url; ?>" title="Excis Logo" class="left-content d-flex align-items-center">
-                        <div class="logo-img d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'main-logo.png'; ?>" alt="Excis">
-                        </div>
-                    </a>
-
-                    <div class="desktop">
-                        <ul class="middle-content d-flex align-items-center">
-                            <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'services'; ?>">
-                                    <div class="nav-tab-item d-flex align-items-center">
-                                        Services
-                                    </div>
-                                </a>
-
-                                <div class="nav-tab-dropdown">
-                                    <div class="d-flex justify-content-center align-items-start">
-                                        <ul>
-                                            <li>Infrastructure</li>
-                                            <li><a href="#">Network</a></li>
-                                            <li><a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a></li>
-                                            <li><a href="#">End User Support</a></li>
-                                            <li><a href="#">Audio-Visual</a></li>
-                                            <li><a href="#">WiFi Services</a></li>
-                                            <li><a href="#">Operating System</a></li>
-                                            <li><a href="#">New Office + Migration <br> Solutions</a></li>
-                                            <li><a href="#">Helpdesk</a></li>
-                                            <li><a href="#">Storage As A Service (SAAS)</a></li>
-                                            <li><a href="#">Device As A Service (DAAS)</a></li>
-                                        </ul>
-
-                                        <div>
-                                            <ul>
-                                                <li>Cyber Security Services</li>
-                                                <li><a href="#">Cyber Security Consulting</a></li>
-                                                <li><a href="#">End Point Security</a></li>
-                                                <li><a href="#">Network Security</a></li>
-                                                <li><a href="#">Application Security</a></li>
-                                                <li><a href="#">Web Security</a></li>
-                                                <li><a href="#">Email Security</a></li>
-                                                <li><a href="#">Hybrid Cloud Security</a></li>
-                                            </ul>
-
-                                            <ul>
-                                                <li>Development</li>
-                                                <li><a href="#">Software And Application Development</a></li>
-                                                <li><a href="#">API Integration</a></li>
-                                                <li><a href="#">Network And Systems Automation</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div>
-                                            <ul>
-                                                <li>Cloud Services</li>
-                                                <li><a href="#">Public Cloud Integration And Migration (AWS, Azure, GCP)</a></li>
-                                                <li><a href="#">Private Cloud Solutions</a></li>
-                                                <li><a href="#">Hybrid Cloud</a></li>
-                                                <li><a href="#">Office 365 And G-Suite Migration + Integration</a></li>
-                                            </ul>
-
-                                            <ul>
-                                                <li>Depot</li>
-                                                <li><a href="#">Warehousing</a></li>
-                                                <li><a href="#">Logistics</a></li>
-                                                <li><a href="#">Staging</a></li>
-                                                <li><a href="#">Wiping + Disposal</a></li>
-                                                <li><a href="#">PMO</a></li>
-                                                <li><a href="#">NOC Services</a></li>
-                                                <li><a href="#">SOC Services</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'industries'; ?>">
-                                    <div class="nav-tab-item d-flex align-items-center">
-                                        Industries
-                                    </div>
-                                </a>
-
-                                <div class="nav-tab-dropdown">
-                                    <div class="d-flex justify-content-center align-items-start">
-                                        <ul>
-                                            <li>Industries</li>
-                                            <li><a href="#">Retail</a></li>
-                                            <li><a href="#">Energy</a></li>
-                                            <li><a href="#">Life Sciences</a></li>
-                                            <li><a href="#">Financial Services (FS&I)</a></li>
-                                            <li><a href="#">Telecom</a></li>
-                                            <li><a href="#">Utilities</a></li>
-                                            <li><a href="#">Public Sector</a></li>
-                                            <li><a href="#">Manufacturing</a></li>
-                                            <li><a href="#">Education</a></li>
-                                            <li><a href="#">IT & Consulting</a></li>
-                                            <li><a href="#">Consumer Goods</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-block-container d-flex align-items-center">
-                                <a href="<?php echo $desktop_url . 'insights/'; ?>">
-                                    <div class="nav-tab-item active d-flex align-items-center">
-                                        Insights
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="d-flex align-items-center">
-                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>" class="right-content desktop">
-                            <div class="contact-us-btn d-flex justify-content-center align-items-center">
-                                Contact Us
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="mobile">
-                        <div class="m-nav d-flex align-items-center">
-                            <a href="#">
-                                <div class="global-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'global-presence-black.png'; ?>" alt="Global Presence">
-                                </div>
-                            </a>
-
-                            <div class="hamburger d-flex align-items-center justify-content-end">
-                                <div class="middle-line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+    include("../templates/navigation.php");
+    ?>
 
     <div class="full-container">
-        <div style="height: 260px; width: 100%; background: rgba(250, 249, 246, 1); position: relative;">
-            <div
-                style="position: absolute; top: 0; left: 50%; height: 260px; width: max-content; transform: translate(-50%, 0);">
-                <img src="../assets/images/inner-pages-banner.png" alt="">
+        <div class="pages-banner">
+            <div class="banner-bg-map-img">
+                <picture>
+                    <source srcset="<?php echo $desktop_images . 'inner-pages-banner-mobile.png'; ?>" media="(max-width: 600px)">
+                    <img src="<?php echo $desktop_images . 'inner-pages-banner.png'; ?>" alt="Banner">
+                </picture>
+            </div>
+            <div class="banner-left-abstract desktop">
+                <img src="<?php echo $desktop_images . 'inner-pages-banner-abstract.png'; ?>" alt="Abstract">
+            </div>
+            <div class="banner-right-abstract desktop">
+                <img src="<?php echo $desktop_images . 'inner-pages-banner-abstract.png'; ?>" alt="Abstract">
             </div>
 
-            <div style="height: 170px; width: max-content; position: absolute; top: 0; left: 0; opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div
-                style="height: 170px; width: max-content; position: absolute; top: 0; right: 0; transform: scaleX(-1); opacity: 0.5">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="">
-            </div>
-
-            <div style="height: 100%; padding: 0 15px;" class="main-content-container">
-                <div style="width: 100%; height: 100%; flex-direction: column;" class="d-flex justify-content-center">
-                    <div style="font-size: 16px; font-weight: 400; color: rgba(0, 0, 0, 1);">
-                        Home - Insights - <span style="font-weight: 600;">Case Studies</span>
+            <div class="main-content-container">
+                <div class="banner-txt d-flex flex-column justify-content-center">
+                    <div class="breadcrumb">
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'Insights'; ?>">Insights</a> - <span class="page">Case Studies</span>
                     </div>
-                    <div style="font-size: 40px; font-weight: 600; padding: 5px 0 0; color: rgba(37, 37, 37, 1);">
+                    <div class="page-title">
                         Case Studies
                     </div>
                 </div>
@@ -536,76 +354,21 @@ require_once('../constant.php');
         </div>
     </div>
 
-    <!-- Our Clients & Partners -->
-    <div class="full-container">
-        <div class="partners-bg" data-aos="fade-up" data-aos-duration="1000">
-            <div class="main-content-container">
-                <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
-                    Lorem ipsum dolor sit amet.
-                </div>
-
-                <div class="partner-cards d-flex" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-25 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-30 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-60 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-20 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-vmware.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-35 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-deutsche-bank.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-35 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-cisco.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-25 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-nokia.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-25 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-microsoft.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-30 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-lenovo.png' ?>" alt="">
-                        </div>
-                    </div>
-                    <div class="card d-flex justify-content-center align-items-center">
-                        <div class="logo-img-60 d-flex">
-                            <img loading="lazy" src="<?php echo $desktop_images . 'partner-dell.png' ?>" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php
+    include("../templates/partners.php");
+    ?>
 
     <?php
-    require("../footer.php");
+    include("../templates/footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        const navItem = document.querySelectorAll('.middle-content .nav-block-container');
+        navItem[4].querySelector('a .nav-tab-item').classList.add('active');
+    </script>
 
     <script>
         const prevBtn = document.getElementById('prev-btn');
