@@ -31,76 +31,10 @@ include('../constant.php');
     <link rel="stylesheet" href="../assets/sass/inner-pages.css">
     <link rel="stylesheet" href="../assets/sass/footer.css">
     <link rel="stylesheet" href="../assets/sass/why-excis.css">
+    <link rel="stylesheet" href="../assets/sass/services.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
-
-    <style>
-        .carousel-container {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 0 50px 0;
-        }
-
-        .carousel-container .carousel {
-            overflow: visible;
-            max-width: 1265px;
-            width: 100%;
-            margin-inline: auto;
-        }
-
-        .carousel-container .carousel .cards {
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .carousel-container .carousel .cards .card {
-            flex: 0 0 31.6%;
-            margin: 0 10px;
-            background: rgba(250, 249, 246);
-            border: 1px solid rgba(227, 227, 227, 1);
-            border-radius: 8px;
-            z-index: 1;
-        }
-
-        button {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0);
-            background: #000;
-            cursor: pointer;
-        }
-
-        button .btn-arrow {
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: #F58520;
-        }
-
-        button:disabled {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0);
-            background: rgba(250, 249, 246);
-            /* cursor: not-allowed; */
-        }
-
-        button:disabled .btn-arrow {
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: #000;
-        }
-
-        .prev-btn,
-        .next-btn {
-            z-index: 1;
-        }
-    </style>
 
 </head>
 
@@ -114,15 +48,15 @@ include('../constant.php');
         <div class="pages-banner">
             <div class="banner-bg-map-img">
                 <picture>
-                    <source srcset="../assets/images/inner-pages-banner-mobile.png" media="(max-width: 600px)">
-                    <img src="../assets/images/inner-pages-banner.png" alt="Banner">
+                    <source srcset="<?php echo $desktop_images . 'inner-pages-banner-mobile.png'; ?>" media="(max-width: 600px)">
+                    <img src="<?php echo $desktop_images . 'inner-pages-banner.png'; ?>" alt="Banner">
                 </picture>
             </div>
             <div class="banner-left-abstract desktop">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
+                <img src="<?php echo $desktop_images . 'inner-pages-banner-abstract.png'; ?>" alt="Abstract">
             </div>
             <div class="banner-right-abstract desktop">
-                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
+                <img src="<?php echo $desktop_images . 'inner-pages-banner-abstract.png'; ?>" alt="Abstract">
             </div>
 
             <div class="main-content-container">
@@ -139,41 +73,34 @@ include('../constant.php');
     </div>
 
     <div class="full-container">
-        <div style="width: 100%; background: #fff;">
-            <div style="max-width: 100%; margin-inline: auto; position: relative; overflow: hidden;">
-                <div
-                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
-                </div>
-                <div
-                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
-                </div>
+        <div class="white-container-bg">
+            <div class="container">
+                <div class="left-btm-abstract desktop"></div>
+                <div class="right-top-abstract desktop"></div>
 
-                <div style="height: 100%; padding: 50px 15px;" class="main-content-container">
-                    <div style="width: 100%;" class="d-flex justify-content-between align-items-start">
-                        <div>
-                            <div style="font-size: 32px; font-weight: 500; color: #F58520;">
+                <div class="main-content-container">
+                    <div class="services-excelled-container d-flex justify-content-between align-items-center">
+                        <div class="content-txt">
+                            <div class="heading-txt">
                                 Services we’ve excelled in
                             </div>
-                            <div
-                                style="max-width: 60%; font-size: 14px; font-weight: 400; line-height: 20px; padding: 10px 0 0; color: rgba(37, 37, 37, 1);">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore mollitia veniam
-                                temporibus molestias consequuntur provident voluptatem eligendi a consectetur nostrum.
+                            <div class="sub-txt">
+                                Our proven solutions are tailored to meet the unique needs of businesses across industries worldwide.
                             </div>
                         </div>
-                        <div>
-                            <div style="gap: 15px;" class="d-flex justify-content-center">
-                                <button class="prev-btn d-flex justify-content-center align-items-center" id="prev-btn"
-                                    disabled>
+                        <div class="desktop">
+                            <div class="carousel-prev-next-btn d-flex justify-content-center">
+                                <button class="prev-btn d-flex justify-content-center align-items-center" id="prev-btn" disabled>
                                     <div class="btn-arrow d-flex justify-content-center align-items-center">
-                                        <div style="max-width: 12px;" class="d-flex">
-                                            <img src="./../assets/images/prev-arrow-icon.png" alt="">
+                                        <div class="arrow d-flex">
+                                            <img src="<?php echo $desktop_images . 'prev-arrow-icon.png'; ?>" alt="">
                                         </div>
                                     </div>
                                 </button>
                                 <button class="next-btn d-flex justify-content-center align-items-center" id="next-btn">
                                     <div class="btn-arrow d-flex justify-content-center align-items-center">
-                                        <div style="max-width: 12px;" class="d-flex">
-                                            <img src="./../assets/images/next-arrow-icon.png" alt="">
+                                        <div class="arrow d-flex">
+                                            <img src="<?php echo $desktop_images . 'next-arrow-icon.png'; ?>" alt="">
                                         </div>
                                     </div>
                                 </button>
@@ -182,90 +109,172 @@ include('../constant.php');
                     </div>
                 </div>
 
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="cards">
+                <div class="desktop">
+                    <div class="services-excelled-carousel-container">
+                        <div class="cards d-flex">
                             <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'oil-and-gas-industries-icon.png'; ?>" alt="">
+                                <a href="<?php echo $desktop . 'industries/oil-and-gas.php'; ?>">
+                                    <div class="content-container">
+                                        <div class="icon-image d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'oil-and-gas-industries-icon.png'; ?>" alt="Oil & Gas">
                                         </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
+                                        <div class="heading-txt">
                                             Oil & Gas
                                         </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sit.
+                                        <div class="sub-txt">
+                                            Streamlined IT solutions to optimize operations, enhance safety, and ensure reliability in the energy sector.
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'banking-and-financial-industries-icon.png'; ?>" alt="">
+                                <a href="<?php echo $desktop . 'industries/banking-and-financial.php'; ?>">
+                                    <div class="content-container">
+                                        <div class="icon-image d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'banking-and-financial-industries-icon.png'; ?>" alt="Banking & Financial Services">
                                         </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
-                                            Banking & Financial
+                                        <div class="heading-txt">
+                                            Banking & Financial Services
                                         </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sit.
+                                        <div class="sub-txt">
+                                            Secure and scalable IT support tailored for seamless transactions, compliance, and digital transformation.
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'retail-industries-icon.png'; ?>" alt="">
+                                <a href="<?php echo $desktop . 'industries/retail.php'; ?>">
+                                    <div class="content-container">
+                                        <div class="icon-image d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'retail-industries-icon.png'; ?>" alt="Retail">
                                         </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
+                                        <div class="heading-txt">
                                             Retail
                                         </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sit.
+                                        <div class="sub-txt">
+                                            Innovative technology solutions to enhance customer experiences, streamline operations, and drive sales.
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'healthcare-industries-icon.png'; ?>" alt="">
+                                <a href="<?php echo $desktop . 'industries/healthcare.php'; ?>">
+                                    <div class="content-container">
+                                        <div class="icon-image d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'healthcare-industries-icon.png'; ?>" alt="Healthcare">
                                         </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
+                                        <div class="heading-txt">
                                             Healthcare
                                         </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sit.
+                                        <div class="sub-txt">
+                                            Reliable IT support to streamline patient care, maintain compliance, and optimize healthcare delivery systems.
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'telecom-industries-icon.png'; ?>" alt="">
+                                <a href="<?php echo $desktop . 'industries/telecom.php'; ?>">
+                                    <div class="content-container">
+                                        <div class="icon-image d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'telecom-industries-icon.png'; ?>" alt="Telecom">
                                         </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; padding: 25px 0 0; color: #000;">
+                                        <div class="heading-txt">
                                             Telecom
                                         </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sit.
+                                        <div class="sub-txt">
+                                            Robust IT services ensuring connectivity, network optimization, and enhanced communication for global telecom operations.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile">
+                    <div class="m-forward-linking-cards m-services-excelled-container">
+                        <div class="cards d-flex flex-column">
+                            <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                <a href="<?php echo $desktop . 'industries/oil-and-gas.php'; ?>">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'oil-and-gas-industries-icon.png'; ?>" alt="Oil & Gas">
+                                            </div>
+                                            <div class="titletxt">
+                                                Oil & Gas
+                                            </div>
+                                        </div>
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                <a href="<?php echo $desktop . 'industries/banking-and-financial.php'; ?>">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'banking-and-financial-industries-icon.png'; ?>" alt="Banking & Financial Services">
+                                            </div>
+                                            <div class="titletxt">
+                                                Banking & Financial Services
+                                            </div>
+                                        </div>
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                <a href="<?php echo $desktop . 'industries/retail.php'; ?>">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'retail-industries-icon.png'; ?>" alt="Retail">
+                                            </div>
+                                            <div class="titletxt">
+                                                Retail
+                                            </div>
+                                        </div>
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                <a href="<?php echo $desktop . 'industries/healthcare.php'; ?>">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'healthcare-industries-icon.png'; ?>" alt="Healthcare">
+                                            </div>
+                                            <div class="titletxt">
+                                                Healthcare
+                                            </div>
+                                        </div>
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                <a href="<?php echo $desktop . 'industries/telecom.php'; ?>">
+                                    <div class="card-content d-flex justify-content-between align-items-center">
+                                        <div class="left-portion d-flex align-items-center">
+                                            <div class="card-icon-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'telecom-industries-icon.png'; ?>" alt="Telecom">
+                                            </div>
+                                            <div class="titletxt">
+                                                Telecom
+                                            </div>
+                                        </div>
+                                        <div class="forward-arrow-img d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
                                         </div>
                                     </div>
                                 </a>
@@ -758,7 +767,7 @@ include('../constant.php');
                                                 <img loading="lazy" src="<?php echo $desktop_images . 'network-and-system-automation-service-icon.png'; ?>" alt="Network And System Automation">
                                             </div>
                                             <div class="title">
-                                            Network And System Automation
+                                                Network And System Automation
                                             </div>
                                             <div class="subtitle">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
@@ -774,50 +783,515 @@ include('../constant.php');
                             </div>
 
                             <div class="mobile">
-                                <div class="cards d-flex flex-column">
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'help-desk-icon.png'; ?>" alt="">
+                                <div class="m-forward-linking-cards m-services-our-services-container">
+                                    <div class="cards d-flex flex-column">
+                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                            <a href="<?php echo $desktop . 'services/data-center-support.php'; ?>">
+                                                <div class="card-content d-flex justify-content-between align-items-center">
+                                                    <div class="left-portion d-flex align-items-center">
+                                                        <div class="card-icon-img d-flex">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Data Center Support">
+                                                        </div>
+                                                        <div class="titletxt">
+                                                            Data Center Support
+                                                        </div>
+                                                    </div>
+                                                    <div class="forward-arrow-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                                    </div>
                                                 </div>
-                                                <div class="titletxt">
-                                                    Help Desk
+                                            </a>
+                                        </div>
+                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                            <a href="<?php echo $desktop . 'services/cyber-security-consulting.php'; ?>">
+                                                <div class="card-content d-flex justify-content-between align-items-center">
+                                                    <div class="left-portion d-flex align-items-center">
+                                                        <div class="card-icon-img d-flex">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Cyber Security Consulting">
+                                                        </div>
+                                                        <div class="titletxt">
+                                                            Cyber Security Consulting
+                                                        </div>
+                                                    </div>
+                                                    <div class="forward-arrow-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                                    </div>
                                                 </div>
+                                            </a>
+                                        </div>
+                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                            <a href="<?php echo $desktop . 'services/hybrid-cloud.php'; ?>">
+                                                <div class="card-content d-flex justify-content-between align-items-center">
+                                                    <div class="left-portion d-flex align-items-center">
+                                                        <div class="card-icon-img d-flex">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Hybrid Cloud">
+                                                        </div>
+                                                        <div class="titletxt">
+                                                            Hybrid Cloud
+                                                        </div>
+                                                    </div>
+                                                    <div class="forward-arrow-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                            <a href="<?php echo $desktop . 'services/network.php'; ?>">
+                                                <div class="card-content d-flex justify-content-between align-items-center">
+                                                    <div class="left-portion d-flex align-items-center">
+                                                        <div class="card-icon-img d-flex">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Network">
+                                                        </div>
+                                                        <div class="titletxt">
+                                                            Network
+                                                        </div>
+                                                    </div>
+                                                    <div class="forward-arrow-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                            <a href="<?php echo $desktop . 'services/helpdesk.php'; ?>">
+                                                <div class="card-content d-flex justify-content-between align-items-center">
+                                                    <div class="left-portion d-flex align-items-center">
+                                                        <div class="card-icon-img d-flex">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'helpdesk-service-icon.png'; ?>" alt="Help Desk">
+                                                        </div>
+                                                        <div class="titletxt">
+                                                            Help Desk
+                                                        </div>
+                                                    </div>
+                                                    <div class="forward-arrow-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                            <a href="<?php echo $desktop . 'services/.php'; ?>">
+                                                <div class="card-content d-flex justify-content-between align-items-center">
+                                                    <div class="left-portion d-flex align-items-center">
+                                                        <div class="card-icon-img d-flex">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . '-service-icon.png'; ?>" alt="Data Center Support">
+                                                        </div>
+                                                        <div class="titletxt">
+                                                            Data Center Support
+                                                        </div>
+                                                    </div>
+                                                    <div class="forward-arrow-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
+                                            <a href="<?php echo $desktop . 'services/.php'; ?>">
+                                                <div class="card-content d-flex justify-content-between align-items-center">
+                                                    <div class="left-portion d-flex align-items-center">
+                                                        <div class="card-icon-img d-flex">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . '-service-icon.png'; ?>" alt="Data Center Support">
+                                                        </div>
+                                                        <div class="titletxt">
+                                                            Data Center Support
+                                                        </div>
+                                                    </div>
+                                                    <div class="forward-arrow-img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ----------------------- -->
+
+                            <div class="desktop">
+                                <div class="cards">
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Web Security">
                                             </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                            <div class="title">
+                                                End-User Support
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'data-security-icon.png'; ?>" alt="">
-                                                </div>
-                                                <div class="titletxt">
-                                                    Data Security
-                                                </div>
-                                            </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
-                                            </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-content d-flex justify-content-between align-items-center">
-                                            <div class="left-portion d-flex align-items-center">
-                                                <div class="card-icon-img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'email-security-icon.png'; ?>" alt="">
-                                                </div>
-                                                <div class="titletxt">
-                                                    Email Security
-                                                </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'audio-visual-service-icon.png'; ?>" alt="Audio Visual">
                                             </div>
-                                            <div class="forward-arrow-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="">
+                                            <div class="title">
+                                                Audio Visual
                                             </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'wifi-services-icon.png'; ?>" alt="WiFi Services">
+                                            </div>
+                                            <div class="title">
+                                                WiFi Services
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'opearting-system-service-icon.png'; ?>" alt="Operating System">
+                                            </div>
+                                            <div class="title">
+                                                Operating System
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'new-office-and-migration-solutions-service-icon.png'; ?>" alt="New Office + Migration Solutions">
+                                            </div>
+                                            <div class="title">
+                                                New Office + Migration Solutions
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'storage-as-a-service-icon.png'; ?>" alt="Storage As A Service (SaaS)">
+                                            </div>
+                                            <div class="title">
+                                                Storage as a Service (SaaS)
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'device-as-a-service-icon.png'; ?>" alt="Device as a Service (Daas)">
+                                            </div>
+                                            <div class="title">
+                                                Device as a Service (Daas)
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-point-security-service-icon.png'; ?>" alt="End Point Security">
+                                            </div>
+                                            <div class="title">
+                                                End Point Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-security-service-icon.png'; ?>" alt="Network Security">
+                                            </div>
+                                            <div class="title">
+                                                Network Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'application-security-service-icon.png'; ?>" alt="Application Security">
+                                            </div>
+                                            <div class="title">
+                                                Application Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'web-security-service-icon.png'; ?>" alt="Web Security">
+                                            </div>
+                                            <div class="title">
+                                                Web Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'email-security-service-icon.png'; ?>" alt="Email Security">
+                                            </div>
+                                            <div class="title">
+                                                Email Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-security-service-icon.png'; ?>" alt="Hybrid Cloud Security">
+                                            </div>
+                                            <div class="title">
+                                                Hybrid Cloud Security
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'warehouse-service-icon.png'; ?>" alt="Warehouse">
+                                            </div>
+                                            <div class="title">
+                                                Warehouse
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/warehouse.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'public-cloud-integartion-and-migration-service-icon.png'; ?>" alt="Device as a Service (Daas)">
+                                            </div>
+                                            <div class="title">
+                                                Public Cloud Integration + Migration
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'private-cloud-solutions-service-icon.png'; ?>" alt="Private Cloud Solutions">
+                                            </div>
+                                            <div class="title">
+                                                Private Cloud Solutions
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'office-365-and-g-suite-migration-and-integration-service-icon.png'; ?>" alt="Office 365 And G-Suite Migration + Integration">
+                                            </div>
+                                            <div class="title">
+                                                Office 365 And G-Suite Migration + Integration
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/office-365-and-g-suite-migration-and-integration.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'software-and-application-development-service-icon.png'; ?>" alt="Software and Application Development">
+                                            </div>
+                                            <div class="title">
+                                                Software and Application Development
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'api-integration-service-icon.png'; ?>" alt="API Integration">
+                                            </div>
+                                            <div class="title">
+                                                API Integration
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/api-integration.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-and-system-automation-service-icon.png'; ?>" alt="Network And System Automation">
+                                            </div>
+                                            <div class="title">
+                                                Network And System Automation
+                                            </div>
+                                            <div class="subtitle">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/network-and-system-automation.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -868,12 +1342,27 @@ include('../constant.php');
     <script>
         const prevBtn = document.getElementById('prev-btn');
         const nextBtn = document.getElementById('next-btn');
-        const cards = document.querySelector('.cards');
+        const cards = document.querySelector('.services-excelled-carousel-container .cards');
 
         let cardIndex = 0;
-        const cardWidth = 33.27; // Card width including margin
-        const visibleCards = 3;
+        var cardWidth = 33.33; // Card width including margin
+        var visibleCards = 3;
         const totalCards = cards.children.length;
+
+        // Function to update visible cards based on screen size
+        // function updateVisibleCards() {
+        //     if (window.matchMedia('(max-width: 600px)').matches) {
+        //         visibleCards = 1;
+        //         cardWidth = 100;
+        //     } else if (window.matchMedia('(max-width: 768px)').matches) {
+        //         visibleCards = 2;
+        //         cardWidth = 50;
+        //     } else {
+        //         visibleCards = 3;
+        //         cardWidth = 33.33;
+        //     }
+        //     updateCarousel();
+        // }
 
         function updateCarousel() {
             cards.style.transform = `translateX(${-cardIndex * cardWidth}%)`;
@@ -894,6 +1383,12 @@ include('../constant.php');
                 updateCarousel();
             }
         });
+
+        // Add a listener to update visible cards on window resize
+        // window.addEventListener('resize', updateVisibleCards);
+
+        // Initial call to set up visible cards based on initial screen size
+        // updateVisibleCards();
     </script>
 
     <script>

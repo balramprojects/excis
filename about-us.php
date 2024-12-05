@@ -81,14 +81,10 @@ include('constant.php');
                     <div class="d-flex justify-content-between align-items-center">
                         <div style="max-width: 600px;">
                             <div style="font-size: 30px; font-weight: 500; line-height: 40px; color: #F58520;">
-                                Transforming Businesses <br> Through Global IT Expertise
+                                Who We Are
                             </div>
                             <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus, dicta veniam, quis, accusantium perspiciatis consectetur sapiente ab modi sed excepturi vitae. Sapiente velit quibusdam rerum natus enim culpa a nemo delectus illum consequuntur, architecto illo corporis sed cumque? Necessitatibus.
-                                <br> <br>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed ratione reiciendis minus amet! Quo sit quos reprehenderit blanditiis, qui exercitationem architecto commodi quidem similique ad culpa ipsum eum non fuga dolores aut dolorem eos, neque suscipit dicta cupiditate, nisi dolorum voluptatibus! Explicabo quisquam aspernatur quod, autem nemo sit velit libero, veritatis amet quis odit facere vel, unde dicta quas. Perferendis quaerat omnis unde harum necessitatibus debitis nam alias ratione reprehenderit recusandae, nisi incidunt. Asperiores laborum esse maxime sint amet?
-                                <br> <br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae, ratione, qui neque temporibus deserunt omnis nemo soluta eum magni fuga consectetur! Libero, incidunt molestiae reprehenderit saepe omnis dicta. Recusandae!
+                                Excis is a global IT services company that provides 24/7 multilingual support and onsite assistance in over 180 countries. With a focus on end-user computing and networking, we ensure our clients experience seamless and efficient IT operations. Our extensive network of skilled professionals allows us to deliver high-quality, reliable solutions tailored to meet the diverse needs of businesses worldwide.
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
@@ -116,9 +112,7 @@ include('constant.php');
                                         The Journey Of <span style="color: #F58520;">Excis</span>
                                     </div>
                                     <div style="max-width: 550px; font-size: 14px; font-weight: 14px; line-height: 22px; color: #fff; padding: 20px 0 0;">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nesciunt quas unde nam non dolor. Impedit praesentium ipsa nam provident est ex tempore, velit ipsam inventore voluptates, dolorem possimus amet nesciunt animi similique recusandae suscipit tempora enim asperiores adipisci! Sapiente sequi eos ad. Eaque optio nam reprehenderit suscipit voluptas error.
-                                        <br> <br>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora amet expedita a ut ducimus maiores neque officiis possimus iure, illum sunt iusto laborum maxime similique magni tempore aspernatur! Iusto doloribus at molestias numquam adipisci id illum possimus eveniet expedita beatae vel exercitationem earum, perferendis voluptas laudantium ullam animi nisi!
+                                        Excis began with a vision to provide world-class IT services and has grown into a global leader, operating in 190+ countries. Through innovation, dedication, and teamwork, we’ve built a reputation for excellence and reliability.
                                     </div>
                                 </div>
                             </div>

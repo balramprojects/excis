@@ -148,7 +148,7 @@
                                         <li><a href="<?php echo $desktop_url . 'industries/healthcare.php'; ?>">Healthcare</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">Retail</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/oil-and-gas.php'; ?>">Oil & Gas</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'industries/telecom.php'; ?>">Telecom</a></li>
 
                                         <!-- <li><a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a></li>
                                         <li><a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a></li>
@@ -479,9 +479,9 @@
                                 Retail
                             </div>
                         </a>
-                        <a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>" class="list-item-link">
+                        <a href="<?php echo $desktop_url . 'industries/telecom.php'; ?>" class="list-item-link">
                             <div class="list-item">
-                                Telecoms
+                                Telecom
                             </div>
                         </a>
 

@@ -208,7 +208,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Financial Services (FS&I)
+                                            Financial Services
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
@@ -226,7 +226,7 @@ require_once('../constant.php');
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Telecoms
+                                            Telecom
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">

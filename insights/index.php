@@ -246,7 +246,7 @@ require_once('../constant.php');
                                             <li><a href="#">Energy</a></li>
                                             <li><a href="#">Life Sciences</a></li>
                                             <li><a href="#">Financial Services (FS&I)</a></li>
-                                            <li><a href="#">Telecoms</a></li>
+                                            <li><a href="#">Telecom</a></li>
                                             <li><a href="#">Utilities</a></li>
                                             <li><a href="#">Public Sector</a></li>
                                             <li><a href="#">Manufacturing</a></li>

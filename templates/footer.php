@@ -222,7 +222,7 @@
                             <a href="<?php echo $desktop_url . 'industries/oil-and-gas.php'; ?>">Oil & Gas</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/telecoms.php'; ?>">Telecoms</a>
+                            <a href="<?php echo $desktop_url . 'industries/telecom.php'; ?>">Telecom</a>
                         </div>
 
                         <!-- <div class="serviceName">
@@ -453,19 +453,19 @@
                                 </span>
                             </summary>
                             <div class="htp-accord-list">
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
+                                <a href="<?php echo $desktop_url . 'services/retail.php'; ?>" class="list-item-link">
                                     <div class="list-item">
                                         Retail
                                     </div>
                                 </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
+                                <a href="<?php echo $desktop_url . 'services/financial-services.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Financial Services (FS&I)
+                                        Financial Services
                                     </div>
                                 </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
+                                <a href="<?php echo $desktop_url . 'services/telecom.php'; ?>" class="list-item-link">
                                     <div class="list-item">
-                                        Telecoms
+                                        Telecom
                                     </div>
                                 </a>
                                 <!-- <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">

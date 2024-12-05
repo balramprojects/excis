@@ -1830,7 +1830,7 @@
                             </div>
                             <div style="padding: 5px 0 0; line-height: 24px;">
                                 <a href="#"
-                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Telecoms</a>
+                                    style="font-size: 14px; font-weight: 400; color: rgba(250, 249, 246, 1); text-wrap: nowrap;">Telecom</a>
                             </div>
                             <div style="padding: 5px 0 0; line-height: 24px;">
                                 <a href="#"
