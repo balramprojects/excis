@@ -244,6 +244,9 @@
   .m-forward-linking-cards.m-services-excelled-container {
     padding: 0 15px 50px;
   }
+  .m-forward-linking-cards.m-services-our-services-container {
+    padding: 0;
+  }
   .m-forward-linking-cards .cards {
     grid-template-columns: repeat(1, 1fr);
     height: 100%;

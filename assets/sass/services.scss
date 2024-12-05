@@ -311,7 +311,9 @@
             padding: 0 15px 50px;
         }
 
-        &.m-services-our-services-container {}
+        &.m-services-our-services-container {
+            padding: 0;
+        }
 
         .cards {
             grid-template-columns: repeat(1, 1fr);

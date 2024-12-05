@@ -933,208 +933,15 @@ require_once('../constant.php');
         </div>
     </div>
 
-    <!-- Benefits Of Working -->
     <div class="full-container">
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
-            <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
-                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
-                    Benefits of working with Excis
-                </div>
-                <div style="max-width: 650px; margin-inline: auto; color: #fff; font-size: 14px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet molestiae deserunt accusamus consequuntur minima at tenetur iure!\
-                </div>
-
-                <div class="benefits-cards d-flex">
-                    <div class="benefits-card">
-                        <div class="card-content">
-                            <div style="width: 50px; margin-inline: auto;" class="flex">
-                                <img loading="lazy" src="../assets/images/sparkling-stars.png" alt="">
-                            </div>
-                            <div style="font-size: 20px; font-weight: 500; text-align: center; color: #1B315D; padding: 15px 0;">
-                                One Point of Contact
-                            </div>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="benefits-card">
-                        <div class="card-content">
-                            <div style="width: 50px; margin-inline: auto;" class="flex">
-                                <img loading="lazy" src="../assets/images/sparkling-stars.png" alt="">
-                            </div>
-                            <div style="font-size: 20px; font-weight: 500; text-align: center; color: #1B315D; padding: 15px 0;">
-                                Centralized Operations
-                            </div>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="benefits-card">
-                        <div class="card-content">
-                            <div style="width: 50px; margin-inline: auto;" class="flex">
-                                <img loading="lazy" src="../assets/images/sparkling-stars.png" alt="">
-                            </div>
-                            <div style="font-size: 20px; font-weight: 500; text-align: center; color: #1B315D; padding: 15px 0;">
-                                24/7 Global Coverage
-                            </div>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptas!</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Our Core Values & Case Studies -->
-    <div class="full-container">
-        <div class="core-values-bg">
-            <div class="core-values-container">
-                <div class="left-btm-abstract"></div>
-                <div class="right-top-abstract"></div>
-
-                <div class="case-studies">
-                    <div class="main-content-container">
-                        <div class="content-container">
-                            <div class="title-txt" data-aos="zoom-out" data-aos-duration="1000">
-                                Case Studies
-                            </div>
-                            <div class="subtitle-txt" data-aos="zoom-out" data-aos-duration="1000">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, omnis quae. Sequi ullam amet
-                                quis culpa cumque, laboriosam deserunt unde?
-                            </div>
-
-                            <div class="case-studies-container">
-                                <div class="cards d-flex justify-content-between align-items-start">
-                                    <a href="#" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="card">
-                                            <div class="creative d-flex justify-content-center align-items-center">
-                                                <div class="img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
-                                                </div>
-                                            </div>
-                                            <div class="txt-content">
-                                                <div class="case-study-type">
-                                                    RETAIL
-                                                </div>
-
-                                                <div class="case-study-type-heading">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                                </div>
-
-                                                <div class="case-study-type-desc">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                                </div>
-
-                                                <div class="case-study-read-more">
-                                                    Read More...
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="card">
-                                            <div class="creative d-flex justify-content-center align-items-center">
-                                                <div class="img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
-                                                </div>
-                                            </div>
-                                            <div class="txt-content">
-                                                <div class="case-study-type">
-                                                    RETAIL
-                                                </div>
-
-                                                <div class="case-study-type-heading">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                                </div>
-
-                                                <div class="case-study-type-desc">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                                </div>
-
-                                                <div class="case-study-read-more">
-                                                    Read More...
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="card">
-                                            <div class="creative d-flex justify-content-center align-items-center">
-                                                <div class="img d-flex">
-                                                    <img loading="lazy" src="<?php echo $desktop_images . 'case-studies-card-creative.png'; ?>" alt="Retai">
-                                                </div>
-                                            </div>
-                                            <div class="txt-content">
-                                                <div class="case-study-type">
-                                                    RETAIL
-                                                </div>
-
-                                                <div class="case-study-type-heading">
-                                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, odit.
-                                                </div>
-
-                                                <div class="case-study-type-desc">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum
-                                                    distinctio vel praesentium voluptatibus possimus illum et velit harum neque.
-                                                </div>
-
-                                                <div class="case-study-read-more">
-                                                    Read More...
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <a href="#">
-                                <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
-                                    <p>View All</p>
-                                    <div class="arrow-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Start your Business Transformation -->
-    <div class="full-container">
-        <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
-            <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
-                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 35px; line-height: 50px; font-weight: 700; text-align: center;">
+            <div style="height: 100%; padding: 100px 15px;" class="main-content-container">
+                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 38px; line-height: 50px; font-weight: 700; text-align: center;">
                     Start your business transformation today with Excis!
                 </div>
-                <div style="max-width: 500px; margin-inline: auto; color: #fff; font-size: 16px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, impedit. Ipsa nemo eligendi laudantium totam.
-                </div>
             </div>
         </div>
     </div>
-
-    <?php
-    include("../templates/partners.php");
-    ?>
 
     <?php
     include("../templates/footer.php");
@@ -1143,12 +950,10 @@ require_once('../constant.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
     <script>
         const navItem = document.querySelectorAll('.middle-content .nav-block-container');
-        navItem[1].querySelector('a .nav-tab-item').classList.add('active');
+        navItem[2].querySelector('a .nav-tab-item').classList.add('active');
     </script>
-
 
     <script>
         const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');

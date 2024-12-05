@@ -927,7 +927,7 @@ require_once('../constant.php');
     </div>
 
     <!-- Benefits Of Working -->
-    <div class="full-container">
+    <!-- <div class="full-container">
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
             <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
                 <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 30px; line-height: 40px; font-weight: 500; text-align: center;">
@@ -988,10 +988,10 @@ require_once('../constant.php');
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Our Core Values & Case Studies -->
-    <div class="full-container">
+    <!-- <div class="full-container">
         <div class="core-values-bg">
             <div class="core-values-container">
                 <div class="left-btm-abstract"></div>
@@ -1100,7 +1100,7 @@ require_once('../constant.php');
                                 <div class="learn-more-btn-container d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
                                     <p>View All</p>
                                     <div class="arrow-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="-->">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                     </div>
                                 </div>
                             </a>
@@ -1109,25 +1109,18 @@ require_once('../constant.php');
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Start your Business Transformation -->
     <div class="full-container">
         <div style="width: 100%; background: linear-gradient(to bottom, #1B315D, #354D7D);;">
-            <div style="height: 100%; padding: 70px 15px;" class="main-content-container">
-                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 35px; line-height: 50px; font-weight: 700; text-align: center;">
+            <div style="height: 100%; padding: 100px 15px;" class="main-content-container">
+                <div style="max-width: 700px; margin-inline: auto; color: #fff; font-size: 38px; line-height: 50px; font-weight: 700; text-align: center;">
                     Start your business transformation today with Excis!
-                </div>
-                <div style="max-width: 500px; margin-inline: auto; color: #fff; font-size: 16px; line-height: 24px; font-weight: 400; text-align: center; padding: 20px 0 0;">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, impedit. Ipsa nemo eligendi laudantium totam.
                 </div>
             </div>
         </div>
     </div>
-
-    <?php
-    include("../templates/partners.php");
-    ?>
 
     <?php
     include("../templates/footer.php");
@@ -1136,12 +1129,10 @@ require_once('../constant.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
     <script>
         const navItem = document.querySelectorAll('.middle-content .nav-block-container');
-        navItem[1].querySelector('a .nav-tab-item').classList.add('active');
+        navItem[2].querySelector('a .nav-tab-item').classList.add('active');
     </script>
-
 
     <script>
         const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');
