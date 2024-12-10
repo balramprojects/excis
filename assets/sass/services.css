@@ -12,40 +12,6 @@
   --border-color: rgba(0, 0, 0, 0.1);
 }
 
-.white-container-bg {
-  width: 100%;
-  background: var(--primary-white-color);
-}
-.white-container-bg .container {
-  width: 100%;
-  position: relative;
-  margin-inline: auto;
-  overflow: hidden;
-}
-.white-container-bg .container .left-btm-abstract,
-.white-container-bg .container .right-top-abstract {
-  width: 290px;
-  height: 416px;
-  background-image: url("./../images/bg-abstract-2.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-  position: absolute;
-}
-.white-container-bg .container .left-btm-abstract {
-  bottom: 0;
-  left: 0;
-  rotate: 180deg;
-}
-.white-container-bg .container .right-top-abstract {
-  top: 0;
-  right: 0;
-}
-.white-container-bg .container .main-content-container {
-  height: 100%;
-  padding: 50px 15px 0;
-}
-
 .services-excelled-container {
   width: 100%;
   gap: 20px;

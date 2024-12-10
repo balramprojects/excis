@@ -78,7 +78,7 @@ include('../constant.php');
                 <div class="left-btm-abstract desktop"></div>
                 <div class="right-top-abstract desktop"></div>
 
-                <div class="main-content-container">
+                <div class="main-content-container" style="padding: 50px 15px 0;">
                     <div class="services-excelled-container d-flex justify-content-between align-items-center">
                         <div class="content-txt">
                             <div class="heading-txt">

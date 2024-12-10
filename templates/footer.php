@@ -168,7 +168,7 @@
 
                     <div class="container2">
                         <div class="serviceTitle">
-                        <a href="<?php echo $desktop_url . 'services.php'; ?>">Our Services</a>
+                            <a href="<?php echo $desktop_url . 'services.php'; ?>">Our Services</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">Audio-Visual</a>
@@ -617,3 +617,4 @@
             </div>
         </div>
     </div>
+</div>
