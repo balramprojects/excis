@@ -308,7 +308,7 @@ include('constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Help Desk">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Data Center Support">
                                             </div>
                                             <div class="title">
                                                 Data Center Support
@@ -317,11 +317,11 @@ include('constant.php');
                                                 Comprehensive support for your data center infrastructure, ensuring optimal performance, uptime, and security.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -336,11 +336,11 @@ include('constant.php');
                                                 Expert guidance to protect your business from evolving cyber threats with tailored security strategies and solutions.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -355,11 +355,11 @@ include('constant.php');
                                                 Seamless integration of private and public cloud environments, offering flexibility, scalability, and secure data management.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -374,11 +374,11 @@ include('constant.php');
                                                 Reliable network management and optimization services to ensure fast, secure, and efficient connectivity for your business.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/network.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -393,11 +393,11 @@ include('constant.php');
                                                 24/7 support to resolve technical issues and ensure smooth IT operations for your team.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -412,11 +412,11 @@ include('constant.php');
                                                 Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
@@ -431,11 +431,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
@@ -450,11 +450,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -469,11 +469,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-left" data-aos-duration="1000">
@@ -488,11 +488,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-right" data-aos-duration="1000">
@@ -507,11 +507,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -526,11 +526,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -545,11 +545,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/end-point-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -564,11 +564,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/network-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -583,11 +583,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/application-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -602,11 +602,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/web-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -621,11 +621,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/email-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -640,11 +640,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/hybrid-cloud-security.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -659,11 +659,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/warehouse.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -678,11 +678,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/public-cloud-integartion-and-migration.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -697,11 +697,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/private-cloud-solutions.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -716,11 +716,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/office-365-and-g-suite-migration-and-integration.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -735,11 +735,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/software-and-application-development.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -754,11 +754,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/api-integration.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -773,11 +773,11 @@ include('constant.php');
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tenetur.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/network-and-system-automation.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>

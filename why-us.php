@@ -245,31 +245,70 @@ require_once('constant.php');
         <div class="blue-container-bg">
             <div class="main-content-container">
                 <div class="why-us-testimonial d-flex justify-content-between align-items-center">
-                    <div style="width: 435px;">
-                        <div style="width: fit-content; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 4px 15px; background: white; color: black; border-radius: 3.5px;">
+                    <div class="text-content">
+                        <div class="txt1">
                             Client Testimonials
                         </div>
-                        <div style="font-size: 45px; font-weight: 700; line-height: 70px; color: white; padding: 20px 0;">
+                        <div class="heading-txt">
                             What Our Customer Says
                         </div>
-                        <div style=" font-size: 16px; font-weight: 400; line-height: 24px; color: #fff; ">
+                        <div class="sub-txt">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolor consequatur eius porro ullam repudiandae aspernatur reiciendis, sequi assumenda minima, incidunt esse asperiores labore fugiat. Illo dolor, voluptas qui alias tempora illum dicta cum repudiandae facere impedit pariatur omnis voluptatibus necessitatibus molestiae quisquam. Cupiditate ullam deserunt, illo accusantium expedita eveniet!
                         </div>
                     </div>
-                    <div>
-                        <div style="width: 650px; background: #fff; padding: 40px 25px; border-radius: 15px;">
-                            <div style="position: relative;">
-                                <div style="position: absolute; top: -15px; right: 0;">
-                                    <div style="width: 60px;" class="d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'white-quote.png'; ?>" alt="">
+
+                    <div class="review-cards d-flex flex-column align-items-end">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="position-quote">
+                                    <div class="quote-img d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'white-quote.png'; ?>" alt="Quote">
                                     </div>
                                 </div>
 
-                                <div>
-                                    <div style="font-size: 16px; font-weight: 500; line-height: 24px; color: black;">
-                                        The team delivered exceptional support and resolved issues efficiently. Highly impressed!
+                                <div class="review">
+                                    <div class="txt">
+                                        <i>The team delivered exceptional support and resolved issues efficiently. Highly impressed!</i>
                                     </div>
-                                    <div style="font-size: 16px; font-weight: 700; line-height: 24px; color: blue; padding: 20px 0 0;">
+                                    <div class="company-name">
+                                        A Leading IT Services Company
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card middle-card">
+                            <div class="card-content">
+                                <div class="position-quote">
+                                    <div class="quote-img d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'white-quote.png'; ?>" alt="Quote">
+                                    </div>
+                                </div>
+
+                                <div class="review">
+                                    <div class="txt">
+                                        <i>The team delivered exceptional support and resolved issues efficiently. Highly impressed!</i>
+                                    </div>
+                                    <div class="company-name">
+                                        A Leading IT Services Company
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="position-quote">
+                                    <div class="quote-img d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'white-quote.png'; ?>" alt="Quote">
+                                    </div>
+                                </div>
+
+                                <div class="review">
+                                    <div class="txt">
+                                        <i>The team delivered exceptional support and resolved issues efficiently. Highly impressed!</i>
+                                    </div>
+                                    <div class="company-name">
                                         A Leading IT Services Company
                                     </div>
                                 </div>
@@ -281,7 +320,96 @@ require_once('constant.php');
         </div>
     </div>
 
+    <div class="full-container">
+        <div class="our-presence-bg white">
 
+            <!-- <div class="desktop">
+                <div class="default-data-card-slide">
+                    <div class="data d-flex flex-column">
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <p>120+</p>
+                            <p>Delivery Centers</p>
+                            <p>
+                                Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
+                            </p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <p>20+</p>
+                            <p>Branches</p>
+                            <p>
+                                Our Delivery Centers support global customers and partners by providing access to the latest technology expertise and business-oriented technology solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="countries-data-card-slide desktop">
+                <div class="mobile">
+                    <div class="slide-nav d-flex justify-content-between">
+                        <select class="countryCityDropdown">
+                            <option value="" selected disabled>Select a Region</option>
+                        </select>
+                        <div class="slide-close-btn">
+                            ×
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding: 210px 15px 50px;">
+                    <?php
+                    include("templates/global-presence-location-data.php");
+                    ?>
+                </div>
+            </div> -->
+
+            <div class="exact-black-container">
+                <div class="main-content-container">
+                    <div class="our-presence-container">
+                        <div class="title black" data-aos="fade-up" data-aos-duration="1000">
+                            Our Global Presence
+                        </div>
+                        <div class="subtxt black" data-aos="fade-up" data-aos-duration="1000">
+                            Excis operates in over 190 countries, offering seamless IT support and services across the globe. Our extensive reach ensures reliable, localized assistance wherever you are. We are committed to delivering excellence worldwide.
+                        </div>
+
+                        <div class="our-presence-map d-flex justify-content-center align-items-center">
+                            <div class="map-legends-container d-flex">
+                                <!-- <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="legends-box1">
+                                    <div class="inner-box"></div>
+                                </div>
+                                <div class="legends-txt">
+                                    Excis Entities
+                                </div>
+                            </div>
+                             <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="legends-box2">
+                                    <div class="inner-box"></div>
+                                </div>
+                                <div class="legends-txt">
+                                    Excis Entities
+                                </div>
+                            </div> -->
+
+                                <!-- <div class="d-flex" data-aos="fade-up" data-aos-duration="1000">
+                                    <select class="countryCityDropdown">
+                                        <option value="" selected disabled>Select a Region</option>
+                                    </select>
+                                </div> -->
+                            </div>
+
+                            <div class="map-container" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="map-img">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'world-map.png'; ?>" alt="Our Presence in World">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="full-container">
         <div class="footer-bg">

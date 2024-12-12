@@ -475,6 +475,67 @@
   padding: 30px 0;
   gap: 100px;
 }
+.why-us-testimonial .text-content {
+  width: 435px;
+}
+.why-us-testimonial .text-content .txt1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 15px;
+  background: var(--white-color);
+  color: var(--black-color);
+  border-radius: 3.5px;
+}
+.why-us-testimonial .text-content .heading-txt {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 70px;
+  color: var(--white-color);
+  padding: 20px 0;
+}
+.why-us-testimonial .text-content .sub-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--white-color);
+}
+.why-us-testimonial .review-cards .card {
+  width: 570px;
+  background: var(--white-color);
+  padding: 40px 25px;
+  border-radius: 10px;
+}
+.why-us-testimonial .review-cards .card.middle-card {
+  margin: 15px 60px 15px 0;
+}
+.why-us-testimonial .review-cards .card .card-content {
+  position: relative;
+}
+.why-us-testimonial .review-cards .card .card-content .position-quote {
+  position: absolute;
+  top: -20px;
+  right: -5px;
+}
+.why-us-testimonial .review-cards .card .card-content .position-quote .quote-img {
+  width: 70px;
+}
+.why-us-testimonial .review-cards .card .review .txt {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--black-color);
+}
+.why-us-testimonial .review-cards .card .review .company-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--blue-color);
+  padding: 20px 0 0;
+}
 
 .why-choose-bg {
   width: 100%;
@@ -611,6 +672,9 @@
   background: var(--black-color);
   position: relative;
 }
+.our-presence-bg.white {
+  background: var(--white-color);
+}
 .our-presence-bg .default-data-card-slide {
   position: absolute;
   top: 0;
@@ -723,6 +787,9 @@
   text-align: center;
   color: var(--white-color);
 }
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .title.black {
+  color: var(--black-color);
+}
 .our-presence-bg .exact-black-container .main-content-container .our-presence-container .subtxt {
   max-width: 700px;
   font-size: 16px;
@@ -732,6 +799,9 @@
   padding: 10px 0 0;
   margin-inline: auto;
   color: var(--grey-color);
+}
+.our-presence-bg .exact-black-container .main-content-container .our-presence-container .subtxt.black {
+  color: var(--black-color);
 }
 .our-presence-bg .exact-black-container .main-content-container .our-presence-container .our-presence-map {
   width: 100%;

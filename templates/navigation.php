@@ -58,8 +58,6 @@
                                             <li><a href="<?php echo $desktop_url; ?>">Cyber Security Solutions</a></li>
                                             <li><a href="<?php echo $desktop_url; ?>">Firewall & Cloud Security Solutions</a></li>
                                         </ul>
-
-                                    
                                         <ul>
                                             <li class="title">Global Project Services</li>
                                             <li><a href="<?php echo $desktop_url; ?>">IT Project Management</a></li>
@@ -72,7 +70,6 @@
                                             <li class="title">Warehousing & Logistics</li>
                                             <li><a href="<?php echo $desktop_url; ?>">Storage, Staging & Logistics</a></li>
                                         </ul>
-                                    
                                 </div>
                             </div>
                         </li>

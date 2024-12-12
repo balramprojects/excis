@@ -362,11 +362,11 @@ include('./constant.php');
                                                 Comprehensive support for your data center infrastructure, ensuring optimal performance, uptime, and security.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -381,11 +381,11 @@ include('./constant.php');
                                                 Expert guidance to protect your business from evolving cyber threats with tailored security strategies and solutions.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -400,11 +400,11 @@ include('./constant.php');
                                                 Seamless integration of private and public cloud environments, offering flexibility, scalability, and secure data management.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -419,11 +419,11 @@ include('./constant.php');
                                                 Reliable network management and optimization services to ensure fast, secure, and efficient connectivity for your business.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/network.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -438,11 +438,11 @@ include('./constant.php');
                                                 24/7 support to resolve technical issues and ensure smooth IT operations for your team.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
@@ -457,11 +457,11 @@ include('./constant.php');
                                                 Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
                                             </div>
                                         </div>
-                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
