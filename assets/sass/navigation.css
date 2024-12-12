@@ -12,48 +12,6 @@
   --border-color: rgba(0, 0, 0, 0.1);
 }
 
-.full-container .black-nav-container {
-  height: 52px;
-  background: var(--black-color);
-}
-.full-container .black-nav-container .main-content-container {
-  height: 100%;
-  padding: 0 15px;
-}
-.full-container .black-nav-container .main-content-container .left-content {
-  height: 100%;
-  gap: 25px;
-}
-.full-container .black-nav-container .main-content-container .left-content a .block-txt {
-  height: 100%;
-  font-size: 12px;
-  color: var(--white-color);
-}
-.full-container .black-nav-container .main-content-container .middle-content {
-  height: 100%;
-  font-size: 12px;
-  color: var(--white-color);
-  gap: 3px;
-}
-.full-container .black-nav-container .main-content-container .middle-content p:first-child {
-  font-weight: 700;
-  text-wrap: nowrap;
-}
-.full-container .black-nav-container .main-content-container .right-content {
-  height: 100%;
-  padding-right: 10px;
-}
-.full-container .black-nav-container .main-content-container .right-content .img-and-txt {
-  gap: 10px;
-}
-.full-container .black-nav-container .main-content-container .right-content .img-and-txt .icon-img {
-  width: 24px;
-}
-.full-container .black-nav-container .main-content-container .right-content .img-and-txt p {
-  font-size: 16px;
-  color: var(--white-color);
-}
-
 .pg-nav-sticky {
   position: sticky;
   top: 0;
@@ -61,7 +19,7 @@
 }
 .pg-nav-sticky .full-container .main-nav-container {
   width: 100%;
-  height: 65px;
+  height: 70px;
   position: relative;
   background: var(--primary-white-color);
   box-shadow: 0 0 10px var(--box-shadow-color);
@@ -70,50 +28,53 @@
   height: 100%;
   padding: 0 15px;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .left-content {
-  margin: 0 80px 0 0;
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-logo {
+  width: 170px;
+  height: 100%;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .left-content .logo-img {
-  padding-top: 5px;
-  width: 60px;
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-logo a {
+  height: 100%;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content {
-  font-size: 13px;
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-logo a .logo-img {
+  width: 70px;
+  padding: 5px 0 0;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu {
   list-style-type: none;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container {
   cursor: pointer;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-item {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-item {
   position: relative;
-  height: 65px;
-  font-size: 13px;
+  height: 70px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--black-color);
   padding: 0 13px;
   cursor: pointer;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-item::after {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-item::after {
   content: "";
-  width: 0%;
-  height: 4px;
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 0;
+  height: 4px;
   background: var(--orange-color);
   border-radius: 5px 5px 0 0;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-item.active {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-item.active {
   color: var(--orange-color);
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-item.active::after {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-item.active::after {
   width: 100%;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown {
   display: none;
   position: absolute;
-  top: 65px;
+  top: 70px;
   left: 50%;
   transform: translate(-50%, 0);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05), -5px 5px 5px rgba(0, 0, 0, 0.05), 0px 5px 5px rgba(0, 0, 0, 0.05);
@@ -122,28 +83,28 @@
   background: var(--white-color);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown:hover {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown:hover {
   display: block;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown ul {
   list-style-type: none;
   padding: 10px 20px;
-  width: 215px;
+  width: 243px;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul li {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown ul li {
   padding: 10px 0 0;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul li a {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown ul li a {
   font-size: 14px;
   font-weight: 400px;
   color: var(--black-color);
   line-height: 20px;
   text-wrap: wrap;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul li:hover a {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown ul li:hover a {
   font-weight: 700;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul .title {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown ul .title {
   padding: 10px 0;
   font-size: 18px;
   font-weight: 700;
@@ -151,36 +112,55 @@
   border-bottom: 1px solid rgba(37, 37, 37, 0.25);
   text-wrap: nowrap;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container .nav-tab-dropdown ul:hover .title {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container .nav-tab-dropdown ul:hover .title {
   color: var(--orange-color);
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container:hover .nav-tab-item {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container:hover .nav-tab-item {
   color: var(--orange-color);
   transition: all 0.2s ease-in-out;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container:hover .nav-tab-item::after {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container:hover .nav-tab-item::after {
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .middle-content .nav-block-container:hover .nav-tab-dropdown {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container:hover .nav-tab-dropdown {
   display: block;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .right-content .contact-us-btn {
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us {
+  width: 170px;
+  height: 100%;
+  gap: 15px;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-worldwide {
+  height: 100%;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-worldwide a {
+  height: 100%;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-worldwide a .world-icon-img {
+  width: 28px;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-contact-us {
+  height: 100%;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-contact-us a {
+  height: 100%;
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-contact-us a .contact-us-btn {
   height: 42px;
   width: 124px;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: center;
   border-radius: 10px;
   border: 1px solid var(--orange-color);
   background: var(--orange-color);
-  color: var(--white-color);
-  transition: all 0.3s ease-in-out;
 }
-.pg-nav-sticky .full-container .main-nav-container .main-content-container .right-content .contact-us-btn:hover {
-  background: var(--black-color);
-  border: 1px solid var(--white-color);
-  transition: all 0.3s ease-in-out;
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-contact-us a .contact-us-btn p {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--white-color);
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us .nav-contact-us a .contact-us-btn:hover p {
+  animation: btn-zoom 0.5s forwards ease-in-out;
 }
 
 @media (max-width: 1080px) {

@@ -381,6 +381,101 @@
   transition: all 0.3s ease-in-out;
 }
 
+.why-us {
+  padding: 30px 0;
+}
+.why-us .cards {
+  width: 100%;
+  gap: 20px;
+}
+.why-us .cards .card {
+  min-width: 300px;
+  width: 100%;
+  background: var(--white-color);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+.why-us .cards .card .card-content {
+  padding: 40px 15px;
+}
+.why-us .cards .card .card-content .card-icon-img {
+  height: 60px;
+  width: 60px;
+}
+.why-us .cards .card .card-content .card-icon-img img {
+  height: 100%;
+  width: auto;
+  margin-inline: auto;
+}
+.why-us .cards .card .card-content .text-content {
+  max-width: 360px;
+  margin-inline: auto;
+}
+.why-us .cards .card .card-content .text-content .heading-txt {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: var(--blue-color);
+  margin: 25px 0 0;
+}
+.why-us .cards .card .card-content .text-content .sub-txt {
+  height: 145px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: var(--black-color);
+  margin: 20px 0 0;
+  overflow: auto;
+}
+
+.iso-certifications {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 40px 0 0;
+}
+.iso-certifications .cards {
+  gap: 20px;
+}
+.iso-certifications .cards .card {
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background: var(--white-color);
+  border-radius: 10px;
+}
+.iso-certifications .cards .card .card-content {
+  padding: 25px;
+}
+.iso-certifications .cards .card .card-content .iso-img {
+  width: 130px;
+  margin-inline: auto;
+}
+.iso-certifications .cards .card .card-content .text-content {
+  margin: 25px auto 0;
+  text-align: center;
+  color: var(--black-color);
+}
+.iso-certifications .cards .card .card-content .text-content .txt1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.iso-certifications .cards .card .card-content .text-content .txt2 {
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 0 0;
+  overflow: auto;
+}
+
+.why-us-testimonial {
+  padding: 30px 0;
+  gap: 100px;
+}
+
 .why-choose-bg {
   width: 100%;
   background: var(--primary-white-color);
