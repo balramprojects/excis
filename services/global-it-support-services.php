@@ -340,10 +340,10 @@ require_once('../constant.php');
             <div class="main-content-container">
                 <div class="banner-txt d-flex flex-column justify-content-center">
                     <div class="breadcrumb">
-                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Global Service Desk</span>
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Global IT Support Services</span>
                     </div>
                     <div class="page-title">
-                        Global Service Desk
+                        Global IT Support Services
                     </div>
                 </div>
             </div>
@@ -360,7 +360,7 @@ require_once('../constant.php');
                     <div class="page-about-feature-content d-flex justify-content-between align-items-center">
                         <div class="txt-content">
                             <div class="heading-txt">
-                                Delivering Service Desk <br> Across the Globe
+                                Delivering 24/7 IT Support <br> Across the Globe
                             </div>
 
                             <div class="m-creative d-flex">
@@ -368,18 +368,18 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                At Excis, our Global Service Desk redefines IT support by providing proactive, high-quality assistance around the clock. Using a follow-the-sun model, our dedicated teams of skilled service desk agents are strategically positioned across multiple continents, ensuring seamless 24/7 support. Whether it’s resolving everyday technical challenges, managing user access, or troubleshooting complex system outages, our experts are always ready to assist.
+                                Excis’s Global IT Support Services empower organizations with skilled, on-demand resources to maintain peak performance, regardless of location. Our global network of qualified IT engineers delivers on-site “smart hands” support and technical troubleshooting in local languages, ensuring compliance with regional regulations.
                                 <br> <br>
-                                By leveraging industry best practices and robust IT service management frameworks, we ensure smooth operations, reduce downtime, and streamline issue resolution.
+                                From enterprise infrastructure and networking to cloud environments and cybersecurity, we manage a broad spectrum of IT challenges. By seamlessly extending your in-house team into international markets, we deliver consistent service quality, faster resolutions, and the flexibility to scale your operations worldwide.
                                 <br> <br>
-                                <b>Ready to transform your IT support experience?</b>
+                                <b>Ready to elevate your IT support?</b>
                             </div>
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
                                     <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
-                                            <p>Partner With Us Today</p>
+                                            <p>Connect With Us Today</p>
                                             <div class="arrow d-flex">
                                                 <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                             </div>
@@ -418,7 +418,7 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Presence with Local Insight
+                                        Global Network of Engineers
                                     </div>
                                     <div class="sub-txt">
                                         Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
@@ -433,7 +433,7 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Proactive Approach
+                                        Skilled, On-Demand Resources
                                     </div>
                                     <div class="sub-txt">
                                         We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
@@ -448,7 +448,7 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Seamless Operations
+                                        Regional Compliance Expertise
                                     </div>
                                     <div class="sub-txt">
                                         Transparent escalation and real-time updates make every interaction smooth and efficient.
@@ -463,7 +463,7 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Advanced ITSM Practices
+                                        Comprehensive IT Coverage
                                     </div>
                                     <div class="sub-txt">
                                         Robust frameworks and best practices ensure effective, streamlined processes.
@@ -478,7 +478,22 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Availability
+                                        24/7 Multi-Language Support
+                                    </div>
+                                    <div class="sub-txt">
+                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content d-flex flex-column justify-content-start align-items-center">
+                                <div class="card-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                </div>
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Scalable and Flexible Solutions
                                     </div>
                                     <div class="sub-txt">
                                         Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.

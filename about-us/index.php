@@ -1,5 +1,5 @@
 <?php
-include('constant.php');
+include('../constant.php');
 ?>
 
 <!DOCTYPE html>
@@ -25,12 +25,12 @@ include('constant.php');
 
     <link rel="canonical" href="https://www.exc1s.com/services">
     <link rel="icon" type="image/x-icon" href="https://www.excis.com/wp-content/uploads/2021/12/fav.png">
-    <link rel="stylesheet" href="assets/sass/common.css">
-    <link rel="stylesheet" href="assets/sass/navigation.css">
-    <link rel="stylesheet" href="assets/sass/banners.css">
-    <link rel="stylesheet" href="assets/sass/inner-pages.css">
-    <link rel="stylesheet" href="assets/sass/footer.css">
-    <link rel="stylesheet" href="assets/sass/why-excis.css">
+    <link rel="stylesheet" href="../assets/sass/common.css">
+    <link rel="stylesheet" href="../assets/sass/navigation.css">
+    <link rel="stylesheet" href="../assets/sass/banners.css">
+    <link rel="stylesheet" href="../assets/sass/inner-pages.css">
+    <link rel="stylesheet" href="../assets/sass/footer.css">
+    <link rel="stylesheet" href="../assets/sass/why-excis.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
@@ -40,22 +40,22 @@ include('constant.php');
 <body>
 
     <?php
-    include("templates/navigation.php");
+    include("../templates/navigation.php");
     ?>
 
     <div class="full-container">
         <div class="pages-banner">
             <div class="banner-bg-map-img">
                 <picture>
-                    <source srcset="assets/images/inner-pages-banner-mobile.png" media="(max-width: 600px)">
-                    <img src="assets/images/inner-pages-banner.png" alt="Banner">
+                    <source srcset="../assets/images/inner-pages-banner-mobile.png" media="(max-width: 600px)">
+                    <img src="../assets/images/inner-pages-banner.png" alt="Banner">
                 </picture>
             </div>
             <div class="banner-left-abstract desktop">
-                <img src="assets/images/inner-pages-banner-abstract.png" alt="Abstract">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
             </div>
             <div class="banner-right-abstract desktop">
-                <img src="assets/images/inner-pages-banner-abstract.png" alt="Abstract">
+                <img src="../assets/images/inner-pages-banner-abstract.png" alt="Abstract">
             </div>
 
             <div class="main-content-container">
@@ -88,7 +88,7 @@ include('constant.php');
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
-                            <img loading="lazy" src="assets/images/data-center-creativity.png" alt="">
+                            <img loading="lazy" src="../assets/images/data-center-creativity.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -141,7 +141,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -159,7 +159,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,7 +177,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -195,7 +195,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -213,7 +213,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -231,7 +231,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -249,7 +249,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -267,7 +267,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -285,7 +285,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -303,7 +303,7 @@ include('constant.php');
                                             <div style="width: 80px; height: 80px; margin: 10px; border-radius: 50%; background: rgb(255, 255, 255, 0.2);" class="d-flex justify-content-center align-items-center">
                                                 <div style="width: 60px; height: 60px; border-radius: 50%; background:linear-gradient(to bottom, #F58520, #1B315D);" class="d-flex justify-content-center align-items-center">
                                                     <div style="width: 25px;" class="d-flex">
-                                                        <img loading="lazy" src="assets/images/dollar-icon.png" alt="">
+                                                        <img loading="lazy" src="../assets/images/dollar-icon.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -326,10 +326,10 @@ include('constant.php');
         <div style="width: 100%; background: #fff;">
             <div style="max-width: 100%; margin-inline: auto; position: relative; overflow: hidden;">
                 <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg-btm.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; bottom: 0; left: 0;">
                 </div>
                 <div
-                    style="width: 290px; height: 416px; background-image: url('assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
+                    style="width: 290px; height: 416px; background-image: url('../assets/images/abstract-bg.png'); background-size: 100% 100%; background-repeat: no-repeat; opacity: 0.6; position: absolute; top: 0; right: 0;">
                 </div>
 
                 <div class="main-content-container">
@@ -342,7 +342,7 @@ include('constant.php');
                             <div class="card-flex d-flex justify-content-between">
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/bert.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/bert.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -352,7 +352,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/bertu/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -361,7 +361,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/finn.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/finn.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -371,7 +371,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/finn-lyskov-002005a/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -380,7 +380,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/thomas.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/thomas.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -390,7 +390,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/thomaslyskov/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -399,7 +399,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/anna.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/anna.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -409,7 +409,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/anna-nel-133136a6/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -418,7 +418,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/rodica.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/rodica.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -428,7 +428,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/rodica-petrea-825b2447/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -437,7 +437,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/max.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/max.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -447,7 +447,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/maximilian-uitterlinden-a7b48b224/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -456,7 +456,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/gabrielle.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/gabrielle.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -466,7 +466,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/gabrielle-d-arch-81b1149a/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -475,7 +475,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/theo.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/theo.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt" style="padding: 6.6px 15px;">
@@ -485,7 +485,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/theo-ramarolahy/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -494,7 +494,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/andrew.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/andrew.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -504,7 +504,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/bremnerandrew/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -513,7 +513,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/jean.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/jean.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -523,7 +523,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/jean-oosthuizen-a203aaa/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -532,7 +532,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/dawn.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/dawn.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -542,7 +542,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/dawn-everts-4a4a2766/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -551,7 +551,7 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/douglas.png" alt="">
+                                        <img loading="lazy" src="../assets/images/excis-members/douglas.png" alt="">
                                     </div>
                                     <div class="card-info">
                                         <div class="txt">
@@ -561,7 +561,7 @@ include('constant.php');
                                         <a href="https://www.linkedin.com/in/douglashoule/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                    <img loading="lazy" src="../assets/images/excis-members/linkedin.png" alt="">
                                                 </div>
                                             </div>
                                         </a>
@@ -576,11 +576,15 @@ include('constant.php');
     </div>
 
     <?php
-    include("templates/partners.php");
+    include("../templates/partners.php");
     ?>
 
     <?php
-    include("templates/footer.php");
+    include("../templates/contact-form.php");
+    ?>
+
+    <?php
+    include("../templates/footer.php");
     ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>

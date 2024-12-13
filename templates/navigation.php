@@ -14,7 +14,7 @@
                 <div class="desktop">
                     <ul class="nav-menu d-flex align-items-center">
                         <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                            <a href="<?php echo $desktop_url . 'about-us'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     About Us
                                 </div>
@@ -146,7 +146,7 @@
     <div class="m-nav-slider">
         <div class="container d-flex flex-column justify-content-between align-items-start">
             <div class="menu-list">
-                <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                <a href="<?php echo $desktop_url . 'about-us'; ?>">
                     <div class="details d-flex align-items-center">
                         About Us
                     </div>

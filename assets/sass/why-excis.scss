@@ -147,6 +147,85 @@
     }
 }
 
+.common-grid-cards {
+    padding: 40px 0 0;
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        place-items: center;
+
+        .card {
+            grid-column: span 4;
+            width: 100%;
+            height: 100%;
+            background: var(--white-color);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            transition: all .3s ease-in-out;
+
+            .card-content {
+                padding: 40px 15px;
+
+                .card-icon-img {
+                    height: 60px;
+                    width: 60px;
+
+                    img {
+                        height: 100%;
+                        width: auto;
+                        margin-inline: auto;
+                    }
+                }
+
+                .text-content {
+                    max-width: 300px;
+                    margin-inline: auto;
+
+                    .heading-txt {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        text-align: center;
+                        color: var(--blue-color);
+                        margin: 25px 0 0;
+                    }
+
+                    .sub-txt {
+                        height: 75px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: center;
+                        color: var(--black-color);
+                        margin: 20px 0 0;
+                        overflow: auto;
+                    }
+                }
+            }
+
+            // &:hover .card-icon-img img {
+            //     animation: zoom-img .5s ease-in-out forwards;
+            // }
+
+            // @keyframes zoom-img {
+            //     0% {
+            //         transform: scale(1);
+            //     }
+
+            //     50% {
+            //         transform: scale(0.7);
+            //     }
+
+            //     100% {
+            //         transform: scale(1);
+            //     }
+            // }
+        }
+    }
+}
+
 .page-about-feature-content {
     width: 100%;
     gap: 50px;
@@ -617,6 +696,81 @@
                     line-height: 24px;
                     color: var(--blue-color);
                     padding: 20px 0 0;
+                }
+            }
+        }
+    }
+}
+
+.service-benefits {
+    max-width: 1000px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--white-color);
+    margin: 40px auto 0;
+
+    .cards-container {
+        padding: 15px 40px;
+
+        .container-line {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: 24.5px;
+                height: calc(100% - 66px);
+                width: 0;
+                border: 1px dashed var(--blue-color);
+            }
+
+            .card-block {
+                gap: 50px;
+
+                .img-content {
+                    padding: 20px 0;
+                    z-index: 1;
+
+                    .img-circle {
+                        width: 50px;
+                        height: 50px;
+                        background: linear-gradient(to bottom, #1B315D, #354D7D);
+                        border-radius: 50%;
+
+                        .tick-img {
+                            width: 20px;
+                        }
+                    }
+                }
+
+                .text-content {
+                    width: 100%;
+                    padding: 20px 0;
+                    border-bottom: 1px solid var(--border-color);
+
+                    .heading-txt {
+                        min-width: 350px;
+                        max-width: 350px;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        color: var(--black-color);
+                        padding: 13px 0;
+                    }
+
+                    .sub-txt {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: var(--black-color);
+                        padding: 13px 0;
+                    }
+                }
+
+                &:last-child .text-content {
+                    border-bottom: none;
                 }
             }
         }
