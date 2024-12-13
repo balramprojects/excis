@@ -782,6 +782,10 @@ include('./constant.php');
     ?>
 
     <?php
+    include("templates/contact-form.php");
+    ?>
+
+    <?php
     include("templates/footer.php");
     ?>
 

@@ -1,131 +1,4 @@
 <div class="full-container">
-    <div class="contact-us-bg">
-        <div class="contact-us-bg-container">
-            <div class="left-btm-abstract desktop"></div>
-            <div class="right-top-abstract desktop"></div>
-
-            <div class="main-content-container">
-                <div class="content-container">
-                    <div class="top-part">
-                        <div class="txt-content d-flex justify-content-between align-items-start">
-                            <div class="header-txt" data-aos="fade-up" data-aos-duration="1000">
-                                Contact Us
-                            </div>
-                            <div class="header-subtxt" data-aos="fade-up" data-aos-duration="1000">
-                                Partner With Us Today!
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main-part-txt-section d-flex justify-content-between align-items-start">
-                        <div class="container">
-                            <div class="txt-content d-flex flex-column justify-content-between">
-                                <div class="txt1" data-aos="fade-up" data-aos-duration="1000">
-                                    We’re happy to answer any questions you may have and help you determine which of our services best fit your needs.
-                                </div>
-                                <div class="txt2" data-aos="fade-up" data-aos-duration="1000">
-                                    Call us at <span><a href="tel:+44 1344930900">+44 1344930900</a></span>
-                                </div>
-                                <div>
-                                    <div class="txt2" data-aos="fade-up" data-aos-duration="1000">
-                                        Your benefits:
-                                    </div>
-                                    <ul>
-                                        <li data-aos="fade-up" data-aos-duration="1000">Results-Driven</li>
-                                        <li data-aos="fade-up" data-aos-duration="1000">Client-Oriented</li>
-                                        <li data-aos="fade-up" data-aos-duration="1000">Problem Solving</li>
-                                        <li data-aos="fade-up" data-aos-duration="1000">Independent</li>
-                                        <li data-aos="fade-up" data-aos-duration="1000">Transparent</li>
-                                        <li data-aos="fade-up" data-aos-duration="1000">Competent</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-form" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="container">
-                            <div class="heading-txt">
-                                Schedule a Call with Us
-                            </div>
-                            <form action="">
-                                <div class="container1 d-flex">
-                                    <div class="txtBox">
-                                        <label for="firstName">First Name</label> <br>
-                                        <input type="text" name="firstName" placeholder="">
-                                    </div>
-                                    <div class="txtBox">
-                                        <label for="lastName">Last Name</label> <br>
-                                        <input type="text" name="lastName" placeholder="">
-                                    </div>
-                                </div>
-
-                                <div class="container2 d-flex">
-                                    <div class="txtBox">
-                                        <label for="companyName">Company / Organization</label> <br>
-                                        <input type="text" name="companyName" placeholder="">
-                                    </div>
-                                </div>
-
-                                <div class="container2 d-flex">
-                                    <div class="txtBox">
-                                        <label for="companyEmail">Company Email</label> <br>
-                                        <input type="email" name="companyEmail" placeholder="">
-                                    </div>
-                                </div>
-
-                                <div class="container2 d-flex">
-                                    <div class="txtBox">
-                                        <label for="phoneNumber">Phone</label> <br>
-                                        <input type="tel" name="phoneNumber" id="phone">
-                                    </div>
-                                </div>
-
-                                <div class="container2 d-flex">
-                                    <div class="txtBox">
-                                        <label>How Can We Help You?</label> <br>
-
-                                        <div class="departments-checkbox">
-                                            <div class="department d-flex justify-content-start align-items-center">
-                                                <input type="checkbox" name="sales" id="">
-                                                <label for="sales">Sales</label>
-                                            </div>
-                                            <div class="department d-flex justify-content-start align-items-center">
-                                                <input type="checkbox" name="careers" id="">
-                                                <label for="careers">Careers</label>
-                                            </div>
-                                            <div class="department d-flex justify-content-start align-items-center">
-                                                <input type="checkbox" name="hr" id="">
-                                                <label for="hr">HR</label>
-                                            </div>
-                                            <div class="department d-flex justify-content-start align-items-center">
-                                                <input type="checkbox" name="other" id="">
-                                                <label for="other">Other</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="container2 d-flex">
-                                    <div class="txtBox">
-                                        <label for="message">Message</label> <br>
-                                        <textarea name="message" id="" rows="6" placeholder="To better assist you, please describe how we can help..."></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="container2 d-flex justify-content-center">
-                                    <input type="submit" value="Submit" class="submitBtn">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="full-container">
     <div class="footer-bg">
         <div class="desktop" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-content-container">
@@ -225,70 +98,24 @@
                             <a href="<?php echo $desktop_url . 'industries/telecom.php'; ?>">Telecom</a>
                         </div>
 
-                        <!-- <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/energy.php'; ?>">Energy</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/life-sciences.php'; ?>">Life Sciences</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/public-sector.php'; ?>">Public Sector</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/utilities.php'; ?>">Utilities</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/manufacturing.php'; ?>">Manufacturing</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/education.php'; ?>">Education</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/it-and-consulting.php'; ?>">IT & Consulting</a>
-                        </div>
-                        <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'industries/consumer-goods.php'; ?>">Consumer Goods</a>
-                        </div> -->
-
                         <div>
                             <div class="serviceTitle p-t-15">
-                                <a href="<?php echo $desktop_url . 'about-us.php'; ?>">About Us</a>
+                                <a href="<?php echo $desktop_url . 'about-us'; ?>">About Us</a>
                             </div>
                             <div class="serviceTitle p-t-15">
-                                <a href="<?php echo $desktop_url . 'why-us.php'; ?>">Why Excis</a>
+                                <a href="<?php echo $desktop_url . 'about-us/why-us.php'; ?>">Why Excis</a>
                             </div>
                             <div class="serviceTitle p-t-15">
                                 <a href="<?php echo $desktop_url . 'careers.php'; ?>">Careers</a>
                             </div>
                             <div class="serviceTitle p-t-15">
-                                <a href="<?php echo $desktop_url . 'worldwide.php'; ?>">Worldwide</a>
+                                <a href="<?php echo $desktop_url . 'global-presence.php'; ?>">Worldwide</a>
                             </div>
-
-                            <!-- <div class="serviceName">
-                                <a href="#">CSR</a>
+                            <div class="serviceTitle p-t-15">
+                                <a href="<?php echo $desktop_url . 'about-us/csr.php'; ?>">CSR</a>
                             </div>
-                            <div class="serviceName">
-                                <a href="#">Partners</a>
-                            </div> -->
                         </div>
                     </div>
-
-                    <!-- <div class="container2">
-                        <div>
-                            <div class="serviceTitle p-t-15">
-                                Insights
-                            </div>
-                            <div class="serviceName">
-                                <a href="#">Blogs/Case Studies</a>
-                            </div>
-                            <div class="serviceName">
-                                <a href="#">News</a>
-                            </div>
-                            <div class="serviceName">
-                                <a href="#">Research & Development</a>
-                            </div>
-                        </div>
-                    </div> -->
 
                     <div class="container3">
                         <div class="isoTxt">
@@ -329,7 +156,7 @@
                             <a href="#">General Policies</a>
                         </div> -->
                         <div class="policy">
-                            <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">Privacy/Cookies Policy</a>
+                            <a href="<?php echo $desktop_url . 'policies/privacy-policy.php'; ?>">Privacy/Cookies Policy</a>
                         </div>
                         <!-- <div class="policy">
                             <a href="#">Terms and Conditions</a>
@@ -468,41 +295,6 @@
                                         Telecom
                                     </div>
                                 </a>
-                                <!-- <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Energy
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Life Sciences
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Utilities
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Public Sector
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Manufacturing
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Education
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        IT & Consulting
-                                    </div>
-                                </a> -->
                             </div>
                         </details>
 
@@ -529,44 +321,8 @@
                                         Worldwide
                                     </div>
                                 </a>
-                                <!-- <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        CSR
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Partners
-                                    </div>
-                                </a> -->
                             </div>
                         </details>
-
-                        <!-- <details data-aos="fade-up" data-aos-duration="1000">
-                            <summary>
-                                <span>
-                                    <h3>Insights</h3>
-                                    <div class="arrow"></div>
-                                </span>
-                            </summary>
-                            <div class="htp-accord-list">
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Blogs/Case Studies
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        News
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/network'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Research & Development
-                                    </div>
-                                </a>
-                            </div>
-                        </details> -->
                     </div>
 
                     <div class="container1">
@@ -603,7 +359,7 @@
                         <div class="policies">
                             <div class="policy d-flex justify-content-center align-items-center">
                                 <!-- <a href="#">General Policies</a> -->
-                                <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">Privacy/Cookies Policy</a>
+                                <a href="<?php echo $desktop_url . 'privacy-policy.php'; ?>">policies/Privacy/Cookies Policy</a>
                             </div>
                             <!-- <div class="policy d-flex justify-content-center align-items-center">
                                 <a href="#">Terms and Conditions</a>

@@ -20,6 +20,7 @@
                                 </div>
                             </a>
                         </li>
+
                         <li class="nav-block-container d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'why-us.php'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
@@ -27,13 +28,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'capabilities.php'; ?>">
-                                <div class="nav-tab-item d-flex align-items-center">
-                                    Capabilities
-                                </div>
-                            </a>
-                        </li>
+
                         <li class="nav-block-container d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'services'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
@@ -43,35 +38,43 @@
 
                             <div class="nav-tab-dropdown">
                                 <div class="d-flex justify-content-center align-items-start">
-                                        <ul>
-                                            <li class="title">Global IT Managed Services</li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Global Service Desk</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Global IT Support Services</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Global IT Staffing</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Global IT Asset Lifecycle Management</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="title">Cybersecurity Services</li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Cyber Risk Assessments</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Cyber Security Audits</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Penetration Testing</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Cyber Security Solutions</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Firewall & Cloud Security Solutions</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="title">Global Project Services</li>
-                                            <li><a href="<?php echo $desktop_url; ?>">IT Project Management</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">IT Infrastructure Audits</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">IT Deployments</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">IT Asset Recycling (eWaste Disposal)</a></li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Procurement</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li class="title">Warehousing & Logistics</li>
-                                            <li><a href="<?php echo $desktop_url; ?>">Storage, Staging & Logistics</a></li>
-                                        </ul>
+                                    <ul>
+                                        <li class="title">Global IT Managed Services</li>
+                                        <li><a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">Global Service Desk</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/global-it-support-services.php'; ?>">Global IT Support Services</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/global-it-staffing.php'; ?>">Global IT Staffing</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/global-it-asset-lifecycle-management.php'; ?>">Global IT Asset Lifecycle Management</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">Cybersecurity Services</li>
+                                        <li><a href="<?php echo $desktop_url . ''; ?>">Cyber Risk Assessments</a></li>
+                                        <li><a href="<?php echo $desktop_url . ''; ?>">Cyber Security Audits</a></li>
+                                        <li><a href="<?php echo $desktop_url . ''; ?>">Penetration Testing</a></li>
+                                        <li><a href="<?php echo $desktop_url . ''; ?>">Cyber Security Solutions</a></li>
+                                        <li><a href="<?php echo $desktop_url . ''; ?>">Firewall & Cloud Security Solutions</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">Global Project Services</li>
+                                        <li><a href="<?php echo $desktop_url; ?>">IT Project Management</a></li>
+                                        <li><a href="<?php echo $desktop_url; ?>">IT Infrastructure Audits</a></li>
+                                        <li><a href="<?php echo $desktop_url; ?>">IT Deployments</a></li>
+                                        <li><a href="<?php echo $desktop_url; ?>">IT Asset Recycling (eWaste Disposal)</a></li>
+                                        <li><a href="<?php echo $desktop_url; ?>">Procurement</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li class="title">Warehousing & Logistics</li>
+                                        <li><a href="<?php echo $desktop_url; ?>">Storage, Staging & Logistics</a></li>
+                                    </ul>
                                 </div>
                             </div>
+                        </li>
+
+                        <li class="nav-block-container d-flex align-items-center">
+                            <a href="<?php echo $desktop_url . 'capabilities.php'; ?>">
+                                <div class="nav-tab-item d-flex align-items-center">
+                                    Capabilities
+                                </div>
+                            </a>
                         </li>
 
                         <li class="nav-block-container d-flex align-items-center">
@@ -92,6 +95,14 @@
                                     </ul>
                                 </div>
                             </div>
+                        </li>
+
+                        <li class="nav-block-container d-flex align-items-center">
+                            <a href="<?php echo $desktop_url . 'careers.php'; ?>">
+                                <div class="nav-tab-item d-flex align-items-center">
+                                    Careers
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -144,12 +155,6 @@
                 <a href="<?php echo $desktop_url . 'why-us.php'; ?>">
                     <div class="details d-flex align-items-center">
                         Why Us
-                    </div>
-                </a>
-
-                <a href="<?php echo $desktop_url . 'capabilities.php'; ?>">
-                    <div class="details d-flex align-items-center">
-                        Capabilities
                     </div>
                 </a>
 
@@ -342,41 +347,17 @@
                                     <div class="list-item">
                                         Warehouse
                                     </div>
-                                </a>
-                                <!-- <a href="<?php echo $desktop_url . 'services/logistics.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Logistics
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/staging.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Staging
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/wiping-and-disposal.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        Wiping + Disposal
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/pmo.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        PMO
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/noc-services.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        NOC Services
-                                    </div>
-                                </a>
-                                <a href="<?php echo $desktop_url . 'services/soc-services.php'; ?>" class="list-item-link">
-                                    <div class="list-item">
-                                        SOC Services
-                                    </div>
-                                </a> -->
+                                </a>s
                             </div>
                         </details>
                     </div>
                 </details>
+
+                <a href="<?php echo $desktop_url . 'capabilities.php'; ?>">
+                    <div class="details d-flex align-items-center">
+                        Capabilities
+                    </div>
+                </a>
 
                 <details>
                     <summary>
