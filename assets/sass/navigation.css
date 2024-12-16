@@ -126,6 +126,12 @@
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container:hover .nav-tab-dropdown {
   display: block;
 }
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container.about-us:hover .nav-tab-dropdown {
+  left: calc(50% - 95px);
+}
+.pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-menu .nav-block-container.industries:hover .nav-tab-dropdown {
+  left: calc(50% + 18px);
+}
 .pg-nav-sticky .full-container .main-nav-container .main-content-container .nav-worldwide-contact-us {
   width: 170px;
   height: 100%;

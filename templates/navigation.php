@@ -13,14 +13,23 @@
 
                 <div class="desktop">
                     <ul class="nav-menu d-flex align-items-center">
-                        <li class="nav-block-container d-flex align-items-center">
+                        <li class="nav-block-container about-us d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'about-us'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     About Us
                                 </div>
                             </a>
-                        </li>
 
+                            <div class="nav-tab-dropdown">
+                                <div class="d-flex justify-content-center align-items-start">
+                                    <ul>
+                                        <li><a href="<?php echo $desktop_url . 'about-us/csr.php'; ?>">CSR</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'about-us/global-presence.php'; ?>">Global Presence</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'about-us/why-us.php'; ?>">Why Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                         <li class="nav-block-container d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'why-us.php'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
@@ -47,23 +56,23 @@
                                     </ul>
                                     <ul>
                                         <li class="title">Cybersecurity Services</li>
-                                        <li><a href="<?php echo $desktop_url . ''; ?>">Cyber Risk Assessments</a></li>
-                                        <li><a href="<?php echo $desktop_url . ''; ?>">Cyber Security Audits</a></li>
-                                        <li><a href="<?php echo $desktop_url . ''; ?>">Penetration Testing</a></li>
-                                        <li><a href="<?php echo $desktop_url . ''; ?>">Cyber Security Solutions</a></li>
-                                        <li><a href="<?php echo $desktop_url . ''; ?>">Firewall & Cloud Security Solutions</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/cyber-risk-assessments.php'; ?>">Cyber Risk Assessments</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/cyber-security-audits.php'; ?>">Cyber Security Audits</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/penetration-testing.php'; ?>">Penetration Testing</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">Cyber Security Solutions</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">Firewall & Cloud Security Solutions</a></li>
                                     </ul>
                                     <ul>
                                         <li class="title">Global Project Services</li>
-                                        <li><a href="<?php echo $desktop_url; ?>">IT Project Management</a></li>
-                                        <li><a href="<?php echo $desktop_url; ?>">IT Infrastructure Audits</a></li>
-                                        <li><a href="<?php echo $desktop_url; ?>">IT Deployments</a></li>
-                                        <li><a href="<?php echo $desktop_url; ?>">IT Asset Recycling (eWaste Disposal)</a></li>
-                                        <li><a href="<?php echo $desktop_url; ?>">Procurement</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/it-project-management.php'; ?>">IT Project Management</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/it-infrastructure-audits.php'; ?>">IT Infrastructure Audits</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/it-deployments.php'; ?>">IT Deployments</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/it-asset-recycling.php'; ?>">IT Asset Recycling (eWaste Disposal)</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/procurement.php'; ?>">Procurement</a></li>
                                     </ul>
                                     <ul>
                                         <li class="title">Warehousing & Logistics</li>
-                                        <li><a href="<?php echo $desktop_url; ?>">Storage, Staging & Logistics</a></li>
+                                        <li><a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">Storage, Staging & Logistics</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -77,7 +86,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-block-container d-flex align-items-center">
+                        <li class="nav-block-container industries d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'industries'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     Industries
@@ -109,7 +118,7 @@
 
                 <div class="nav-worldwide-contact-us d-flex justify-content-end align-items-center">
                     <div class="nav-worldwide">
-                        <a href="<?php echo $desktop_url . 'global-presence.php'; ?>" class="d-flex align-items-center">
+                        <a href="<?php echo $desktop_url . 'about-us/global-presence.php'; ?>" class="d-flex align-items-center">
                             <div class="world-icon-img d-flex">
                                 <img src="<?php echo $desktop_images . 'global-presence-black.png'; ?>" alt="Worldwide">
                             </div>

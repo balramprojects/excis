@@ -133,6 +133,18 @@
                             display: block;
                         }
                     }
+
+                    &.about-us:hover {
+                        .nav-tab-dropdown {
+                            left: calc(50% - 95px);
+                        }
+                    }
+
+                    &.industries:hover {
+                        .nav-tab-dropdown {
+                            left: calc(50% + 18px);
+                        }
+                    }
                 }
             }
 
