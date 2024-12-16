@@ -129,8 +129,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2001 - Establishment</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Excis was founded as an IT services company in Belgium</p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2001 - Establishment of Excis</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis laid its foundation as a pioneering IT services company in Belgium, marking the beginning of its global journey. </p>
                                         </div>
                                     </div>
 
@@ -147,8 +147,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2003 - Procurement Setup</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Setup global procurement platform</p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2003 - Establishment of Global Procurement Platform</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis introduced a global procurement platform to streamline IT resource management and support.</p>
                                         </div>
                                     </div>
 
@@ -165,8 +165,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2005 - Belgium</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Retail operations started in Belgium</p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2005 - Launch of Retail Operations in Belgium</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Retail operations were initiated, strengthening Excis’ presence in the Belgian IT market.</p>
                                         </div>
                                     </div>
 
@@ -183,8 +183,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2007 - Europe </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Excis expanded across Benelux, Hungary, Italy and the UK </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2007 - Expansion Across Europe</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis expanded its operations across Benelux, Hungary, Italy, and the UK, building a strong European presence.</p>
                                         </div>
                                     </div>
 
@@ -201,8 +201,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2012 - Madgascar</p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Technical operations Started in Madagascar </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2012 - Initiation of Technical Operations in Madagascar</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis extended its reach to Madagascar, establishing a technical operations center to enhance regional support.</p>
                                         </div>
                                     </div>
 
@@ -219,8 +219,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2015 - South Africa and India Office </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">South Africa Office and India Office 2nd line support and Experts, with Smart Centre </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2015 - Launch of South Africa and India Offices</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Opened offices in South Africa and India, introducing 2nd line support and expert services with a state-of-the-art Smart Centre.</p>
                                         </div>
                                     </div>
 
@@ -237,8 +237,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2016 - US Office </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">US Office, US Coordination desk and Service Delivery </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2016 - Establishment of the US Office</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis established its US office along with a dedicated US Coordination Desk and Service Delivery operations.</p>
                                         </div>
                                     </div>
 
@@ -255,8 +255,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2017 - Mexico Office </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Mexico Office Coordination desk Helpdesk, HR Partner Management </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2017 - Mexico Office Launch</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">The Mexico office was inaugurated, featuring a Coordination Desk, Helpdesk, HR, and Partner Management functions.</p>
                                         </div>
                                     </div>
 
@@ -273,8 +273,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2018 - Sun Model </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Service Desk Follow the Sun Model Final setup </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2018 - Implementation of the Follow-the-Sun Service Desk Model</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis completed the setup of its Follow-the-Sun Model, ensuring 24/7 service desk availability globally.</p>
                                         </div>
                                     </div>
 
@@ -291,8 +291,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2019 - Global Entities </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">Global IT Services Company Excis 50 entities worldwide </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2019 - Evolution into a Global IT Services Entity</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis transformed into a Global IT Services Company with 50 entities worldwide, offering end-to-end IT solutions.</p>
                                         </div>
                                     </div>
 
@@ -309,8 +309,8 @@ include('constant.php');
                                             </div>
                                         </div>
                                         <div style="padding: 0 0 0 10px;">
-                                            <p style="font-size: 30px; font-weight: 800; line-height: 25px; color: #F58520;">2023 - Further Expansion </p>
-                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 15px 0 0;">60+ global entities. Fully established in the US + Canada </p>
+                                            <p style="font-size: 20px; font-weight: 800; line-height: 25px; color: #F58520;">2023 - Achieving New Heights with Further Expansion</p>
+                                            <p style="color: #fff; font-size: 14px; font-weight: 400; padding: 12px 0 0;">Excis expanded to 60+ global entities and solidified its presence in the US and Canada markets.</p>
                                         </div>
                                     </div>
                                 </div>
