@@ -353,115 +353,286 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Data Center Support">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Global Service Desk">
                                             </div>
                                             <div class="title">
-                                                Data Center Support
+                                                Global Service Desk
                                             </div>
                                             <div class="subtitle">
                                                 Comprehensive support for your data center infrastructure, ensuring optimal performance, uptime, and security.
                                             </div>
                                         </div>
-                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div> -->
+                                        </div>
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Cyber Security Consulting">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Global IT Support Services">
                                             </div>
                                             <div class="title">
-                                                Cyber Security Consulting
+                                                Global IT Support Services
                                             </div>
                                             <div class="subtitle">
                                                 Expert guidance to protect your business from evolving cyber threats with tailored security strategies and solutions.
                                             </div>
                                         </div>
-                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/global-it-support-services.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div> -->
+                                        </div>
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Hybrid Cloud">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Global IT Staffing">
                                             </div>
                                             <div class="title">
-                                                Hybrid Cloud
+                                                Global IT Staffing
                                             </div>
                                             <div class="subtitle">
                                                 Seamless integration of private and public cloud environments, offering flexibility, scalability, and secure data management.
                                             </div>
                                         </div>
-                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/global-it-staffing.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div> -->
+                                        </div>
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Network">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Global IT Asset Lifecycle Management">
                                             </div>
                                             <div class="title">
-                                                Network
+                                                Global IT Asset Lifecycle Management
                                             </div>
                                             <div class="subtitle">
                                                 Reliable network management and optimization services to ensure fast, secure, and efficient connectivity for your business.
                                             </div>
                                         </div>
-                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'services/network.php'; ?>">
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/global-it-asset-lifecycle-management.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div> -->
+                                        </div>
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'helpdesk-service-icon.png'; ?>" alt="Help Desk">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'helpdesk-service-icon.png'; ?>" alt="Cyber Risk Assessments">
                                             </div>
                                             <div class="title">
-                                                Help Desk
+                                                Cyber Risk Assessments
                                             </div>
                                             <div class="subtitle">
                                                 24/7 support to resolve technical issues and ensure smooth IT operations for your team.
                                             </div>
                                         </div>
-                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/cyber-risk-assessments.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div> -->
+                                        </div>
                                     </div>
 
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="End-User Support">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Cyber Security Audits">
                                             </div>
                                             <div class="title">
-                                                End-User Support
+                                                Cyber Security Audits
                                             </div>
                                             <div class="subtitle">
                                                 Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
                                             </div>
                                         </div>
-                                        <!-- <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/cyber-security-audits.php'; ?>">
                                                 <p>Learn More</p>
                                             </a>
-                                        </div> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Penetration Testing">
+                                            </div>
+                                            <div class="title">
+                                                Penetration Testing
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/penetration-testing.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Cyber Security Solutions">
+                                            </div>
+                                            <div class="title">
+                                                Cyber Security Solutions
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Firewall & Cloud Security Solutions">
+                                            </div>
+                                            <div class="title">
+                                                Firewall & Cloud Security Solutions
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Project Management">
+                                            </div>
+                                            <div class="title">
+                                                IT Project Management
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'Firewall & Cloud Security Solutions'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Infrastructure Audits">
+                                            </div>
+                                            <div class="title">
+                                                IT Infrastructure Audits
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/it-infrastructure-audits.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Deployments">
+                                            </div>
+                                            <div class="title">
+                                                IT Deployments
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/it-deployments.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Asset Recycling">
+                                            </div>
+                                            <div class="title">
+                                                IT Asset Recycling
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/it-asset-recycling.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Procurement">
+                                            </div>
+                                            <div class="title">
+                                                Procurement
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/procurement.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
+                                        <div class="top-part">
+                                            <div class="creative-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Storage, Staging & Logistics">
+                                            </div>
+                                            <div class="title">
+                                                Storage, Staging & Logistics
+                                            </div>
+                                            <div class="subtitle">
+                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                            </div>
+                                        </div>
+                                        <div class="btm-part d-flex justify-content-center align-items-center">
+                                            <a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">
+                                                <p>Learn More</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -556,7 +727,7 @@ include('./constant.php');
                         </div>
                         <div class="stats-line-breaker" data-aos="fade-up" data-aos-duration="1000"></div>
                         <div class="stats-column" data-aos="fade-up" data-aos-duration="1000">
-                            <p>100+</p>
+                            <p>190+</p>
                             <p>Countries</p>
                         </div>
                     </div>
@@ -587,7 +758,7 @@ include('./constant.php');
                                 <img loading="lazy" src="<?php echo $desktop_images . 'trophy-icon.png'; ?>" alt="">
                             </div>
                             <div class="stats-txt">
-                                <p>100+</p>
+                                <p>190+</p>
                                 <p>Countries</p>
                             </div>
                         </div>

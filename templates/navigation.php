@@ -14,22 +14,13 @@
                 <div class="desktop">
                     <ul class="nav-menu d-flex align-items-center">
                         <li class="nav-block-container about-us d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'about-us'; ?>">
+                            <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     About Us
                                 </div>
                             </a>
-
-                            <div class="nav-tab-dropdown">
-                                <div class="d-flex justify-content-center align-items-start">
-                                    <ul>
-                                        <li><a href="<?php echo $desktop_url . 'about-us/csr.php'; ?>">CSR</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'about-us/global-presence.php'; ?>">Global Presence</a></li>
-                                        <li><a href="<?php echo $desktop_url . 'about-us/why-us.php'; ?>">Why Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                         </li>
+
                         <li class="nav-block-container d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'why-us.php'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
@@ -42,6 +33,7 @@
                             <a href="<?php echo $desktop_url . 'services'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">
                                     Services
+                                    <!-- <span style="height: 8px; width: 16px; background: red; clip-path: polygon(0% 0%, 12% 0%, 50% 76%, 88% 0%, 100% 0%, 100% 12%, 50% 100%);"></span> -->
                                 </div>
                             </a>
 
@@ -93,7 +85,7 @@
                                 </div>
                             </a>
 
-                            <div class="nav-tab-dropdown">
+                            <!-- <div class="nav-tab-dropdown">
                                 <div class="d-flex justify-content-center align-items-start">
                                     <ul>
                                         <li><a href="<?php echo $desktop_url . 'industries/financial-services.php'; ?>">Financial Services (FS&I)</a></li>
@@ -103,7 +95,7 @@
                                         <li><a href="<?php echo $desktop_url . 'industries/telecom.php'; ?>">Telecom</a></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                         </li>
 
                         <li class="nav-block-container d-flex align-items-center">
