@@ -368,18 +368,18 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                At Excis, our Global Service Desk redefines IT support by providing proactive, high-quality assistance around the clock. Using a follow-the-sun model, our dedicated teams of skilled service desk agents are strategically positioned across multiple continents, ensuring seamless 24/7 support. Whether it’s resolving everyday technical challenges, managing user access, or troubleshooting complex system outages, our experts are always ready to assist.
+                                Excis’s IT Project Management services ensure precise and efficient delivery of complex global IT initiatives. With a team of experienced project managers, coordinators, and engineers, combined with an international partner network, we handle every stage of your project with complete visibility and professionalism.
                                 <br> <br>
-                                By leveraging industry best practices and robust IT service management frameworks, we ensure smooth operations, reduce downtime, and streamline issue resolution.
+                                We specialize in large-scale deployments, leveraging global expertise and local insights to overcome regional challenges. From detailed preparation to seamless execution, Excis ensures that every engineer and technician is fully trained, compliant, and equipped to deliver exceptional service.
                                 <br> <br>
-                                <b>Ready to transform your IT support experience?</b>
+                                <b>Ready to elevate your IT project outcomes?</b>
                             </div>
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
-                                    <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
-                                            <p>Partner With Us Today</p>
+                                            <p>Contact Us Today</p>
                                             <div class="arrow d-flex">
                                                 <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                             </div>
@@ -405,7 +405,7 @@ require_once('../constant.php');
                         Why Choose Excis?
                     </div>
                     <div class="sub-txt">
-                        Discover why Excis is the ideal partner for your IT support needs.
+                        Global Expertise, Local Precision
                     </div>
                 </div>
 
@@ -418,10 +418,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Presence with Local Insight
+                                        Comprehensive Oversight
                                     </div>
                                     <div class="sub-txt">
-                                        Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
+                                        End-to-end management from scoping to final handover.
                                     </div>
                                 </div>
                             </div>
@@ -433,10 +433,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Proactive Approach
+                                        Skilled Teams
                                     </div>
                                     <div class="sub-txt">
-                                        We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
+                                        Experienced project managers and engineers deliver professional results.
                                     </div>
                                 </div>
                             </div>
@@ -448,10 +448,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Seamless Operations
+                                        Global Reach with Local Insight
                                     </div>
                                     <div class="sub-txt">
-                                        Transparent escalation and real-time updates make every interaction smooth and efficient.
+                                        Extensive partner network ensures seamless regional support.
                                     </div>
                                 </div>
                             </div>
@@ -463,10 +463,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Advanced ITSM Practices
+                                        Meticulous Preparation
                                     </div>
                                     <div class="sub-txt">
-                                        Robust frameworks and best practices ensure effective, streamlined processes.
+                                        Detailed runbooks, training, and compliance alignment guarantee readiness.
                                     </div>
                                 </div>
                             </div>
@@ -478,10 +478,25 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Availability
+                                        Cultural Awareness
                                     </div>
                                     <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                        Adherence to dress codes, conduct policies, and regional considerations.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content d-flex flex-column justify-content-start align-items-center">
+                                <div class="card-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                </div>
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Consistent Quality
+                                    </div>
+                                    <div class="sub-txt">
+                                        Standardized processes ensure reliability across global deployments.
                                     </div>
                                 </div>
                             </div>
@@ -501,10 +516,10 @@ require_once('../constant.php');
                 <div class="main-content-container">
                     <div class="container-txt-content">
                         <div class="heading-txt">
-                            Benefits of Excis’ Global Service Desk
+                            Benefits of Excis’ IT Project Management
                         </div>
                         <div class="sub-txt">
-                            Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                            Precision, Efficiency, and Global Scalability
                         </div>
                     </div>
 
@@ -521,10 +536,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Improved User Experience
+                                            On-Time, On-Budget Delivery
                                         </div>
                                         <div class="sub-txt">
-                                            Personalized multilingual support fosters user satisfaction and trust.
+                                            Stringent project controls ensure schedule and cost adherence.
                                         </div>
                                     </div>
                                 </div>
@@ -538,10 +553,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Cost Optimization
+                                            Improved Resource Readiness
                                         </div>
                                         <div class="sub-txt">
-                                            Efficient processes and a global presence help lower IT costs without compromising quality.
+                                            Thorough preparation guarantees trained, equipped, and compliant teams.
                                         </div>
                                     </div>
                                 </div>
@@ -555,10 +570,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Sustainable Growth
+                                            Streamlined Global Execution
                                         </div>
                                         <div class="sub-txt">
-                                            Enhanced system performance and strategic guidance support your long-term success.
+                                            Consistent processes ensure smooth deployments across regions.
                                         </div>
                                     </div>
                                 </div>
@@ -572,10 +587,44 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Streamlined Escalation
+                                            Enhanced Collaboration
                                         </div>
                                         <div class="sub-txt">
-                                            Clear escalation channels reduce resolution time and maintain operational efficiency
+                                            Transparent communication fosters alignment with your business goals.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block d-flex">
+                                    <div class="img-content">
+                                        <div class="img-circle d-flex justify-content-center align-items-center">
+                                            <div class="tick-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'white-tick.png'; ?>" alt="✓">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-content d-flex align-items-start">
+                                        <div class="heading-txt">
+                                            Risk Mitigation
+                                        </div>
+                                        <div class="sub-txt">
+                                            Proactive planning minimizes delays and unexpected issues.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block d-flex">
+                                    <div class="img-content">
+                                        <div class="img-circle d-flex justify-content-center align-items-center">
+                                            <div class="tick-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'white-tick.png'; ?>" alt="✓">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-content d-flex align-items-start">
+                                        <div class="heading-txt">
+                                            Actionable Insights
+                                        </div>
+                                        <div class="sub-txt">
+                                            Detailed reporting provides visibility and supports future planning.
                                         </div>
                                     </div>
                                 </div>

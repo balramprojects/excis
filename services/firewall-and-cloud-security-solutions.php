@@ -360,7 +360,7 @@ require_once('../constant.php');
                     <div class="page-about-feature-content d-flex justify-content-between align-items-center">
                         <div class="txt-content">
                             <div class="heading-txt">
-                                Delivering Service Desk <br> Across the Globe
+                                Strengthening Defenses Across <br> Networks and the Cloud
                             </div>
 
                             <div class="m-creative d-flex">
@@ -368,18 +368,18 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                At Excis, our Global Service Desk redefines IT support by providing proactive, high-quality assistance around the clock. Using a follow-the-sun model, our dedicated teams of skilled service desk agents are strategically positioned across multiple continents, ensuring seamless 24/7 support. Whether it’s resolving everyday technical challenges, managing user access, or troubleshooting complex system outages, our experts are always ready to assist.
+                                Excis’s Firewall & Cloud Security Solutions deliver robust protection against external attacks, unauthorized access, and data breaches. By combining advanced firewall technologies with secure cloud gateways, we help your organization monitor, control, and safeguard critical data and resources across on-premises and cloud environments.
                                 <br> <br>
-                                By leveraging industry best practices and robust IT service management frameworks, we ensure smooth operations, reduce downtime, and streamline issue resolution.
+                                Our integrated solutions empower you to detect malicious activity, enforce granular security policies, and maintain business agility while staying ahead of evolving cyber threats.
                                 <br> <br>
-                                <b>Ready to transform your IT support experience?</b>
+                                <b>Ready to elevate your security posture?</b>
                             </div>
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
-                                    <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
-                                            <p>Partner With Us Today</p>
+                                            <p>Contact Us Today</p>
                                             <div class="arrow d-flex">
                                                 <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                             </div>
@@ -405,7 +405,7 @@ require_once('../constant.php');
                         Why Choose Excis?
                     </div>
                     <div class="sub-txt">
-                        Discover why Excis is the ideal partner for your IT support needs.
+                        A Reliable Partner for Firewall & Cloud Security
                     </div>
                 </div>
 
@@ -414,74 +414,94 @@ require_once('../constant.php');
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Global Growth">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Next-Generation Firewalls">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Presence with Local Insight
+                                        Next-Generation Firewalls
                                     </div>
                                     <div class="sub-txt">
-                                        Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
+                                        Advanced threat detection and prevention for maximum protection.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-culture-icon.png'; ?>" alt="Innovative and Inclusive Culture">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Secure Cloud Gateways">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Proactive Approach
+                                        Secure Cloud Gateways
                                     </div>
                                     <div class="sub-txt">
-                                        We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
+                                        Safeguard your cloud environment with intelligent controls and monitoring.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Seamless Integration">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Seamless Operations
+                                        Seamless Integration
                                     </div>
                                     <div class="sub-txt">
-                                        Transparent escalation and real-time updates make every interaction smooth and efficient.
+                                        Solutions designed to complement and enhance your existing infrastructure.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Proactive Monitoring">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Advanced ITSM Practices
+                                        Proactive Monitoring
                                     </div>
                                     <div class="sub-txt">
-                                        Robust frameworks and best practices ensure effective, streamlined processes.
+                                        Continuous traffic analysis to detect and mitigate threats in real time.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Scalable Solutions">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Availability
+                                        Scalable Solutions
                                     </div>
                                     <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                        Flexible security that grows with your organizational needs.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-content d-flex flex-column justify-content-start align-items-center">
+                                <div class="card-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Compliance-Ready">
+                                </div>
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Compliance-Ready
+                                    </div>
+                                    <div class="sub-txt">
+                                        Policies and configurations aligned with global standards and regulations.
                                     </div>
                                 </div>
                             </div>
@@ -501,10 +521,10 @@ require_once('../constant.php');
                 <div class="main-content-container">
                     <div class="container-txt-content">
                         <div class="heading-txt">
-                            Benefits of Excis’ Global Service Desk
+                            Benefits of Excis’ Firewall and Cloud Security Solutions
                         </div>
                         <div class="sub-txt">
-                            Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                            Enhanced Protection for Critical Resources
                         </div>
                     </div>
 
@@ -521,13 +541,14 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Improved User Experience
+                                            Fortified Security
                                         </div>
                                         <div class="sub-txt">
-                                            Personalized multilingual support fosters user satisfaction and trust.
+                                            Advanced defenses that protect against modern threats and vulnerabilities.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-block d-flex">
                                     <div class="img-content">
                                         <div class="img-circle d-flex justify-content-center align-items-center">
@@ -538,13 +559,14 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Cost Optimization
+                                            Increased Visibility
                                         </div>
                                         <div class="sub-txt">
-                                            Efficient processes and a global presence help lower IT costs without compromising quality.
+                                            Centralized monitoring of network and cloud activity for actionable insights.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-block d-flex">
                                     <div class="img-content">
                                         <div class="img-circle d-flex justify-content-center align-items-center">
@@ -555,13 +577,14 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Sustainable Growth
+                                            Improved Compliance
                                         </div>
                                         <div class="sub-txt">
-                                            Enhanced system performance and strategic guidance support your long-term success.
+                                            Solutions designed to meet GDPR, ISO 27001, and other global standards.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-block d-flex">
                                     <div class="img-content">
                                         <div class="img-circle d-flex justify-content-center align-items-center">
@@ -572,10 +595,28 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Streamlined Escalation
+                                            Business Agility
                                         </div>
                                         <div class="sub-txt">
-                                            Clear escalation channels reduce resolution time and maintain operational efficiency
+                                            Scalable solutions that adapt to changing business and regulatory needs.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-block d-flex">
+                                    <div class="img-content">
+                                        <div class="img-circle d-flex justify-content-center align-items-center">
+                                            <div class="tick-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'white-tick.png'; ?>" alt="✓">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-content d-flex align-items-start">
+                                        <div class="heading-txt">
+                                            Reduced Downtime
+                                        </div>
+                                        <div class="sub-txt">
+                                            Proactive monitoring and response minimize disruptions caused by cyber incidents.
                                         </div>
                                     </div>
                                 </div>

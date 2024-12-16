@@ -360,7 +360,7 @@ require_once('../constant.php');
                     <div class="page-about-feature-content d-flex justify-content-between align-items-center">
                         <div class="txt-content">
                             <div class="heading-txt">
-                                Delivering Service Desk <br> Across the Globe
+                                Delivering Global IT Staffing <br> Across the Globe
                             </div>
 
                             <div class="m-creative d-flex">
@@ -368,18 +368,18 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                At Excis, our Global Service Desk redefines IT support by providing proactive, high-quality assistance around the clock. Using a follow-the-sun model, our dedicated teams of skilled service desk agents are strategically positioned across multiple continents, ensuring seamless 24/7 support. Whether it’s resolving everyday technical challenges, managing user access, or troubleshooting complex system outages, our experts are always ready to assist.
+                                Excis’s Global IT Staffing solutions provide a streamlined, single-vendor approach to sourcing, managing, and maintaining skilled IT professionals worldwide. Whether you’re expanding into new markets or strengthening existing operations, our fully managed staffing services adapt to your organization’s unique requirements, ensuring peak performance.
                                 <br> <br>
-                                By leveraging industry best practices and robust IT service management frameworks, we ensure smooth operations, reduce downtime, and streamline issue resolution.
+                                Our global delivery managers carefully match engineers with the technical expertise, language skills, and cultural alignment needed to seamlessly integrate into your team. Through a flexible, monthly managed service model, we help you scale your IT workforce efficiently and cost-effectively.
                                 <br> <br>
-                                <b>Ready to transform your IT support experience?</b>
+                                <b>Ready to streamline your IT staffing?</b>
                             </div>
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
-                                    <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
-                                            <p>Partner With Us Today</p>
+                                            <p>Contact Us Today</p>
                                             <div class="arrow d-flex">
                                                 <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                             </div>
@@ -405,7 +405,7 @@ require_once('../constant.php');
                         Why Choose Excis?
                     </div>
                     <div class="sub-txt">
-                        Discover why Excis is the ideal partner for your IT support needs.
+                        Your Trusted IT Staffing Partner
                     </div>
                 </div>
 
@@ -418,10 +418,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Presence with Local Insight
+                                        Tailored Staffing Solutions
                                     </div>
                                     <div class="sub-txt">
-                                        Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
+                                        Engineers handpicked to meet your specific technical and cultural requirements.
                                     </div>
                                 </div>
                             </div>
@@ -433,10 +433,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Proactive Approach
+                                        Global Reach
                                     </div>
                                     <div class="sub-txt">
-                                        We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
+                                        Access to a worldwide network of skilled IT professionals.
                                     </div>
                                 </div>
                             </div>
@@ -448,10 +448,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Seamless Operations
+                                        Proactive Service Delivery
                                     </div>
                                     <div class="sub-txt">
-                                        Transparent escalation and real-time updates make every interaction smooth and efficient.
+                                        Global delivery managers ensure consistent quality and continuous improvement.
                                     </div>
                                 </div>
                             </div>
@@ -463,10 +463,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Advanced ITSM Practices
+                                        Flexible and Scalable
                                     </div>
                                     <div class="sub-txt">
-                                        Robust frameworks and best practices ensure effective, streamlined processes.
+                                        Easily adapt to seasonal demands or evolving business needs.
                                     </div>
                                 </div>
                             </div>
@@ -478,10 +478,25 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Availability
+                                        Cost-Effective Model
                                     </div>
                                     <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                        Fully managed monthly service for predictable, optimized costs.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content d-flex flex-column justify-content-start align-items-center">
+                                <div class="card-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                </div>
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Reliable Coverage
+                                    </div>
+                                    <div class="sub-txt">
+                                        Seamless backfill support during absences or transitions.
                                     </div>
                                 </div>
                             </div>
@@ -501,10 +516,10 @@ require_once('../constant.php');
                 <div class="main-content-container">
                     <div class="container-txt-content">
                         <div class="heading-txt">
-                            Benefits of Excis’ Global Service Desk
+                            Benefits of Excis’ Global IT Staffing
                         </div>
                         <div class="sub-txt">
-                            Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                            Flexible, Reliable, and Cost-Effective Staffing
                         </div>
                     </div>
 
@@ -521,10 +536,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Improved User Experience
+                                            Seamless Team Integration
                                         </div>
                                         <div class="sub-txt">
-                                            Personalized multilingual support fosters user satisfaction and trust.
+                                            Engineers selected for technical expertise and cultural fit.
                                         </div>
                                     </div>
                                 </div>
@@ -541,7 +556,7 @@ require_once('../constant.php');
                                             Cost Optimization
                                         </div>
                                         <div class="sub-txt">
-                                            Efficient processes and a global presence help lower IT costs without compromising quality.
+                                            Predictable costs with a fully managed monthly model.
                                         </div>
                                     </div>
                                 </div>
@@ -555,10 +570,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Sustainable Growth
+                                            Faster Deployment
                                         </div>
                                         <div class="sub-txt">
-                                            Enhanced system performance and strategic guidance support your long-term success.
+                                            Quickly scale your workforce for new markets or projects.
                                         </div>
                                     </div>
                                 </div>
@@ -572,10 +587,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Streamlined Escalation
+                                            Global Expertise
                                         </div>
                                         <div class="sub-txt">
-                                            Clear escalation channels reduce resolution time and maintain operational efficiency
+                                            Access to skilled professionals with local knowledge and language proficiency.
                                         </div>
                                     </div>
                                 </div>

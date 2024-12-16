@@ -368,18 +368,18 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                Excis’s Global IT Support Services empower organizations with skilled, on-demand resources to maintain peak performance, regardless of location. Our global network of qualified IT engineers delivers on-site “smart hands” support and technical troubleshooting in local languages, ensuring compliance with regional regulations.
+                                Excis’s Global IT Support Services provide on-demand, skilled resources to ensure your organization runs smoothly, no matter where you operate. With a global network of qualified IT engineers, we deliver on-site “smart hands” support and technical troubleshooting across time zones, in local languages, and in compliance with regional regulations.
                                 <br> <br>
-                                From enterprise infrastructure and networking to cloud environments and cybersecurity, we manage a broad spectrum of IT challenges. By seamlessly extending your in-house team into international markets, we deliver consistent service quality, faster resolutions, and the flexibility to scale your operations worldwide.
+                                Our services cover a wide range of technologies, including enterprise infrastructure, networking, datacentres, cloud environments, and cybersecurity. Whether rolling out new systems, maintaining mission-critical infrastructure, or addressing technical challenges, Excis ensures consistent service quality and agility across global markets.
                                 <br> <br>
-                                <b>Ready to elevate your IT support?</b>
+                                <b>Ready to enhance your IT capabilities?</b>
                             </div>
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
-                                    <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
-                                            <p>Connect With Us Today</p>
+                                            <p>Contact Us Today</p>
                                             <div class="arrow d-flex">
                                                 <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                             </div>
@@ -405,7 +405,7 @@ require_once('../constant.php');
                         Why Choose Excis?
                     </div>
                     <div class="sub-txt">
-                        Discover why Excis is the ideal partner for your IT support needs.
+                        Trusted Global IT Partner
                     </div>
                 </div>
 
@@ -418,10 +418,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Network of Engineers
+                                        Localized Globalization
                                     </div>
                                     <div class="sub-txt">
-                                        Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
+                                        On-site support in multiple languages ensures smooth operations worldwide.
                                     </div>
                                 </div>
                             </div>
@@ -433,10 +433,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Skilled, On-Demand Resources
+                                        Broad Expertise
                                     </div>
                                     <div class="sub-txt">
-                                        We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
+                                        Skilled engineers cover enterprise systems, cloud platforms, and cybersecurity.
                                     </div>
                                 </div>
                             </div>
@@ -448,10 +448,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Regional Compliance Expertise
+                                        Quick Deployment
                                     </div>
                                     <div class="sub-txt">
-                                        Transparent escalation and real-time updates make every interaction smooth and efficient.
+                                        Rapid on-demand resources minimize downtime and disruptions.
                                     </div>
                                 </div>
                             </div>
@@ -463,10 +463,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Comprehensive IT Coverage
+                                        Flexible Scaling
                                     </div>
                                     <div class="sub-txt">
-                                        Robust frameworks and best practices ensure effective, streamlined processes.
+                                        Seamlessly extend IT operations into new markets with consistent service quality.
                                     </div>
                                 </div>
                             </div>
@@ -478,25 +478,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Multi-Language Support
+                                        Proven Track Record
                                     </div>
                                     <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-content d-flex flex-column justify-content-start align-items-center">
-                                <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
-                                </div>
-                                <div class="text-content">
-                                    <div class="heading-txt">
-                                        Scalable and Flexible Solutions
-                                    </div>
-                                    <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                        Trusted by enterprises to handle diverse IT challenges across industries.
                                     </div>
                                 </div>
                             </div>
@@ -516,10 +501,10 @@ require_once('../constant.php');
                 <div class="main-content-container">
                     <div class="container-txt-content">
                         <div class="heading-txt">
-                            Benefits of Excis’ Global Service Desk
+                            Benefits of Excis IT Support Service
                         </div>
                         <div class="sub-txt">
-                            Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                            Optimized Operations and Reliable Support
                         </div>
                     </div>
 
@@ -536,10 +521,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Improved User Experience
+                                            Faster Issue Resolution
                                         </div>
                                         <div class="sub-txt">
-                                            Personalized multilingual support fosters user satisfaction and trust.
+                                            Skilled engineers quickly address and resolve technical challenges.
                                         </div>
                                     </div>
                                 </div>
@@ -553,10 +538,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Cost Optimization
+                                            Enhanced Service Consistency
                                         </div>
                                         <div class="sub-txt">
-                                            Efficient processes and a global presence help lower IT costs without compromising quality.
+                                            Uniform support ensures smooth operations across global markets.
                                         </div>
                                     </div>
                                 </div>
@@ -570,10 +555,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Sustainable Growth
+                                            Scalable IT Operations
                                         </div>
                                         <div class="sub-txt">
-                                            Enhanced system performance and strategic guidance support your long-term success.
+                                            Flexible solutions grow with your organization’s needs.
                                         </div>
                                     </div>
                                 </div>
@@ -587,10 +572,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Streamlined Escalation
+                                            Regulatory-Compliant Solutions
                                         </div>
                                         <div class="sub-txt">
-                                            Clear escalation channels reduce resolution time and maintain operational efficiency
+                                            Adherence to local laws ensures smooth and compliant operations.
                                         </div>
                                     </div>
                                 </div>

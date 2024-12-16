@@ -360,7 +360,7 @@ require_once('../constant.php');
                     <div class="page-about-feature-content d-flex justify-content-between align-items-center">
                         <div class="txt-content">
                             <div class="heading-txt">
-                                Delivering Service Desk <br> Across the Globe
+                                Delivering IT Asset Recycling <br> Across the Globe
                             </div>
 
                             <div class="m-creative d-flex">
@@ -368,18 +368,18 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                At Excis, our Global Service Desk redefines IT support by providing proactive, high-quality assistance around the clock. Using a follow-the-sun model, our dedicated teams of skilled service desk agents are strategically positioned across multiple continents, ensuring seamless 24/7 support. Whether it’s resolving everyday technical challenges, managing user access, or troubleshooting complex system outages, our experts are always ready to assist.
+                                Excis offers comprehensive IT asset recycling and e-waste disposal services to help global enterprises retire hardware responsibly and securely. With a focus on environmental and data protection standards, we provide expert guidance, certified processes, and a transparent chain-of-custody for each retired asset.
                                 <br> <br>
-                                By leveraging industry best practices and robust IT service management frameworks, we ensure smooth operations, reduce downtime, and streamline issue resolution.
+                                From data destruction to asset recycling, refurbishment, or redeployment, we ensure full compliance with industry regulations and support corporate sustainability initiatives. Trust Excis to manage your e-waste lifecycle with integrity and in alignment with global best practices.
                                 <br> <br>
-                                <b>Ready to transform your IT support experience?</b>
+                                <b>Ready to responsibly manage your IT asset disposal</b>
                             </div>
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
-                                    <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
-                                            <p>Partner With Us Today</p>
+                                            <p>Contact Us Today</p>
                                             <div class="arrow d-flex">
                                                 <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                             </div>
@@ -405,7 +405,7 @@ require_once('../constant.php');
                         Why Choose Excis?
                     </div>
                     <div class="sub-txt">
-                        Discover why Excis is the ideal partner for your IT support needs.
+                        Leading the Way in Secure and Sustainable eWaste Disposal
                     </div>
                 </div>
 
@@ -414,74 +414,94 @@ require_once('../constant.php');
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Global Growth">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Certified Processes">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Presence with Local Insight
+                                        Certified Processes
                                     </div>
                                     <div class="sub-txt">
-                                        Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
+                                        Compliance with environmental and data protection standards.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-culture-icon.png'; ?>" alt="Innovative and Inclusive Culture">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Expert Guidance">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Proactive Approach
+                                        Expert Guidance
                                     </div>
                                     <div class="sub-txt">
-                                        We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
+                                        Specialized knowledge to navigate industry-specific requirements.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Rigorously Secure Data Destruction">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Seamless Operations
+                                        Rigorously Secure Data Destruction
                                     </div>
                                     <div class="sub-txt">
-                                        Transparent escalation and real-time updates make every interaction smooth and efficient.
+                                        On-site and off-site data destruction to protect sensitive information.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Global Compliance">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Advanced ITSM Practices
+                                        Global Compliance
                                     </div>
                                     <div class="sub-txt">
-                                        Robust frameworks and best practices ensure effective, streamlined processes.
+                                        Adherence to international regulations and sustainability frameworks.
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-content d-flex flex-column justify-content-start align-items-center">
                                 <div class="card-icon-img d-flex">
-                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Full Chain-of-Custody">
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Availability
+                                        Full Chain-of-Custody
                                     </div>
                                     <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                        Transparent tracking of every asset throughout the disposal process.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-content d-flex flex-column justify-content-start align-items-center">
+                                <div class="card-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-growth-icon.png'; ?>" alt="Environmental Responsibility">
+                                </div>
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Environmental Responsibility
+                                    </div>
+                                    <div class="sub-txt">
+                                        Minimizing environmental impact with sustainable recycling methods.
                                     </div>
                                 </div>
                             </div>
@@ -504,7 +524,7 @@ require_once('../constant.php');
                             Benefits of Excis’ Global Service Desk
                         </div>
                         <div class="sub-txt">
-                            Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                            Minimize Impact, Maximize Responsibility
                         </div>
                     </div>
 
@@ -521,13 +541,14 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Improved User Experience
+                                            Data Security
                                         </div>
                                         <div class="sub-txt">
-                                            Personalized multilingual support fosters user satisfaction and trust.
+                                            Robust data destruction protocols to safeguard sensitive information.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-block d-flex">
                                     <div class="img-content">
                                         <div class="img-circle d-flex justify-content-center align-items-center">
@@ -538,13 +559,14 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Cost Optimization
+                                            Environmental Sustainability
                                         </div>
                                         <div class="sub-txt">
-                                            Efficient processes and a global presence help lower IT costs without compromising quality.
+                                            Compliant recycling practices that minimize environmental footprint.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-block d-flex">
                                     <div class="img-content">
                                         <div class="img-circle d-flex justify-content-center align-items-center">
@@ -555,13 +577,14 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Sustainable Growth
+                                            Regulatory Compliance
                                         </div>
                                         <div class="sub-txt">
-                                            Enhanced system performance and strategic guidance support your long-term success.
+                                            Meet global and industry-specific e-waste disposal regulations.
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="card-block d-flex">
                                     <div class="img-content">
                                         <div class="img-circle d-flex justify-content-center align-items-center">
@@ -572,10 +595,28 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Streamlined Escalation
+                                            Reduced Liability
                                         </div>
                                         <div class="sub-txt">
-                                            Clear escalation channels reduce resolution time and maintain operational efficiency
+                                            Minimize risk with certified processes and clear documentation.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-block d-flex">
+                                    <div class="img-content">
+                                        <div class="img-circle d-flex justify-content-center align-items-center">
+                                            <div class="tick-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'white-tick.png'; ?>" alt="✓">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-content d-flex align-items-start">
+                                        <div class="heading-txt">
+                                            Responsible IT Stewardship
+                                        </div>
+                                        <div class="sub-txt">
+                                            Align with corporate sustainability goals and industry best practices.
                                         </div>
                                     </div>
                                 </div>

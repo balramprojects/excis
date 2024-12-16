@@ -368,18 +368,18 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                At Excis, our Global Service Desk redefines IT support by providing proactive, high-quality assistance around the clock. Using a follow-the-sun model, our dedicated teams of skilled service desk agents are strategically positioned across multiple continents, ensuring seamless 24/7 support. Whether it’s resolving everyday technical challenges, managing user access, or troubleshooting complex system outages, our experts are always ready to assist.
+                                Excis’s Asset Lifecycle Management service simplifies the management of IT assets globally. From acquisition and deployment to maintenance and disposal, we provide full visibility and control over your hardware and software investments.
                                 <br> <br>
-                                By leveraging industry best practices and robust IT service management frameworks, we ensure smooth operations, reduce downtime, and streamline issue resolution.
+                                Our dedicated Service Managers and Coordinators collaborate with your team to create a tailored strategy for asset management. By leveraging a sophisticated software platform and proactive processes, we ensure compliance, minimize downtime, reduce costs, and optimize asset refresh cycles—while simplifying audits and reporting across multiple regions.
                                 <br> <br>
-                                <b>Ready to transform your IT support experience?</b>
+                                <b>Ready to transform your asset management process?</b>
                             </div>
 
                             <div class="desktop">
                                 <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
-                                    <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
                                         <div class="learn-more-btn d-flex align-items-center">
-                                            <p>Partner With Us Today</p>
+                                            <p>Contact Us Today</p>
                                             <div class="arrow d-flex">
                                                 <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
                                             </div>
@@ -405,7 +405,7 @@ require_once('../constant.php');
                         Why Choose Excis?
                     </div>
                     <div class="sub-txt">
-                        Discover why Excis is the ideal partner for your IT support needs.
+                        Expert IT Asset Management on a Global Scale
                     </div>
                 </div>
 
@@ -418,10 +418,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Presence with Local Insight
+                                        End-to-End Service
                                     </div>
                                     <div class="sub-txt">
-                                        Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
+                                        Comprehensive management of procurement, tracking, maintenance, and disposal.
                                     </div>
                                 </div>
                             </div>
@@ -433,10 +433,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Proactive Approach
+                                        Tailored Solutions
                                     </div>
                                     <div class="sub-txt">
-                                        We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
+                                        Customized strategies designed to meet your organization’s unique requirements.
                                     </div>
                                 </div>
                             </div>
@@ -448,10 +448,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Seamless Operations
+                                        Cost Optimization
                                     </div>
                                     <div class="sub-txt">
-                                        Transparent escalation and real-time updates make every interaction smooth and efficient.
+                                        Reduced expenses with efficient asset utilization and streamlined processes.
                                     </div>
                                 </div>
                             </div>
@@ -463,10 +463,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Advanced ITSM Practices
+                                        Proactive Management
                                     </div>
                                     <div class="sub-txt">
-                                        Robust frameworks and best practices ensure effective, streamlined processes.
+                                        Minimized downtime and optimized refresh cycles through forward-looking strategies.
                                     </div>
                                 </div>
                             </div>
@@ -478,10 +478,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Availability
+                                        Simplified Compliance
                                     </div>
                                     <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                        Tools and reporting that ensure easy audits and regulatory adherence.
                                     </div>
                                 </div>
                             </div>
@@ -501,10 +501,10 @@ require_once('../constant.php');
                 <div class="main-content-container">
                     <div class="container-txt-content">
                         <div class="heading-txt">
-                            Benefits of Excis’ Global Service Desk
+                            Benefits of Excis’ Global IT Asset Lifecycle Management
                         </div>
                         <div class="sub-txt">
-                            Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                            Efficiency, Visibility, and Cost Savings
                         </div>
                     </div>
 
@@ -521,10 +521,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Improved User Experience
+                                            Optimized Asset Utilization
                                         </div>
                                         <div class="sub-txt">
-                                            Personalized multilingual support fosters user satisfaction and trust.
+                                            Maximize ROI by ensuring all assets are fully accounted for and used efficiently.
                                         </div>
                                     </div>
                                 </div>
@@ -538,10 +538,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Cost Optimization
+                                            Reduced Downtime
                                         </div>
                                         <div class="sub-txt">
-                                            Efficient processes and a global presence help lower IT costs without compromising quality.
+                                            Proactive strategies minimize disruptions during maintenance or refresh cycles.
                                         </div>
                                     </div>
                                 </div>
@@ -555,10 +555,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Sustainable Growth
+                                            Improved Cost Management
                                         </div>
                                         <div class="sub-txt">
-                                            Enhanced system performance and strategic guidance support your long-term success.
+                                            Streamlined processes lower acquisition and operational expenses.
                                         </div>
                                     </div>
                                 </div>
@@ -572,10 +572,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Streamlined Escalation
+                                            Environmentally Friendly Disposal
                                         </div>
                                         <div class="sub-txt">
-                                            Clear escalation channels reduce resolution time and maintain operational efficiency
+                                            Secure, compliant, and eco-conscious end-of-life solutions.
                                         </div>
                                     </div>
                                 </div>
