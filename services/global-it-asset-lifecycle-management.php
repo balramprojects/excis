@@ -340,10 +340,10 @@ require_once('../constant.php');
             <div class="main-content-container">
                 <div class="banner-txt d-flex flex-column justify-content-center">
                     <div class="breadcrumb">
-                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Global Service Desk</span>
+                        <a href="<?php echo $desktop_url; ?>">Home</a> - <a href="<?php echo $desktop_url . 'services'; ?>">Services</a> - <span class="page">Global IT Asset Lifecycle Management</span>
                     </div>
                     <div class="page-title">
-                        Global Service Desk
+                        Global IT Asset Lifecycle Management
                     </div>
                 </div>
             </div>
