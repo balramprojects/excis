@@ -79,7 +79,7 @@ require_once('constant.php');
                 <div class="left-btm-abstract2 desktop" style="bottom: -150px;"></div>
                 <div class="right-top-abstract2 desktop" style="top: -150px;"></div>
 
-                <div class="main-content-container">
+                <div class="main-content-container" style="padding: 20px 15px;">
                     <div class="page-about-feature-content d-flex justify-content-between align-items-center">
                         <div class="txt-content">
                             <div class="heading-txt">

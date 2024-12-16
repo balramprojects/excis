@@ -1054,7 +1054,7 @@ include('../constant.php');
     include("../templates/partners.php");
     ?>
 
-<?php
+    <?php
     include("../templates/contact-form.php");
     ?>
 

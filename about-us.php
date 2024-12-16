@@ -418,82 +418,6 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/rodica.png" alt="">
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="txt">
-                                            <p>Rodica Petrea</p>
-                                            <p>Chief Financial Officer</p>
-                                        </div>
-                                        <a href="https://www.linkedin.com/in/rodica-petrea-825b2447/">
-                                            <div class="member-linkedin">
-                                                <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/max.png" alt="">
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="txt">
-                                            <p>Max Uitterlinden</p>
-                                            <p>Head of IT</p>
-                                        </div>
-                                        <a href="https://www.linkedin.com/in/maximilian-uitterlinden-a7b48b224/">
-                                            <div class="member-linkedin">
-                                                <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/gabrielle.png" alt="">
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="txt">
-                                            <p>Gabrielle D’arch</p>
-                                            <p>Head of Global Service Delivery</p>
-                                        </div>
-                                        <a href="https://www.linkedin.com/in/gabrielle-d-arch-81b1149a/">
-                                            <div class="member-linkedin">
-                                                <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/theo.png" alt="">
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="txt" style="padding: 6.6px 15px;">
-                                            <p>Theo Ramarolahy</p>
-                                            <p>Head of Remote Services & Coordination</p>
-                                        </div>
-                                        <a href="https://www.linkedin.com/in/theo-ramarolahy/">
-                                            <div class="member-linkedin">
-                                                <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/andrew.png" alt="">
                                     </div>
                                     <div class="card-info">
@@ -502,25 +426,6 @@ include('constant.php');
                                             <p>Global Operations Director</p>
                                         </div>
                                         <a href="https://www.linkedin.com/in/bremnerandrew/">
-                                            <div class="member-linkedin">
-                                                <div class="linkedin-img d-flex">
-                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="member-img d-flex">
-                                        <img loading="lazy" src="assets/images/excis-members/jean.png" alt="">
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="txt">
-                                            <p>Jean Oosthuizen</p>
-                                            <p>Head of Contract Management</p>
-                                        </div>
-                                        <a href="https://www.linkedin.com/in/jean-oosthuizen-a203aaa/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
                                                     <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
@@ -551,6 +456,25 @@ include('constant.php');
 
                                 <div class="card">
                                     <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/gabrielle.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Gabrielle D’arch</p>
+                                            <p>Head of Global Service Delivery</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/gabrielle-d-arch-81b1149a/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="member-img d-flex">
                                         <img loading="lazy" src="assets/images/excis-members/douglas.png" alt="">
                                     </div>
                                     <div class="card-info">
@@ -559,6 +483,83 @@ include('constant.php');
                                             <p>Head of Transition NA & LATAM</p>
                                         </div>
                                         <a href="https://www.linkedin.com/in/douglashoule/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/rodica.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Rodica Petrea</p>
+                                            <p>Chief Financial Officer</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/rodica-petrea-825b2447/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/jean.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Jean Oosthuizen</p>
+                                            <p>Head of Contract Management</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/jean-oosthuizen-a203aaa/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/max.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="txt">
+                                            <p>Max Uitterlinden</p>
+                                            <p>Head of IT</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/maximilian-uitterlinden-a7b48b224/">
+                                            <div class="member-linkedin">
+                                                <div class="linkedin-img d-flex">
+                                                    <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="member-img d-flex">
+                                        <img loading="lazy" src="assets/images/excis-members/theo.png" alt="">
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="txt" style="padding: 6.6px 15px;">
+                                            <p>Theo Ramarolahy</p>
+                                            <p>Head of Remote Services & Coordination</p>
+                                        </div>
+                                        <a href="https://www.linkedin.com/in/theo-ramarolahy/">
                                             <div class="member-linkedin">
                                                 <div class="linkedin-img d-flex">
                                                     <img loading="lazy" src="assets/images/excis-members/linkedin.png" alt="">
