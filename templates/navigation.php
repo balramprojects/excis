@@ -70,14 +70,6 @@
                             </div>
                         </li>
 
-                        <li class="nav-block-container d-flex align-items-center">
-                            <a href="<?php echo $desktop_url . 'capabilities.php'; ?>">
-                                <div class="nav-tab-item d-flex align-items-center">
-                                    Capabilities
-                                </div>
-                            </a>
-                        </li>
-
                         <li class="nav-block-container industries d-flex align-items-center">
                             <a href="<?php echo $desktop_url . 'industries'; ?>">
                                 <div class="nav-tab-item d-flex align-items-center">

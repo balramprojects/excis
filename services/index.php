@@ -314,7 +314,7 @@ include('../constant.php');
                                                 Global Service Desk
                                             </div>
                                             <div class="subtitle">
-                                                Comprehensive support for your data center infrastructure, ensuring optimal performance, uptime, and security.
+                                                A centralized support team offering timely IT assistance across global teams and operations.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -333,7 +333,7 @@ include('../constant.php');
                                                 Global IT Support Services
                                             </div>
                                             <div class="subtitle">
-                                                Expert guidance to protect your business from evolving cyber threats with tailored security strategies and solutions.
+                                                Providing comprehensive IT support to ensure seamless operations and quick issue resolution worldwide.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -352,7 +352,7 @@ include('../constant.php');
                                                 Global IT Staffing
                                             </div>
                                             <div class="subtitle">
-                                                Seamless integration of private and public cloud environments, offering flexibility, scalability, and secure data management.
+                                                Delivering skilled IT professionals globally, ensuring effective project execution and access to top talent.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -371,7 +371,7 @@ include('../constant.php');
                                                 Global IT Asset Lifecycle Management
                                             </div>
                                             <div class="subtitle">
-                                                Reliable network management and optimization services to ensure fast, secure, and efficient connectivity for your business.
+                                                Managing the entire lifecycle of IT assets, ensuring cost-efficiency and compliance across organizations.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -390,7 +390,7 @@ include('../constant.php');
                                                 Cyber Risk Assessments
                                             </div>
                                             <div class="subtitle">
-                                                24/7 support to resolve technical issues and ensure smooth IT operations for your team.
+                                                Identifying and mitigating security vulnerabilities to protect systems, data, and operations from cyber threats.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -409,7 +409,7 @@ include('../constant.php');
                                                 Cyber Security Audits
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Evaluating security policies and systems to ensure compliance and strengthen defenses against cyber threats.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -428,7 +428,7 @@ include('../constant.php');
                                                 Penetration Testing
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Simulating cyberattacks to uncover vulnerabilities and enhance security measures against potential threats.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -447,7 +447,7 @@ include('../constant.php');
                                                 Cyber Security Solutions
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Providing comprehensive tools and strategies to safeguard systems and data from evolving cyber risks.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -466,7 +466,7 @@ include('../constant.php');
                                                 Firewall & Cloud Security Solutions
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Protecting networks and cloud environments with advanced security protocols and monitoring to prevent unauthorized access.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -485,7 +485,7 @@ include('../constant.php');
                                                 IT Project Management
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Managing IT projects efficiently, ensuring timely delivery, resource allocation, and alignment with organizational goals.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -504,7 +504,7 @@ include('../constant.php');
                                                 IT Infrastructure Audits
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Assessing technology systems to ensure efficiency, security, and compliance with industry standards and regulations.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -523,7 +523,7 @@ include('../constant.php');
                                                 IT Deployments
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Ensuring seamless installation, configuration, and integration of IT systems for business continuity and optimal performance.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -542,7 +542,7 @@ include('../constant.php');
                                                 IT Asset Recycling
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Environmentally responsible disposal and repurposing of outdated IT assets while maintaining data security.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -561,7 +561,7 @@ include('../constant.php');
                                                 Procurement
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Strategic sourcing and acquisition of goods and services, ensuring cost-effective solutions and quality control.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
@@ -580,7 +580,7 @@ include('../constant.php');
                                                 Storage, Staging & Logistics
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Efficient management of goods for secure storage, preparation, and timely distribution or deployment.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">

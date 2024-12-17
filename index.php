@@ -287,7 +287,7 @@ include('./constant.php');
                 <div class="main-content-container">
                     <div class="our-presence-container">
                         <div class="title" data-aos="fade-up" data-aos-duration="1000">
-                            Our Global Presence
+                            Our Entities
                         </div>
                         <div class="subtxt" data-aos="fade-up" data-aos-duration="1000">
                             Excis operates in over 190 countries, offering seamless IT support and services across the globe. Our extensive reach ensures reliable, localized assistance wherever you are. We are committed to delivering excellence worldwide.

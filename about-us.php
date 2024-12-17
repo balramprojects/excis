@@ -84,7 +84,7 @@ include('constant.php');
                                 Who We Are
                             </div>
                             <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
-                                Excis is a global IT services company that provides 24/7 multilingual support and onsite assistance in over 180 countries. With a focus on end-user computing and networking, we ensure our clients experience seamless and efficient IT operations. Our extensive network of skilled professionals allows us to deliver high-quality, reliable solutions tailored to meet the diverse needs of businesses worldwide.
+                                Excis is a global IT services company that provides 24/7 multilingual support and onsite assistance in over 190+ countries. With a focus on end-user computing and networking, we ensure our clients experience seamless and efficient IT operations. Our extensive network of skilled professionals allows us to deliver high-quality, reliable solutions tailored to meet the diverse needs of businesses worldwide.
                             </div>
                         </div>
                         <div style="max-width: 360px;" class="d-flex">
