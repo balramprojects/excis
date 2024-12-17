@@ -193,7 +193,7 @@ require_once('constant.php');
                             <div class="card">
                                 <div class="card-content">
                                     <div class="iso-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-9001.jpg'; ?>" alt="">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-dummy-9001.png'; ?>" alt="">
                                     </div>
                                     <div class="text-content">
                                         <div class="txt1">ISO 9001:2015</div>
@@ -204,7 +204,7 @@ require_once('constant.php');
                             <div class="card">
                                 <div class="card-content">
                                     <div class="iso-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-9001.jpg'; ?>" alt="">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-dummy-14001.png'; ?>" alt="">
                                     </div>
                                     <div class="text-content">
                                         <div class="txt1">ISO 14001:2015</div>
@@ -215,7 +215,7 @@ require_once('constant.php');
                             <div class="card">
                                 <div class="card-content">
                                     <div class="iso-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-9001.jpg'; ?>" alt="">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-dummy-27001.png'; ?>" alt="">
                                     </div>
                                     <div class="text-content">
                                         <div class="txt1">ISO 27001:2022</div>
@@ -226,7 +226,7 @@ require_once('constant.php');
                             <div class="card">
                                 <div class="card-content">
                                     <div class="iso-img d-flex">
-                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-9001.jpg'; ?>" alt="">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'iso/iso-dummy-45001.png'; ?>" alt="">
                                     </div>
                                     <div class="text-content">
                                         <div class="txt1">ISO 45001:2018</div>
