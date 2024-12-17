@@ -621,8 +621,8 @@ require_once('../constant.php');
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
-        const navItem = document.querySelectorAll('.middle-content .nav-block-container');
-        navItem[2].querySelector('a .nav-tab-item').classList.add('active');
+        const navItem = document.querySelectorAll('.nav-menu .nav-block-container');
+        navItem[4].querySelector('a .nav-tab-item').classList.add('active');
     </script>
 
     <script>

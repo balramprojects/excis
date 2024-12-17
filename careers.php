@@ -983,6 +983,11 @@ require_once('constant.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
+        const navItem = document.querySelectorAll('.nav-menu .nav-block-container');
+        navItem[5].querySelector('a .nav-tab-item').classList.add('active');
+    </script>
+
+    <script>
         var owl = $('.career-testimonial-carousel').owlCarousel({
             loop: true,
             responsiveClass: true,
