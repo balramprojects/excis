@@ -360,11 +360,11 @@ require_once('../constant.php');
                     <div class="page-about-feature-content d-flex justify-content-between align-items-center">
                         <div class="txt-content">
                             <div class="heading-txt">
-                                Delivering Service Desk <br> Across the Globe
+                                Delivering Global Asset Lifecycle <br> Management Across the Globe
                             </div>
 
                             <div class="m-creative d-flex">
-                                <img src="<?php echo $desktop_images . 'careers-about-us-creativity.png'; ?>" alt="Careers">
+                                <img src="<?php echo $desktop_images . 'services/global-it-asset-lifecycle-management-creative.png'; ?>" alt="Global Asset Lifecycle Management">
                             </div>
 
                             <div class="sub-txt">
@@ -389,7 +389,7 @@ require_once('../constant.php');
                             </div>
                         </div>
                         <div class="creative d-flex">
-                            <img src="<?php echo $desktop_images . 'careers-about-us-creativity.png'; ?>" alt="Careers">
+                            <img src="<?php echo $desktop_images . 'services/global-it-asset-lifecycle-management-creative.png'; ?>" alt="Global Asset Lifecycle Management">
                         </div>
                     </div>
                 </div>

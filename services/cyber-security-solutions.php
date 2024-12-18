@@ -364,7 +364,7 @@ require_once('../constant.php');
                             </div>
 
                             <div class="m-creative d-flex">
-                                <img src="<?php echo $desktop_images . 'careers-about-us-creativity.png'; ?>" alt="Careers">
+                                <img src="<?php echo $desktop_images . 'services/cyber-security-solutions-creative.png'; ?>" alt="Cyber Security Solutions">
                             </div>
 
                             <div class="sub-txt">
@@ -389,7 +389,7 @@ require_once('../constant.php');
                             </div>
                         </div>
                         <div class="creative d-flex">
-                            <img src="<?php echo $desktop_images . 'careers-about-us-creativity.png'; ?>" alt="Careers">
+                            <img src="<?php echo $desktop_images . 'services/cyber-security-solutions-creative.png'; ?>" alt="Cyber Security Solutions">
                         </div>
                     </div>
                 </div>
