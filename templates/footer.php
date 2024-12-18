@@ -41,37 +41,37 @@
 
                     <div class="container2">
                         <div class="serviceTitle">
-                            <a href="<?php echo $desktop_url . 'services.php'; ?>">Our Services</a>
+                            <a href="<?php echo $desktop_url . 'services'; ?>">Our Services</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/audio-visual.php'; ?>">Audio-Visual</a>
+                            <a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">Global Service Desk</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">Data Center Support</a>
+                            <a href="<?php echo $desktop_url . 'services/global-it-support-services.php'; ?>">Global IT Support Services</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/device-as-a-service.php'; ?>">Device As A Service</a>
+                            <a href="<?php echo $desktop_url . 'services/penetration-testing.php'; ?>">Penetration Testing</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/end-user-support.php'; ?>">End-User Support</a>
+                            <a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">Cyber Security Solutions</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/helpdesk.php'; ?>">Helpdesk</a>
+                            <a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">Firewall & Cloud Security Solutions</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/network.php'; ?>">Network</a>
+                            <a href="<?php echo $desktop_url . 'services/it-project-management.php'; ?>">IT Project Management</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/new-office-and-migration-solutions.php'; ?>">New Office + Migration Solutions</a>
+                            <a href="<?php echo $desktop_url . 'services/it-deployments.php'; ?>">IT Deployments</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/operating-system.php'; ?>">Operating Systems</a>
+                            <a href="<?php echo $desktop_url . 'services/it-asset-recycling.php'; ?>">IT Asset Recycling</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/storage-as-a-service.php'; ?>">Storage As A Service</a>
+                            <a href="<?php echo $desktop_url . 'services/procurement.php'; ?>">Procurement</a>
                         </div>
                         <div class="serviceName">
-                            <a href="<?php echo $desktop_url . 'services/wifi-services.php'; ?>">WiFi Services</a>
+                            <a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">Storage, Staging & Logistics</a>
                         </div>
                         <div class="serviceName">
                             <a href="<?php echo $desktop_url . 'services'; ?>">All Services &nbsp; -></a>
@@ -100,10 +100,10 @@
 
                         <div>
                             <div class="serviceTitle p-t-15">
-                                <a href="<?php echo $desktop_url . 'about-us'; ?>">About Us</a>
+                                <a href="<?php echo $desktop_url . 'about-us.php'; ?>">About Us</a>
                             </div>
                             <div class="serviceTitle p-t-15">
-                                <a href="<?php echo $desktop_url . 'about-us/why-us.php'; ?>">Why Excis</a>
+                                <a href="<?php echo $desktop_url . 'why-us.php'; ?>">Why Excis</a>
                             </div>
                             <div class="serviceTitle p-t-15">
                                 <a href="<?php echo $desktop_url . 'careers.php'; ?>">Careers</a>
@@ -112,7 +112,7 @@
                                 <a href="<?php echo $desktop_url . 'global-presence.php'; ?>">Worldwide</a>
                             </div>
                             <div class="serviceTitle p-t-15">
-                                <a href="<?php echo $desktop_url . 'about-us/csr.php'; ?>">CSR</a>
+                                <a href="<?php echo $desktop_url . 'csr.php'; ?>">CSR</a>
                             </div>
                         </div>
                     </div>

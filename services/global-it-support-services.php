@@ -312,6 +312,21 @@ require_once('../constant.php');
         .pie-section-info-card.active {
             display: block;
         }
+
+        .fabulous {
+            position: relative;
+        }
+
+        .fabulous::before {
+            content: "";
+            width: 100%;
+            height: 58px;
+            position: absolute;
+            top: 0;
+            left: -525px;
+            background: #1B315D;
+            clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 0% 100%);
+        }
     </style>
 
 </head>
@@ -352,7 +367,7 @@ require_once('../constant.php');
 
     <div class="full-container">
         <div class="white-container-bg">
-            <div class="container">
+            <div class="container" style="overflow: visible;">
                 <div class="left-btm-abstract2 desktop" style="bottom: -150px;"></div>
                 <div class="right-top-abstract2 desktop" style="top: -150px;"></div>
 
@@ -390,6 +405,159 @@ require_once('../constant.php');
                         </div>
                         <div class="creative d-flex">
                             <img src="<?php echo $desktop_images . 'careers-about-us-creativity.png'; ?>" alt="Careers">
+                        </div>
+                    </div>
+
+                    <div class="services-extend-capabilities">
+                        <div class="content-container">
+                            <div class="content d-flex align-items-start">
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Extend Your IT Capabilities
+                                    </div>
+                                    <div class="sub-txt">
+                                        Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                                    </div>
+                                </div>
+                                <div class="cards d-flex justify-content-center">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                End User Computing Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Providing IT support for end-user devices and systems.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Network Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Ensuring stable and secure network connectivity for users.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Enterprise WiFI Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Managing and optimizing enterprise-level wireless network solutions.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Datacenter Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Providing maintenance and troubleshooting for data center operations.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Operating System Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Assisting with OS installation, updates, and troubleshooting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Microsoft Cloud Services Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Offering guidance and support for Microsoft cloud solutions.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Amazon Web Services Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Managing and supporting AWS cloud infrastructure and tools.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Google Cloud Support
+                                            </div>
+                                            <div class="sub-txt">
+                                                Providing expertise and assistance for Google Cloud services.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

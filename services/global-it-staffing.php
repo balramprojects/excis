@@ -392,6 +392,91 @@ require_once('../constant.php');
                             <img src="<?php echo $desktop_images . 'careers-about-us-creativity.png'; ?>" alt="Careers">
                         </div>
                     </div>
+
+                    <div class="services-extend-capabilities">
+                        <div class="content-container">
+                            <div class="content d-flex align-items-start">
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Tailored Global IT Staffing Services
+                                    </div>
+                                    <div class="sub-txt">
+                                        Empowering businesses with skilled IT professionals, flexible staffing solutions, and proactive service management to ensure seamless operations and adapt to evolving needs.
+                                    </div>
+                                </div>
+                                <div class="cards d-flex justify-content-center">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Dedicated Onsite IT Professionals
+                                            </div>
+                                            <div class="sub-txt">
+                                                Skilled technicians matched to your requirements for seamless integration.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Recurring Scheduled Visits
+                                            </div>
+                                            <div class="sub-txt">
+                                                Predictable on-site support for consistent operations.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Backfill IT Staff
+                                            </div>
+                                            <div class="sub-txt">
+                                                Coverage for staff absences or seasonal spikes to maintain continuity.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Service Delivery Management
+                                            </div>
+                                            <div class="sub-txt">
+                                                Proactive oversight for SLA adherence and continuous improvement.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

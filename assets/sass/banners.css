@@ -17,6 +17,7 @@
   width: 100%;
   background: var(--white-color);
   position: relative;
+  z-index: 1;
 }
 .pages-banner .banner-bg-map-img {
   position: absolute;

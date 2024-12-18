@@ -654,6 +654,81 @@
   border-bottom: none;
 }
 
+.services-extend-capabilities {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  background: var(--white-color);
+  margin: 50px 0 0;
+}
+.services-extend-capabilities .content-container {
+  padding: 50px;
+}
+.services-extend-capabilities .content-container .content {
+  gap: 50px;
+}
+.services-extend-capabilities .content-container .content .text-content {
+  max-width: 385px;
+  position: sticky;
+  top: 100px;
+  left: 0;
+}
+.services-extend-capabilities .content-container .content .text-content .heading-txt {
+  font-size: 35px;
+  font-weight: 500;
+  color: var(--orange-color);
+}
+.services-extend-capabilities .content-container .content .text-content .sub-txt {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+  padding: 10px 0 0;
+}
+.services-extend-capabilities .content-container .content .cards {
+  max-width: 700px;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+  margin-inline: auto;
+}
+.services-extend-capabilities .content-container .content .cards .card {
+  width: 330px;
+  border: 1px solid transparent;
+}
+.services-extend-capabilities .content-container .content .cards .card .card-content {
+  padding: 25px;
+}
+.services-extend-capabilities .content-container .content .cards .card .card-content .icon-img-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.services-extend-capabilities .content-container .content .cards .card .card-content .icon-img-container .icon-img {
+  height: 55px;
+  width: 55px;
+  background: linear-gradient(to bottom, #1B315D, #354D7D);
+  border-radius: 50%;
+}
+.services-extend-capabilities .content-container .content .cards .card .card-content .icon-img-container .icon-img .img {
+  width: 26px;
+}
+.services-extend-capabilities .content-container .content .cards .card .card-content .heading-txt {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--blue-color);
+}
+.services-extend-capabilities .content-container .content .cards .card .card-content .sub-txt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: calc(--black-color);
+  padding: 10px 0 0;
+}
+.services-extend-capabilities .content-container .content .cards .card:hover {
+  border-radius: 15px;
+  background: var(--primary-white-color);
+  border: 1px solid var(--border-color);
+}
+
 .why-choose-bg {
   width: 100%;
   background: var(--primary-white-color);
@@ -1361,7 +1436,7 @@
   gap: 25px;
 }
 .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card {
-  height: 365px;
+  height: 350px;
   flex-direction: column;
   background: var(--white-color);
   border-radius: 10px;
@@ -1370,10 +1445,14 @@
   transition: all 0.3s ease-in-out;
 }
 .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part {
-  padding: 30px 25px;
+  padding: 30px 25px 15px;
 }
 .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .creative-img {
-  width: 65px;
+  height: 75px;
+}
+.our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .creative-img img {
+  height: 100%;
+  width: auto;
   margin-inline: auto;
 }
 .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .title {
@@ -1894,10 +1973,10 @@
     height: 325px;
   }
   .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part {
-    padding: 15px;
+    padding: 20px 15px;
   }
   .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .creative-img {
-    width: 80px;
+    height: 70px;
   }
   .our-services-bg .our-services-container .main-content-container .content-container .service-cards-container .cards .card .top-part .title {
     font-size: 22px;

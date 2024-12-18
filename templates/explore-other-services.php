@@ -199,16 +199,16 @@
                                 <br> <br>
                                 <b>Ready to transform your IT support experience?</b>
                             </div>
-                            <a href="<?php echo $desktop . 'services/global-service-desk.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
 
                         <div class="pie-section-info-card">
@@ -222,16 +222,17 @@
                                 <br> <br>
                                 <b>Ready to enhance your IT capabilities?</b>
                             </div>
-                            <a href="<?php echo $desktop . 'services/global-it-support-service.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/global-it-support-service.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
 
                         <div id="slice3" class="pie-section-info-card">
@@ -245,16 +246,16 @@
                                 <br> <br>
                                 <b>Ready to secure your business?</b>
                             </div>
-                            <a href="<?php echo $desktop . 'services/cyber-security-solutions.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
 
                         <div id="slice4" class="pie-section-info-card">
@@ -268,16 +269,16 @@
                                 <br> <br>
                                 <b>Ready to elevate your security posture?</b>
                             </div>
-                            <a href="<?php echo $desktop . 'services/firewall-and-cloud-security-solutions.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
 
                         <div id="slice5" class="pie-section-info-card">
@@ -291,16 +292,16 @@
                                 <br> <br>
                                 <b>Ready to elevate your IT project outcomes?</b>
                             </div>
-                            <a href="<?php echo $desktop . 'services/it-project-management.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/it-project-management.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
 
                         <div id="slice6" class="pie-section-info-card">
@@ -314,16 +315,16 @@
                                 <br> <br>
                                 <b>Ready to responsibly manage your IT asset disposal?</b>
                             </div>
-                            <a href="<?php echo $desktop . 'services/it-asset-recycling.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/it-asset-recycling.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
 
                         <div id="slice7" class="pie-section-info-card">
@@ -337,16 +338,16 @@
                                 <br> <br>
                                 <b>Ready to transform your IT support experience?</b>
                             </div>
-                            <a href="<?php echo $desktop . 'services/procurement.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/procurement.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
 
                         <div id="slice8" class="pie-section-info-card">
@@ -356,16 +357,16 @@
                             <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus adipisci mollitia, sunt, nisi dolores quas enim, esse itaque quia neque dolore cum quis exercitationem error. Aliquam fugit natus obcaecati? Autem eligendi eos aut tempore aperiam aliquid totam reiciendis illum nemo quisquam asperiores doloremque eaque minus expedita odit, incidunt vero?
                             </div>
-                            <a href="<?php echo $desktop . 'services/storage-staging-and-logistics.php'; ?>">
-                                <div style="width: fit-content; padding: 12px 20px; margin: 30px 0 0; background: transparent; border: 1px solid #000; gap: 12px; border-radius: 10px;"
-                                    class="d-flex justify-content-center align-items-center">
-                                    <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #000;">
-                                        Learn More</p>
-                                    <div style="width: 20px;" class="d-flex">
-                                        <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
+                                <a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Know More</p>
+                                        <div class="arrow d-flex">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

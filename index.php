@@ -353,18 +353,18 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Global Service Desk">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-service-desk-icon.png'; ?>" alt="Global Service Desk">
                                             </div>
                                             <div class="title">
                                                 Global Service Desk
                                             </div>
                                             <div class="subtitle">
-                                                Comprehensive support for your data center infrastructure, ensuring optimal performance, uptime, and security.
+                                                A centralized support team offering timely IT assistance across global teams and operations.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -372,18 +372,18 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Global IT Support Services">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-support-services-icon.png'; ?>" alt="Global IT Support Services">
                                             </div>
                                             <div class="title">
                                                 Global IT Support Services
                                             </div>
                                             <div class="subtitle">
-                                                Expert guidance to protect your business from evolving cyber threats with tailored security strategies and solutions.
+                                                Providing comprehensive IT support to ensure seamless operations and quick issue resolution worldwide.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/global-it-support-services.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -391,18 +391,18 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Cyber Security Solutions">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-security-solutions-icon.png'; ?>" alt="Cyber Security Solutions">
                                             </div>
                                             <div class="title">
                                                 Cyber Security Solutions
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Providing comprehensive tools and strategies to safeguard systems and data from evolving cyber risks.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -410,18 +410,18 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Firewall & Cloud Security Solutions">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/firewall-and-cloud-security-solutions-icon.png'; ?>" alt="Firewall & Cloud Security Solutions">
                                             </div>
                                             <div class="title">
                                                 Firewall & Cloud Security Solutions
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Securing networks and clouds with advanced protocols and monitoring.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -429,37 +429,37 @@ include('./constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Project Management">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/it-project-management-icon.png'; ?>" alt="IT Project Management">
                                             </div>
                                             <div class="title">
                                                 IT Project Management
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Managing IT projects efficiently, ensuring timely delivery, resource allocation, and alignment with organizational goals.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'Firewall & Cloud Security Solutions'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
-
+                                    
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Storage, Staging & Logistics">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/storage-staging-and-logistics-icon.png'; ?>" alt="Storage, Staging & Logistics">
                                             </div>
                                             <div class="title">
                                                 Storage, Staging & Logistics
                                             </div>
                                             <div class="subtitle">
-                                                Proactive assistance for end users, ensuring quick resolution of issues and enhancing overall productivity.
+                                                Efficient management of goods for secure storage, preparation, and timely distribution or deployment.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -468,15 +468,15 @@ include('./constant.php');
 
                             <div class="mobile">
                                 <div class="cards d-flex flex-column">
-                                    <a href="<?php echo $desktop_url . 'services/data-center-support.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">
                                         <div class="card">
                                             <div class="card-content d-flex justify-content-between align-items-center">
                                                 <div class="left-portion d-flex align-items-center">
                                                     <div class="card-icon-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/global-service-desk-icon.png'; ?>" alt="Global Service Desk">
                                                     </div>
                                                     <div class="titletxt">
-                                                        Data Center Support
+                                                        Global Service Desk
                                                     </div>
                                                 </div>
                                                 <div class="forward-arrow-img d-flex">
@@ -485,15 +485,15 @@ include('./constant.php');
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="<?php echo $desktop_url . 'services/cyber-security-consulting.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">
                                         <div class="card">
                                             <div class="card-content d-flex justify-content-between align-items-center">
                                                 <div class="left-portion d-flex align-items-center">
                                                     <div class="card-icon-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Cyber Security Consulting">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-security-solutions-icon.png'; ?>" alt="Cyber Security Solutions">
                                                     </div>
                                                     <div class="titletxt">
-                                                        Cyber Security Consulting
+                                                        Cyber Security Solutions
                                                     </div>
                                                 </div>
                                                 <div class="forward-arrow-img d-flex">
@@ -502,15 +502,15 @@ include('./constant.php');
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="<?php echo $desktop_url . 'services/hybrid-cloud.php'; ?>">
+                                    <a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">
                                         <div class="card">
                                             <div class="card-content d-flex justify-content-between align-items-center">
                                                 <div class="left-portion d-flex align-items-center">
                                                     <div class="card-icon-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Hybrid Cloud">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/firewall-and-cloud-security-solutions-icon.png'; ?>" alt="Firewall & Cloud Security Solutions">
                                                     </div>
                                                     <div class="titletxt">
-                                                        Hybrid Cloud
+                                                        Firewall & Cloud Security Solutions
                                                     </div>
                                                 </div>
                                                 <div class="forward-arrow-img d-flex">

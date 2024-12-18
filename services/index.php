@@ -113,7 +113,7 @@ include('../constant.php');
                     <div class="services-excelled-carousel-container">
                         <div class="cards d-flex">
                             <div class="card">
-                                <a href="<?php echo $desktop . 'industries/oil-and-gas.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/oil-and-gas.php'; ?>">
                                     <div class="content-container">
                                         <div class="icon-image d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'oil-and-gas-industries-icon.png'; ?>" alt="Oil & Gas">
@@ -128,7 +128,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="<?php echo $desktop . 'industries/banking-and-financial.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/banking-and-financial.php'; ?>">
                                     <div class="content-container">
                                         <div class="icon-image d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'banking-and-financial-industries-icon.png'; ?>" alt="Banking & Financial Services">
@@ -143,7 +143,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="<?php echo $desktop . 'industries/retail.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">
                                     <div class="content-container">
                                         <div class="icon-image d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'retail-industries-icon.png'; ?>" alt="Retail">
@@ -158,7 +158,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="<?php echo $desktop . 'industries/healthcare.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/healthcare.php'; ?>">
                                     <div class="content-container">
                                         <div class="icon-image d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'healthcare-industries-icon.png'; ?>" alt="Healthcare">
@@ -173,7 +173,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card">
-                                <a href="<?php echo $desktop . 'industries/telecom.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/telecom.php'; ?>">
                                     <div class="content-container">
                                         <div class="icon-image d-flex">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'telecom-industries-icon.png'; ?>" alt="Telecom">
@@ -195,7 +195,7 @@ include('../constant.php');
                     <div class="m-forward-linking-cards m-services-excelled-container">
                         <div class="cards d-flex flex-column">
                             <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                <a href="<?php echo $desktop . 'industries/oil-and-gas.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/oil-and-gas.php'; ?>">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -212,7 +212,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                <a href="<?php echo $desktop . 'industries/banking-and-financial.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/banking-and-financial.php'; ?>">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -229,7 +229,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                <a href="<?php echo $desktop . 'industries/retail.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/retail.php'; ?>">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -246,7 +246,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                <a href="<?php echo $desktop . 'industries/healthcare.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/healthcare.php'; ?>">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -263,7 +263,7 @@ include('../constant.php');
                                 </a>
                             </div>
                             <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                <a href="<?php echo $desktop . 'industries/telecom.php'; ?>">
+                                <a href="<?php echo $desktop_url . 'industries/telecom.php'; ?>">
                                     <div class="card-content d-flex justify-content-between align-items-center">
                                         <div class="left-portion d-flex align-items-center">
                                             <div class="card-icon-img d-flex">
@@ -308,7 +308,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Global Service Desk">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-service-desk-icon.png'; ?>" alt="Global Service Desk">
                                             </div>
                                             <div class="title">
                                                 Global Service Desk
@@ -319,7 +319,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -327,7 +327,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Global IT Support Services">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-support-services-icon.png'; ?>" alt="Global IT Support Services">
                                             </div>
                                             <div class="title">
                                                 Global IT Support Services
@@ -338,7 +338,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/global-it-support-services.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -346,7 +346,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Global IT Staffing">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-staffing-icon.png'; ?>" alt="Global IT Staffing">
                                             </div>
                                             <div class="title">
                                                 Global IT Staffing
@@ -357,7 +357,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/global-it-staffing.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -365,7 +365,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Global IT Asset Lifecycle Management">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-asset-lifecycle-management-icon.png'; ?>" alt="Global IT Asset Lifecycle Management">
                                             </div>
                                             <div class="title">
                                                 Global IT Asset Lifecycle Management
@@ -376,7 +376,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/global-it-asset-lifecycle-management.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -384,7 +384,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'helpdesk-service-icon.png'; ?>" alt="Cyber Risk Assessments">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-risk-assessments-icon.png'; ?>" alt="Cyber Risk Assessments">
                                             </div>
                                             <div class="title">
                                                 Cyber Risk Assessments
@@ -395,7 +395,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/cyber-risk-assessments.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -403,7 +403,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Cyber Security Audits">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-security-audits-icon.png'; ?>" alt="Cyber Security Audits">
                                             </div>
                                             <div class="title">
                                                 Cyber Security Audits
@@ -414,7 +414,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/cyber-security-audits.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -422,7 +422,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Penetration Testing">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/penetration-testing-icon.png'; ?>" alt="Penetration Testing">
                                             </div>
                                             <div class="title">
                                                 Penetration Testing
@@ -433,7 +433,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/penetration-testing.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -441,7 +441,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Cyber Security Solutions">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-security-solutions-icon.png'; ?>" alt="Cyber Security Solutions">
                                             </div>
                                             <div class="title">
                                                 Cyber Security Solutions
@@ -452,7 +452,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -460,18 +460,18 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Firewall & Cloud Security Solutions">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/firewall-and-cloud-security-solutions-icon.png'; ?>" alt="Firewall & Cloud Security Solutions">
                                             </div>
                                             <div class="title">
                                                 Firewall & Cloud Security Solutions
                                             </div>
                                             <div class="subtitle">
-                                                Protecting networks and cloud environments with advanced security protocols and monitoring to prevent unauthorized access.
+                                                Securing networks and clouds with advanced protocols and monitoring.
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -479,7 +479,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Project Management">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/it-project-management-icon.png'; ?>" alt="IT Project Management">
                                             </div>
                                             <div class="title">
                                                 IT Project Management
@@ -489,8 +489,8 @@ include('../constant.php');
                                             </div>
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
-                                            <a href="<?php echo $desktop_url . 'Firewall & Cloud Security Solutions'; ?>">
-                                                <p>Learn More</p>
+                                            <a href="<?php echo $desktop_url . 'services/it-project-management.php'; ?>">
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -498,7 +498,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Infrastructure Audits">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/it-infrastructure-audits-icon.png'; ?>" alt="IT Infrastructure Audits">
                                             </div>
                                             <div class="title">
                                                 IT Infrastructure Audits
@@ -509,7 +509,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/it-infrastructure-audits.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -517,7 +517,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Deployments">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/it-deployments-icon.png'; ?>" alt="IT Deployments">
                                             </div>
                                             <div class="title">
                                                 IT Deployments
@@ -528,7 +528,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/it-deployments.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -536,7 +536,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="IT Asset Recycling">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/it-asset-recycling-icon.png'; ?>" alt="IT Asset Recycling">
                                             </div>
                                             <div class="title">
                                                 IT Asset Recycling
@@ -547,7 +547,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/it-asset-recycling.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -555,7 +555,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Procurement">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/procurement-icon.png'; ?>" alt="Procurement">
                                             </div>
                                             <div class="title">
                                                 Procurement
@@ -566,7 +566,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/procurement.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -574,7 +574,7 @@ include('../constant.php');
                                     <div class="card d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000">
                                         <div class="top-part">
                                             <div class="creative-img d-flex">
-                                                <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="Storage, Staging & Logistics">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/storage-staging-and-logistics-icon.png'; ?>" alt="Storage, Staging & Logistics">
                                             </div>
                                             <div class="title">
                                                 Storage, Staging & Logistics
@@ -585,7 +585,7 @@ include('../constant.php');
                                         </div>
                                         <div class="btm-part d-flex justify-content-center align-items-center">
                                             <a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">
-                                                <p>Learn More</p>
+                                                <p>Know More</p>
                                             </a>
                                         </div>
                                     </div>
@@ -596,14 +596,14 @@ include('../constant.php');
                                 <div class="m-forward-linking-cards m-services-our-services-container">
                                     <div class="cards d-flex flex-column">
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/data-center-support.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/global-service-desk.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'data-center-support-service-icon.png'; ?>" alt="Data Center Support">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/global-service-desk-icon.png'; ?>" alt="Global Service Desk">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Data Center Support
+                                                            Global Service Desk
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -613,14 +613,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/cyber-security-consulting.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/global-it-support-services.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'cyber-security-consultng-service-icon.png'; ?>" alt="Cyber Security Consulting">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-support-services-icon.png'; ?>" alt="Global IT Support Services">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Cyber Security Consulting
+                                                            Global IT Support Services
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -630,14 +630,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/hybrid-cloud.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/global-it-staffing-icon.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-service-icon.png'; ?>" alt="Hybrid Cloud">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-staffing-icon.png'; ?>" alt="Global IT Staffing">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Hybrid Cloud
+                                                            Global IT Staffing
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -647,14 +647,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/network.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/global-it-asset-lifecycle-management.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'network-service-icon.png'; ?>" alt="Network">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-asset-lifecycle-management-icon.png'; ?>" alt="Global IT Asset Lifecycle Management">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Network
+                                                            Global IT Asset Lifecycle Management
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -664,14 +664,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/helpdesk.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/cyber-risk-assessments.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'helpdesk-service-icon.png'; ?>" alt="Help Desk">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-risk-assessments-icon.png'; ?>" alt="Cyber Risk Assessments">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Help Desk
+                                                            Cyber Risk Assessments
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -681,14 +681,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/end-user-support.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/cyber-security-audits.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'end-user-support-service-icon.png'; ?>" alt="End-User Support">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-security-audits-icon.png'; ?>" alt="Cyber Security Audits">
                                                         </div>
                                                         <div class="titletxt">
-                                                            End-User Support
+                                                            Cyber Security Audits
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -698,14 +698,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/audio-visual.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/penetration-testing.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'audio-visual-service-icon.png'; ?>" alt="Audio Visual">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/penetration-testing-icon.png'; ?>" alt="Penetration Testing">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Audio Visual
+                                                            Penetration Testing
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -715,14 +715,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/wifi-services.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/cyber-security-solutions.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'wifi-services-icon.png'; ?>" alt="WiFi Services">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-security-solutions-icon.png'; ?>" alt="Cyber Security Solutions">
                                                         </div>
                                                         <div class="titletxt">
-                                                            WiFi Services
+                                                            Cyber Security Solutions
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -732,14 +732,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/operating-system.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/firewall-and-cloud-security-solutions.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'opearting-system-service-icon.png'; ?>" alt="Operating System">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/firewall-and-cloud-security-solutions-icon.png'; ?>" alt="Firewall & Cloud Security Solutions">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Operating System
+                                                            Firewall & Cloud Security Solutions
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -749,14 +749,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/new-office-and-migration-solutions.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/it-project-management.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'new-office-and-migration-solutions-service-icon.png'; ?>" alt="New Office + Migration Solutions">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/it-project-management-icon.png'; ?>" alt="IT Project Management">
                                                         </div>
                                                         <div class="titletxt">
-                                                            New Office + Migration Solutions
+                                                            IT Project Management
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -766,14 +766,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/storage-as-a-service.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/it-infrastructure-audits.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'storage-as-a-service-icon.png'; ?>" alt="Storage as a Service (SaaS)">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/it-infrastructure-audits-icon.png'; ?>" alt="IT Infrastructure Audits">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Storage as a Service (SaaS)
+                                                            IT Infrastructure Audits
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -783,14 +783,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/device-as-a-service.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/it-deployments.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'device-as-a-service-icon.png'; ?>" alt="Device as a Service (Daas)">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/it-deployments-icon.png'; ?>" alt="IT Deployments">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Device as a Service (Daas)
+                                                            IT Deployments
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -800,14 +800,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/end-point-security.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/it-asset-recycling.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'end-point-security-service-icon.png'; ?>" alt="End Point Security">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/it-asset-recycling-icon.png'; ?>" alt="IT Asset Recycling">
                                                         </div>
                                                         <div class="titletxt">
-                                                            End Point Security
+                                                            IT Asset Recycling
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -817,14 +817,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/network-security.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/procurement.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'network-security-service-icon.png'; ?>" alt="Network Security">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/procurement-icon.png'; ?>" alt="Procurement">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Network Security
+                                                            Procurement
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
@@ -834,184 +834,14 @@ include('../constant.php');
                                             </a>
                                         </div>
                                         <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/application-security.php'; ?>">
+                                            <a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">
                                                 <div class="card-content d-flex justify-content-between align-items-center">
                                                     <div class="left-portion d-flex align-items-center">
                                                         <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'application-security-service-icon.png'; ?>" alt="Application Security">
+                                                            <img loading="lazy" src="<?php echo $desktop_images . 'services/storage-staging-and-logistics-icon.png'; ?>" alt="Storage, Staging & Logistics">
                                                         </div>
                                                         <div class="titletxt">
-                                                            Application Security
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/web-security.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'web-security-service-icon.png'; ?>" alt="Web Security">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Web Security
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/email-security.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'email-security-service-icon.png'; ?>" alt="Email Security">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Email Security
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/hybrid-cloud-security.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'hybrid-cloud-security-service-icon.png'; ?>" alt="Hybrid Cloud Security">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Hybrid Cloud Security
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/warehouse.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'warehouse-service-icon.png'; ?>" alt="Warehouse">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Warehouse
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/public-cloud-integartion-and-migration.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'public-cloud-integartion-and-migration-service-icon.png'; ?>" alt="Public Cloud Integration + Migration">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Public Cloud Integration + Migration
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/private-cloud-solutions.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'private-cloud-solutions-service-icon.png'; ?>" alt="Private Cloud Solutions">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Private Cloud Solutions
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/office-365-and-g-suite-migration-and-integration.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'office-365-and-g-suite-migration-and-integration-service-icon.png'; ?>" alt="Office 365 And G-Suite Migration + Integration">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Office 365 And G-Suite Migration + Integration
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/software-and-application-development.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'software-and-application-development-service-icon.png'; ?>" alt="Software and Application Development">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Software and Application Development
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/api-integration.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'api-integration-service-icon.png'; ?>" alt="API Integration">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            API Integration
-                                                        </div>
-                                                    </div>
-                                                    <div class="forward-arrow-img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'black-arrow.png'; ?>" alt="Arrow">
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card" data-aos="zoom-out" data-aos-duration="1000">
-                                            <a href="<?php echo $desktop . 'services/network-and-system-automation.php'; ?>">
-                                                <div class="card-content d-flex justify-content-between align-items-center">
-                                                    <div class="left-portion d-flex align-items-center">
-                                                        <div class="card-icon-img d-flex">
-                                                            <img loading="lazy" src="<?php echo $desktop_images . 'network-and-system-automation-service-icon.png'; ?>" alt="Network And System Automation">
-                                                        </div>
-                                                        <div class="titletxt">
-                                                            Network And System Automation
+                                                            Storage, Staging & Logistics
                                                         </div>
                                                     </div>
                                                     <div class="forward-arrow-img d-flex">
