@@ -850,6 +850,17 @@
     padding: 0 15px;
     transition: all 0.3s ease-in-out;
   }
+  .footer-bg .main-content-container .content-container .footer-list .details {
+    height: 55px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .footer-bg .main-content-container .content-container .footer-list .details a {
+    height: 100%;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 500;
+  }
   .footer-bg .main-content-container .footer-btm {
     margin-inline: auto;
     height: auto;

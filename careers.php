@@ -124,7 +124,7 @@ require_once('constant.php');
                         Why work with us?
                     </div>
                     <div class="sub-txt">
-                        Lorem ipsum dolor sit amet consectetur. Congue lorem aliquet lacus sagittis. Nunc leo in sed blandit vel lorem eu. Convallis sed enim phasellus mauris feugiat sem. Massa dui amet
+                        At Excis, we offer a dynamic and inclusive work environment where innovation and growth thrive. Join our team to collaborate, learn, and build a rewarding career in the tech industry.
                     </div>
                 </div>
 
@@ -230,7 +230,7 @@ require_once('constant.php');
                                     </div>
 
                                     <div class="sub-txt">
-                                        At Excis, hard work doesn’t go unnoticed. We celebrate individual achievements and team successes, recognizing contributions that make a difference. We ensure our employees feel valued and appreciated for their dedication.
+                                        At Excis, we believe that hard work should always be recognized. We celebrate both individual achievements and collective team successes, ensuring that every contribution, big or small, is valued. Our culture of appreciation fosters a positive work environment where employees feel empowered, motivated, and proud of their impact. We take the time to acknowledge dedication and effort, reinforcing our commitment to building a supportive and rewarding workplace for all.
                                     </div>
                                 </div>
 

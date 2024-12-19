@@ -1028,6 +1028,19 @@
                             }
                         }
                     }
+
+                    .details {
+                        height: 55px;
+                        border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+
+                        a {
+                            height: 100%;
+                            width: 100%;
+                            color: var(--white-color);
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
                 }
             }
 
