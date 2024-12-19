@@ -358,7 +358,7 @@
 }
 
 .career-testimonial-carousel {
-  padding: 25px 0 70px;
+  margin: 25px 0 70px;
 }
 .career-testimonial-carousel .owl-item .item {
   transform: translate3d(0, 0, 0);

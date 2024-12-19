@@ -241,7 +241,7 @@ require_once('constant.php');
                         </div>
 
                         <div class="learn-more-btn-container d-flex justify-content-center align-items-center">
-                            <a href="<?php echo $desktop_url . 'about-us.php'; ?>">
+                            <a href="https://excis.zohorecruit.com/jobs/job">
                                 <div class="learn-more-btn d-flex align-items-center">
                                     <p>Join Us</p>
                                     <div class="arrow d-flex">
@@ -502,7 +502,9 @@ require_once('constant.php');
             loop: true,
             responsiveClass: true,
             margin: 0,
-            autoplayTimeout: 4000,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
             smartSpeed: 400,
             center: true,
             nav: false, // Disable default nav
@@ -511,9 +513,12 @@ require_once('constant.php');
                     items: 1,
                 },
                 600: {
-                    items: 5
+                    items: 2,
                 },
-                1200: {
+                900: {
+                    items: 3,
+                },
+                1260: {
                     items: 5
                 }
             }
@@ -612,58 +617,6 @@ require_once('constant.php');
                 });
             });
         });
-    </script>
-
-    <script>
-        const triangles = document.querySelectorAll('.pie-containers-center-point .pie-slice');
-
-        const infoCards = document.querySelectorAll('.pie-section-info-card');
-
-        triangles.forEach(triangle => {
-
-            triangle.onclick = function() {
-
-                // Extract the class that starts with "slice-"
-                const className = triangle.className;
-                const sliceClass = className.split(' ').find(cls => cls.startsWith('slice-'));
-
-                // If sliceClass exists, extract the number after "slice-"
-                const sliceNumber = sliceClass ? sliceClass.split('-')[1] : '';
-
-                // Remove 'active' class from all triangles
-                triangles.forEach(triangle => {
-                    triangle.classList.remove('active');
-                });
-
-                triangle.classList.add('active');
-
-                // Remove 'active' class from all info cards
-                infoCards.forEach(card => {
-                    card.classList.remove('active');
-                });
-
-                // Add 'active' class to the corresponding info card (use sliceNumber - 1 if needed)
-                if (sliceNumber && infoCards[sliceNumber - 1]) {
-                    infoCards[sliceNumber - 1].classList.add('active');
-                }
-            }
-        });
-
-        window.onload = function() {
-            var n = 0;
-            var pieSlices = document.querySelectorAll(".pie-containers-center-point .pie-slice");
-
-            pieSlices.forEach((slice, index) => {
-                setTimeout(function() {
-                    var n = index + 1;
-                    slice.classList.add(`slice-${n}`);
-                }, 300 * (index + 1));
-            });
-
-            setTimeout(function() {
-                pieSlices[0].classList.add("active");
-            }, 3100);
-        };
     </script>
 
     <script>

@@ -867,13 +867,17 @@ include('../constant.php');
                     <div style="font-size: 40px; font-weight: 700; line-height: 54px; color: #F58520;">
                         Get Your Right Solution, <br> Connect with Excis Today!
                     </div>
-                    <div style="width: fit-content; padding: 12px 14px; background: rgba(18, 24, 32); gap: 12px; border-radius: 10px;"
-                        class="d-flex justify-content-center align-items-center">
-                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #fff;">
-                            Let's Work Together</p>
-                        <div style="width: 20px;" class="d-flex">
-                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
-                        </div>
+
+
+                    <div class="learn-more-btn-container d-flex justify-content-center align-items-center" style="width: fit-content;">
+                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
+                            <div class="learn-more-btn d-flex align-items-center">
+                                <p>Let's Work Together</p>
+                                <div class="arrow d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
