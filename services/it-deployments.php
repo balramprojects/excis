@@ -412,7 +412,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/it-hardware-and-software-icon.png'; ?>" alt="IT Hardware & Software">
                                                     </div>
                                                 </div>
                                             </div>
@@ -429,7 +429,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/end-user-computing-icon.png'; ?>" alt="End User Computing">
                                                     </div>
                                                 </div>
                                             </div>
@@ -446,7 +446,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/networking-infrastructure-icon.png'; ?>" alt="Networking Infrastructure">
                                                     </div>
                                                 </div>
                                             </div>
@@ -463,7 +463,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/data-cabling-and-connectivity-icon.png'; ?>" alt="Data Cabling & Connectivity">
                                                     </div>
                                                 </div>
                                             </div>
@@ -480,7 +480,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/network-switching-icon.png'; ?>" alt="Network Switching">
                                                     </div>
                                                 </div>
                                             </div>
@@ -497,7 +497,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/enterprise-wifi-icon.png'; ?>" alt="Enterprise WiFi">
                                                     </div>
                                                 </div>
                                             </div>
@@ -514,7 +514,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/audio-visual-and-conferencing-icon.png'; ?>" alt="Audio Visual & Conferencing">
                                                     </div>
                                                 </div>
                                             </div>
@@ -531,7 +531,7 @@ require_once('../constant.php');
                                             <div class="icon-img-container">
                                                 <div class="icon-img d-flex justify-content-center align-items-center">
                                                     <div class="img d-flex">
-                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'services/cctv-and-access-control-icon.png'; ?>" alt="CCTV & Access Control">
                                                     </div>
                                                 </div>
                                             </div>

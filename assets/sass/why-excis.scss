@@ -837,7 +837,12 @@
                                 border-radius: 50%;
 
                                 .img {
-                                    width: 26px;
+                                    height: 26px;
+
+                                    img {
+                                        width: auto;
+                                        margin-inline: auto;
+                                    }
                                 }
                             }
                         }
@@ -867,6 +872,286 @@
             }
         }
     }
+}
+
+.pie-containers {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+
+    .pie-containers-center-point {
+        width: 0;
+        height: 0;
+        position: relative;
+
+        .pie-container-center-circle {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: rgba(21, 35, 75);
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pie-slice {
+            width: 206px;
+            height: 300px;
+            position: absolute;
+            top: -300px;
+            left: 50%;
+            transform-origin: bottom;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 40px, 50% 100%, 0% 40px);
+            transform: translate(-50%, 0);
+            transition: all .5s ease-in-out;
+
+            &.slice-1 {
+                transform: translate(-50%, 0) rotate(0deg);
+            }
+
+            &.slice-2 {
+                transform: translate(-50%, 0) rotate(45deg);
+            }
+
+            &.slice-3 {
+                transform: translate(-50%, 0) rotate(90deg);
+            }
+
+            &.slice-4 {
+                transform: translate(-50%, 0) rotate(135deg);
+            }
+
+            &.slice-5 {
+                transform: translate(-50%, 0) rotate(180deg);
+            }
+
+            &.slice-6 {
+                transform: translate(-50%, 0) rotate(225deg);
+            }
+
+            &.slice-7 {
+                transform: translate(-50%, 0) rotate(270deg);
+            }
+
+            &.slice-8 {
+                transform: translate(-50%, 0) rotate(315deg);
+            }
+
+            .pie-triangle {
+                height: 250px;
+                width: 206px;
+                position: relative;
+                top: 40px;
+                background: rgba(233, 233, 233);
+                clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+                cursor: pointer;
+
+                .pie-triangle-left-curve-block,
+                .pie-triangle-right-curve-block {
+                    width: 17px;
+                    height: 17px;
+                    position: absolute;
+                    top: -2px;
+                    background: #fff;
+
+                    .pie-triangle-curve {
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        top: 1px;
+                        background: rgba(233, 233, 233);
+                        border-radius: 50%;
+                    }
+                }
+
+                .pie-triangle-left-curve-block {
+                    border-bottom-right-radius: 10px;
+                    border-top-right-radius: 10px;
+                    left: 0;
+
+                    .pie-triangle-curve {
+                        left: 5.5px;
+                    }
+                }
+
+                .pie-triangle-right-curve-block {
+                    border-bottom-left-radius: 10px;
+                    border-top-left-radius: 10px;
+                    right: 0;
+
+                    .pie-triangle-curve {
+                        right: 5.5px;
+                    }
+                }
+            }
+
+            .pie-triangle-outer-circle {
+                height: 52px;
+                width: 52px;
+                position: absolute;
+                top: 15px;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(233, 233, 233);
+                border: 1.5px solid #fff;
+                border-radius: 50%;
+                box-shadow: 0px 8px 3px -1px rgb(137, 147, 152);
+
+                .pie-triangle-inner-circle {
+                    height: 42px;
+                    width: 42px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(191, 191, 191, 1);
+                    border: 1.5px solid #fff;
+                    border-radius: 50%;
+
+                    .icon-img {
+                        max-width: 21px;
+                        display: flex;
+                    }
+                }
+            }
+
+            &.active {
+                .pie-triangle {
+                    background: var(--orange-color);
+                    top: 30px;
+                    transition: all .2s ease-in-out;
+
+                    .pie-triangle-left-curve-block .pie-triangle-curve,
+                    .pie-triangle-right-curve-block .pie-triangle-curve {
+                        background: var(--orange-color);
+                        transition: .2s ease-in-out;
+                    }
+                }
+
+                .pie-triangle-outer-circle {
+                    top: 0;
+                    background: rgb(21, 35, 75);
+                    box-shadow: 0px 8px 3px -1px rgb(21, 35, 75, 0.5);
+                    transition: all .2s ease-in-out;
+
+                    .pie-triangle-inner-circle {
+                        background: rgb(245, 133, 32);
+                        transition: all .2s ease-in-out;
+                    }
+                }
+            }
+
+            &:hover {
+                .pie-triangle {
+                    background: var(--orange-color);
+                    top: 30px;
+                    transition: all .2s ease-in-out;
+
+                    .pie-triangle-left-curve-block .pie-triangle-curve,
+                    .pie-triangle-right-curve-block .pie-triangle-curve {
+                        background: var(--orange-color);
+                        transition: .2s ease-in-out;
+                    }
+                }
+
+                .pie-triangle-outer-circle {
+                    top: 0;
+                    background: rgb(21, 35, 75);
+                    box-shadow: 0px 8px 3px -1px rgb(21, 35, 75, 0.5);
+                    transition: all .2s ease-in-out;
+
+                    .pie-triangle-inner-circle {
+                        background: rgb(245, 133, 32);
+                        transition: all .2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pie-containers-center-point .pie-slice .txt-content {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(115, 115, 115, 0.5);
+    font-size: 12px;
+    font-weight: 700;
+    text-wrap: wrap;
+}
+
+.pie-containers-center-point .pie-slice:hover .txt-content {
+    top: calc(50% - 30px);
+    color: #fff;
+    font-size: 13px;
+    transition: all .2s ease-in-out;
+}
+
+.pie-containers-center-point .pie-slice.active .txt-content {
+    top: calc(50% - 30px);
+    color: #fff;
+    font-size: 13px;
+    transition: all .2s ease-in-out;
+}
+
+.pie-containers-center-point .pie-slice.slice-1 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    transform: rotate(0deg);
+}
+
+.pie-containers-center-point .pie-slice.slice-2 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    max-width: 15px;
+    transform: rotate(-45deg);
+}
+
+.pie-containers-center-point .pie-slice.slice-3 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    max-width: 21px;
+    transform: rotate(-90deg);
+}
+
+.pie-containers-center-point .pie-slice.slice-4 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    transform: rotate(-135deg);
+}
+
+.pie-containers-center-point .pie-slice.slice-5 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    transform: rotate(-180deg);
+}
+
+.pie-containers-center-point .pie-slice.slice-6 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    transform: rotate(-225deg);
+}
+
+.pie-containers-center-point .pie-slice.slice-7 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    transform: rotate(-270deg);
+}
+
+.pie-containers-center-point .pie-slice.slice-8 .pie-triangle-outer-circle .pie-triangle-inner-circle .icon-img {
+    transform: rotate(-315deg);
+}
+
+.pie-section-info-card {
+    max-width: 550px;
+    margin-left: auto;
+    display: none;
+}
+
+.pie-section-info-card:hover {
+    display: block;
+}
+
+.pie-section-info-card.active {
+    display: block;
 }
 
 .why-choose-bg {

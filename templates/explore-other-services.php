@@ -18,8 +18,8 @@
                         <div class="pie-containers">
                             <div class="pie-containers-center-point">
                                 <div class="pie-container-center-circle">
-                                    <div style="width: 120px; display: flex;">
-                                        <img loading="lazy" style="height: 100%; width: 100%;" src="../assets/images/excis-logo.png" alt="">
+                                    <div style="width: 120px;" class="d-flex">
+                                        <img loading="lazy" src="<?php echo $desktop_images . 'excis-logo.png'; ?>" alt="Excis">
                                     </div>
                                 </div>
 
@@ -35,7 +35,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon8.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-service-desk-icon-white.png'; ?>" alt="Global Service Desk">
                                             </div>
                                         </div>
                                     </div>
@@ -55,7 +55,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon2.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/global-it-support-services-icon-white.png'; ?>" alt="Global IT Support Services">
                                             </div>
                                         </div>
                                     </div>
@@ -75,7 +75,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon3.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/cyber-security-solutions-icon-white.png'; ?>" alt="Cyber Security Solutions">
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon4.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/firewall-and-cloud-security-solutions-icon-white.png'; ?>" alt="Firewall & Cloud Security Solutions">
                                             </div>
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon5.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/it-project-management-icon-white.png'; ?>" alt="IT Project Management">
                                             </div>
                                         </div>
                                     </div>
@@ -135,7 +135,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon6.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/it-asset-recycling-icon-white.png'; ?>" alt="IT Asset Recycling">
                                             </div>
                                         </div>
                                     </div>
@@ -155,7 +155,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon7.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/procurement-icon-white.png'; ?>" alt="Procurement">
                                             </div>
                                         </div>
                                     </div>
@@ -175,7 +175,7 @@
                                     <div class="pie-triangle-outer-circle">
                                         <div class="pie-triangle-inner-circle">
                                             <div class="icon-img">
-                                                <img loading="lazy" src="../assets/images/pie-icon1.png" alt="">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'services/storage-staging-and-logistics-icon-white.png'; ?>" alt="Storage, Staging & Logistics">
                                             </div>
                                         </div>
                                     </div>
