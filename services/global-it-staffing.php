@@ -352,7 +352,7 @@ require_once('../constant.php');
 
     <div class="full-container">
         <div class="white-container-bg">
-            <div class="container">
+            <div class="container" style="overflow: visible;">
                 <div class="left-btm-abstract2 desktop" style="bottom: -150px;"></div>
                 <div class="right-top-abstract2 desktop" style="top: -150px;"></div>
 
@@ -398,10 +398,12 @@ require_once('../constant.php');
                             <div class="content d-flex align-items-start">
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Tailored Global IT Staffing Services
+                                        Our Global IT Staffing Services Include
                                     </div>
                                     <div class="sub-txt">
-                                        Empowering businesses with skilled IT professionals, flexible staffing solutions, and proactive service management to ensure seamless operations and adapt to evolving needs.
+                                        Excis offers tailored IT staffing solutions to ensure your organization runs smoothly and efficiently, no matter the changing demands.
+                                        <br> <br>
+                                        From providing dedicated professionals to overseeing service delivery, our staffing services are designed to meet your dynamic IT needs while upholding the highest standards of service quality.
                                     </div>
                                 </div>
                                 <div class="cards d-flex justify-content-center">

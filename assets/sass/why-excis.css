@@ -680,19 +680,21 @@
 }
 .services-extend-capabilities .content-container .content .text-content .sub-txt {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 24px;
   color: var(--black-color);
-  padding: 10px 0 0;
+  padding: 20px 0 0;
 }
 .services-extend-capabilities .content-container .content .cards {
   max-width: 700px;
-  gap: 40px 30px;
+  gap: 10px 30px;
   flex-wrap: wrap;
   margin-inline: auto;
 }
 .services-extend-capabilities .content-container .content .cards .card {
   width: 330px;
   border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 .services-extend-capabilities .content-container .content .cards .card .card-content {
   padding: 25px;
@@ -712,13 +714,13 @@
   width: 26px;
 }
 .services-extend-capabilities .content-container .content .cards .card .card-content .heading-txt {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 700;
   color: var(--blue-color);
 }
 .services-extend-capabilities .content-container .content .cards .card .card-content .sub-txt {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   color: calc(--black-color);
   padding: 10px 0 0;
@@ -727,6 +729,7 @@
   border-radius: 15px;
   background: var(--primary-white-color);
   border: 1px solid var(--border-color);
+  transition: all 0.3s ease-in-out;
 }
 
 .why-choose-bg {

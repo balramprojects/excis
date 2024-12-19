@@ -72,23 +72,39 @@ include('constant.php');
     </div>
 
     <div class="full-container">
-        <div class="about-service-bg">
-            <div class="about-service-container">
-                <div class="left-btm-abstract dekstop"></div>
-                <div class="right-top-abstract desktop"></div>
+        <div class="white-container-bg">
+            <div class="container">
+                <div class="left-btm-abstract2 desktop" style="bottom: -150px;"></div>
+                <div class="right-top-abstract2 desktop" style="top: -150px;"></div>
 
-                <div style="padding: 50px 15px;" class="main-content-container">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div style="max-width: 600px;">
-                            <div style="font-size: 30px; font-weight: 500; line-height: 40px; color: #F58520;">
+                <div class="main-content-container">
+                    <div class="page-about-feature-content d-flex justify-content-between align-items-center">
+                        <div class="txt-content">
+                            <div class="heading-txt">
                                 Who We Are
                             </div>
-                            <div style="padding: 25px 0 0; font-size: 14px; font-weight: 400; line-height: 22px; color: #000;">
+
+                            <div class="m-creative d-flex">
+                                <img src="<?php echo $desktop_images . 'data-center-creativity.png'; ?>" alt="Careers">
+                            </div>
+
+                            <div class="sub-txt">
                                 Excis is a global IT services company that provides 24/7 multilingual support and onsite assistance in over 190+ countries. With a focus on end-user computing and networking, we ensure our clients experience seamless and efficient IT operations. Our extensive network of skilled professionals allows us to deliver high-quality, reliable solutions tailored to meet the diverse needs of businesses worldwide.
                             </div>
+
+                            <div class="learn-more-btn-container d-flex justify-content-start align-items-center">
+                                <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
+                                    <div class="learn-more-btn d-flex align-items-center">
+                                        <p>Partner With Us Today</p>
+                                        <div class="arrow d-flex">
+                                            <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div style="max-width: 360px;" class="d-flex">
-                            <img loading="lazy" src="assets/images/data-center-creativity.png" alt="">
+                        <div class="creative d-flex">
+                            <img src="<?php echo $desktop_images . 'data-center-creativity.png'; ?>" alt="Careers">
                         </div>
                     </div>
                 </div>

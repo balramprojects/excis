@@ -355,7 +355,11 @@
                                 Storage, Staging & Logistics
                             </div>
                             <div style="font-size: 14px; font-weight: 400; line-height: 22px; color: #000; padding: 25px 0 0;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus adipisci mollitia, sunt, nisi dolores quas enim, esse itaque quia neque dolore cum quis exercitationem error. Aliquam fugit natus obcaecati? Autem eligendi eos aut tempore aperiam aliquid totam reiciendis illum nemo quisquam asperiores doloremque eaque minus expedita odit, incidunt vero?
+                                Excis offers a comprehensive suite of services designed to simplify the storage, preparation, and distribution of your IT assets on a global scale. From secure warehousing and climate-controlled storage to meticulous equipment staging and reliable logistics, we provide end-to-end solutions that ensure your equipment is always in the right place, at the right time, and ready for deployment.
+                                <br> <br>
+                                With a strategic global presence, cutting-edge inventory management systems, and a network of trusted logistics partners, Excis helps you scale operations, reduce downtime, and maintain control over your critical IT resources, no matter where in the world you operate.
+                                <br> <br>
+                                <b>Looking to optimize your IT asset management?</b>
                             </div>
                             <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="margin: 30px 0 0;">
                                 <a href="<?php echo $desktop_url . 'services/storage-staging-and-logistics.php'; ?>">

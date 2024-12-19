@@ -102,7 +102,7 @@
 
                 <div class="nav-worldwide-contact-us d-flex justify-content-end align-items-center">
                     <div class="nav-worldwide">
-                        <a href="<?php echo $desktop_url . 'about-us/global-presence.php'; ?>" class="d-flex align-items-center">
+                        <a href="<?php echo $desktop_url . 'global-presence.php'; ?>" class="d-flex align-items-center">
                             <div class="world-icon-img d-flex">
                                 <img src="<?php echo $desktop_images . 'global-presence-black.png'; ?>" alt="Worldwide">
                             </div>

@@ -368,11 +368,11 @@ require_once('../constant.php');
                             </div>
 
                             <div class="sub-txt">
-                                At Excis, our Global Service Desk redefines IT support by providing proactive, high-quality assistance around the clock. Using a follow-the-sun model, our dedicated teams of skilled service desk agents are strategically positioned across multiple continents, ensuring seamless 24/7 support. Whether it’s resolving everyday technical challenges, managing user access, or troubleshooting complex system outages, our experts are always ready to assist.
+                                Excis offers a comprehensive suite of services designed to simplify the storage, preparation, and distribution of your IT assets on a global scale. From secure warehousing and climate-controlled storage to meticulous equipment staging and reliable logistics, we provide end-to-end solutions that ensure your equipment is always in the right place, at the right time, and ready for deployment.
                                 <br> <br>
-                                By leveraging industry best practices and robust IT service management frameworks, we ensure smooth operations, reduce downtime, and streamline issue resolution.
+                                With a strategic global presence, cutting-edge inventory management systems, and a network of trusted logistics partners, Excis helps you scale operations, reduce downtime, and maintain control over your critical IT resources, no matter where in the world you operate.
                                 <br> <br>
-                                <b>Ready to transform your IT support experience?</b>
+                                <b>Looking to optimize your IT asset management?</b>
                             </div>
 
                             <div class="desktop">
@@ -405,7 +405,7 @@ require_once('../constant.php');
                         Why Choose Excis?
                     </div>
                     <div class="sub-txt">
-                        Discover why Excis is the ideal partner for your IT support needs.
+                        Your Global Partner for Efficient IT Asset Management
                     </div>
                 </div>
 
@@ -418,10 +418,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Global Presence with Local Insight
+                                        Global Coverage
                                     </div>
                                     <div class="sub-txt">
-                                        Multilingual agents stationed worldwide ensure support tailored to your region and business needs.
+                                        Strategically located facilities across key markets ensure reliable services worldwide.
                                     </div>
                                 </div>
                             </div>
@@ -433,10 +433,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Proactive Approach
+                                        Secure Storage
                                     </div>
                                     <div class="sub-txt">
-                                        We don’t just fix issues; we analyze patterns, monitor performance, and recommend strategic improvements.
+                                        Climate-controlled environments and advanced security measures protect your IT assets.
                                     </div>
                                 </div>
                             </div>
@@ -448,10 +448,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Seamless Operations
+                                        Comprehensive Equipment Staging
                                     </div>
                                     <div class="sub-txt">
-                                        Transparent escalation and real-time updates make every interaction smooth and efficient.
+                                        Full pre-deployment services to ensure your IT hardware is configured, tested, and ready to go.
                                     </div>
                                 </div>
                             </div>
@@ -463,10 +463,10 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        Advanced ITSM Practices
+                                        Streamlined Logistics
                                     </div>
                                     <div class="sub-txt">
-                                        Robust frameworks and best practices ensure effective, streamlined processes.
+                                        Seamless coordination of international shipping, customs, and last-mile delivery.
                                     </div>
                                 </div>
                             </div>
@@ -478,10 +478,25 @@ require_once('../constant.php');
                                 </div>
                                 <div class="text-content">
                                     <div class="heading-txt">
-                                        24/7 Availability
+                                        Advanced Inventory Management
                                     </div>
                                     <div class="sub-txt">
-                                        Our follow-the-sun model guarantees round-the-clock service for uninterrupted business continuity.
+                                        Real-time tracking and quality control for visibility and accountability.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content d-flex flex-column justify-content-start align-items-center">
+                                <div class="card-icon-img d-flex">
+                                    <img loading="lazy" src="<?php echo $desktop_images . 'career-benefits-icon.png'; ?>" alt="Comprehensive Support and Benefits">
+                                </div>
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Cost Efficiency
+                                    </div>
+                                    <div class="sub-txt">
+                                        Optimized logistics and warehousing solutions to reduce lead times and minimize overhead.
                                     </div>
                                 </div>
                             </div>
@@ -501,10 +516,10 @@ require_once('../constant.php');
                 <div class="main-content-container">
                     <div class="container-txt-content">
                         <div class="heading-txt">
-                            Benefits of Excis’ Global Service Desk
+                            Benefits of Excis’ Storage, Staging <br> & Logistics Service
                         </div>
                         <div class="sub-txt">
-                            Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                            Efficient, Secure, and Scalable Solutions for IT Asset Management
                         </div>
                     </div>
 
@@ -521,10 +536,27 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Improved User Experience
+                                            Reduced Lead Times
                                         </div>
                                         <div class="sub-txt">
-                                            Personalized multilingual support fosters user satisfaction and trust.
+                                            Faster staging, shipping, and deployment of your IT assets to support product launches and rollouts.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block d-flex">
+                                    <div class="img-content">
+                                        <div class="img-circle d-flex justify-content-center align-items-center">
+                                            <div class="tick-img d-flex">
+                                                <img loading="lazy" src="<?php echo $desktop_images . 'white-tick.png'; ?>" alt="✓">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-content d-flex align-items-start">
+                                        <div class="heading-txt">
+                                            Minimized Risk
+                                        </div>
+                                        <div class="sub-txt">
+                                            Ensured compliance and quality control throughout the storage, staging, and logistics process.
                                         </div>
                                     </div>
                                 </div>
@@ -541,7 +573,7 @@ require_once('../constant.php');
                                             Cost Optimization
                                         </div>
                                         <div class="sub-txt">
-                                            Efficient processes and a global presence help lower IT costs without compromising quality.
+                                            Streamlined processes and optimized logistics to reduce overall costs and improve resource allocation.
                                         </div>
                                     </div>
                                 </div>
@@ -555,10 +587,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Sustainable Growth
+                                            Improved Agility
                                         </div>
                                         <div class="sub-txt">
-                                            Enhanced system performance and strategic guidance support your long-term success.
+                                            Flexible solutions that adapt to the demands of your global operations and business needs.
                                         </div>
                                     </div>
                                 </div>
@@ -572,10 +604,10 @@ require_once('../constant.php');
                                     </div>
                                     <div class="text-content d-flex align-items-start">
                                         <div class="heading-txt">
-                                            Streamlined Escalation
+                                            Global Reach, Local Expertise
                                         </div>
                                         <div class="sub-txt">
-                                            Clear escalation channels reduce resolution time and maintain operational efficiency
+                                            A network of trusted partners and local knowledge ensures timely, efficient service delivery anywhere in the world.
                                         </div>
                                     </div>
                                 </div>

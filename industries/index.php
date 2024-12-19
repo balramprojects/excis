@@ -36,7 +36,6 @@ require_once('../constant.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/themes/clean.css" />
 
     <style>
-
         .industry-cards .card {
             flex: 0 0 31.6%;
             background: rgba(250, 249, 246);
@@ -186,24 +185,6 @@ require_once('../constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Life Sciences
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px; margin-inline: auto;">
                                             <img loading="lazy" src="<?php echo $desktop_images . 'banking-and-financial-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
@@ -221,8 +202,8 @@ require_once('../constant.php');
                             <div class="card">
                                 <a href="">
                                     <div style="padding: 50px;">
-                                        <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="<?php echo $desktop_images . 'telecom-industries-icon.png'; ?>" alt="">
+                                        <div style="height: 80px; margin-inline: auto;" class="d-flex">
+                                            <img loading="lazy" style="height: 100%; width: auto; margin-inline: auto;" src="<?php echo $desktop_images . 'telecom-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
@@ -240,101 +221,11 @@ require_once('../constant.php');
                                 <a href="">
                                     <div style="padding: 50px;">
                                         <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
+                                            <img loading="lazy" src="<?php echo $desktop_images . 'healthcare-industries-icon.png'; ?>" alt="">
                                         </div>
                                         <div
                                             style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Utilities
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Public Sector
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Manufacturing
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Education
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            IT & Consulting
-                                        </div>
-                                        <div
-                                            style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia.
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="card">
-                                <a href="">
-                                    <div style="padding: 50px;">
-                                        <div style="max-width: 80px; margin-inline: auto;">
-                                            <img loading="lazy" src="./../assets/images/trophy-icon.png" alt="">
-                                        </div>
-                                        <div
-                                            style="font-size: 24px; font-weight: 700; line-height: 32px; text-align: center; padding: 25px 0 0; color: #000;">
-                                            Consumer Goods
+                                            Healthcare
                                         </div>
                                         <div
                                             style="font-size: 16px; font-weight: 400; line-height: 24px; padding: 20px 0 0; text-align: center; color: #000;">
@@ -364,13 +255,16 @@ require_once('../constant.php');
                             odio sit! Ut impedit aut non, saepe ea aliquid!
                         </div>
                     </div>
-                    <div style="width: fit-content; padding: 12px 40px; background: transparent; border: 1px solid #fff; gap: 12px; border-radius: 10px;"
-                        class="d-flex justify-content-center align-items-center">
-                        <p style="font-size: 12px; font-weight: 600; text-wrap: nowrap; color: #fff;">
-                            Contact Us</p>
-                        <div style="width: 20px;" class="d-flex">
-                            <img loading="lazy" src="../assets/images/btn-arrow.png" alt="Excis Compliance">
-                        </div>
+
+                    <div class="learn-more-btn-container d-flex justify-content-start align-items-center" style="width: fit-content;">
+                        <a href="<?php echo $desktop_url . 'contact-us.php'; ?>">
+                            <div class="learn-more-btn d-flex align-items-center">
+                                <p>Contact Us</p>
+                                <div class="arrow d-flex">
+                                    <img src="<?php echo $desktop_images . 'btn-arrow.png'; ?>" alt="Arrow">
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -608,9 +502,8 @@ require_once('../constant.php');
         </div>
     </div>
 
-    <!-- Our Clients & Partners -->
     <?php
-    include("../templates/partners.php");
+    include("../templates/contact-form.php");
     ?>
 
     <?php

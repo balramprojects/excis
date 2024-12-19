@@ -352,7 +352,7 @@ require_once('../constant.php');
 
     <div class="full-container">
         <div class="white-container-bg">
-            <div class="container">
+            <div class="container" style="overflow: visible;">
                 <div class="left-btm-abstract2 desktop" style="bottom: -150px;"></div>
                 <div class="right-top-abstract2 desktop" style="top: -150px;"></div>
 
@@ -390,6 +390,161 @@ require_once('../constant.php');
                         </div>
                         <div class="creative d-flex">
                             <img src="<?php echo $desktop_images . 'services/it-deployments-creative.png'; ?>" alt="IT Deployments">
+                        </div>
+                    </div>
+
+                    <div class="services-extend-capabilities">
+                        <div class="content-container">
+                            <div class="content d-flex align-items-start">
+                                <div class="text-content">
+                                    <div class="heading-txt">
+                                        Our IT Deployment Services Include
+                                    </div>
+                                    <div class="sub-txt">
+                                        Excis provides end-to-end IT deployment solutions, ensuring seamless technology integration that boosts performance, security, and connectivity across your organization.
+                                        <br> <br>
+                                        Our services span from hardware installation and network infrastructure to advanced security and collaboration tools. Focused on reliability and scalability, we ensure your business is equipped with a solid technology foundation for long-term success.
+                                    </div>
+                                </div>
+                                <div class="cards d-flex justify-content-center">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                IT Hardware & Software
+                                            </div>
+                                            <div class="sub-txt">
+                                                Procurement, configuration, and installation of durable IT solutions.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                End User Computing
+                                            </div>
+                                            <div class="sub-txt">
+                                                Ready-to-use devices with tailored configurations for employees.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Networking Infrastructure
+                                            </div>
+                                            <div class="sub-txt">
+                                                Scalable, secure networks for business growth and reliability.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Data Cabling & Connectivity
+                                            </div>
+                                            <div class="sub-txt">
+                                                Structured cabling and connectivity for robust network foundations.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Network Switching
+                                            </div>
+                                            <div class="sub-txt">
+                                                Enterprise switches for optimized traffic, security, and seamless communication.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Enterprise WiFi
+                                            </div>
+                                            <div class="sub-txt">
+                                                High-performance wireless for secure, uninterrupted connectivity everywhere.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                Audio Visual & Conferencing
+                                            </div>
+                                            <div class="sub-txt">
+                                                AV and conferencing tools for effective global team collaboration.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <div class="icon-img-container">
+                                                <div class="icon-img d-flex justify-content-center align-items-center">
+                                                    <div class="img d-flex">
+                                                        <img loading="lazy" src="<?php echo $desktop_images . 'dollar-icon.png'; ?>" alt="Dollar">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="heading-txt">
+                                                CCTV & Access Control
+                                            </div>
+                                            <div class="sub-txt">
+                                                Advanced security with CCTV monitoring and access control systems.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

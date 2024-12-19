@@ -416,7 +416,9 @@ require_once('../constant.php');
                                         Extend Your IT Capabilities
                                     </div>
                                     <div class="sub-txt">
-                                        Excis empowers your organization with reliable IT support, proactive solutions, and a globally integrated approach. Experience smoother operations and a trusted partnership that aligns with your business goals.
+                                        Excis provides comprehensive global IT support services to enhance your organization’s technology infrastructure, ensuring optimal performance and security.
+                                        <br> <br>
+                                        From end-user support to cloud services and data center management, our team delivers reliable solutions that keep your systems running smoothly and efficiently across all platforms.
                                     </div>
                                 </div>
                                 <div class="cards d-flex justify-content-center">
